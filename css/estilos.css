@@ -3373,7 +3373,7 @@ table tfoot .cart_total_voucher .text-right {
 }
 .content_sortPagiBar {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 .content_sortPagiBar .bottom-pagination-content {
   border-top: 1px solid #ecedef;
@@ -3446,8 +3446,6 @@ table tfoot .cart_total_voucher .text-right {
   width: 100%;
 }
 .content_sortPagiBar .sortPagiBar form .select .selector select {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   text-align: center;
 }
 .content_sortPagiBar .sortPagiBar ul {
@@ -3641,6 +3639,7 @@ table tfoot .cart_total_voucher .text-right {
   transition: 0.4s;
 }
 .listaProducto .listaProductoLi .contenedorPopular .right-block .comments_note {
+  display: none;
   font-size: 11px;
   text-align: center;
 }
@@ -4968,6 +4967,9 @@ td .sale-box {
   font-size: 13px;
   margin: 20px 0;
 }
+.tabsInfo {
+  margin-top: 25px;
+}
 .tabsInfo .tabs nav ul {
   font-size: 0;
   margin: 0;
@@ -4998,7 +5000,7 @@ td .sale-box {
 }
 .tabsInfo .tabs nav ul .tab-current {
   background: #fff;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #fff;
   border-left: 1px solid #aeadb3;
   border-top: 1px solid #aeadb3;
   border-right: 1px solid #aeadb3;
@@ -5010,6 +5012,56 @@ td .sale-box {
 .tabsInfo .tabs .content-wrap section {
   display: none;
 }
+.tabsInfo .tabs .content-wrap section p {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario {
+  border-bottom: 1px solid #ecedef;
+  padding: 15px 0;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo {
+  width: 120px;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos {
+  text-transform: uppercase;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em {
+  font-size: 13px;
+  margin: 0;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong {
+  display: block;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star {
+  margin: -1px;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario {
+  display: inline-block;
+  vertical-align: top;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong {
+  font-style: normal;
+  font-weight: 100;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .teSirvio {
+  display: none;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: right;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a {
+  color: #aeadb3;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a:hover {
+  color: #ff4c00;
+}
 .tabsInfo .tabs .content-wrap section,
 .tabsInfo .tabs .content-wrap .content-current {
   margin-top: -1px;
@@ -5018,8 +5070,12 @@ td .sale-box {
   border: 1px solid #aeadb3;
   border-box: box-sizing;
   display: block;
-  padding: 15px;
-  width: 70%;
+  padding: 25px;
+  width: 67%;
+}
+.tabsInfo .tabs .content-wrap .content-current table {
+  font-family: 'oswaldregular';
+  font-weight: 100;
 }
 .tabsInfo .tabs .content-wrap .content-current table tbody .even td {
   border: 0;
@@ -5031,6 +5087,9 @@ td .sale-box {
 .tabsInfo .tabs .content-wrap .content-current table tbody .odd {
   background: #ecedef;
   border: 0;
+}
+.tabsInfo .tabs .content-wrap .content-current table tbody tr td:nth-child(1) {
+  color: #aeadb3;
 }
 @-moz-keyframes anim-open {
   0% {

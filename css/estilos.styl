@@ -2950,7 +2950,7 @@ table
 
 .content_sortPagiBar
 	margin 0 auto
-	width 80%
+	width 100%
 	.bottom-pagination-content
 		border-top 1px solid clarito
 		overflow hidden
@@ -3011,7 +3011,7 @@ table
 			.select
 				.selector
 					select
-						border-radius 5px
+						//border-radius 5px
 						text-align center
 		ul
 			margin 0
@@ -3177,6 +3177,7 @@ table
 						transition .4s
 
 				.comments_note
+					display none
 					font-size 11px
 					text-align center
 				.disponibilidad
@@ -4315,6 +4316,7 @@ td
 	margin 20px 0 
 	
 .tabsInfo
+	margin-top 25px
 	.tabs
 		nav
 			ul
@@ -4343,7 +4345,7 @@ td
 							text-transform uppercase
 				.tab-current
 					background white
-					border-bottom 1px solid transparent
+					border-bottom 1px solid white
 					border-left 1px solid #aeadb3
 					border-top 1px solid #aeadb3
 					border-right 1px solid #aeadb3
@@ -4354,6 +4356,49 @@ td
 		.content-wrap
 			section
 				display none
+				p
+					font-size 14px
+					font-weight 100
+					margin 0
+				.contenedorComentario
+					.contenedorInternoComentario
+						.comentario
+							border-bottom 1px solid clarito
+							padding 15px 0
+							.usuarioInfo
+								width 120px
+								.comment_author_infos
+									text-transform uppercase
+									em
+										font-size 13px
+										margin 0
+									em
+									strong
+										display block
+								.star_content
+									.star
+										margin -1px
+							.usuarioInfo
+							.detalleComentario
+								display inline-block
+								vertical-align top
+							.detalleComentario
+								p
+									strong
+										font-style normal
+										font-weight 100
+							.teSirvio
+								display none
+						.align_center
+							font-family 'oswaldregular'
+							font-size 15px
+							margin-top 15px
+							text-align right
+							a
+								color #aeadb3
+								&:hover
+									color rojoAsiste
+								
 			section
 			.content-current
 				margin-top -1px
@@ -4361,9 +4406,11 @@ td
 				border 1px solid #aeadb3
 				border-box box-sizing
 				display block
-				padding 15px
-				width 70%
+				padding 25px
+				width 67%
 				table
+					font-family 'oswaldregular'
+					font-weight 100
 					tbody
 						.even
 							td
@@ -4375,4 +4422,8 @@ td
 						.odd
 							background clarito
 							border 0
+						tr	
+							td
+								&:nth-child(1)
+									color #aeadb3
 				
