@@ -95,43 +95,73 @@
 			</div>
 		{/if}
 
-		<!-- {if $logged}
-		  <div id="somedialog" class="dialog" style="display:none;">
-		  </div>
-		{else}
-			{if $page_name === 'authentication'}
-				<div id="somedialog" class="dialog" style="display:none;">
-				</div>
-			{else}
-				<div id="somedialog" class="dialog">
-				<div class="dialog__overlay"></div>
-				<div class="dialog__content">
-					<h2><strong>Pssss</strong>, si te registras tienes un descuento</h2>
-		      <a class="login" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
-						<span>click para cupon</span>
-					</a>
-					<div><button class="action closeDialog" data-dialog-close>Close</button></div>
-				</div>
-				</div>
-			{/if}
-		{/if} -->
-
 		<header>
-			<!-- <button data-dialog="somedialog" class="trigger">Open Dialog</button> -->
 			<div class="header">
-				<figure>
-					<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
-						<img src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>
-					</a>
-				</figure>
 				<div class="headerCOnt">
+					<figure>
+						<a href="{$base_dir}" title="{$shop_name|escape:'html':'UTF-8'}">
+							<img src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"/>
+						</a>
+					</figure>
+					<!-- Block user information module NAV  -->
+					<div class="loginUsuario">
+						<div class="contenedorLogin">
+							{if $is_logged}
+								<div class="nombre">
+									<span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span>
+								</div>
+								<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">
+									<div class="icono"></div>
+									<span class="texto">Perfil</span>
+								</a>
+
+								<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
+									<div class="icono"></div>
+									<span class="texto">{l s='Salir' mod='blockuserinfo'}</span>
+								</a>
+							{else}
+
+								<div class="login">
+									{l s='Login' mod='blockuserinfo'}
+								</div>
+								<div class="accedeCuenta">
+									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" class="box boxLogin" autocomplete="off">
+										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
+										<div class="form_content">
+											<div class="form-group emailLogin">
+												<label for="email">{l s='Email address'}</label>
+												<input class="is_required validate account_input form-control" data-validate="isEmail" type="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}"/>
+											</div>
+											<div class="form-group passwordLogin">
+												<label for="passwd">{l s='Password'}</label>
+												<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes}{/if}"/></span>
+											</div>
+
+											<p class="submit">
+												{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
+												<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
+													<span>
+														<i class="icon-lock left"></i>
+														{l s='Sign in'}
+													</span>
+												</button>
+											</p>
+
+											<p class="lost_password form-group"><a href="{$link->getPageLink('password')|escape:'html':'UTF-8'}" title="{l s='Recover your forgotten password'}" rel="nofollow">{l s='Forgot your password?'}</a></p>
+											<a class="linkCreaCuenta" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
+												<!-- {l s='Login' mod='blockuserinfo'} -->
+												Crea una cuenta
+											</a>
+										</div>
+									</form>
+								</div>
+							{/if}
+						</div>
+
+					</div>
+					<!-- /Block usmodule NAV -->
 					{if isset($HOOK_TOP)}{$HOOK_TOP}{hook h="displayNav"}{/if}
 				</div>
-			</div>
-			<div class="telefono animated tada">
-			</div>
-			<div class="telefonoContenedor">
-				<span>+56 22 3792188</span>
 			</div>
 		</header>
 

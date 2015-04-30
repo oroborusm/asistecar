@@ -246,9 +246,9 @@ body
 							color oscuro
 							display block
 	header
-		background white
+		background clarito
 		//background #eaeaea
-		height 125px
+		height 70px
 		margin 0 auto
 		//overflow hidden
 		position relative
@@ -257,12 +257,11 @@ body
 			height 125px
 			margin 0 auto
 			position relative
-			width 1150px
 			figure
-				background white
-				border-right 1px solid clarito
+				//background white
+				//border-right 1px solid clarito
 				//float left
-				height 125px
+				height 70px
 				//margin 0 0 0 10%
 				margin 0
 				padding 0
@@ -273,413 +272,417 @@ body
 					//background blue
 					img
 						display block
-						margin 30px auto 0 auto
+						margin 0
 						width 70%
-			.buscador
-				//background naranjito
-				//float right
-				height 50px
-				left 190px
-				//margin 0 10% 0 0
-				position absolute
-				top 0
-				width 910px
-				.buscadorForm
-					background white
-					border 2px solid naranjito
-					//border-radius .3em
-					height 30px
-					left 30px
-					margin 0
+			.headerCOnt
+				height 70px
+				margin 0 auto
+				position relative
+				width 950px
+				.buscador
+					//background naranjito
+					//float right
+					height 50px
+					left 190px
+					//margin 0 10% 0 0
 					position absolute
-					top 13px
-					width 60%
-					form
-						height 2em
-						//position relative
-						//text-align center
-						z-index -1
-						button
-							background naranjito
-							border none
-							//border-radius 0 .5em .5em 0
-							cursor pointer
-							height 30px
-							margin 0
-							padding 0
-							position absolute
-							right 0
-							width 14%
-							//z-index -1
-							span
-								color white
-								line-height 30px
-								&:before
-									content '\e67f'
-									font-family 'icos'
-									font-size 1em
-									line-height 30px
-						input
-							background white
-							border none
-							border-radius .5em
-							height 30px
-							//margin-top 35px
-							padding 0 0 0 5%
-							width 80%
-							//z-index -2
-						button
-						input
-							display inline-block
-							vertical-align top
-			.carrito
-				//background #f8b302
-				//background #003F3F
-				background oscuro
-				//background naranjito
-				//float right
-				height 50px
-				position absolute
-				right 0
-				text-align center
-				top 0px
-				transition .3s
-				width 110px
-				z-index 2147483647
-				.carritoIcon
-					&:before
-						color white
-						content "\e601"
-						display block
-						font-family 'mania'
-						font-size 42px
-						font-weight 100
-						left 0
-						line-height 50px
+					top 0
+					width 500px
+					.buscadorForm
+						background white
+						border 2px solid naranjito
+						//border-radius .3em
+						height 30px
+						left 30px
+						margin 0
 						position absolute
-						text-align center
-						top 0
-						width 110px
-				&:hover
+						top 13px
+						width 60%
+						form
+							height 2em
+							//position relative
+							//text-align center
+							z-index -1
+							button
+								background naranjito
+								border none
+								//border-radius 0 .5em .5em 0
+								cursor pointer
+								height 30px
+								margin 0
+								padding 0
+								position absolute
+								right 0
+								width 14%
+								//z-index -1
+								span
+									color white
+									line-height 30px
+									&:before
+										content '\e67f'
+										font-family 'icos'
+										font-size 1em
+										line-height 30px
+							input
+								background white
+								border none
+								border-radius .5em
+								height 30px
+								//margin-top 35px
+								padding 0 0 0 5%
+								width 80%
+								//z-index -2
+							button
+							input
+								display inline-block
+								vertical-align top
+				.carrito
+					//background #f8b302
+					//background #003F3F
+					background rgb(255, 76, 0)
+					//background naranjito
+					border-radius 2px
+					//float right
+					height 30px
+					position absolute
+					right 0
+					text-align center
+					top 20px
+					transition .3s
+					width 90px
+					z-index 2147483647
+					.carritoIcon
+						&:before
+							color white
+							content "\e601"
+							display block
+							font-family 'mania'
+							font-size 30px
+							font-weight 100
+							left 0
+							line-height 30px
+							position absolute
+							text-align center
+							top 0
+							width 90px
+					&:hover
+						.carritoHover
+							display block
 					.carritoHover
-						display block
-				.carritoHover
-					background white
-					border-radius 5px
-					box-shadow 1px 1px 10px oscuro
-					display none
-					padding 0 3px
+						background white
+						border-radius 5px
+						box-shadow 1px 1px 10px oscuro
+						display none
+						padding 0 3px
+						position absolute
+						right 0
+						text-align left
+						top 50px
+						transition .3s
+						width 380px
+						z-index 10000
+						.carritoDeCompra
+							position relative
+							.topCarrito
+								background #006666
+								//display block
+								display none
+								height 40px
+								width 100%
+								h3
+									color oscuro
+									font-size 14px
+									line-height 40px
+									margin 0 0 0 50px
+									position relative
+									text-align left
+									&:before
+										content '\e636'
+										font-family 'icos'
+										font-size 20px
+										left -30px
+										font-weight 100
+										position absolute
+										top 0px
+									span
+										display inline-block
+										font-weight 100
+									.unvisible
+										display none
+							.cart_block
+								.block_content
+									position relative
+									.cart_block_list
+										.products
+											.first_item
+											.item
+											.last_item
+												margin 3px 0
+												overflow hidden
+												&:hover
+													background #003F3F
+													.cart-info
+														.product-name
+															a
+																color white
+															.cantidad
+																span
+																	color white
+															.nombreProducto
+																.cart_block_product_name
+																	color white
+															.quantity-formated
+																color white
+														.product-atributes
+															a
+																color white
+														span
+														.price
+															color white
+													.remove_link
+														a
+															&:after
+																color clarito
+												.cart-images
+													border-radius 5px
+													display block
+													float left
+													height 85px
+													//margin-left 5px
+													img
+														border 1px solid clarito
+														border-radius 5px
+														margin 5px
+														width 75px
+												.cart-info
+													float left
+													width 250px
+													.product-name
+														float left
+														width 150px
+														.cantidad
+															width 25px
+															span
+																color oscuro
+																display inline-block
+																font-size 14px
+														.cantidad
+														.nombreProducto
+															display inline-block
+															vertical-align top
+														.nombreProducto
+															width 90px
+															.cart_block_product_name
+																color oscuro
+																display block
+																font-size 13px
+														.cart_block_product_name
+														.quantity-formated
+															color oscuro
+															float left
+															font-size 14px
+													.product-name
+													.product-atributes
+													.price
+														// display inline-block
+														// vertical-align top
+														line-height 80px
+													.product-atributes
+														display none
+														a
+															color oscuro
+													span
+													.price
+														color oscuro
+														float right
+														font-size 13px
+														//width 30%
+												.remove_link
+													//background green
+													cursor pointer
+													float left
+													height 80px
+													position relative
+													width 25px
+													a
+														font-size 0
+														&:after
+															color oscuro
+															content '\e6fa'
+															display block
+															font-family 'icos'
+															font-size 16px
+															left 0
+															line-height 80px
+															position absolute
+															text-align center
+															top 0
+															transition .2s
+															width 25px
+														&:hover
+															&:after
+																color naranjito
+						.cart-buttons
+							background naranjo
+							border-radius 4px
+							float right
+							padding 0 1em
+							//width 150px
+							a
+								display block
+								line-height 35px
+								position relative
+								text-align center
+								text-decoration none
+								span
+									color white
+									font-size 14px
+									margin 0
+									&:after
+										content '\e722'
+										font-family 'icos'
+										font-size 13px
+										//right 0
+										font-weight 100
+										//line-height 40px
+										margin-left 7px
+										margin-top 10px
+										//position absolute
+										//top 0px
+
+						.productoCarrito
+							position relative
+				.carrito > .ajax_cart_quantity
+				.carrito > .ajax_cart_no_product
+					color white
+					font-size 11px
 					position absolute
 					right 0
 					text-align left
-					top 50px
-					transition .3s
-					width 380px
-					z-index 10000
-					.carritoDeCompra
+					top 0
+					width 45px
+				.loginUsuario
+					background oscuro
+					border-radius 2px
+					height 30px
+					position absolute
+					right 90px
+					text-align center
+					top 20px
+					width 90px
+					.contenedorLogin
+						display block
+						height 30px
+						//overflow hidden
 						position relative
-						.topCarrito
-							background #006666
-							//display block
-							display none
-							height 40px
-							width 100%
-							h3
-								color oscuro
-								font-size 14px
-								line-height 40px
-								margin 0 0 0 50px
+						width 100%
+						z-index 2147483647
+						&:hover
+							.accedeCuenta
+								display block
+							.account
+								left 0
+								top 0
+							.logout
+								left 50%
+								top 0
+							.nombre
+								//left 100%
+								top -100%
+						.account
+						.logout
+						.nombre
+							transition .4s
+						.account
+							//background calipso
+							color clarito
+							height 50px
+							line-height normal
+							left 0
+							position absolute
+							text-decoration none
+							top -55px
+							width 55px
+							z-index 1
+							.icono
+								height 20px
 								position relative
-								text-align left
+								width 100%
 								&:before
-									content '\e636'
+									color clarito
+									content '\e670'
 									font-family 'icos'
-									font-size 20px
-									left -30px
-									font-weight 100
+									font-size 16px
+									left 0
+									line-height 20px
 									position absolute
-									top 0px
-								span
-									display inline-block
-									font-weight 100
-								.unvisible
-									display none
-						.cart_block
-							.block_content
-								position relative
-								.cart_block_list
-									.products
-										.first_item
-										.item
-										.last_item
-											margin 3px 0
-											overflow hidden
-											&:hover
-												background #003F3F
-												.cart-info
-													.product-name
-														a
-															color white
-														.cantidad
-															span
-																color white
-														.nombreProducto
-															.cart_block_product_name
-																color white
-														.quantity-formated
-															color white
-													.product-atributes
-														a
-															color white
-													span
-													.price
-														color white
-												.remove_link
-													a
-														&:after
-															color clarito
-											.cart-images
-												border-radius 5px
-												display block
-												float left
-												height 85px
-												//margin-left 5px
-												img
-													border 1px solid clarito
-													border-radius 5px
-													margin 5px
-													width 75px
-											.cart-info
-												float left
-												width 250px
-												.product-name
-													float left
-													width 150px
-													.cantidad
-														width 25px
-														span
-															color oscuro
-															display inline-block
-															font-size 14px
-													.cantidad
-													.nombreProducto
-														display inline-block
-														vertical-align top
-													.nombreProducto
-														width 90px
-														.cart_block_product_name
-															color oscuro
-															display block
-															font-size 13px
-													.cart_block_product_name
-													.quantity-formated
-														color oscuro
-														float left
-														font-size 14px
-												.product-name
-												.product-atributes
-												.price
-													// display inline-block
-													// vertical-align top
-													line-height 80px
-												.product-atributes
-													display none
-													a
-														color oscuro
-												span
-												.price
-													color oscuro
-													float right
-													font-size 13px
-													//width 30%
-											.remove_link
-												//background green
-												cursor pointer
-												float left
-												height 80px
-												position relative
-												width 25px
-												a
-													font-size 0
-													&:after
-														color oscuro
-														content '\e6fa'
-														display block
-														font-family 'icos'
-														font-size 16px
-														left 0
-														line-height 80px
-														position absolute
-														text-align center
-														top 0
-														transition .2s
-														width 25px
-													&:hover
-														&:after
-															color naranjito
-					.cart-buttons
-						background naranjo
-						border-radius 4px
-						float right
-						padding 0 1em
-						//width 150px
-						a
+									text-decoration none
+									top 0
+									width 55px
+							.texto
+								color clarito
+								display block
+								font-size 9px
+								height 10px
+								line-height 10px
+								text-decoration none
+						.login
+							background clarito
+							//border 1px solid transparent
+							color oscuro
 							display block
-							line-height 35px
-							position relative
+							font-size 13px
+							line-height 50px
+							width 100%
+						.logout
+							//background #005959
+							color clarito
+							display block
+							//font-size 11px
+							left 50%
+							height 55px
+							margin 0
+							position absolute
 							text-align center
 							text-decoration none
-							span
-								color white
-								font-size 14px
-								margin 0
-								&:after
-									content '\e722'
+							top -55px
+							width 55px
+							.icono
+								height 20px
+								position relative
+								width 100%
+								&:before
+									color clarito
+									content '\e704'
 									font-family 'icos'
-									font-size 13px
-									//right 0
-									font-weight 100
-									//line-height 40px
-									margin-left 7px
-									margin-top 10px
-									//position absolute
-									//top 0px
-
-					.productoCarrito
-						position relative
-			.carrito > .ajax_cart_quantity
-			.carrito > .ajax_cart_no_product
-				color white
-				font-size 14px
-				position absolute
-				right 0
-				text-align left
-				top 5px
-				width 58px
-			
-			.ie8 .loginUsuario
-				z-index 2147483647
-			.loginUsuario
-				//background calipso
-				height 50px
-				position absolute
-				right 110px
-				text-align center
-				top 0
-				width 110px
-				.contenedorLogin
-					display block
-					height 50px
-					//overflow hidden
-					position relative
-					width 100%
-					z-index 2147483647
-					&:hover
-						.accedeCuenta
-							display block
-						.account
-							left 0
-							top 0
-						.logout
-							left 50%
-							top 0
+									font-size 16px
+									left 0
+									line-height 20px
+									position absolute
+									text-decoration none
+									top 0
+									width 55px
+							.texto
+								color clarito
+								display block
+								font-size 9px
+								height 10px
+								line-height 10px
+								text-decoration none
 						.nombre
-							//left 100%
-							top -100%
-					.account
-					.logout
-					.nombre
-						transition .4s
-					.account
-						//background calipso
-						color oscuro
-						height 50px
-						line-height normal
-						left 0
-						position absolute
-						text-decoration none
-						top -55px
-						width 55px
-						z-index 1
-						.icono
-							height 35px
-							position relative
+							color clarito
+							height 30px
+							line-height normal
+							left 0
+							overflow hidden
+							position absolute
+							top 0
 							width 100%
-							&:before
-								color oscuro
-								content '\e670'
-								font-family 'icos'
-								font-size 20px
-								left 0
-								line-height 35px
-								position absolute
-								text-decoration none
-								top 0
-								width 55px
-						.texto
-							color oscuro
-							display block
-							font-size 11px
-							height 15px
-							line-height 15px
-							text-decoration none
-					.login
-						background white
-						//border 1px solid transparent
-						color oscuro
-						display block
-						font-size 13px
-						line-height 50px
-						width 100%
-					.logout
-						//background #005959
-						color oscuro
-						display block
-						//font-size 11px
-						left 50%
-						height 55px
-						margin 0
-						position absolute
-						text-align center
-						text-decoration none
-						top -55px
-						width 55px
-						.icono
-							height 35px
-							position relative
-							width 100%
-							&:before
-								color oscuro
-								content '\e704'
-								font-family 'icos'
-								font-size 20px
-								left 0
-								line-height 35px
-								position absolute
-								text-decoration none
-								top 0
-								width 55px
-						.texto
-							color oscuro
-							display block
-							font-size 11px
-							height 15px
-							line-height 15px
-							text-decoration none
-					.nombre
-						color oscuro
-						height 55px
-						line-height normal
-						left 0
-						overflow hidden
-						position absolute
-						top 0
-						width 100%
-						span
-							color oscuro
-							display block
-							font-size 11px
-							line-height 55px
+							span
+								color clarito
+								display block
+								font-size 11px
+								line-height 30px
 		.telefono
 			background white
 			border 3px solid naranjito
@@ -2776,45 +2779,19 @@ table
 
 
 .menuManias
-	//background naranjito
+	background oscuro
 	border-top 1px dotted clarito
 	display block
 	height 70px
-	position absolute
-	right 0
-	top 55px
-	width 950px
-	//z-index 100000
-	// &:after
-	// 	background linear-gradient(right, transparent, naranjito)
-	// 	content ''
-	// 	height 37px
-	// 	position absolute
-	// 	top 0
-	// 	right -35px
-	// 	width 40px
-	// &:before
-	// 	background linear-gradient(left, transparent, naranjito)
-	// 	content ''
-	// 	height 37px
-	// 	left -35px
-	// 	position absolute
-	// 	top 0
-	// 	width 40px
+	position relative
+	//right 0
+	//top 55px
+	width 100%
 .menuManias > ul
 	margin 0 auto
 	padding 0
 	position relative
 	text-align left
-	//width 90%
-	// &:before
-	// 	border-bottom 20px solid naranjito
-	// 	border-left 20px solid transparent
-	// 	border-right 20px solid naranjito
-	// 	border-top 20px solid transparent
-	// 	content ''
-	// 	position absolute
-	// 	left -40px
 .menuManias > ul > li
 	display inline-block
 	list-style none
@@ -2831,7 +2808,7 @@ table
 			display block
 .menuManias > ul > li > a
 	//color naranjito
-	color oscuro
+	color clarito
 	display block
 	font-size 14px
 	font-weight 600
@@ -3991,8 +3968,8 @@ table
 				color naranjito
 
 .container
-	margin 0 auto
-	width 1150px
+	margin 2em auto
+	width 950px
 .page-heading
 .product-listing
 	font-size 15px

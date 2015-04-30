@@ -260,8 +260,8 @@ body footer .row .informacionFooter ul li span {
   display: block;
 }
 body header {
-  background: #fff;
-  height: 125px;
+  background: #ecedef;
+  height: 70px;
   margin: 0 auto;
   position: relative;
 }
@@ -270,12 +270,9 @@ body header .header {
   height: 125px;
   margin: 0 auto;
   position: relative;
-  width: 1150px;
 }
 body header .header figure {
-  background: #fff;
-  border-right: 1px solid #ecedef;
-  height: 125px;
+  height: 70px;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -284,17 +281,23 @@ body header .header figure {
 }
 body header .header figure a img {
   display: block;
-  margin: 30px auto 0 auto;
+  margin: 0;
   width: 70%;
 }
-body header .header .buscador {
+body header .header .headerCOnt {
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  width: 950px;
+}
+body header .header .headerCOnt .buscador {
   height: 50px;
   left: 190px;
   position: absolute;
   top: 0;
-  width: 910px;
+  width: 500px;
 }
-body header .header .buscador .buscadorForm {
+body header .header .headerCOnt .buscador .buscadorForm {
   background: #fff;
   border: 2px solid #f8b302;
   height: 30px;
@@ -304,11 +307,11 @@ body header .header .buscador .buscadorForm {
   top: 13px;
   width: 60%;
 }
-body header .header .buscador .buscadorForm form {
+body header .header .headerCOnt .buscador .buscadorForm form {
   height: 2em;
   z-index: -1;
 }
-body header .header .buscador .buscadorForm form button {
+body header .header .headerCOnt .buscador .buscadorForm form button {
   background: #f8b302;
   border: none;
   cursor: pointer;
@@ -319,17 +322,17 @@ body header .header .buscador .buscadorForm form button {
   right: 0;
   width: 14%;
 }
-body header .header .buscador .buscadorForm form button span {
+body header .header .headerCOnt .buscador .buscadorForm form button span {
   color: #fff;
   line-height: 30px;
 }
-body header .header .buscador .buscadorForm form button span:before {
+body header .header .headerCOnt .buscador .buscadorForm form button span:before {
   content: '\e67f';
   font-family: 'icos';
   font-size: 1em;
   line-height: 30px;
 }
-body header .header .buscador .buscadorForm form input {
+body header .header .headerCOnt .buscador .buscadorForm form input {
   background: #fff;
   border: none;
   -webkit-border-radius: 0.5em;
@@ -338,44 +341,46 @@ body header .header .buscador .buscadorForm form input {
   padding: 0 0 0 5%;
   width: 80%;
 }
-body header .header .buscador .buscadorForm form button,
-body header .header .buscador .buscadorForm form input {
+body header .header .headerCOnt .buscador .buscadorForm form button,
+body header .header .headerCOnt .buscador .buscadorForm form input {
   display: inline-block;
   vertical-align: top;
 }
-body header .header .carrito {
-  background: #434142;
-  height: 50px;
+body header .header .headerCOnt .carrito {
+  background: #ff4c00;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  height: 30px;
   position: absolute;
   right: 0;
   text-align: center;
-  top: 0px;
+  top: 20px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  width: 110px;
+  width: 90px;
   z-index: 2147483647;
 }
-body header .header .carrito .carritoIcon:before {
+body header .header .headerCOnt .carrito .carritoIcon:before {
   color: #fff;
   content: "\e601";
   display: block;
   font-family: 'mania';
-  font-size: 42px;
+  font-size: 30px;
   font-weight: 100;
   left: 0;
-  line-height: 50px;
+  line-height: 30px;
   position: absolute;
   text-align: center;
   top: 0;
-  width: 110px;
+  width: 90px;
 }
-body header .header .carrito:hover .carritoHover {
+body header .header .headerCOnt .carrito:hover .carritoHover {
   display: block;
 }
-body header .header .carrito .carritoHover {
+body header .header .headerCOnt .carrito .carritoHover {
   background: #fff;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -395,16 +400,16 @@ body header .header .carrito .carritoHover {
   width: 380px;
   z-index: 10000;
 }
-body header .header .carrito .carritoHover .carritoDeCompra {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra {
   position: relative;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .topCarrito {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .topCarrito {
   background: #066;
   display: none;
   height: 40px;
   width: 100%;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3 {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .topCarrito h3 {
   color: #434142;
   font-size: 14px;
   line-height: 40px;
@@ -412,7 +417,7 @@ body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3 {
   position: relative;
   text-align: left;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3:before {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .topCarrito h3:before {
   content: '\e636';
   font-family: 'icos';
   font-size: 20px;
@@ -421,186 +426,186 @@ body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3:befor
   position: absolute;
   top: 0px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3 span {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .topCarrito h3 span {
   display: inline-block;
   font-weight: 100;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .topCarrito h3 .unvisible {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .topCarrito h3 .unvisible {
   display: none;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content {
   position: relative;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item {
   margin: 3px 0;
   overflow: hidden;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover {
   background: #003f3f;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name a {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name a {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .cantidad span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .cantidad span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .cantidad span {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .cantidad span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .cantidad span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .cantidad span {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .nombreProducto .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .nombreProducto .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .nombreProducto .cart_block_product_name {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .nombreProducto .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .nombreProducto .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .nombreProducto .cart_block_product_name {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .quantity-formated,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .quantity-formated,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .quantity-formated {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-name .quantity-formated {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-atributes a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-atributes a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-atributes a {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .product-atributes a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .product-atributes a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .product-atributes a {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .price {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .cart-info .price {
   color: #fff;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .remove_link a:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .remove_link a:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .remove_link a:after {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item:hover .remove_link a:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item:hover .remove_link a:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item:hover .remove_link a:after {
   color: #ecedef;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-images,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-images,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-images {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-images,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-images,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-images {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   display: block;
   float: left;
   height: 85px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-images img,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-images img,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-images img {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-images img,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-images img,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-images img {
   border: 1px solid #ecedef;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   margin: 5px;
   width: 75px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info {
   float: left;
   width: 250px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name {
   float: left;
   width: 150px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad {
   width: 25px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad span {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad span {
   color: #434142;
   display: inline-block;
   font-size: 14px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto {
   display: inline-block;
   vertical-align: top;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto {
   width: 90px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto .cart_block_product_name {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .nombreProducto .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .nombreProducto .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .nombreProducto .cart_block_product_name {
   color: #434142;
   display: block;
   font-size: 13px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cart_block_product_name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .quantity-formated,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .quantity-formated,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .quantity-formated {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cart_block_product_name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .quantity-formated {
   color: #434142;
   float: left;
   font-size: 14px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .price {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .price {
   line-height: 80px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes {
   display: none;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes a {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-atributes a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-atributes a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-atributes a {
   color: #434142;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info span,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .price,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .price {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info span,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .price,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .price {
   color: #434142;
   float: right;
   font-size: 13px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link {
   cursor: pointer;
   float: left;
   height: 80px;
   position: relative;
   width: 25px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a {
   font-size: 0;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a:after {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a:after {
   color: #434142;
   content: '\e6fa';
   display: block;
@@ -618,31 +623,31 @@ body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_c
   transition: 0.2s;
   width: 25px;
 }
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a:hover:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a:hover:after,
-body header .header .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a:hover:after {
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a:hover:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a:hover:after,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .remove_link a:hover:after {
   color: #f8b302;
 }
-body header .header .carrito .carritoHover .cart-buttons {
+body header .header .headerCOnt .carrito .carritoHover .cart-buttons {
   background: #ff6b00;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   float: right;
   padding: 0 1em;
 }
-body header .header .carrito .carritoHover .cart-buttons a {
+body header .header .headerCOnt .carrito .carritoHover .cart-buttons a {
   display: block;
   line-height: 35px;
   position: relative;
   text-align: center;
   text-decoration: none;
 }
-body header .header .carrito .carritoHover .cart-buttons a span {
+body header .header .headerCOnt .carrito .carritoHover .cart-buttons a span {
   color: #fff;
   font-size: 14px;
   margin: 0;
 }
-body header .header .carrito .carritoHover .cart-buttons a span:after {
+body header .header .headerCOnt .carrito .carritoHover .cart-buttons a span:after {
   content: '\e722';
   font-family: 'icos';
   font-size: 13px;
@@ -650,62 +655,62 @@ body header .header .carrito .carritoHover .cart-buttons a span:after {
   margin-left: 7px;
   margin-top: 10px;
 }
-body header .header .carrito .carritoHover .productoCarrito {
+body header .header .headerCOnt .carrito .carritoHover .productoCarrito {
   position: relative;
 }
-body header .header .carrito > .ajax_cart_quantity,
-body header .header .carrito > .ajax_cart_no_product {
+body header .header .headerCOnt .carrito > .ajax_cart_quantity,
+body header .header .headerCOnt .carrito > .ajax_cart_no_product {
   color: #fff;
-  font-size: 14px;
+  font-size: 11px;
   position: absolute;
   right: 0;
   text-align: left;
-  top: 5px;
-  width: 58px;
-}
-body header .header .ie8 .loginUsuario {
-  z-index: 2147483647;
-}
-body header .header .loginUsuario {
-  height: 50px;
-  position: absolute;
-  right: 110px;
-  text-align: center;
   top: 0;
-  width: 110px;
+  width: 45px;
 }
-body header .header .loginUsuario .contenedorLogin {
+body header .header .headerCOnt .loginUsuario {
+  background: #434142;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  height: 30px;
+  position: absolute;
+  right: 90px;
+  text-align: center;
+  top: 20px;
+  width: 90px;
+}
+body header .header .headerCOnt .loginUsuario .contenedorLogin {
   display: block;
-  height: 50px;
+  height: 30px;
   position: relative;
   width: 100%;
   z-index: 2147483647;
 }
-body header .header .loginUsuario .contenedorLogin:hover .accedeCuenta {
+body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .accedeCuenta {
   display: block;
 }
-body header .header .loginUsuario .contenedorLogin:hover .account {
+body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .account {
   left: 0;
   top: 0;
 }
-body header .header .loginUsuario .contenedorLogin:hover .logout {
+body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .logout {
   left: 50%;
   top: 0;
 }
-body header .header .loginUsuario .contenedorLogin:hover .nombre {
+body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .nombre {
   top: -100%;
 }
-body header .header .loginUsuario .contenedorLogin .account,
-body header .header .loginUsuario .contenedorLogin .logout,
-body header .header .loginUsuario .contenedorLogin .nombre {
+body header .header .headerCOnt .loginUsuario .contenedorLogin .account,
+body header .header .headerCOnt .loginUsuario .contenedorLogin .logout,
+body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre {
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   -ms-transition: 0.4s;
   transition: 0.4s;
 }
-body header .header .loginUsuario .contenedorLogin .account {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .account {
+  color: #ecedef;
   height: 50px;
   line-height: normal;
   left: 0;
@@ -715,41 +720,41 @@ body header .header .loginUsuario .contenedorLogin .account {
   width: 55px;
   z-index: 1;
 }
-body header .header .loginUsuario .contenedorLogin .account .icono {
-  height: 35px;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .account .icono {
+  height: 20px;
   position: relative;
   width: 100%;
 }
-body header .header .loginUsuario .contenedorLogin .account .icono:before {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .account .icono:before {
+  color: #ecedef;
   content: '\e670';
   font-family: 'icos';
-  font-size: 20px;
+  font-size: 16px;
   left: 0;
-  line-height: 35px;
+  line-height: 20px;
   position: absolute;
   text-decoration: none;
   top: 0;
   width: 55px;
 }
-body header .header .loginUsuario .contenedorLogin .account .texto {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .account .texto {
+  color: #ecedef;
   display: block;
-  font-size: 11px;
-  height: 15px;
-  line-height: 15px;
+  font-size: 9px;
+  height: 10px;
+  line-height: 10px;
   text-decoration: none;
 }
-body header .header .loginUsuario .contenedorLogin .login {
-  background: #fff;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .login {
+  background: #ecedef;
   color: #434142;
   display: block;
   font-size: 13px;
   line-height: 50px;
   width: 100%;
 }
-body header .header .loginUsuario .contenedorLogin .logout {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .logout {
+  color: #ecedef;
   display: block;
   left: 50%;
   height: 55px;
@@ -760,34 +765,34 @@ body header .header .loginUsuario .contenedorLogin .logout {
   top: -55px;
   width: 55px;
 }
-body header .header .loginUsuario .contenedorLogin .logout .icono {
-  height: 35px;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .icono {
+  height: 20px;
   position: relative;
   width: 100%;
 }
-body header .header .loginUsuario .contenedorLogin .logout .icono:before {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .icono:before {
+  color: #ecedef;
   content: '\e704';
   font-family: 'icos';
-  font-size: 20px;
+  font-size: 16px;
   left: 0;
-  line-height: 35px;
+  line-height: 20px;
   position: absolute;
   text-decoration: none;
   top: 0;
   width: 55px;
 }
-body header .header .loginUsuario .contenedorLogin .logout .texto {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .texto {
+  color: #ecedef;
   display: block;
-  font-size: 11px;
-  height: 15px;
-  line-height: 15px;
+  font-size: 9px;
+  height: 10px;
+  line-height: 10px;
   text-decoration: none;
 }
-body header .header .loginUsuario .contenedorLogin .nombre {
-  color: #434142;
-  height: 55px;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre {
+  color: #ecedef;
+  height: 30px;
   line-height: normal;
   left: 0;
   overflow: hidden;
@@ -795,11 +800,11 @@ body header .header .loginUsuario .contenedorLogin .nombre {
   top: 0;
   width: 100%;
 }
-body header .header .loginUsuario .contenedorLogin .nombre span {
-  color: #434142;
+body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre span {
+  color: #ecedef;
   display: block;
   font-size: 11px;
-  line-height: 55px;
+  line-height: 30px;
 }
 body header .telefono {
   background: #fff;
@@ -3207,13 +3212,12 @@ table tfoot .cart_total_voucher .text-right {
   text-transform: uppercase;
 }
 .menuManias {
+  background: #434142;
   border-top: 1px dotted #ecedef;
   display: block;
   height: 70px;
-  position: absolute;
-  right: 0;
-  top: 55px;
-  width: 950px;
+  position: relative;
+  width: 100%;
 }
 .menuManias > ul {
   margin: 0 auto;
@@ -3240,7 +3244,7 @@ table tfoot .cart_total_voucher .text-right {
   display: block;
 }
 .menuManias > ul > li > a {
-  color: #434142;
+  color: #ecedef;
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -4619,8 +4623,8 @@ table tfoot .cart_total_voucher .text-right {
   color: #f8b302;
 }
 .container {
-  margin: 0 auto;
-  width: 1150px;
+  margin: 2em auto;
+  width: 950px;
 }
 .page-heading,
 .product-listing {
