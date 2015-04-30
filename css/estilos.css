@@ -3263,6 +3263,7 @@ table tfoot .cart_total_voucher .text-right {
   background: #f8b302;
 }
 .menuManias > ul > li > ul {
+  background: #ecedef;
   border-bottom: 6px solid #f8b302;
   display: none;
   min-height: 280px;
@@ -3270,7 +3271,7 @@ table tfoot .cart_total_voucher .text-right {
   opacity: 1 !important;
   -ms-filter: none !important;
   filter: none !important;
-  padding: 10px 12%;
+  padding: 10px 5%;
   position: absolute;
   text-align: left;
   -webkit-transition: 0.3s;
@@ -3278,8 +3279,19 @@ table tfoot .cart_total_voucher .text-right {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  width: 76%;
+  width: 90%;
   z-index: 10;
+}
+.menuManias > ul > li > ul li {
+  font-size: 16px;
+}
+.menuManias > ul > li > ul li a {
+  color: #434142;
+  font-family: 'oswaldregular';
+  text-decoration: none;
+}
+.menuManias > ul > li > ul li ul {
+  display: block !important;
 }
 .navegador {
   margin: 1em auto;
