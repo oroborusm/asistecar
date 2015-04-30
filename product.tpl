@@ -107,29 +107,50 @@
 					<p class="online_only">{l s='Online only'}</p>
 				{/if}
 
-				<p id="product_reference" class="referencia"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
-					<label>{l s='Model'} </label>
-					<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
-				</p>
+				<div class="topDescripcion">
+					<p id="product_reference" class="referencia"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
+						<label>{l s='Model'} </label>
+						<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
+					</p>
 
 
-				{if $product->condition}
-				<p id="product_condition" class="condicion">
-					<label>{l s='Condition'} </label>
-					{if $product->condition == 'new'}
-						<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
-						<span class="editable">{l s='New'}</span>
-					{elseif $product->condition == 'used'}
-						<link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
-						<span class="editable">{l s='Used'}</span>
-					{elseif $product->condition == 'refurbished'}
-						<link itemprop="itemCondition" href="http://schema.org/RefurbishedCondition"/>
-						<span class="editable">{l s='Refurbished'}</span>
-					{/if}
-				</p>
+					{if $product->condition}
+					<p id="product_condition" class="condicion">
+						<label>{l s='Condition'} </label>
+						{if $product->condition == 'new'}
+							<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
+							<span class="editable">{l s='New'}</span>
+						{elseif $product->condition == 'used'}
+							<link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
+							<span class="editable">{l s='Used'}</span>
+						{elseif $product->condition == 'refurbished'}
+							<link itemprop="itemCondition" href="http://schema.org/RefurbishedCondition"/>
+							<span class="editable">{l s='Refurbished'}</span>
+						{/if}
+					</p>
+
+					<!-- {if $nbComments != 0} -->
+						<div class="commentsValorizacion">
+							<span>{l s='Rating' mod='productcomments'}:</span>
+							<div class="star_content clearfix">
+								{section name="i" start=0 loop=5 step=1}
+									{if $averageTotal le $smarty.section.i.index}
+										<div class="star"></div>
+									{else}
+										<div class="star star_on"></div>
+									{/if}
+								{/section}
+								<meta itemprop="worstRating" content = "0" />
+								<meta itemprop="ratingValue" content = "{if isset($ratings.avg)}{$ratings.avg|round:1|escape:'html':'UTF-8'}{else}{$averageTotal|round:1|escape:'html':'UTF-8'}{/if}" />
+								<meta itemprop="bestRating" content = "5" />
+							</div>
+						</div> <!-- .comments_note -->
+					<!-- {/if} -->					
+				</div>
+
 
 				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
-				
+
 				{/if}
 				{if $product->description_short || $packItems|@count > 0}
 					<div id="short_description_block" class="textoDescripcion">
@@ -183,10 +204,11 @@
 				<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
 					{$HOOK_PRODUCT_OOS}
 				</div>
+				<!-- social? -->
 				{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
 				{if !$content_only}
 					<!-- usefull links-->
-					<ul id="usefull_link_block" class="clearfix no-print">
+					<ul id="usefull_link_block" class="linksDescripcion">
 						{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
 						<li class="print">
 							<a href="javascript:print();">
@@ -194,6 +216,16 @@
 							</a>
 						</li>
 						{if $have_image && !$jqZoomEnabled}{/if}
+
+
+						{if ($too_early == false AND ($is_logged OR $allow_guests))}
+							<li>
+								<a class="open-comment-form" href="#new_comment_form">
+									{l s='Write a review' mod='productcomments'}
+								</a>
+							</li>
+						{/if}
+
 					</ul>
 				{/if}
 			</div>
@@ -285,7 +317,7 @@
 
 								{if !$PS_CATALOG_MODE}
 								<p id="quantity_wanted_p" class="contieneCantidad"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
-									<label>{l s='Quantity'}</label>
+									<!-- <label>{l s='Quantity'}</label> -->
 
 									<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
 
@@ -570,6 +602,15 @@
 		</section>
 		<!--end HOOK_PRODUCT_TAB -->
 		{if isset($accessories) && $accessories}
+
+
+
+		
+
+
+
+
+
 			<!--Accessories -->
 			<section class="page-product-box accesorios">
 				<div class="homeTab one">

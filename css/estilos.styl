@@ -14,6 +14,7 @@ naranjoClaro = #F39C02
 grisAzul = #A1A5AD
 azulAsiste = #0040a6
 rojoAsiste = #ff4c00
+otroGris = rgb(91, 91, 95)
 
 
 
@@ -1940,8 +1941,8 @@ body
 			.contenedorProductoFoto
 				.carroDecripcion
 					background clarito
-					height 350px
-					width 25%
+					height 300px
+					width 24%
 					form
 						font-size 16px
 						position relative
@@ -1950,15 +1951,18 @@ body
 								.price
 									font-size 16px
 									.precioActual
-										background naranjito
-										border-radius 5px
+										background rojoAsiste
+										//border-radius 2px
 										display block
 										line-height 50px
-										margin 0 auto
+										margin 18px auto 0
 										text-align center
 										width 80%
 										span
 											color white
+											font-family 'oswaldregular'
+											font-size 24px
+											font-weight 100
 							.cantidad
 								font-size 15px
 								margin 0 auto
@@ -1976,17 +1980,20 @@ body
 									width 100%
 									input
 										border none
-										border-radius 5px
+										//border-radius 5px
 										bottom 0
+										box-sizing border-box
+										font-family 'oswaldregular'
 										height 20px
 										left 0
+										padding 5px
 										position absolute
-										text-align center
+										text-align right
 										width 80%
 									.product_quantity_down
 									.product_quantity_up
-										background cafoso
-										border-radius 5px
+										background oscuro
+										//border-radius 5px
 										display block
 										height 17px
 										overflow hidden
@@ -2019,21 +2026,21 @@ body
 											top 2px
 											width 100%
 						.box-cart-bottom
-							margin-top 70px
+							margin-top 50px
 							div
 								.agregaCarrito
 									display block
 									button
-										background oscuro
+										background otroGris
 										border none
-										border-radius 5px
+										//border-radius 5px
 										display block
 										line-height 50px
 										margin 0 auto
 										position relative
 										width 80%
 										&:before
-											background naranjito
+											//background naranjito
 											color white
 											content "\e636"
 											font-family 'icos'
@@ -2047,63 +2054,92 @@ body
 										span
 											color white
 											display block
-											font-size 14px
+											font-family 'oswaldregular'
+											font-size 20px
 											margin-left 49px
 											text-align left
 							.buttons_bottom_block
 								height 50px
 								a
-									background oscuro
-									border none
-									border-radius 5px
+									//background oscuro
+									border 1px solid #aeadb3
+									//border-radius 5px
 									color white
 									display block
 									font-size 15px
-									height 50px
+									height 30px
 									margin 0 auto
 									position relative
 									text-align center
 									text-decoration none
 									width 80%
 									&:before
-										background naranjo
-										color white
+										color #aeadb3
 										content "\e606"
 										font-family 'icos'
-										font-size 1.5em
+										font-size 18px
 										font-weight 100
 										left 0
-										line-height 50px
+										line-height 30px
 										position absolute
 										text-align center
 										top 0
-										width 45px
+										width 40px
 									span
-										color white
+										color #aeadb3
 										display block
-										margin-left 55px
-										padding-top 5px
-										text-align left
-										width 120px
+										font-family 'oswaldregular'
+										font-size 14px
+										//margin-left 55px
+										padding 5px
+										text-align right
+										width 90%
 
 				.descripcion
 					//background rgba(cafoso, .6)
-					height 350px
-					margin-right 2%
+					margin-right 2.5%
+					min-height 300px
 					padding 0
 					position relative
-					width 39%
+					width 40%
 					h1
 						color oscuro
 						font-family 'oswaldregular'
 						font-size 24px
-						margin 0 0 0 5px
+						font-weight 100
+						margin 10px 0
+						padding 0 5px 0 15px
 						text-align left
-					.condicion
-					.referencia
-						color oscuro
-						font-size 11px
-						margin 0 0 0 5px
+					.topDescripcion
+						background clarito
+						padding 5px 5px 5px 15px
+						.commentsValorizacion
+							font-size 0
+							text-align right
+							width 50%
+							span
+								font-family 'oswaldregular'
+								font-size 13px
+								margin-right 5px
+							span
+							.star_content
+								display inline-block
+								vertical-align middle
+						.commentsValorizacion
+						.condicion
+							display inline-block
+							vertical-align middle
+						.condicion
+							font-size 0
+							width 50%
+						.condicion
+						.referencia
+							label
+							span
+								color oscuro
+								font-family 'oswaldregular'
+								font-size 13px
+								margin 0
 					.linkComentario
 						bottom 40px
 						display block
@@ -2121,7 +2157,7 @@ body
 								list-style none
 								a
 									color oscuro
-					.no-print
+					.linksDescripcion
 						bottom 0
 						margin 0
 						padding 0
@@ -2129,30 +2165,33 @@ body
 						right 0
 						text-align right
 						li
-							display inline-block
+							background rgb(237, 238, 240)
+							border 1px solid rgb(174, 173, 179)
+							//display inline-block
 							font-size 13px
 							list-style none
+							margin-bottom 5px
+							width 100px
 							a
-								border 2px solid white
-								border-radius 5px
-								color oscuro
+								color rgb(174, 173, 179)
 								display block
+								font-family 'oswaldregular'
 								margin-bottom 2px
 								margin-right 6px
-								padding 3px
+								padding 0 3px
 								text-decoration none
 					.referencia
 						margin-top 5px
 					.socialsharing_product
-						bottom 2px
+						bottom -35px
 						//float right
 						left 0
 						margin 0
 						position absolute
 						text-align right
-						width 110px
+						width 100%
 						button
-							background transparent
+							background oscuro
 							border 2px solid white
 							border-radius 50%
 							height 30px
@@ -2165,32 +2204,38 @@ body
 					// 	display inline-block
 					// 	position absolute
 					.stock
+						background clarito
 						border 1px solid white
 						border-radius 3px
 						color oscuro
 						//display block
 						//float left
+						font-family 'oswaldlight'
 						font-size 11px
-						padding 0 2px
-						text-align center
+						margin-left 15px
+						padding 2px
+						text-align left
 						width 150px
 					.textoDescripcion
-						margin 0 0 0 5px
+						margin 0
+						padding 0 5px 0 15px
 						.rodeaTexto
 							p
 								color oscuro
-								font-size 16px
+								font-family 'oswaldlight'
+								font-size 15px
 				.carroDecripcion
 				.descripcion
 				.imagenGrande
 					display inline-block
 					vertical-align top
 				.imagenGrande
+					border 1px solid clarito
 					//height 350px
 					margin-right 2%
 					//overflow hidden
 					position relative
-					width 32%
+					width 31%
 					.contenedorImagen
 						cursor pointer
 						display block
@@ -2205,19 +2250,25 @@ body
 							width 100%
 			.muestraChica
 				overflow hidden
-				width 40%
+				width 32%
 				.rodeaMuestraChica
 					ul
 						display block
 						margin 16px 0
 						padding 0
-						text-align center
+						text-align left
 						li
 							border 1px solid clarito
 							border-radius 5px
 							display inline-block
 							//float right
+							height 70px
 							margin-right 4px
+							width 70px
+							a
+								img
+									height 70px
+									width 70px
 		.fichaTecnica
 			margin-top 36px
 			h3
@@ -2662,25 +2713,50 @@ table
 .star
 	cursor pointer
 	display inline-block
+	margin 1px
+	height 18px
+	position relative
+	width 18px
 	&:after
+		color oscuro
 		content '\e6ce'
 		font-family 'icos'
 		font-size 12px
+		left 0
+		padding 3px
+		position absolute
+		top 0
 	a
 		font-size 0
 
 .star_hover
+	height 18px
+	position relative
+	width 18px
 	&:after
-		color naranjito
-		content '\e6d0'
+		background oscuro
+		color clarito
+		content '\e6ce'
 		font-family 'icos'
 		font-size 12px
+		left 0
+		padding 3px
+		position absolute
+		top 0
 .star_on
+	height 18px
+	position relative
+	width 18px
 	&:after
-		color naranjito
-		content '\e6d0'
+		background oscuro
+		color white
+		content '\e6ce'
 		font-family 'icos'
 		font-size 12px
+		left 0
+		padding 3px
+		position absolute
+		top 0
 .unvisible
 	display none
 

@@ -2247,8 +2247,8 @@ body .productoPag .productoFoto {
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion {
   background: #ecedef;
-  height: 350px;
-  width: 25%;
+  height: 300px;
+  width: 24%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form {
   font-size: 16px;
@@ -2258,17 +2258,18 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   font-size: 16px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices .price .precioActual {
-  background: #f8b302;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: #ff4c00;
   display: block;
   line-height: 50px;
-  margin: 0 auto;
+  margin: 18px auto 0;
   text-align: center;
   width: 80%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices .price .precioActual span {
   color: #fff;
+  font-family: 'oswaldregular';
+  font-size: 24px;
+  font-weight: 100;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .cantidad {
   font-size: 15px;
@@ -2289,20 +2290,21 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .cantidad .contieneCantidad input {
   border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'oswaldregular';
   height: 20px;
   left: 0;
+  padding: 5px;
   position: absolute;
-  text-align: center;
+  text-align: right;
   width: 80%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .cantidad .contieneCantidad .product_quantity_down,
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .cantidad .contieneCantidad .product_quantity_up {
-  background: #211915;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: #434142;
   display: block;
   height: 17px;
   overflow: hidden;
@@ -2338,16 +2340,14 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   width: 100%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom div .agregaCarrito {
   display: block;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom div .agregaCarrito button {
-  background: #434142;
+  background: #5b5b5f;
   border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   display: block;
   line-height: 50px;
   margin: 0 auto;
@@ -2355,7 +2355,6 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   width: 80%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom div .agregaCarrito button:before {
-  background: #f8b302;
   color: #fff;
   content: "\e636";
   font-family: 'icos';
@@ -2370,7 +2369,8 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom div .agregaCarrito button span {
   color: #fff;
   display: block;
-  font-size: 14px;
+  font-family: 'oswaldregular';
+  font-size: 20px;
   margin-left: 49px;
   text-align: left;
 }
@@ -2378,14 +2378,11 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   height: 50px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom .buttons_bottom_block a {
-  background: #434142;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border: 1px solid #aeadb3;
   color: #fff;
   display: block;
   font-size: 15px;
-  height: 50px;
+  height: 30px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -2393,46 +2390,79 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   width: 80%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom .buttons_bottom_block a:before {
-  background: #ff6b00;
-  color: #fff;
+  color: #aeadb3;
   content: "\e606";
   font-family: 'icos';
-  font-size: 1.5em;
+  font-size: 18px;
   font-weight: 100;
   left: 0;
-  line-height: 50px;
+  line-height: 30px;
   position: absolute;
   text-align: center;
   top: 0;
-  width: 45px;
+  width: 40px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-cart-bottom .buttons_bottom_block a span {
-  color: #fff;
+  color: #aeadb3;
   display: block;
-  margin-left: 55px;
-  padding-top: 5px;
-  text-align: left;
-  width: 120px;
+  font-family: 'oswaldregular';
+  font-size: 14px;
+  padding: 5px;
+  text-align: right;
+  width: 90%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion {
-  height: 350px;
-  margin-right: 2%;
+  margin-right: 2.5%;
+  min-height: 300px;
   padding: 0;
   position: relative;
-  width: 39%;
+  width: 40%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion h1 {
   color: #434142;
   font-family: 'oswaldregular';
   font-size: 24px;
-  margin: 0 0 0 5px;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 0 5px 0 15px;
   text-align: left;
 }
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .condicion,
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .referencia {
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion {
+  background: #ecedef;
+  padding: 5px 5px 5px 15px;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .commentsValorizacion {
+  font-size: 0;
+  text-align: right;
+  width: 50%;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .commentsValorizacion span {
+  font-family: 'oswaldregular';
+  font-size: 13px;
+  margin-right: 5px;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .commentsValorizacion span,
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .commentsValorizacion .star_content {
+  display: inline-block;
+  vertical-align: middle;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .commentsValorizacion,
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion {
+  display: inline-block;
+  vertical-align: middle;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion {
+  font-size: 0;
+  width: 50%;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion label,
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .referencia label,
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion span,
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .referencia span {
   color: #434142;
-  font-size: 11px;
-  margin: 0 0 0 5px;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+  margin: 0;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linkComentario {
   bottom: 40px;
@@ -2455,7 +2485,7 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linkComent
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linkComentario .comments_advices li a {
   color: #434142;
 }
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .no-print {
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion {
   bottom: 0;
   margin: 0;
   padding: 0;
@@ -2463,35 +2493,36 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .no-print {
   right: 0;
   text-align: right;
 }
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .no-print li {
-  display: inline-block;
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li {
+  background: #edeef0;
+  border: 1px solid #aeadb3;
   font-size: 13px;
   list-style: none;
+  margin-bottom: 5px;
+  width: 100px;
 }
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .no-print li a {
-  border: 2px solid #fff;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #434142;
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li a {
+  color: #aeadb3;
   display: block;
+  font-family: 'oswaldregular';
   margin-bottom: 2px;
   margin-right: 6px;
-  padding: 3px;
+  padding: 0 3px;
   text-decoration: none;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .referencia {
   margin-top: 5px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .socialsharing_product {
-  bottom: 2px;
+  bottom: -35px;
   left: 0;
   margin: 0;
   position: absolute;
   text-align: right;
-  width: 110px;
+  width: 100%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .socialsharing_product button {
-  background: transparent;
+  background: #434142;
   border: 2px solid #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -2502,21 +2533,26 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .socialshar
   width: 30px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .stock {
+  background: #ecedef;
   border: 1px solid #fff;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   color: #434142;
+  font-family: 'oswaldlight';
   font-size: 11px;
-  padding: 0 2px;
-  text-align: center;
+  margin-left: 15px;
+  padding: 2px;
+  text-align: left;
   width: 150px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .textoDescripcion {
-  margin: 0 0 0 5px;
+  margin: 0;
+  padding: 0 5px 0 15px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .textoDescripcion .rodeaTexto p {
   color: #434142;
-  font-size: 16px;
+  font-family: 'oswaldlight';
+  font-size: 15px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion,
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion,
@@ -2525,9 +2561,10 @@ body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande {
   vertical-align: top;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande {
+  border: 1px solid #ecedef;
   margin-right: 2%;
   position: relative;
-  width: 32%;
+  width: 31%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedorImagen {
   cursor: pointer;
@@ -2547,20 +2584,26 @@ body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedo
 }
 body .productoPag .productoFoto .muestraChica {
   overflow: hidden;
-  width: 40%;
+  width: 32%;
 }
 body .productoPag .productoFoto .muestraChica .rodeaMuestraChica ul {
   display: block;
   margin: 16px 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 body .productoPag .productoFoto .muestraChica .rodeaMuestraChica ul li {
   border: 1px solid #ecedef;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   display: inline-block;
+  height: 70px;
   margin-right: 4px;
+  width: 70px;
+}
+body .productoPag .productoFoto .muestraChica .rodeaMuestraChica ul li a img {
+  height: 70px;
+  width: 70px;
 }
 body .productoPag .fichaTecnica {
   margin-top: 36px;
@@ -3076,26 +3119,55 @@ table tfoot .cart_total_voucher .text-right {
 .star {
   cursor: pointer;
   display: inline-block;
+  margin: 1px;
+  height: 18px;
+  position: relative;
+  width: 18px;
 }
 .star:after {
+  color: #434142;
   content: '\e6ce';
   font-family: 'icos';
   font-size: 12px;
+  left: 0;
+  padding: 3px;
+  position: absolute;
+  top: 0;
 }
 .star a {
   font-size: 0;
 }
+.star_hover {
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
 .star_hover:after {
-  color: #f8b302;
-  content: '\e6d0';
+  background: #434142;
+  color: #ecedef;
+  content: '\e6ce';
   font-family: 'icos';
   font-size: 12px;
+  left: 0;
+  padding: 3px;
+  position: absolute;
+  top: 0;
+}
+.star_on {
+  height: 18px;
+  position: relative;
+  width: 18px;
 }
 .star_on:after {
-  color: #f8b302;
-  content: '\e6d0';
+  background: #434142;
+  color: #fff;
+  content: '\e6ce';
   font-family: 'icos';
   font-size: 12px;
+  left: 0;
+  padding: 3px;
+  position: absolute;
+  top: 0;
 }
 .unvisible {
   display: none;
