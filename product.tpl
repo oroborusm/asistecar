@@ -83,7 +83,7 @@
 							{if !$content_only}
 								<!-- <span  class="quick-view">{l s='View larger'}</span> -->
 								<a class="quick-view" title="{if !empty($cover.legend)}{$cover.legend|escape:'html':'UTF-8'}{else}{$product->name|escape:'html':'UTF-8'}{/if}" rel="gal1" href="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'thickbox_default')|escape:'html':'UTF-8'}" itemprop="url">
-									{l s='View larger'}
+									<span>{l s='View larger'}</span>
 								</a>
 							{/if}
 						{/if}
@@ -112,7 +112,6 @@
 					<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
 				</p>
 
-				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 
 				{if $product->condition}
 				<p id="product_condition" class="condicion">
@@ -128,6 +127,9 @@
 						<span class="editable">{l s='Refurbished'}</span>
 					{/if}
 				</p>
+
+				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
+				
 				{/if}
 				{if $product->description_short || $packItems|@count > 0}
 					<div id="short_description_block" class="textoDescripcion">
