@@ -4968,6 +4968,70 @@ td .sale-box {
   font-size: 13px;
   margin: 20px 0;
 }
+.tabsInfo .tabs nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+.tabsInfo .tabs nav ul li {
+  background: #ecedef;
+  border-bottom: 1px solid #aeadb3;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 180px;
+}
+.tabsInfo .tabs nav ul li a {
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+}
+.tabsInfo .tabs nav ul li a h3 {
+  color: #aeadb3;
+  font-family: 'oswaldregular';
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+  padding: 5px 5px 0 5px;
+  text-transform: uppercase;
+}
+.tabsInfo .tabs nav ul .tab-current {
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid #aeadb3;
+  border-top: 1px solid #aeadb3;
+  border-right: 1px solid #aeadb3;
+}
+.tabsInfo .tabs nav ul .tab-current a h3 {
+  color: #0040a6;
+  padding: 5px 10px 0 10px;
+}
+.tabsInfo .tabs .content-wrap section {
+  display: none;
+}
+.tabsInfo .tabs .content-wrap section,
+.tabsInfo .tabs .content-wrap .content-current {
+  margin-top: -1px;
+}
+.tabsInfo .tabs .content-wrap .content-current {
+  border: 1px solid #aeadb3;
+  border-box: box-sizing;
+  display: block;
+  padding: 15px;
+  width: 70%;
+}
+.tabsInfo .tabs .content-wrap .content-current table tbody .even td {
+  border: 0;
+}
+.tabsInfo .tabs .content-wrap .content-current table tbody .even td,
+.tabsInfo .tabs .content-wrap .content-current table tbody .odd td {
+  padding: 5px 0;
+}
+.tabsInfo .tabs .content-wrap .content-current table tbody .odd {
+  background: #ecedef;
+  border: 0;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;

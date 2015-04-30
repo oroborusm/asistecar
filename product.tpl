@@ -489,12 +489,12 @@
 
 
 	</div> <!-- end primary_block -->
-	{if !$content_only}
-{if (isset($quantity_discounts) && count($quantity_discounts) > 0)}
+	<!-- {if !$content_only} -->
+<!-- {if (isset($quantity_discounts) && count($quantity_discounts) > 0)} -->
 
 
 			<!-- quantity discount -->
-			<section class="fichaTecnica">
+<!-- 			<section class="fichaTecnica">
 				<h3 class="page-product-heading">{l s='Volume discounts'}</h3>
 				<div id="quantityDiscount">
 					<table class="std table-product-discounts">
@@ -542,74 +542,64 @@
 						</tbody>
 					</table>
 				</div>
-			</section>
-		{/if}
-		{if isset($features) && $features}
-			<!-- Data sheet -->
-			<section class="fichaTecnica">
-				<div class="homeTab one">
+			</section> -->
+		<!-- {/if} -->
 
-					<div class="main">
-						<div><h3 class="page-product-heading">{l s='Data sheet'}</h3></div>
-					</div>
-
-				</div>
-
-				<table class="table-data-sheet">
-					{foreach from=$features item=feature}
-					<tr class="{cycle values="odd,even"}">
-						{if isset($feature.value)}
-						<td><span>{$feature.name|escape:'html':'UTF-8'}</span></td>
-						<td><span>{$feature.value|escape:'html':'UTF-8'}</span></td>
-						{/if}
-					</tr>
-					{/foreach}
-				</table>
-			</section>
-			<!--end Data sheet -->
-		{/if}
-		{if $product->description}
-			<!-- More info -->
-			<section class="page-product-box reseñaInfo">
-
-				<div class="homeTab one">
-
-
-					<div class="main">
-						<div><h3 class="page-product-heading">{l s='More info'}</h3></div>
-					</div>
-
-				</div>
-		{/if}
-		{if isset($product) && $product->description}
-					<!-- full description -->
-					<div  class="rte">{$product->description}</div>
-			</section>
-			<!--end  More info -->
-		{/if}
+		
 		<!--HOOK_PRODUCT_TAB -->
-		<section class="page-product-box reseñaComentario">
-			<div class="homeTab one">
 
-				<div class="main">
-					<div>{$HOOK_PRODUCT_TAB}</div>
-				</div>
-
-			</div>
-
-
-			{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
-		</section>
 		<!--end HOOK_PRODUCT_TAB -->
-		{if isset($accessories) && $accessories}
-
-
-
 		
 
 
 
+		<section class="tabsInfo">
+			<div class="tabs tabs-style-bar">
+				<nav>
+					<ul>
+						<li>
+							<a href="#section-bar-1" class="icon icon-box">
+								<h3 class="page-product-heading">{l s='More info'}</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#section-bar-2" class="icon icon-home">
+								{if isset($features) && $features}<h3 class="page-product-heading">{l s='Data sheet'}</h3>{/if}
+							</a>
+						</li>
+						<li>
+							<a href="#section-bar-3" class="icon icon-display">
+								{$HOOK_PRODUCT_TAB}
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="content-wrap">
+					<section id="section-bar-1">
+						<p>{$product->description}</p>
+					</section>
+					<section id="section-bar-2">
+							<table class="table-data-sheet">
+								{foreach from=$features item=feature}
+								<tr class="{cycle values="odd,even"}">
+									{if isset($feature.value)}
+									<td><span>{$feature.name|escape:'html':'UTF-8'}</span></td>
+									<td><span>{$feature.value|escape:'html':'UTF-8'}</span></td>
+									{/if}
+								</tr>
+								{/foreach}
+							</table>
+					</section>
+					<section id="section-bar-3">
+						{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
+					</section>
+				</div>
+			</div>
+		</section>
 
+
+
+		{if isset($accessories) && $accessories}
 
 			<!--Accessories -->
 			<section class="page-product-box accesorios">
@@ -879,3 +869,14 @@
 {addJsDefL name='product_fileButtonHtml'}{l s='Choose File' js=1}{/addJsDefL}
 {/strip}
 {/if}
+
+
+<script>
+	(function() {
+
+		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+			new CBPFWTabs( el );
+		});
+
+	})();
+</script>

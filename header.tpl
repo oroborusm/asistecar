@@ -71,6 +71,7 @@
 	<script type="text/javascript" src="{$js_dir}classie.js"></script>
 	<script type="text/javascript" src="{$js_dir}modal.js"></script>
 	<script type="text/javascript" src="{$js_dir}placeholder.js"></script>
+	<script type="text/javascript" src="{$js_dir}tabs.js"></script>
 
 
 
