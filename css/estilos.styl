@@ -404,17 +404,18 @@ body
 						.carritoHover
 							display block
 					.carritoHover
-						background white
-						border-radius 5px
-						box-shadow 1px 1px 10px oscuro
+						background clarito
+						//border-radius 5px
+						//box-shadow 1px 1px 10px oscuro
+						border 1px solid #aeadb3
 						display none
 						padding 0 3px
 						position absolute
 						right 0
 						text-align left
-						top 50px
+						top 30px
 						transition .3s
-						width 380px
+						width 250px
 						z-index 10000
 						.carritoDeCompra
 							position relative
@@ -454,8 +455,10 @@ body
 											.last_item
 												margin 3px 0
 												overflow hidden
+												padding-bottom 7px
+												position relative
 												&:hover
-													background #003F3F
+													background #aeadb3
 													.cart-info
 														.product-name
 															a
@@ -482,35 +485,40 @@ body
 													border-radius 5px
 													display block
 													float left
-													height 85px
+													height 55px
 													//margin-left 5px
 													img
 														border 1px solid clarito
-														border-radius 5px
+														//border-radius 5px
 														margin 5px
-														width 75px
+														width 50px
 												.cart-info
 													float left
-													width 250px
+													position relative
+													width 160px
 													.product-name
 														float left
-														width 150px
+														width 110px
 														.cantidad
 															width 25px
 															span
 																color oscuro
 																display inline-block
+																font-family 'oswaldregular'
 																font-size 14px
 														.cantidad
 														.nombreProducto
 															display inline-block
 															vertical-align top
 														.nombreProducto
-															width 90px
+															width 68px
 															.cart_block_product_name
 																color oscuro
 																display block
+																font-family 'oswaldregular'
 																font-size 13px
+																line-height initial
+																padding 10.5px 0
 														.cart_block_product_name
 														.quantity-formated
 															color oscuro
@@ -521,7 +529,14 @@ body
 													.price
 														// display inline-block
 														// vertical-align top
-														line-height 80px
+														line-height 40px
+													.price
+														font-family 'oswaldregular'
+														font-size 13px
+														position absolute
+														text-align right
+														top 0
+														right 0
 													.product-atributes
 														display none
 														a
@@ -535,10 +550,12 @@ body
 												.remove_link
 													//background green
 													cursor pointer
-													float left
-													height 80px
-													position relative
-													width 25px
+													//float left
+													height 40px
+													position absolute
+													right 0
+													top 0
+													width 20px
 													a
 														font-size 0
 														&:after
@@ -546,20 +563,20 @@ body
 															content '\e6fa'
 															display block
 															font-family 'icos'
-															font-size 16px
+															font-size 12px
 															left 0
-															line-height 80px
+															line-height 40px
 															position absolute
 															text-align center
 															top 0
 															transition .2s
-															width 25px
-														&:hover
-															&:after
-																color naranjito
+															width 16px
+														// &:hover
+														// 	&:after
+														// 		color rojoAsiste
 						.cart-buttons
 							background naranjo
-							border-radius 4px
+							//border-radius 4px
 							float right
 							padding 0 1em
 							//width 150px
@@ -571,7 +588,8 @@ body
 								text-decoration none
 								span
 									color white
-									font-size 14px
+									font-family 'oswaldregular'
+									font-size 16px
 									margin 0
 									&:after
 										content '\e722'
@@ -2867,14 +2885,24 @@ table
 	width 90%
 	z-index 10
 	li
-		//background rojoAsiste
 		font-size 16px
+		list-style none
 		a
 			color oscuro
 			font-family 'oswaldregular'
 			text-decoration none
 		ul
+			color #aeadb3
 			display block !important
+			margin 0
+			padding 0
+			li
+				list-style-type disc
+				margin 0 0 0 15px
+				padding 0
+				a
+					color #aeadb3
+					font-size 14px
 
 
 
@@ -3778,17 +3806,23 @@ table
 	.totalProducto
 		//margin-left 100px
 		strong
-
+			color #818181
+			font-family 'oswaldregular'
 			font-size 15px
-			font-weight 700
+			font-weight 100
 			text-align right
-			width 200px
+			width 50%
 		strong
 		span
 			display inline-block
 		span
+			font-family 'oswaldregular'
 			font-size 15px
 			font-weight 100
+	.totalFinal
+		span
+			color rojoAsiste
+			font-size 20px
 .carritoAlert
 	background naranjito
 	border 1px solid transparent
@@ -3819,11 +3853,11 @@ table
 		&:after
 			content '\e6fa'
 			font-family 'icos'
-		  font-size 16px
+			font-size 16px
 			display block
-		  line-height 30px
-		  text-align center
-		  width 30px
+			line-height 30px
+			text-align center
+			width 30px
 	.layer_cart_img
 		width 30%
 		img
