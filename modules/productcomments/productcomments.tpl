@@ -117,15 +117,15 @@
 
 <!-- Fancybox -->
 <div style="display: none;">
-	<div id="new_comment_form">
+	<div id="new_comment_form" class="fancyComent">
 		<form id="id_new_comment_form" action="#">
 			<h2 class="page-subheading">
 				{l s='Write a review' mod='productcomments'}
 			</h2>
 			<div class="contenedorFormNuevoComentario">
 				{if isset($product) && $product}
-					<div class="product clearfix  col-xs-12 col-sm-6">
-						<img src="{$productcomment_cover_image}" height="{$mediumSize.height}" width="{$mediumSize.width}" alt="{$product->name|escape:'html':'UTF-8'}" />
+					<div class="product">
+						<img class="fotoNuevoComentatio" src="{$productcomment_cover_image}" alt="{$product->name|escape:'html':'UTF-8'}" />
 						<div class="product_desc">
 							<p class="product_name">
 								<strong>{$product->name}</strong>
@@ -135,7 +135,7 @@
 					</div>
 				{/if}
 				<div class="new_comment_form_content col-xs-12 col-sm-6">
-					<h2>{l s='Write a review' mod='productcomments'}</h2>
+					<h2 style="display:none;">{l s='Write a review' mod='productcomments'}</h2>
 					<div id="new_comment_form_error" class="error" style="display: none; padding: 15px 25px">
 						<ul></ul>
 					</div>
@@ -156,31 +156,34 @@
 						{/foreach}
 						</ul>
 					{/if}
-					<label for="comment_title">
-						{l s='Title' mod='productcomments'}: <sup class="required">*</sup>
-					</label>
-					<input id="comment_title" name="title" type="text" value=""/>
-					<label for="content">
-						{l s='Comment' mod='productcomments'}: <sup class="required">*</sup>
-					</label>
-					<textarea id="content" name="content"></textarea>
-					{if $allow_guests == true && !$is_logged}
-						<label>
-							{l s='Your name' mod='productcomments'}: <sup class="required">*</sup>
+					<div class="formComentario">
+						<label for="comment_title">
+							{l s='Title' mod='productcomments'}:</sup>
 						</label>
-						<input id="commentCustomerName" name="customer_name" type="text" value=""/>
-					{/if}
+						<input id="comment_title" name="title" type="text" value=""/>
+						<label for="content">
+							{l s='Comment' mod='productcomments'}: </sup>
+						</label>
+						<textarea id="content" name="content"></textarea>
+						{if $allow_guests == true && !$is_logged}
+							<label>
+								{l s='Your name' mod='productcomments'}: <sup class="required">*</sup>
+							</label>
+							<input id="commentCustomerName" name="customer_name" type="text" value=""/>
+						{/if}
+						
+					</div>
 					<div id="new_comment_form_footer" class="footerFormComentarios">
 						<input id="id_product_comment_send" name="id_product" type="hidden" value='{$id_product_comment_form}' />
-						<p class="textoSimple"><sup>*</sup> {l s='Required fields' mod='productcomments'}</p>
+						
 						<p class="botonesAgregaComentario">
 							<button id="submitNewMessage" name="submitMessage" type="submit" class="btn button button-small">
 								<span>{l s='Send' mod='productcomments'}</span>
 							</button><!-- &nbsp;
 							{l s='or' mod='productcomments'}&nbsp; -->
-							<a class="closefb" href="#">
+							<!-- <a class="closefb" href="#">
 								{l s='Cancel' mod='productcomments'}
-							</a>
+							</a> -->
 						</p>
 						<div class="clearfix"></div>
 					</div> <!-- #new_comment_form_footer -->

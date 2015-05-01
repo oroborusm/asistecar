@@ -1244,7 +1244,9 @@ body
 				width 25%
 				h4
 					color oscuro
-					font-size 12px
+					font-family 'oswaldregular'
+					font-size 14px
+					font-weight 400
 					margin .3em
 					text-align left
 					text-transform uppercase
@@ -1252,57 +1254,53 @@ body
 					margin 0
 					padding 0
 					position relative
-					li
-						//border-bottom 1px solid oscuro
-						border-top 1px solid #999
-						list-style none
-						margin 0
-						overflow hidden
-						padding .5em 0
-						width 100%
-						&:hover
-							background oscuro
-							figure
-								a
-									img
-										border 4px solid naranjito
-							.contComentariosHome
-								a
-								span
-									color white
-						figure
-							margin 0 0 0 4px
-							float left
-							width 45px
-							a
-								img
-									border 4px solid naranjito
-									border-radius 50%
-									width 100%
-						figure
-						.contComentariosHome
-							display inline-block
-							vertical-align top
-						.contComentariosHome
-							float left
-							margin-left 18px
-							max-width 55%
-							a
-								color oscuro
-								margin 0
-								text-decoration none
-								p
-									font-weight 700
-									margin 0
-									text-align left
-							a
-							span
-								margin 0
-								font-size 11px
-							span
-								p
-									font-weight 100
-									text-align left
+					// li
+					// 	//border-bottom 1px solid oscuro
+					// 	border-top 1px solid #999
+					// 	list-style none
+					// 	margin 0
+					// 	overflow hidden
+					// 	padding .5em 0
+					// 	width 100%
+					// 	&:hover
+					// 		background oscuro
+					// 		.contComentariosHome
+					// 			a
+					// 			span
+					// 				color white
+					// 	figure
+					// 		margin 0 0 0 4px
+					// 		float left
+					// 		width 45px
+					// 		a
+					// 			img
+					// 				//border 4px solid naranjito
+					// 				//border-radius 50%
+					// 				width 100%
+					// 	figure
+					// 	.contComentariosHome
+					// 		display inline-block
+					// 		vertical-align top
+					// 	.contComentariosHome
+					// 		float left
+					// 		margin-left 18px
+					// 		max-width 55%
+					// 		a
+					// 			color oscuro
+					// 			margin 0
+					// 			text-decoration none
+					// 			p
+					// 				font-weight 700
+					// 				margin 0
+					// 				text-align left
+					// 		a
+					// 		span
+					// 			margin 0
+					// 			font-size 11px
+					// 		span
+					// 			p
+					// 				font-weight 100
+					// 				text-align left
 					ul
 						margin 0
 						padding 0
@@ -1316,10 +1314,6 @@ body
 							width 100%
 							&:hover
 								background oscuro
-								figure
-									a
-										img
-											border 4px solid naranjito
 								.contComentariosHome
 									a
 									span
@@ -1330,8 +1324,8 @@ body
 								width 45px
 								a
 									img
-										border 4px solid naranjito
-										border-radius 50%
+										border 2px solid #aeadb3
+										//border-radius 50%
 										width 100%
 							figure
 							.contComentariosHome
@@ -1346,15 +1340,17 @@ body
 									margin 0
 									text-decoration none
 									p
-										font-weight 700
+										font-family 'oswaldregular'
+										font-size 13px
 										margin 0
 										text-align left
+										text-transform uppercase
 								a
 								span
 									margin 0
-									font-size 11px
 								span
 									p
+										font-size 10px
 										font-weight 100
 										text-align left
 
@@ -3386,14 +3382,62 @@ table
 	margin-top 35px
 	text-align center
 .breadcrumb
+	//background clarito
+	border 1px solid clarito
+	color #aeadb3
+	font-family 'oswaldregular'
+	font-size 13px
+	line-height 20px
+	margin 15px auto
+	position relative
+	a
+		margin-top -3px !important
+		&:after
+			border-bottom 11px solid clarito
+			border-left 5px solid transparent
+			border-right 5px solid clarito
+			border-top 11px solid transparent
+			bottom 0
+			content ''
+			position absolute
+			right 0
+			z-index 1
+		&:before
+			border-bottom 11px solid white
+			border-left 5px solid transparent
+			border-right 5px solid white
+			border-top 11px solid transparent
+			bottom 0
+			content ''
+			position absolute
+			right -1px
+			z-index 2
+	a
+	span
+		margin 0
+	a
+	span
 	.home
-		text-decoration none !important
+		//background white
+		//border-right 1px solid clarito
+		color #aeadb3
+		display inline-block
+		line-height 20px
+		padding 0 25px
+		position relative
+		text-decoration none
+		vertical-align middle
+	.home
+		margin 0 -2px 0 0 
 		.icon-home
+			position relative
 			&:before
-				color oscuro
+				color #aeadb3
 				content '\e600'
 				font-family 'icos'
 				font-size 11px
+	.navigation-pipe
+		display none
 
 .remove
 	a
@@ -3572,46 +3616,92 @@ table
 		width 70%
 	.footerFormComentarios
 		.botonesAgregaComentario
-			a
-				background clarito
-				border 1px solid oscuro
-				border-radius 5px
-				color oscuro
-				display block
-				margin 10px auto 0
-				text-decoration none
-				width 40%
+			text-align right
+			width 98%
+			// a
+			// 	background clarito
+			// 	border 1px solid oscuro
+			// 	border-radius 5px
+			// 	color oscuro
+			// 	display block
+			// 	margin 10px auto 0
+			// 	text-align center
+			// 	text-decoration none
+			// 	width 40%
 			button
-				background naranjito
+				background rojoAsiste
 				border none
-				border-radius 5px
-				width 40%
+				//border-radius 5px
+				width 30%
 				span
 					color white
-					font-weight 600
+					font-family 'oswaldregular'
+					font-weight 100
 
 	.new_comment_form_content
 		input
 			width 70%
 		ul
-			margin 0
+			margin 20px 0 20px 29%
 			padding 0
+			width 69%
 			li
+				background clarito
 				list-style none
 				margin 0
-				padding 0
+				padding 0 5px
+				label
+					font-family 'oswaldregular'
+					font-size 15px
+					font-weight 100
+					margin 5px 0
+					text-align left
+				.star_content
+					text-align left
+		.formComentario
+			margin 20px 0 20px 29%
+			text-align left
+			width 69%
+			label
+				font-family 'oswaldregular'
+				font-size 15px
+				font-weight 100
+				margin 5px 0
+			input
+			textarea
+				border-radius 0
+				box-sizing border-box
+				width 100%
 	.product
-		img
-			border-radius 50%
-			height 200px !important
-			width 200px !important
+		border 1px solid clarito
+		padding 10px
+		.fotoNuevoComentatio
+			border 1px solid clarito
+			//border-radius 50%
+			margin-right 3%
+			width 30%
+		.fotoNuevoComentatio
 		.product_desc
-			background oscuro
-			border-radius 5px
+			display inline-block
+			vertical-align top
+		.product_desc
+			//background oscuro
+			//border-radius 5px
 			margin 0 auto
-			width 80%
+			width 65%
 			p
-				color clarito
+				color oscuro
+				font-family 'oswaldlight'
+				font-size 15px
+				margin 0
+				text-align justify
+			.product_name
+				margin-bottom 5px
+				text-align left
+				strong
+					font-family 'oswaldregular'
+					font-size 20px
+					font-weight 100
 
 .error
 	background red
@@ -4000,26 +4090,50 @@ table
 							font-weight 100
 
 .adjuntos
-	margin-top 20px
+	display inline-block
+	margin-left 8%
+	margin-top 25px
+	vertical-align top
+	width 24%
+	h3
+		border 1px solid transparent
+		border-bottom 2px solid clarito
+		color azulAsiste
+		font-family 'oswaldregular'
+		font-size 20px
+		font-weight 100
+		line-height 40px
+		margin 0
+		padding 5px 10px 0 10px
+		text-transform uppercase
 	.col-lg-4
+		border 1px solid clarito
 		h4
-			background naranjito
-			border-radius 5px
-			text-align center
-			width 300px
+			//background naranjito
+			//border-radius 5px
+			margin 0
+			text-align left
+			width 100%
 			a
 				color oscuro
 				display block
+				font-family 'oswaldregular'
+				font-size 18px
 				font-weight 400
 				line-height 50px
+				margin 0 0 0 5%
 				text-decoration none
-				&:hover
-					color white
-		a
-			color oscuro
-			font-weight 100
+				width 95%
 			&:hover
-				color naranjito
+				background rojoAsiste
+				a
+					color white
+		p
+			display none
+			font-family 'oswaldlight'
+			font-size 11px
+			margin 0 0 0 5%
+			width 95%
 .sale-box
 	font-size 16px !important
 	height 80px
@@ -4324,7 +4438,10 @@ td
 	margin 20px 0 
 	
 .tabsInfo
+	display inline-block
 	margin-top 25px
+	vertical-align top
+	width 67%
 	.tabs
 		nav
 			ul
@@ -4383,9 +4500,15 @@ td
 									em
 									strong
 										display block
+										padding-left 5px
 								.star_content
+									margin-top 5px
 									.star
-										margin -1px
+										height 13px
+										margin 0
+										width 13px
+										&:after
+											font-size 9px
 							.usuarioInfo
 							.detalleComentario
 								display inline-block
@@ -4415,7 +4538,7 @@ td
 				border-box box-sizing
 				display block
 				padding 25px
-				width 67%
+				width 100%
 				table
 					font-family 'oswaldregular'
 					font-weight 100
@@ -4434,4 +4557,12 @@ td
 							td
 								&:nth-child(1)
 									color #aeadb3
-				
+
+.fancyComent
+	form
+		text-align left
+		h2
+			font-family 'oswaldregular'
+			font-weight 100
+			margin 0
+			text-align left

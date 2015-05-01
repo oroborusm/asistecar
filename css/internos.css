@@ -74,7 +74,7 @@
         padding: 5px; }
 
 
-.breadcrumb {
+/*.breadcrumb {
   border-radius: 3px;
   border: 1px solid #d6d4d4;
   display: inline-block;
@@ -165,7 +165,7 @@
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
     .breadcrumb a:hover {
-      color: #777777; }
+      color: #777777; }*/
 
 
 

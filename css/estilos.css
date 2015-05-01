@@ -1463,7 +1463,9 @@ body .contCarrusel .contCarruselInt .comentariosHome {
 }
 body .contCarrusel .contCarruselInt .comentariosHome h4 {
   color: #434142;
-  font-size: 12px;
+  font-family: 'oswaldregular';
+  font-size: 14px;
+  font-weight: 400;
   margin: 0.3em;
   text-align: left;
   text-transform: uppercase;
@@ -1472,64 +1474,6 @@ body .contCarrusel .contCarruselInt .comentariosHome .contcomment {
   margin: 0;
   padding: 0;
   position: relative;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li {
-  border-top: 1px solid #999;
-  list-style: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0.5em 0;
-  width: 100%;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li:hover {
-  background: #434142;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li:hover figure a img {
-  border: 4px solid #f8b302;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li:hover .contComentariosHome a,
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li:hover .contComentariosHome span {
-  color: #fff;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li figure {
-  margin: 0 0 0 4px;
-  float: left;
-  width: 45px;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li figure a img {
-  border: 4px solid #f8b302;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 100%;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li figure,
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome {
-  display: inline-block;
-  vertical-align: top;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome {
-  float: left;
-  margin-left: 18px;
-  max-width: 55%;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome a {
-  color: #434142;
-  margin: 0;
-  text-decoration: none;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome a p {
-  font-weight: 700;
-  margin: 0;
-  text-align: left;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome a,
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome span {
-  margin: 0;
-  font-size: 11px;
-}
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment li .contComentariosHome span p {
-  font-weight: 100;
-  text-align: left;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul {
   margin: 0;
@@ -1546,9 +1490,6 @@ body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li {
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li:hover {
   background: #434142;
 }
-body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li:hover figure a img {
-  border: 4px solid #f8b302;
-}
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li:hover .contComentariosHome a,
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li:hover .contComentariosHome span {
   color: #fff;
@@ -1559,9 +1500,7 @@ body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li figure {
   width: 45px;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li figure a img {
-  border: 4px solid #f8b302;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  border: 2px solid #aeadb3;
   width: 100%;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li figure,
@@ -1580,16 +1519,18 @@ body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li .contCom
   text-decoration: none;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li .contComentariosHome a p {
-  font-weight: 700;
+  font-family: 'oswaldregular';
+  font-size: 13px;
   margin: 0;
   text-align: left;
+  text-transform: uppercase;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li .contComentariosHome a,
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li .contComentariosHome span {
   margin: 0;
-  font-size: 11px;
 }
 body .contCarrusel .contCarruselInt .comentariosHome .contcomment ul li .contComentariosHome span p {
+  font-size: 10px;
   font-weight: 100;
   text-align: left;
 }
@@ -3889,14 +3830,69 @@ table tfoot .cart_total_voucher .text-right {
   margin-top: 35px;
   text-align: center;
 }
+.breadcrumb {
+  border: 1px solid #ecedef;
+  color: #aeadb3;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+  line-height: 20px;
+  margin: 15px auto;
+  position: relative;
+}
+.breadcrumb a {
+  margin-top: -3px !important;
+}
+.breadcrumb a:after {
+  border-bottom: 11px solid #ecedef;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #ecedef;
+  border-top: 11px solid transparent;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.breadcrumb a:before {
+  border-bottom: 11px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid #fff;
+  border-top: 11px solid transparent;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  right: -1px;
+  z-index: 2;
+}
+.breadcrumb a,
+.breadcrumb span {
+  margin: 0;
+}
+.breadcrumb a,
+.breadcrumb span,
 .breadcrumb .home {
-  text-decoration: none !important;
+  color: #aeadb3;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 25px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.breadcrumb .home {
+  margin: 0 -2px 0 0;
+}
+.breadcrumb .home .icon-home {
+  position: relative;
 }
 .breadcrumb .home .icon-home:before {
-  color: #434142;
+  color: #aeadb3;
   content: '\e600';
   font-family: 'icos';
   font-size: 11px;
+}
+.breadcrumb .navigation-pipe {
+  display: none;
 }
 .remove a {
   text-decoration: none;
@@ -4106,55 +4102,97 @@ table tfoot .cart_total_voucher .text-right {
   border-radius: 5px;
   width: 70%;
 }
-.contenedorFormNuevoComentario .footerFormComentarios .botonesAgregaComentario a {
-  background: #ecedef;
-  border: 1px solid #434142;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #434142;
-  display: block;
-  margin: 10px auto 0;
-  text-decoration: none;
-  width: 40%;
+.contenedorFormNuevoComentario .footerFormComentarios .botonesAgregaComentario {
+  text-align: right;
+  width: 98%;
 }
 .contenedorFormNuevoComentario .footerFormComentarios .botonesAgregaComentario button {
-  background: #f8b302;
+  background: #ff4c00;
   border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  width: 40%;
+  width: 30%;
 }
 .contenedorFormNuevoComentario .footerFormComentarios .botonesAgregaComentario button span {
   color: #fff;
-  font-weight: 600;
+  font-family: 'oswaldregular';
+  font-weight: 100;
 }
 .contenedorFormNuevoComentario .new_comment_form_content input {
   width: 70%;
 }
 .contenedorFormNuevoComentario .new_comment_form_content ul {
-  margin: 0;
+  margin: 20px 0 20px 29%;
   padding: 0;
+  width: 69%;
 }
 .contenedorFormNuevoComentario .new_comment_form_content ul li {
+  background: #ecedef;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
 }
-.contenedorFormNuevoComentario .product img {
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  height: 200px !important;
-  width: 200px !important;
+.contenedorFormNuevoComentario .new_comment_form_content ul li label {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+  font-weight: 100;
+  margin: 5px 0;
+  text-align: left;
+}
+.contenedorFormNuevoComentario .new_comment_form_content ul li .star_content {
+  text-align: left;
+}
+.contenedorFormNuevoComentario .new_comment_form_content .formComentario {
+  margin: 20px 0 20px 29%;
+  text-align: left;
+  width: 69%;
+}
+.contenedorFormNuevoComentario .new_comment_form_content .formComentario label {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+  font-weight: 100;
+  margin: 5px 0;
+}
+.contenedorFormNuevoComentario .new_comment_form_content .formComentario input,
+.contenedorFormNuevoComentario .new_comment_form_content .formComentario textarea {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.contenedorFormNuevoComentario .product {
+  border: 1px solid #ecedef;
+  padding: 10px;
+}
+.contenedorFormNuevoComentario .product .fotoNuevoComentatio {
+  border: 1px solid #ecedef;
+  margin-right: 3%;
+  width: 30%;
+}
+.contenedorFormNuevoComentario .product .fotoNuevoComentatio,
+.contenedorFormNuevoComentario .product .product_desc {
+  display: inline-block;
+  vertical-align: top;
 }
 .contenedorFormNuevoComentario .product .product_desc {
-  background: #434142;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   margin: 0 auto;
-  width: 80%;
+  width: 65%;
 }
 .contenedorFormNuevoComentario .product .product_desc p {
-  color: #ecedef;
+  color: #434142;
+  font-family: 'oswaldlight';
+  font-size: 15px;
+  margin: 0;
+  text-align: justify;
+}
+.contenedorFormNuevoComentario .product .product_desc .product_name {
+  margin-bottom: 5px;
+  text-align: left;
+}
+.contenedorFormNuevoComentario .product .product_desc .product_name strong {
+  font-family: 'oswaldregular';
+  font-size: 20px;
+  font-weight: 100;
 }
 .error {
   background: #f00;
@@ -4639,31 +4677,55 @@ table tfoot .cart_total_voucher .text-right {
   font-weight: 100;
 }
 .adjuntos {
-  margin-top: 20px;
+  display: inline-block;
+  margin-left: 8%;
+  margin-top: 25px;
+  vertical-align: top;
+  width: 24%;
+}
+.adjuntos h3 {
+  border: 1px solid transparent;
+  border-bottom: 2px solid #ecedef;
+  color: #0040a6;
+  font-family: 'oswaldregular';
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 40px;
+  margin: 0;
+  padding: 5px 10px 0 10px;
+  text-transform: uppercase;
+}
+.adjuntos .col-lg-4 {
+  border: 1px solid #ecedef;
 }
 .adjuntos .col-lg-4 h4 {
-  background: #f8b302;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  text-align: center;
-  width: 300px;
+  margin: 0;
+  text-align: left;
+  width: 100%;
 }
 .adjuntos .col-lg-4 h4 a {
   color: #434142;
   display: block;
+  font-family: 'oswaldregular';
+  font-size: 18px;
   font-weight: 400;
   line-height: 50px;
+  margin: 0 0 0 5%;
   text-decoration: none;
+  width: 95%;
 }
-.adjuntos .col-lg-4 h4 a:hover {
+.adjuntos .col-lg-4 h4:hover {
+  background: #ff4c00;
+}
+.adjuntos .col-lg-4 h4:hover a {
   color: #fff;
 }
-.adjuntos .col-lg-4 a {
-  color: #434142;
-  font-weight: 100;
-}
-.adjuntos .col-lg-4 a:hover {
-  color: #f8b302;
+.adjuntos .col-lg-4 p {
+  display: none;
+  font-family: 'oswaldlight';
+  font-size: 11px;
+  margin: 0 0 0 5%;
+  width: 95%;
 }
 .sale-box {
   font-size: 16px !important;
@@ -4980,7 +5042,10 @@ td .sale-box {
   margin: 20px 0;
 }
 .tabsInfo {
+  display: inline-block;
   margin-top: 25px;
+  vertical-align: top;
+  width: 67%;
 }
 .tabsInfo .tabs nav ul {
   font-size: 0;
@@ -5046,9 +5111,18 @@ td .sale-box {
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong {
   display: block;
+  padding-left: 5px;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content {
+  margin-top: 5px;
 }
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star {
-  margin: -1px;
+  height: 13px;
+  margin: 0;
+  width: 13px;
+}
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after {
+  font-size: 9px;
 }
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario {
@@ -5083,7 +5157,7 @@ td .sale-box {
   border-box: box-sizing;
   display: block;
   padding: 25px;
-  width: 67%;
+  width: 100%;
 }
 .tabsInfo .tabs .content-wrap .content-current table {
   font-family: 'oswaldregular';
@@ -5102,6 +5176,15 @@ td .sale-box {
 }
 .tabsInfo .tabs .content-wrap .content-current table tbody tr td:nth-child(1) {
   color: #aeadb3;
+}
+.fancyComent form {
+  text-align: left;
+}
+.fancyComent form h2 {
+  font-family: 'oswaldregular';
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
 }
 @-moz-keyframes anim-open {
   0% {
