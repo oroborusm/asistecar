@@ -295,8 +295,8 @@ body header .header figure {
 }
 body header .header figure a img {
   display: block;
-  margin: 10px 0 0 0;
-  width: 70%;
+  margin: 20px 0 0 0;
+  width: 100%;
 }
 body header .header .headerCOnt {
   height: 70px;
@@ -529,6 +529,7 @@ body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_bl
 body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
 body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name {
   float: left;
+  font-family: 'oswaldregular';
   width: 110px;
 }
 body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
@@ -577,6 +578,12 @@ body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_bl
   color: #434142;
   float: left;
   font-size: 14px;
+}
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .quantity-formated,
+body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .quantity-formated {
+  margin-right: 5px;
+  width: 20px;
 }
 body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name,
 body header .header .headerCOnt .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name,
@@ -3217,8 +3224,8 @@ table tfoot .cart_total_voucher .text-right {
   min-height: 280px;
   left: 0;
   opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
+  -ms-filter: none;
+  filter: none;
   padding: 10px 5%;
   position: absolute;
   text-align: left;
@@ -4832,8 +4839,8 @@ td .sale-box {
   width: 100%;
 }
 .accedeCuenta form .form_content .form-group input {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   display: block;
   font-size: 15px;
   width: 100%;
@@ -4842,8 +4849,13 @@ td .sale-box {
   background: #f0f8ff;
 }
 .accedeCuenta form .form_content .linkCreaCuenta {
-  color: #434142;
+  background: #ff4c00;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
   font-size: 13px;
+  line-height: 30px;
   margin: 0;
   text-decoration: none;
 }
@@ -4852,7 +4864,7 @@ td .sale-box {
 }
 .accedeCuenta form .form_content .lost_password {
   font-size: 12px;
-  margin: 0;
+  margin: 14px 0 0 0;
 }
 .accedeCuenta form .form_content .lost_password a {
   color: #434142;
@@ -4863,21 +4875,23 @@ td .sale-box {
   text-decoration: underline;
 }
 .accedeCuenta form .form_content .submit {
-  margin: 22px 0 0 0;
+  margin: 10px 0 0 0;
+  text-align: right;
 }
 .accedeCuenta form .form_content .submit button {
-  background: #ecedef;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #ecedef;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   color: #434142;
   width: 100%;
 }
 .accedeCuenta form .form_content .submit button:hover {
-  background: #099;
+  background: #0040a6;
   color: #fff;
 }
 .accedeCuenta form .form_content .submit button span {
+  font-family: 'oswaldregular';
   font-size: 15px;
   line-height: 30px;
 }
