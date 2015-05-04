@@ -3218,7 +3218,7 @@ table tfoot .cart_total_voucher .text-right {
   transition: 0.4s;
 }
 .menuManias > ul > li > a:hover {
-  background: #f8b302;
+  background: #ff4c00;
 }
 .menuManias > ul > li > ul {
   background: #ecedef;
@@ -3259,7 +3259,7 @@ table tfoot .cart_total_voucher .text-right {
 }
 .menuManias > ul > li > ul li ul li {
   list-style-type: disc !important;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 5px;
   padding: 0;
   width: 100%;
 }
@@ -4853,6 +4853,12 @@ td .sale-box {
 }
 .accedeCuenta form .form_content .form-group input:focus {
   background: #f0f8ff;
+}
+.accedeCuenta form .form_content .emailLogin {
+  font-family: 'oswaldregular';
+}
+.accedeCuenta form .form_content .passwordLogin {
+  font-family: 'oswaldregular';
 }
 .accedeCuenta form .form_content .linkCreaCuenta {
   background: #ff4c00;
