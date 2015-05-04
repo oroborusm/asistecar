@@ -2854,9 +2854,9 @@ table
 	vertical-align top
 	//width 183.3px
 	//width 16.6%
-	// &:hover
-	// 	ul
-	// 		display block
+	&:hover
+		ul
+			display block
 .menuManias > ul > li > a
 	//color naranjito
 	color white
@@ -2875,7 +2875,7 @@ table
 		background naranjito
 .menuManias > ul > li > ul
 	background clarito
-	border-bottom 6px solid naranjito
+	border-bottom 6px solid rojoAsiste
 	//box-shadow 0px 1px 2px black
 	display none
 	//margin-left -1px
@@ -2889,8 +2889,10 @@ table
 	width 90%
 	z-index 10
 	li
+		display inline-block
 		font-size 16px
 		list-style none
+		vertical-align top
 		a
 			color oscuro
 			font-family 'oswaldregular'
@@ -2901,9 +2903,10 @@ table
 			margin 0
 			padding 0
 			li
-				list-style-type disc
+				list-style-type disc !important
 				margin 0 0 0 15px
 				padding 0
+				width 100%
 				a
 					color #aeadb3
 					font-size 14px

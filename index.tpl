@@ -34,8 +34,8 @@
 
 						<div id="center_column">
 
-						    {if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
-						        <ul id="home-page-tabs" class="menuProductosHome">
+							{if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
+								<ul id="home-page-tabs" class="menuProductosHome">
 									{$HOOK_HOME_TAB}
 								</ul>
 							{/if}
