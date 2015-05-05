@@ -27,8 +27,7 @@
 <!-- MODULE Block contact infos -->
 <section id="block_contact_infos" class="informacionFooter">
 	<div>
-        <img src="https://www.toolmania.cl/public_img/nodriza.png">
-       <!--  <h4>{l s='Store Information' mod='blockcontactinfos'}</h4> -->
+        <h4>{l s='Store Information' mod='blockcontactinfos'}</h4>
         <ul class="toggle-footer">
             {if $blockcontactinfos_company != ''}
             	<li>

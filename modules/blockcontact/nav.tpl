@@ -23,12 +23,15 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- esta pagina carga informacion adicional en el login, como numero de telefono y un contactanos ahora-->
-
-<!-- <div id="contact-link">
-	<a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact Us' mod='blockcontact'}">{l s='Contact us' mod='blockcontact'}</a>
+<div class="infoAdicionalHeader">
+	<div class="row">
+		<!-- <div id="contact-link">
+			<a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}" title="{l s='Contact Us' mod='blockcontact'}">{l s='Contact us' mod='blockcontact'}</a>
+		</div> -->
+		{if $telnumber}
+			<span class="shop-phone">
+				<i class="icon-phone"></i>{l s='Call us now:' mod='blockcontact'} <strong>{$telnumber}</strong>
+			</span>
+		{/if}
+	</div>
 </div>
-{if $telnumber}
-	<span class="shop-phone">
-		<i class="icon-phone"></i>{l s='Call us now:' mod='blockcontact'} <strong>{$telnumber}</strong>
-	</span>
-{/if} -->

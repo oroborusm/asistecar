@@ -128,29 +128,52 @@ body
 		font-size 14px
 		//height 200px
 		margin 3em auto 0
-		padding 1em 0 3em
+		padding 70px 0 0 0
 		position relative
 		width 100%
+		.finFooter
+			background #aeadb3
+			.row
+				margin 0 auto
+				padding 10px 0
+				width 950px
+				img
+					width 100px
 		.row
 			margin 0 auto
 			//padding 0 12.5%
+			position relative
 			width 950px
-			form
-				display none
+			//form
+			//	display none
+			.blockcategories_footer
+				display none !important
 			.blockcategories_footer
 			.footer-block
 			.footerSocial
 			.informacionFooter
+				border-right 1px solid #aeadb3
 				display inline-block
+				height 270px
+				margin-bottom 15px
+				padding 0 1%
+				//position absolute
 				vertical-align top
-				width 33%
+				width 28%
 				a
 					color oscuro
 					text-decoration none
+				h4
+					font-family 'oswaldregular'
+					font-size 20px
+					font-weight 100
+					display block 
+					margin 0 0 10px 0				
 				ul
 					margin 0
 					padding 0
 					li
+						font-size 13px
 						list-style none
 						margin 0
 						padding 0
@@ -160,16 +183,50 @@ body
 							text-decoration none
 						span
 							display none
-			.footerSocial
-				float right
-				.contFooterSocial
-					text-align left
+			.boletin
+				margin 10px auto 20px auto
+				width 950px
+				.contBoletin
+					background #DDDCE0
+					border #aeadb3
+					margin 0 auto
+					padding 10px 25px
+					width 600px
 					h4
-						//width 100px
+						font-family 'oswaldregular'
+						font-weight 100
+						margin 0
+						padding 0
+						text-align center
+						width 29%
 					h4
-					ul
+					.block_content
 						display inline-block
 						vertical-align middle
+					.block_content
+						text-align right
+						width 70%
+						form
+							width 100%
+							input
+								box-sizing border-box
+								padding 5px
+								width 80%
+							button
+								background naranjito
+								border none
+								margin-top 5px
+								width 19%
+								span
+									color white
+									font-family 'oswaldregular'
+									font-size 15px
+									line-height 29px
+									
+			.footerSocial
+				//float right
+				.contFooterSocial
+					text-align left
 					ul
 						margin 0
 						//height 30px
@@ -188,13 +245,13 @@ body
 							position relative
 							a
 								display block
-								height 25px
-								width 25px
+								height 30px
+								width 30px
 								&:after
 									color oscuro
-									content '\e769'
+									content '\e76a'
 									font-family 'icos'
-									font-size 20px
+									font-size 30px
 									left 5px
 									line-height 25px
 									position absolute
@@ -204,13 +261,13 @@ body
 							position relative
 							a
 								display block
-								height 25px
-								width 25px
+								height 30px
+								width 30px
 								&:after
 									color oscuro
-									content '\e764'
+									content '\e766'
 									font-family 'icos'
-									font-size 20px
+									font-size 30px
 									left 5px
 									line-height 25px
 									position absolute
@@ -220,13 +277,13 @@ body
 							position relative
 							a
 								display block
-								height 25px
-								width 25px
+								height 30px
+								width 30px
 								&:after
 									color oscuro
 									content '\e76c'
 									font-family 'icos'
-									font-size 22px
+									font-size 30px
 									left 5px
 									line-height 25px
 									position absolute
@@ -236,13 +293,13 @@ body
 							position relative
 							a
 								display block
-								height 25px
-								width 25px
+								height 30px
+								width 30px
 								&:after
 									color oscuro
-									content '\e770'
+									content '\e771'
 									font-family 'icos'
-									font-size 20px
+									font-size 30px
 									left 5px
 									line-height 25px
 									position absolute
@@ -252,18 +309,21 @@ body
 							position relative
 							a
 								display block
-								height 25px
-								width 25px
+								height 30px
+								width 30px
 								&:after
 									color oscuro
-									content '\e76d'
+									content '\e76e'
 									font-family 'icos'
-									font-size 20px
+									font-size 30px
 									left 5px
 									line-height 25px
 									position absolute
 									text-align center
 									top 0
+					.tituloPagos
+						border-top 1px solid #aeadb3
+						margin 15px 0 0 0
 			.informacionFooter
 				img
 					margin-bottom 1em
@@ -282,7 +342,7 @@ body
 		background clarito
 		//background #eaeaea
 		height 70px
-		margin 0 auto
+		margin 25px auto 0
 		//overflow hidden
 		position relative
 		.header
@@ -4614,3 +4674,17 @@ td
 			font-weight 100
 			margin 0
 			text-align left
+
+
+.infoAdicionalHeader
+	background white
+	height 25px
+	position absolute
+	top -25px
+	width 100%
+	.row
+		margin 0 auto
+		text-align right
+		width 950px
+		.shop-phone
+			font-size 11px

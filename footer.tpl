@@ -45,24 +45,6 @@
 
 					{if isset($HOOK_HOME) && $HOOK_HOME|trim}
 					<!-- hook_home arriba en los comentarios quedo el contenido que va aca por default-->
-						<!-- <div class="homeInfo">
-							<h3>alguna metodologia que explicar?</h3>
-							<ul>
-								<li>
-									<div class="icoInfo1"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-								<li>
-									<div class="icoInfo2"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-								<li>
-									<div class="icoInfo3"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-							</ul>
-
-						</div> -->
 
 						<div class="contenedorPartners">
 
@@ -87,8 +69,14 @@
 
 				<div class="footer-container">
 					<footer id="footer">
-						<div class="row">{$HOOK_FOOTER}
+						<div class="row">
+							{$HOOK_FOOTER}
 
+						</div>
+						<div class="finFooter">
+							<div class="row">
+								<img src="https://www.toolmania.cl/public_img/nodriza.png">
+							</div>
 						</div>
 					</footer>
 					<!-- #footer -->
