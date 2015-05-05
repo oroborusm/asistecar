@@ -780,147 +780,6 @@ body header .header .headerCOnt .carrito > .ajax_cart_no_product {
   top: 0;
   width: 45px;
 }
-body header .header .headerCOnt .loginUsuario {
-  background: #434142;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  height: 30px;
-  position: absolute;
-  right: 90px;
-  text-align: center;
-  top: 20px;
-  width: 90px;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin {
-  display: block;
-  height: 30px;
-  position: relative;
-  width: 100%;
-  z-index: 2147483647;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .accedeCuenta {
-  display: block;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .account {
-  left: 0;
-  top: 0;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .logout {
-  left: 50%;
-  top: 0;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin:hover .nombre {
-  top: -100%;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .account,
-body header .header .headerCOnt .loginUsuario .contenedorLogin .logout,
-body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre {
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
-  -ms-transition: 0.4s;
-  transition: 0.4s;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .account {
-  color: #ecedef;
-  height: 50px;
-  line-height: normal;
-  left: 0;
-  position: absolute;
-  text-decoration: none;
-  top: -85px;
-  width: 55px;
-  z-index: 1;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .account .icono {
-  height: 20px;
-  position: relative;
-  width: 100%;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .account .icono:before {
-  color: #ecedef;
-  content: '\e670';
-  font-family: 'icos';
-  font-size: 16px;
-  left: 0;
-  line-height: 20px;
-  position: absolute;
-  text-decoration: none;
-  top: 0;
-  width: 55px;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .account .texto {
-  color: #ecedef;
-  display: block;
-  font-size: 9px;
-  height: 10px;
-  line-height: 10px;
-  text-decoration: none;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .login {
-  background: #434142;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  color: #ecedef;
-  display: block;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 30px;
-  width: 100%;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .logout {
-  color: #ecedef;
-  display: block;
-  left: 50%;
-  height: 55px;
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: -85px;
-  width: 55px;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .icono {
-  height: 20px;
-  position: relative;
-  width: 100%;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .icono:before {
-  color: #ecedef;
-  content: '\e704';
-  font-family: 'icos';
-  font-size: 16px;
-  left: 0;
-  line-height: 20px;
-  position: absolute;
-  text-decoration: none;
-  top: 0;
-  width: 55px;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .logout .texto {
-  color: #ecedef;
-  display: block;
-  font-size: 9px;
-  height: 10px;
-  line-height: 10px;
-  text-decoration: none;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre {
-  color: #ecedef;
-  height: 30px;
-  line-height: normal;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-body header .header .headerCOnt .loginUsuario .contenedorLogin .nombre span {
-  color: #ecedef;
-  display: block;
-  font-size: 11px;
-  line-height: 30px;
-}
 body header .telefono {
   background: #fff;
   border: 3px solid #f8b302;
@@ -5411,6 +5270,147 @@ td .sale-box {
 }
 hr {
   display: none;
+}
+.loginUsuario {
+  background: #434142;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  height: 30px;
+  position: absolute;
+  right: 90px;
+  text-align: center;
+  top: 20px;
+  width: 90px;
+}
+.loginUsuario .contenedorLogin {
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 100%;
+  z-index: 2147483647;
+}
+.loginUsuario .contenedorLogin:hover .accedeCuenta {
+  display: block;
+}
+.loginUsuario .contenedorLogin:hover .account {
+  left: 0;
+  top: 0;
+}
+.loginUsuario .contenedorLogin:hover .logout {
+  left: 50%;
+  top: 0;
+}
+.loginUsuario .contenedorLogin:hover .nombre {
+  top: -100%;
+}
+.loginUsuario .contenedorLogin .account,
+.loginUsuario .contenedorLogin .logout,
+.loginUsuario .contenedorLogin .nombre {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+}
+.loginUsuario .contenedorLogin .account {
+  color: #ecedef;
+  height: 50px;
+  line-height: normal;
+  left: 0;
+  position: absolute;
+  text-decoration: none;
+  top: -85px;
+  width: 55px;
+  z-index: 1;
+}
+.loginUsuario .contenedorLogin .account .icono {
+  height: 20px;
+  position: relative;
+  width: 100%;
+}
+.loginUsuario .contenedorLogin .account .icono:before {
+  color: #ecedef;
+  content: '\e670';
+  font-family: 'icos';
+  font-size: 16px;
+  left: 0;
+  line-height: 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  width: 55px;
+}
+.loginUsuario .contenedorLogin .account .texto {
+  color: #ecedef;
+  display: block;
+  font-size: 9px;
+  height: 10px;
+  line-height: 10px;
+  text-decoration: none;
+}
+.loginUsuario .contenedorLogin .login {
+  background: #434142;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #ecedef;
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 30px;
+  width: 100%;
+}
+.loginUsuario .contenedorLogin .logout {
+  color: #ecedef;
+  display: block;
+  left: 50%;
+  height: 55px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: -85px;
+  width: 55px;
+}
+.loginUsuario .contenedorLogin .logout .icono {
+  height: 20px;
+  position: relative;
+  width: 100%;
+}
+.loginUsuario .contenedorLogin .logout .icono:before {
+  color: #ecedef;
+  content: '\e704';
+  font-family: 'icos';
+  font-size: 16px;
+  left: 0;
+  line-height: 20px;
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  width: 55px;
+}
+.loginUsuario .contenedorLogin .logout .texto {
+  color: #ecedef;
+  display: block;
+  font-size: 9px;
+  height: 10px;
+  line-height: 10px;
+  text-decoration: none;
+}
+.loginUsuario .contenedorLogin .nombre {
+  color: #ecedef;
+  height: 30px;
+  line-height: normal;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.loginUsuario .contenedorLogin .nombre span {
+  color: #ecedef;
+  display: block;
+  font-size: 11px;
+  line-height: 30px;
 }
 @-moz-keyframes anim-open {
   0% {
