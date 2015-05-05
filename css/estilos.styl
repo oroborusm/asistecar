@@ -1280,9 +1280,9 @@ body
 			.carrusel
 				margin 0 auto
 				font-size 18px
-				margin-right 3%
+				margin-right 1.5%
 				overflow hidden
-				width 72%
+				width 73.5%
 				ul
 					margin 0
 					padding 0
@@ -1614,6 +1614,7 @@ body
 			width 400px
 
 		.listaDireccion
+			display none
 			margin 28px auto 0
 			text-align center
 			width 100%
@@ -2948,7 +2949,7 @@ table
 	&:hover
 		background rojoAsiste
 .menuManias > ul > li > ul
-	background clarito
+	//background clarito
 	border-bottom 6px solid rojoAsiste
 	//box-shadow 0px 1px 2px black
 	display none
@@ -2994,9 +2995,49 @@ table
 					&:hover
 						color rojoAsiste
 
-
-
-
+.maniaBackground1 >	ul
+		background #fff url('../img/1.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+.maniaBackground2 >	ul
+		background #fff url('../img/2.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+.maniaBackground3 > ul
+		background #fff url('../img/3.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+.maniaBackground4 >	ul
+		background #fff url('../img/4.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+.maniaBackground5 >	ul
+		background #fff url('../img/5.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+.maniaBackground6 >	ul
+		background #fff url('../img/6.png')
+		background-position right bottom
+		background-repeat no-repeat
+		background-size 200px
+		border-left 1px solid clarito
+		border-right 1px solid clarito
+		
 .navegador
 	margin 1em auto
 	overflow hidden
@@ -4248,6 +4289,7 @@ table
 			//background naranjito
 			//border-radius 5px
 			margin 0
+			position relative 
 			text-align left
 			width 100%
 			a
@@ -4260,9 +4302,20 @@ table
 				margin 0 0 0 5%
 				text-decoration none
 				width 95%
+			&:after
+				color rojoAsiste
+				content '\e65e'
+				font-family 'icos'
+				font-size 22px
+				font-weight 100
+				position absolute
+				right 20px
+				top 12px				
 			&:hover
 				background rojoAsiste
 				a
+					color white
+				&:after
 					color white
 		p
 			display none
@@ -4729,3 +4782,5 @@ td
 .fancybox-wrap
 	.fancybox-skin
 		padding 10px !important
+hr
+	display none
