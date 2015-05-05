@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<!-- Block Newsletter module-->
+<!-- Block Newsletter module
 <div id="newsletter_block_left" class="boletin">
 	<div class="contBoletin">
 		<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
@@ -40,7 +40,7 @@
 		
 	</div>
 </div>
-<!-- /Block Newsletter module-->
+/Block Newsletter module
 {strip}
 {if isset($msg) && $msg}
 {addJsDef msg_newsl=$msg|@addcslashes:'\''}
@@ -52,4 +52,4 @@
 {if isset($msg) && $msg}
 	{addJsDefL name=alert_blocknewsletter}{l s='Newsletter : %1$s' sprintf=$msg js=1 mod="blocknewsletter"}{/addJsDefL}
 {/if}
-{/strip}
+{/strip} -->

@@ -238,6 +238,7 @@
 
 
 			<div class="carroDecripcion">
+				<img class="pay" src="https://www.pcfactory.cl/img/interface/formapago/WebPay_Plus.png" alt="">
 				<div class="rodeacarroDecripcion">
 
 					{if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}

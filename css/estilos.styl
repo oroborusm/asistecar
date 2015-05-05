@@ -15,6 +15,9 @@ grisAzul = #A1A5AD
 azulAsiste = #0040a6
 rojoAsiste = #ff4c00
 otroGris = rgb(91, 91, 95)
+//verdeAsiste = #038a7a
+verdeAsiste = #038a7a
+verdeClarito = #71b238
 
 
 
@@ -124,6 +127,7 @@ body
 	//width 1150px
 	footer
 		background clarito
+		border-top 1px solid #E2E2E2
 		color oscuro
 		font-size 14px
 		//height 200px
@@ -139,6 +143,49 @@ body
 				width 950px
 				img
 					width 100px
+				img
+				.boletin
+					display inline-block
+					vertical-align middle
+				.boletin
+					margin 10px 0
+					width 840px
+					.contBoletin
+						background #DDDCE0
+						border #aeadb3
+						margin 0 auto
+						padding 10px 25px
+						width 600px
+						h4
+							font-family 'oswaldregular'
+							font-weight 100
+							margin 0
+							padding 0
+							text-align center
+							width 29%
+						h4
+						.block_content
+							display inline-block
+							vertical-align middle
+						.block_content
+							text-align right
+							width 70%
+							form
+								width 100%
+								input
+									box-sizing border-box
+									padding 5px
+									width 80%
+								button
+									background naranjito
+									border none
+									margin-top 5px
+									width 19%
+									span
+										color white
+										font-family 'oswaldregular'
+										font-size 15px
+										line-height 29px
 		.row
 			margin 0 auto
 			//padding 0 12.5%
@@ -170,6 +217,7 @@ body
 					display block 
 					margin 0 0 10px 0				
 				ul
+					display block !important
 					margin 0
 					padding 0
 					li
@@ -183,45 +231,7 @@ body
 							text-decoration none
 						span
 							display none
-			.boletin
-				margin 10px auto 20px auto
-				width 950px
-				.contBoletin
-					background #DDDCE0
-					border #aeadb3
-					margin 0 auto
-					padding 10px 25px
-					width 600px
-					h4
-						font-family 'oswaldregular'
-						font-weight 100
-						margin 0
-						padding 0
-						text-align center
-						width 29%
-					h4
-					.block_content
-						display inline-block
-						vertical-align middle
-					.block_content
-						text-align right
-						width 70%
-						form
-							width 100%
-							input
-								box-sizing border-box
-								padding 5px
-								width 80%
-							button
-								background naranjito
-								border none
-								margin-top 5px
-								width 19%
-								span
-									color white
-									font-family 'oswaldregular'
-									font-size 15px
-									line-height 29px
+			
 									
 			.footerSocial
 				//float right
@@ -718,7 +728,7 @@ body
 							left 0
 							position absolute
 							text-decoration none
-							top -55px
+							top -85px
 							width 55px
 							z-index 1
 							.icono
@@ -763,7 +773,7 @@ body
 							position absolute
 							text-align center
 							text-decoration none
-							top -55px
+							top -85px
 							width 55px
 							.icono
 								height 20px
@@ -2020,6 +2030,7 @@ body
 				.carroDecripcion
 					background clarito
 					height 300px
+					position relative
 					width 24%
 					form
 						font-size 16px
@@ -2172,7 +2183,10 @@ body
 										padding 5px
 										text-align right
 										width 90%
-
+					.pay
+						bottom -110px
+						left 15px
+						position absolute
 				.descripcion
 					//background rgba(cafoso, .6)
 					margin-right 2.5%
@@ -2796,7 +2810,7 @@ table
 	position relative
 	width 18px
 	&:after
-		color oscuro
+		color verdeAsiste
 		content '\e6ce'
 		font-family 'icos'
 		font-size 12px
@@ -2812,7 +2826,7 @@ table
 	position relative
 	width 18px
 	&:after
-		background oscuro
+		background verdeAsiste
 		color clarito
 		content '\e6ce'
 		font-family 'icos'
@@ -2826,7 +2840,7 @@ table
 	position relative
 	width 18px
 	&:after
-		background oscuro
+		background verdeAsiste
 		color white
 		content '\e6ce'
 		font-family 'icos'
@@ -2949,13 +2963,17 @@ table
 	width 90%
 	z-index 10
 	li
+		
 		display inline-block
 		font-size 16px
 		list-style none
 		vertical-align top
+		width 150px
 		a
-			color oscuro
+			color rojoAsiste
+			display block
 			font-family 'oswaldregular'
+			margin-bottom 10px
 			text-decoration none
 		ul
 			color #aeadb3
@@ -2963,13 +2981,18 @@ table
 			margin 0
 			padding 0
 			li
-				list-style-type disc !important
-				margin 0 0 0 5px
+				//list-style-type disc !important
+				margin 0
 				padding 0
 				width 100%
 				a
 					color #aeadb3
-					font-size 14px
+					font-family 'Open Sans', sans-serif
+					font-size 12px
+					margin 0 !important
+					text-transform capitalize
+					&:hover
+						color rojoAsiste
 
 
 
@@ -3180,11 +3203,11 @@ table
 					.product-image-container
 						.quick-view
 							opacity 1
-					.sale-box
-						.sale-label
-							background naranjito
-							span
-								color white
+					// .sale-box
+					// 	.sale-label
+					// 		background naranjito
+					// 		span
+					// 			color white
 				.right-block
 					.añadeCarrituHome
 						opacity 1
@@ -3434,44 +3457,55 @@ table
 
 .Otroquick-view
 .quick-view
-	background rgba(255,255,255, .5) !important
-	background white
-	//border 1px solid azulAsiste
-	border-radius 50%
+	//background rgba(255,255,255, .5) !important
+	background rojoAsiste
+	//border-bottom 1px solid #c1400e
+	//border-top 1px solid #c1400e
+	//border 1px solid #c1400e
+	//border-radius 50%
 	color naranjito
 	//display block
-	font-size 16px
+	font-size 0
 	font-weight 600
-	height 65px
-	left 50%
+	height 30px
 	//line-height 40px
 	margin-left -30px
 	opacity 0
 	//padding-top 22px
 	position absolute
+	right -5px
 	text-align center
 	text-decoration none
-	top 33%
+	top 0
 	transition .3s
-	width 65px
+	width 45px
 	//z-index 1000
 	&:after
 		//background rgba(255,255,255, .7)
 		top 3px
-		color azulAsiste
-		content '\e702'
+		color white
+		content '\e680'
 		font-family 'icos'
-		font-size 25px
-		margin-top 5px
+		font-size 20px
+		font-weight 100
+		//margin-top 5px
 		left 0
 		line-height 27px
 		position absolute
 		text-align center
 		width 100%
+	&:before
+		content ''
+		border-bottom 30px solid rojoAsiste
+		border-left 7px solid transparent
+		border-right 0
+		border-top 0
+		left -7px
+		position absolute
 .quick-view > span
 	color azulAsiste
-	display block
-	font-size 10px !important
+	display none
+	font-size 0 !important
 	font-weight 600
 	line-height normal
 	margin-top 35px
@@ -3891,8 +3925,8 @@ table
 			color rojoAsiste
 			font-size 20px
 .carritoAlert
-	background naranjito
-	border 1px solid transparent
+	background clarito
+	border 1px solid otroGris
 	border-radius 5px
 	display none
 	font-size 12px
@@ -3901,7 +3935,7 @@ table
 	padding 5px
 	position fixed
 	text-align right
-	top 55px !important
+	top 75px !important
 	width 220px
 	z-index 100001
 
@@ -3937,6 +3971,7 @@ table
 	.layer_cart_product_info
 		width 65%
 .contenedorPartners
+	border-top 2px solid #f5f5f5
 	margin 30px auto
 	overflow hidden
 	position relative
@@ -3956,7 +3991,7 @@ table
 .owl-dots
 	text-align center
 	.active
-		background naranjito !important
+		background rojoAsiste !important
 	.owl-dot
 		background clarito
 		border-radius 50%
@@ -4245,8 +4280,8 @@ table
 	width 80px
 	z-index 1
 	.sale-label
-		background white
-		border 2px solid naranjito
+		background rojoAsiste
+		//border 2px solid naranjito
 		bottom 35px
 		display block
 		left -30px
@@ -4256,25 +4291,25 @@ table
 		text-align center
 		transform rotate(-45deg)
 		width 114px
-		&:after
-			content ''
-			border-bottom 13px solid transparent
-			border-left 13px solid transparent
-			border-right 13px solid naranjito
-			border-top 13px solid naranjito
-			position absolute
-			right 2px
-			top 0
-		&:before
-			content ''
-			border-bottom 13px solid transparent
-			border-left 13px solid naranjito
-			border-right 13px solid transparent
-			border-top 13px solid naranjito
-			left 4px
-			position absolute
+		// &:after
+		// 	content ''
+		// 	border-bottom 13px solid transparent
+		// 	border-left 13px solid transparent
+		// 	border-right 13px solid naranjito
+		// 	border-top 13px solid naranjito
+		// 	position absolute
+		// 	right 2px
+		// 	top 0
+		// &:before
+		// 	content ''
+		// 	border-bottom 13px solid transparent
+		// 	border-left 13px solid naranjito
+		// 	border-right 13px solid transparent
+		// 	border-top 13px solid naranjito
+		// 	left 4px
+		// 	position absolute
 		span
-			color naranjito
+			color white
 			display block
 			font-size 16px !important
 			width 100%
@@ -4625,7 +4660,8 @@ td
 								p
 									strong
 										font-style normal
-										font-weight 100
+										font-weight 400
+										text-transform capitalize
 							.teSirvio
 								display none
 						.align_center
@@ -4687,4 +4723,9 @@ td
 		text-align right
 		width 950px
 		.shop-phone
-			font-size 11px
+			font-size 13px
+			strong
+				color rojoAsiste
+.fancybox-wrap
+	.fancybox-skin
+		padding 10px !important
