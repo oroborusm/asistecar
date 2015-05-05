@@ -44,15 +44,3 @@
 									{$HOOK_HOME_TAB_CONTENT}
 								</div>
 							</div>
-
-							<div class="tabsHome2">
-								{if isset($HOOK_HOME_TAB) && $HOOK_HOME_TAB|trim}
-									<ul id="home-page-tabs" class="menuProductosHome">
-										{$HOOK_HOME_TAB}
-									</ul>
-								{/if}
-								<div class="tab-content" id="productosHome">
-									{$HOOK_HOME_TAB_CONTENT}
-								</div>
-							</div>
-
