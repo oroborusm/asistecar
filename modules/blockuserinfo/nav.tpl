@@ -1,5 +1,5 @@
-
-<!-- Block user information module NAV  -->
+<!-- 
+Block user information module NAV
 					<div class="loginUsuario">
 						<div class="contenedorLogin">
 							{if $is_logged}
@@ -22,7 +22,7 @@
 								</div>
 								<div class="accedeCuenta">
 									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" class="box boxLogin" autocomplete="off">
-										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
+										<h3 class="page-subheading">{l s='Already registered?'}</h3>
 										<div class="form_content">
 											<div class="form-group emailLogin">
 												<label for="email">{l s='Email address'}</label>
@@ -45,7 +45,7 @@
 
 											<p class="lost_password form-group"><a href="{$link->getPageLink('password')|escape:'html':'UTF-8'}" title="{l s='Recover your forgotten password'}" rel="nofollow">{l s='Forgot your password?'}</a></p>
 											<a class="linkCreaCuenta" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
-												<!-- {l s='Login' mod='blockuserinfo'} -->
+												{l s='Login' mod='blockuserinfo'}
 												Crea una cuenta
 											</a>
 										</div>
@@ -55,4 +55,4 @@
 						</div>
 
 					</div>
-					<!-- /Block usmodule NAV -->
+					/Block usmodule NAV -->

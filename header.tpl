@@ -105,7 +105,7 @@
 						</a>
 					</figure>
 					<!-- Block user information module NAV  -->
-					<!-- <div class="loginUsuario">
+					<div class="loginUsuario">
 						<div class="contenedorLogin">
 							{if $is_logged}
 								<div class="nombre">
@@ -127,7 +127,7 @@
 								</div>
 								<div class="accedeCuenta">
 									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" class="box boxLogin" autocomplete="off">
-										<h3 class="page-subheading">{l s='Already registered?'}</h3>
+										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
 										<div class="form_content">
 											<div class="form-group emailLogin">
 												<label for="email">{l s='Email address'}</label>
@@ -161,7 +161,7 @@
 							{/if}
 						</div>
 					
-					</div> -->
+					</div>
 					<!-- /Block usmodule NAV -->
 					{if isset($HOOK_TOP)}{$HOOK_TOP}{hook h="displayNav"}{/if}
 				</div>
