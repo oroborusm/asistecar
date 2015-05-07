@@ -60,6 +60,11 @@ select {
 fieldset {
   border: none;
 }
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 #category-thumbnail,
 .category-thumbnail {
   display: none !important;
@@ -1334,25 +1339,23 @@ body .box .rodeaAddress form .infoAdicional textarea:focus {
 body .box .rodeaAddress form .submit2 {
   display: block;
   margin-top: 130px;
+  text-align: right;
   width: 100%;
 }
 body .box .rodeaAddress form .submit2 button {
-  background: #f8b302;
   border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   padding: 8px 15px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
 }
 body .box .rodeaAddress form .submit2 button:hover {
   background: #ff6b00;
 }
-body .box .rodeaAddress form .submit2 button span {
+body .box .rodeaAddress form .submit2 button:hover span {
   color: #fff;
+}
+body .box .rodeaAddress form .submit2 button span {
+  color: #434142;
+  font-family: 'oswaldregular';
+  font-size: 18px;
 }
 body .box .correos,
 body .box .required {
@@ -5628,12 +5631,79 @@ hr {
 }
 .adresses_bloc .row .col-xs-12 ul {
   margin: 0;
-  padding: 0;
+  padding: 5px 2%;
+  width: 98%;
 }
 .adresses_bloc .row .col-xs-12 ul li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: left;
+}
+.adresses_bloc .row .col-xs-12 ul li h3 {
+  font-weight: 100;
+  margin: 0;
+  text-align: left;
+}
+.contenedorHistoria h1 {
+  margin-top: 16px;
+}
+.contenedorHistoria table {
+  margin: 18px auto;
+}
+.cuadroComentario h1 {
+  border-bottom: 1px solid #ecedef;
+}
+.cuadroComentario p {
+  font-size: 15px;
+}
+.cuadroComentario .box-small {
+  width: 100%;
+}
+.cuadroComentario .box-small form {
+  height: 29px;
+  text-align: left;
+  position: relative;
+}
+.cuadroComentario .box-small form a {
+  border: 2px solid #ecedef;
+  font-size: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 20%;
+}
+.cuadroComentario .box-small form a span {
+  line-height: 25px;
+}
+.cuadroComentario .box-small form p {
+  left: 0;
+  position: absolute;
+  width: 80%;
+}
+.cuadroComentario .box-small form p strong {
+  line-height: 29px;
+}
+.cuadroComentario .info-order {
+  width: 100%;
+}
+.cuadroComentario .submit {
+  text-align: right;
+}
+.cuadroComentario .submit button {
+  background: #ecedef;
+  border: none;
+}
+.cuadroComentario .submit button span {
+  color: #434142;
+  font-family: 'oswaldregular';
+}
+.cuadroComentario .submit button:hover {
+  background: #f4714a;
+}
+.cuadroComentario .submit button:hover span {
+  color: #fff;
 }
 @-moz-keyframes anim-open {
   0% {

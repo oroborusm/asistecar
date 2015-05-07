@@ -35,7 +35,7 @@
 {if $slowValidation}
 	<p class="alert alert-warning">{l s='If you have just placed an order, it may take a few minutes for it to be validated. Please refresh this page if your order is missing.'}</p>
 {/if}
-<div class="block-center" id="block-history">
+<div class="block-center contenedorHistoria" id="block-history">
 	{if $orders && count($orders)}
 		<table id="order-list" class="table table-bordered footab">
 			<thead>
@@ -105,7 +105,7 @@
 				{/foreach}
 			</tbody>
 		</table>
-		<div id="block-order-detail" class="unvisible">&nbsp;</div>
+		<div id="block-order-detail" class="unvisible cuadroComentario">&nbsp;</div>
 	{else}
 		<p class="alert alert-warning">{l s='You have not placed any orders.'}</p>
 	{/if}

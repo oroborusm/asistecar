@@ -109,6 +109,8 @@ select
 	border 1px solid grisAzul !important
 fieldset
 	border none
+textarea
+	box-sizing border-box
 #category-thumbnail
 .category-thumbnail
 	display none !important
@@ -1151,17 +1153,21 @@ body
 				.submit2
 					display block
 					margin-top 130px
+					text-align right
 					width 100%
 					button
-						background naranjito
 						border none
-						border-radius 5px
+						//border-radius 5px
 						padding 8px 15px
-						transition .3s
+						//transition .3s
 						&:hover
 							background naranjo
+							span
+								color white
 						span
-							color white
+							color oscuro
+							font-family 'oswaldregular'
+							font-size 18px
 					
 		.correos
 		.required
@@ -5001,8 +5007,62 @@ hr
 			width 49%
 			ul
 				margin 0
-				padding 0
+				padding 5px 2% 
+				width 98%
 				li
 					list-style none
 					margin 0
 					padding 0
+					text-align left
+					h3
+						font-weight 100
+						margin 0
+						text-align left
+.contenedorHistoria
+	h1
+		margin-top 16px
+	table
+		margin 18px auto
+
+.cuadroComentario
+	h1
+		border-bottom 1px solid clarito
+	p
+		font-size 15px
+	.box-small
+		width 100%
+		form
+			height 29px
+			text-align left
+			position relative
+			a
+				border 2px solid clarito
+				font-size 15px
+				margin-bottom 10px
+				position absolute
+				right 0
+				text-align center
+				width 20%
+				span
+					line-height 25px
+			p
+				left 0
+				position absolute
+				width 80%
+				strong
+					line-height 29px
+	.info-order
+		//height 62px
+		width 100%
+	.submit
+		text-align right
+		button
+			background clarito
+			border none
+			span
+				color oscuro
+				font-family 'oswaldregular'
+			&:hover
+				background colorao
+				span
+					color white
