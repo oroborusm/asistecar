@@ -802,30 +802,40 @@ body
 						.submit
 							margin-top 22px
 							button
-								background calipso
-								border none
-								border-radius 5px
-								color white
+								//background calipso
+								border 2px solid clarito
+								border-radius 2px
+								color oscuro
 								width 100%
 								span
+									font-family 'oswaldregular'
+									font-size 18px
+									font-weight 100
 									line-height 40px
 							input
 								display block
 								width 100%
+							&:hover
+								background azulAsiste
+								button
+									span
+										color white
 			.accedeCuenta
 			.creaCuenta
 				border 1px solid clarito
 				//border-radius 4px
 				display inline-block
-				height 300px
+				//height 300px
 				//padding 1em
 				vertical-align top
 				width 48%
 				form
+					border none !important
 					h1
 						border-bottom 1px solid clarito
 						display block
 						font-size 20px
+						font-weight 100
 						line-height 40px
 						margin 0 0 1em 0
 					.form_content
@@ -836,10 +846,13 @@ body
 				form
 					.form_content
 						//aca estaba el alerta
+						p
+							color oscuro
+							font-size 11px
 						.form-group
 							//border-bottom 1px solid naranjito
 							// border-top 1px solid naranjito
-							margin 5px 0
+							margin 15px 0 5px
 							label
 								color oscuro
 								display block
@@ -853,21 +866,29 @@ body
 								//outline none
 								padding 5px
 								width 100%
+							margin-top 22px
 								&:focus
 									background aliceblue
 						.submit
-							margin-top 22px
+							margin-top 18px
 							button
-								background naranjito
-								border none
-								border-radius 5px
-								color white
+								background white
+								border 2px solid colorao
+								border-radius 2	px
+								color colorao
 								width 100%
 								span
+									font-family 'oswaldregular'
+									font-size 18px
+									font-weight 100
 									line-height 40px
 							input
 								display block
 								width 100%
+							&:hover
+								button
+									background colorao
+									color white
 		.formularioCrea
 			border 1px solid clarito
 			border-radius 5px

@@ -907,33 +907,45 @@ body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit {
   margin-top: 22px;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit button {
-  background: #099;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
+  border: 2px solid #ecedef;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #434142;
   width: 100%;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit button span {
+  font-family: 'oswaldregular';
+  font-size: 18px;
+  font-weight: 100;
   line-height: 40px;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit input {
   display: block;
   width: 100%;
 }
+body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover {
+  background: #0040a6;
+}
+body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover button span {
+  color: #fff;
+}
 body .autenticacion .contenedorLogin .accedeCuenta,
 body .autenticacion .contenedorLogin .creaCuenta {
   border: 1px solid #ecedef;
   display: inline-block;
-  height: 300px;
   vertical-align: top;
   width: 48%;
+}
+body .autenticacion .contenedorLogin .accedeCuenta form,
+body .autenticacion .contenedorLogin .creaCuenta form {
+  border: none !important;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form h1,
 body .autenticacion .contenedorLogin .creaCuenta form h1 {
   border-bottom: 1px solid #ecedef;
   display: block;
   font-size: 20px;
+  font-weight: 100;
   line-height: 40px;
   margin: 0 0 1em 0;
 }
@@ -942,8 +954,12 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content p {
   color: #434142;
   margin: 0;
 }
+body .autenticacion .contenedorLogin .creaCuenta form .form_content p {
+  color: #434142;
+  font-size: 11px;
+}
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group {
-  margin: 5px 0;
+  margin: 15px 0 5px;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group label {
   color: #434142;
@@ -956,26 +972,33 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group 
   padding: 5px;
   width: 100%;
 }
-body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group input:focus {
+body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group margin-top 22px:focus {
   background: #f0f8ff;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit button {
-  background: #f8b302;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
+  background: #fff;
+  border: 2px solid #f4714a;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #f4714a;
   width: 100%;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit button span {
+  font-family: 'oswaldregular';
+  font-size: 18px;
+  font-weight: 100;
   line-height: 40px;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit input {
   display: block;
   width: 100%;
+}
+body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit:hover button {
+  background: #f4714a;
+  color: #fff;
 }
 body .autenticacion .formularioCrea {
   border: 1px solid #ecedef;
