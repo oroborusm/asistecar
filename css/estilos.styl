@@ -1018,6 +1018,7 @@ body
 							text-align left
 						input
 							background white
+							font-size 14px
 							padding 5px
 							width 100%
 				.addressNombreApellido
@@ -1029,13 +1030,14 @@ body
 						display inline-block
 						padding 5px 0
 						vertical-align middle
-						width 49.6%
+						width 49%
 						label
 							display block
 							font-size 13px
 							font-weight 600
 							text-align left
 						input
+							font-size 14px
 							padding 5px
 							width 100%
 				.esAliasDireccion
@@ -1060,6 +1062,11 @@ body
 					input
 						padding 5px
 						width 100%
+				.esCelular
+				.esTelefono
+					display inline-block
+					vertical-align top
+					width 49.5%
 				.esPais
 					.selector
 						width 100% !important
@@ -1114,6 +1121,7 @@ body
 						border 1px solid grisAzul
 						box-sizing border-box
 						display block
+						height 34px
 						margin 0 auto
 						outline none
 						width 100%
@@ -1400,7 +1408,7 @@ body
 			a
 				text-decoration none
 				span
-					color white
+					color rojoAsiste
 		.volver
 			margin 0
 			padding 0
@@ -1446,7 +1454,7 @@ body
 			//width 80%
 		.listaCompra
 			font-size 0
-			margin 0 auto
+			margin 18px auto
 			padding 0
 			//width 80%
 			//max-width 1150px
@@ -1457,39 +1465,66 @@ body
 				width 20%
 				span
 					font-size 16px
-					line-height 50px
+					line-height 25px
 					text-align center
 					em
 						display none
 			.last
-				border-radius 0 5px 5px 0
+				border-radius 0 2px 2px 0
 			.first
-				border-radius 5px 0 0 5px
+				border-radius 2px 0 0 2px
 			.step_current
-				background naranjito
+				background rojoAsiste
 				color white
+				position relative
+				&:after
+					border-bottom 12.5px solid transparent
+					border-left 7px solid rojoAsiste
+					border-right 0
+					border-top 12.5px solid transparent
+					bottom 0
+					content ''
+					position absolute
+					right -7px
+				&:before
+					border-bottom 12.5px solid transparent
+					border-left 7px solid white
+					border-right 0
+					border-top 12.5px solid transparent
+					bottom 0
+					content ''
+					position absolute
+					left 0
 			.step_done
-				background #999
+				background white
+				border-bottom 1px solid clarito
+				border-top 1px solid clarito
 				font-size 16px
-				line-height 50px
+				line-height 25px
 				text-align center
 				a
-					color white
+					color clarito
 					text-decoration none
 				em
 					display none
+				&:hover
+					a
+						color #d3d3d3
 			.step_todo
 				background clarito
+				color otroGris
 		.heading-counter
-			background naranjo
-			border-radius 5px
-			color white
+			//background naranjo
+			//border-radius 5px
+			color otroGris
 			display block
+			font-family 'oswaldregular'
 			font-size 13px
+			font-weight 100
 			line-height 25px
-			margin 1em auto
-			text-align center
-			width 400px
+			margin 0
+			text-align left
+			//width 400px
 
 		.listaDireccion
 			display none
@@ -1500,6 +1535,7 @@ body
 				border 1px solid #999
 				border-radius 3px
 				display inline-block
+				margin 0
 				width 49%
 				ul
 					background clarito
@@ -1520,7 +1556,7 @@ body
 							border-bottom 1px solid #999
 							color clarito
 							font-size 18px
-							font-weight 600
+							font-weight 100
 							line-height 50px
 							margin 0
 							//text-align center
@@ -1535,70 +1571,119 @@ body
 				margin 0 auto
 				width 80%
 				.contenedorAddresses
+					margin-right 1%
+					.agregaComentario
+						margin-top 25px
+						width 100%
+						label
+							display block
+							font-size 12px
+							text-align left
+						textarea
+							//border-radius 5px
+							box-sizing border-box
+							height 100px
+							width 100%
 					.selccionDireccion
-						margin-top 1em
 						text-align center
-						.checkboxSelecciona
-							text-align center
-							label
-							.checker
+						.selector1
+							text-align left
+							.agregarNueva
+								//background naranjito
+								//border-radius 5px
+								display none
+								//line-height 60px
+								margin 0
+								text-align right
+								//width 300px
+								a
+									text-decoration none
+									span
+										color otroGris
+										font-family 'oswaldregular'
+										font-size 13px
+									&:hover
+										span
+											color rojoAsiste
+							.checkboxSelecciona
+								background clarito
+								margin 0
+								text-align center
+								label
+									font-size 13px
+								label
+								.checker
+									display inline-block
+									vertical-align middle
+								.checker
+									width 13px
+							.eligeDireccion
+								//background colorao
+								border-radius 5px
+								color oscuro
+								display block
+								font-family 'oswaldregular'
+								font-size 15px
+								line-height 40px
+								//margin 0 auto 10px
+								//width 300px
+							.eligeDireccion
+							.selector
 								display inline-block
 								vertical-align middle
-							.checker
-								width 40px
-						.eligeDireccion
-							background colorao
-							border-radius 5px
-							color white
-							display block
-							font-size 13px
-							line-height 40px
-							margin 0 auto 10px
-							width 300px
-						.selector
-							margin 0 auto
-							width 300px
-							span
-								display none
+							.selector
+								margin 0 auto
+								width 200px !important
+								span
+									display none
 								select
-									border-radius 5px
+									//border-radius 5px
 									display block
+									font-size 13px
 									margin 0 auto
-									width 300px
-					.selccionOtraDireccion
-						text-align center
-						.selector
-							margin 0 auto
-							width 300px
-							span
-								display none
-								select
-									border-radius 5px
-									display block
-									margin 0 auto
-									width 300px
-				.agregaComentario
-					margin 0 auto
-					width 80%
-					label
-						display block
-						font-size 13px
-						text-align center
-					textarea
-						border-radius 5px
-						width 100%
-				.agregarNueva
-					background naranjito
-					border-radius 5px
-					display block
-					line-height 60px
-					margin 30px auto
-					text-align center
-					width 300px
-					a
-						text-decoration none
-						span
-							color white
+									width 100%
+							.selccionOtraDireccion
+								.select
+									text-align right
+									a
+										text-decoration none
+										span
+											color otroGris
+											font-family 'oswaldregular'
+											font-size 13px
+										&:hover
+											span
+												color rojoAsiste
+									label
+										font-family 'oswaldregular'
+										font-size 15px
+				.contenedorAddresses
+				.listaDireccion
+					display inline-block
+					margin-top 18px
+					vertical-align top
+					width 49%
+				.listaDireccion
+					padding-top 30px
+					.contenedorListaDireccion
+						border none
+						margin-left 10%
+						width 90%
+						ul
+							border 1px solid clarito
+							margin-top 10px
+							li
+								background white
+								text-align right
+								text-transform capitalize
+							.address_title
+								h3
+									background clarito
+									color oscuro
+									font-size 15px
+									font-weight 100
+									line-height 26px
+									text-align right
 			//aca estaba el navegador
 	
 	.micuenta
@@ -1758,7 +1843,7 @@ body
 					.icon-chevron-left
 						&:before
 							border-right 1px solid #999
-							color naranjito
+							color colorao
 							content '\e726'
 							display block
 							font-family 'icos'
@@ -2744,7 +2829,7 @@ table
 
 .listaDireccion
 	margin 28px auto 0
-	width 80%
+	//width 80%
 	.contenedorListaDireccion
 		border 1px solid #999
 		border-radius 3px
@@ -2770,7 +2855,7 @@ table
 					border-bottom 1px solid #999
 					color clarito
 					font-size 18px
-					font-weight 600
+					font-weight 100
 					line-height 50px
 					margin 0
 					//text-align center
@@ -2932,7 +3017,7 @@ table
 			.icon-chevron-right
 				&:before
 					border-left 1px solid #999
-					color naranjito
+					color colorao
 					content '\e722'
 					display block
 					font-family 'icos'
@@ -2970,7 +3055,7 @@ table
 		.icon-chevron-left
 			&:before
 				border-right 1px solid #999
-				color naranjito
+				color colorao
 				content '\e726'
 				display block
 				font-family 'icos'
@@ -3484,6 +3569,8 @@ table
 				content '\e600'
 				font-family 'icos'
 				font-size 11px
+	.navigation_page
+		color oscuro !important
 	.navigation-pipe
 		display none
 
@@ -3573,34 +3660,49 @@ table
 			position relative
 			text-decoration none
 			&:hover
-				background naranjito
-				&:after
-				&:before
-					color oscuro
+				background colorao
+				color white
+				// &:after
+				// &:before
+				// 	color oscuro
 			&:after
-				color naranjito
+				background #ecedef
+				border-bottom 1px solid #E4E4E4
+				border-top 1px solid #E4E4E4
+				border-right 1px solid #E4E4E4
+				color colorao
 				content '\e732'
 				font-family 'icos'
-				font-size 20px
+				font-size 18px
+				height 30px
+				line-height 30px
+				padding 0 5px
 				position absolute
-				top 28px
+				top 70px
 				right 5px
 			&:before
-				color naranjito
+				background #ecedef
+				border-bottom 1px solid #E4E4E4
+				border-left 1px solid #E4E4E4
+				border-top 1px solid #E4E4E4
+				color colorao
 				content 'ir a pagar'
 				font-family 'Open Sans', sans-serif
-				font-size 18px
+				font-size 15px
 				font-weight 600
+				height 30px
+				line-height 30px
+				padding 0 10px
 				position absolute
 				text-transform uppercase
-				top 28px
+				top 70px
 				right 30px
 			img
 				border none
-				height 80px !important
-				margin-right 15px
+				height 75px !important
+				margin-right 5px
 				vertical-align middle
-				width 150px !important
+				width 130px !important
 			span
 				display none
 		&:hover
@@ -3617,12 +3719,22 @@ table
 	background clarito
 
 .box
+	border 1px solid clarito
+	font-size 15px
+	margin-top 18px !important
+	padding 20px
+	text-align left !important
 	a
 		color oscuro
 		font-weight 600
 		transition .3s
 		&:hover
 			color colorao
+	p
+		display block
+		font-size 15px
+		margin 0 auto
+		text-align left
 
 .rodeaContacto
 	form
@@ -3654,7 +3766,12 @@ table
 		display none
 
 .page-subheading
+	font-family 'oswaldregular'
+	font-size 20px
 	text-align center
+.info-title
+	font-size 16px
+	margin 0
 .contenedorFormNuevoComentario
 	text-align center
 	label
@@ -3940,13 +4057,17 @@ table
 	margin 45px auto 18px
 	width 950px
 .page-heading
+	text-align left !important
+.page-heading
 .product-listing
+	font-family 'oswaldregular'
 	font-size 15px
+	font-weight 100
 	display block
 	margin 0 auto
 	overflow hidden
 	text-align left
-	width 80%
+	//width 80%
 	span
 		display inline-block
 	.cat-name
@@ -4787,3 +4908,66 @@ hr
 				display block
 				font-size 11px
 				line-height 30px
+.order_carrier_content
+	margin-top 18px !important
+	.carrier_title
+		display none
+	.checkbox
+		margin-top 18px
+		//text-align left
+		width 100%
+		a
+			background white
+			border 1px solid clarito
+			font-family 'oswaldregular'
+			font-size 16px
+			font-weight 100
+			margin 0 0 0 15%
+			text-align center
+			width 30%
+			&:hover
+				background clarito
+		a
+		label
+		.checker
+			display inline-block
+			vertical-align middle
+		label
+			width 50%
+	.delivery_options_address
+		.carrier_title
+			font-family 'oswaldregular'
+			font-size 15px
+			text-align left
+		.delivery_options
+			.delivery_option
+				display inline-block
+				vertical-align top
+				width 49%
+				table
+					tbody
+						tr
+							td
+								font-size 13px
+								
+.content_only
+	h2
+		color colorao
+		font-family 'oswaldregular'
+		margin-bottom 15px !important
+		span
+			span
+				border-bottom 1px solid colorao
+	h2
+	h3
+		margin 0
+	h2
+	p
+		span
+			span
+				background transparent !important
+	h3
+		font-size 16px
+	p
+		font-size 14px
+		text-align justify

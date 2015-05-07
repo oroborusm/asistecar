@@ -1158,6 +1158,7 @@ body .box .rodeaAddress form .activaEmpresa .esEmpresa label {
 }
 body .box .rodeaAddress form .activaEmpresa .esEmpresa input {
   background: #fff;
+  font-size: 14px;
   padding: 5px;
   width: 100%;
 }
@@ -1169,7 +1170,7 @@ body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion {
   display: inline-block;
   padding: 5px 0;
   vertical-align: middle;
-  width: 49.6%;
+  width: 49%;
 }
 body .box .rodeaAddress form .addressNombreApellido .nombreDireccion label,
 body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion label {
@@ -1180,6 +1181,7 @@ body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion label {
 }
 body .box .rodeaAddress form .addressNombreApellido .nombreDireccion input,
 body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion input {
+  font-size: 14px;
   padding: 5px;
   width: 100%;
 }
@@ -1229,6 +1231,12 @@ body .box .rodeaAddress form .esRutEmpresa input,
 body .box .rodeaAddress form .esTelefono input {
   padding: 5px;
   width: 100%;
+}
+body .box .rodeaAddress form .esCelular,
+body .box .rodeaAddress form .esTelefono {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
 }
 body .box .rodeaAddress form .esPais .selector {
   width: 100% !important;
@@ -1292,6 +1300,7 @@ body .box .rodeaAddress form .infoAdicional textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
+  height: 34px;
   margin: 0 auto;
   outline: none;
   width: 100%;
@@ -1574,7 +1583,7 @@ body .direcciones .agregarNueva a {
   text-decoration: none;
 }
 body .direcciones .agregarNueva a span {
-  color: #fff;
+  color: #ff4c00;
 }
 body .direcciones .volver {
   margin: 0;
@@ -1627,7 +1636,7 @@ body .formCarrito .formRodea {
 }
 body .formCarrito .listaCompra {
   font-size: 0;
-  margin: 0 auto;
+  margin: 18px auto;
   padding: 0;
 }
 body .formCarrito .listaCompra li {
@@ -1638,51 +1647,76 @@ body .formCarrito .listaCompra li {
 }
 body .formCarrito .listaCompra li span {
   font-size: 16px;
-  line-height: 50px;
+  line-height: 25px;
   text-align: center;
 }
 body .formCarrito .listaCompra li span em {
   display: none;
 }
 body .formCarrito .listaCompra .last {
-  -webkit-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
 }
 body .formCarrito .listaCompra .first {
-  -webkit-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
 }
 body .formCarrito .listaCompra .step_current {
-  background: #f8b302;
+  background: #ff4c00;
   color: #fff;
+  position: relative;
+}
+body .formCarrito .listaCompra .step_current:after {
+  border-bottom: 12.5px solid transparent;
+  border-left: 7px solid #ff4c00;
+  border-right: 0;
+  border-top: 12.5px solid transparent;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  right: -7px;
+}
+body .formCarrito .listaCompra .step_current:before {
+  border-bottom: 12.5px solid transparent;
+  border-left: 7px solid #fff;
+  border-right: 0;
+  border-top: 12.5px solid transparent;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  left: 0;
 }
 body .formCarrito .listaCompra .step_done {
-  background: #999;
+  background: #fff;
+  border-bottom: 1px solid #ecedef;
+  border-top: 1px solid #ecedef;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 25px;
   text-align: center;
 }
 body .formCarrito .listaCompra .step_done a {
-  color: #fff;
+  color: #ecedef;
   text-decoration: none;
 }
 body .formCarrito .listaCompra .step_done em {
   display: none;
 }
+body .formCarrito .listaCompra .step_done:hover a {
+  color: #d3d3d3;
+}
 body .formCarrito .listaCompra .step_todo {
   background: #ecedef;
+  color: #5b5b5f;
 }
 body .formCarrito .heading-counter {
-  background: #ff6b00;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
+  color: #5b5b5f;
   display: block;
+  font-family: 'oswaldregular';
   font-size: 13px;
+  font-weight: 100;
   line-height: 25px;
-  margin: 1em auto;
-  text-align: center;
-  width: 400px;
+  margin: 0;
+  text-align: left;
 }
 body .formCarrito .listaDireccion {
   display: none;
@@ -1695,6 +1729,7 @@ body .formCarrito .listaDireccion .contenedorListaDireccion {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   display: inline-block;
+  margin: 0;
   width: 49%;
 }
 body .formCarrito .listaDireccion .contenedorListaDireccion ul {
@@ -1717,7 +1752,7 @@ body .formCarrito .listaDireccion .contenedorListaDireccion ul li h3 {
   border-bottom: 1px solid #999;
   color: #ecedef;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 50px;
   margin: 0;
 }
@@ -1729,92 +1764,139 @@ body .formCarrito .orderAddress .addresses {
   margin: 0 auto;
   width: 80%;
 }
+body .formCarrito .orderAddress .addresses .contenedorAddresses {
+  margin-right: 1%;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .agregaComentario {
+  margin-top: 25px;
+  width: 100%;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .agregaComentario label {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .agregaComentario textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+}
 body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion {
-  margin-top: 1em;
   text-align: center;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .checkboxSelecciona {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 {
+  text-align: left;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .agregarNueva {
+  display: none;
+  margin: 0;
+  text-align: right;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .agregarNueva a {
+  text-decoration: none;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .agregarNueva a span {
+  color: #5b5b5f;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .agregarNueva a:hover span {
+  color: #ff4c00;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .checkboxSelecciona {
+  background: #ecedef;
+  margin: 0;
   text-align: center;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .checkboxSelecciona label,
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .checkboxSelecciona .checker {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .checkboxSelecciona label {
+  font-size: 13px;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .checkboxSelecciona label,
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .checkboxSelecciona .checker {
   display: inline-block;
   vertical-align: middle;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .checkboxSelecciona .checker {
-  width: 40px;
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .checkboxSelecciona .checker {
+  width: 13px;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .eligeDireccion {
-  background: #f4714a;
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .eligeDireccion {
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  color: #fff;
+  color: #434142;
   display: block;
-  font-size: 13px;
+  font-family: 'oswaldregular';
+  font-size: 15px;
   line-height: 40px;
-  margin: 0 auto 10px;
-  width: 300px;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .eligeDireccion,
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selector {
+  display: inline-block;
+  vertical-align: middle;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selector {
   margin: 0 auto;
-  width: 300px;
+  width: 200px !important;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector span {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selector span {
   display: none;
 }
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector span select {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-}
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionOtraDireccion {
-  text-align: center;
-}
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionOtraDireccion .selector {
-  margin: 0 auto;
-  width: 300px;
-}
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionOtraDireccion .selector span {
-  display: none;
-}
-body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionOtraDireccion .selector span select {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-}
-body .formCarrito .orderAddress .addresses .agregaComentario {
-  margin: 0 auto;
-  width: 80%;
-}
-body .formCarrito .orderAddress .addresses .agregaComentario label {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selector select {
   display: block;
   font-size: 13px;
-  text-align: center;
-}
-body .formCarrito .orderAddress .addresses .agregaComentario textarea {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  margin: 0 auto;
   width: 100%;
 }
-body .formCarrito .orderAddress .addresses .agregarNueva {
-  background: #f8b302;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  line-height: 60px;
-  margin: 30px auto;
-  text-align: center;
-  width: 300px;
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selccionOtraDireccion .select {
+  text-align: right;
 }
-body .formCarrito .orderAddress .addresses .agregarNueva a {
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selccionOtraDireccion .select a {
   text-decoration: none;
 }
-body .formCarrito .orderAddress .addresses .agregarNueva a span {
-  color: #fff;
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selccionOtraDireccion .select a span {
+  color: #5b5b5f;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selccionOtraDireccion .select a:hover span {
+  color: #ff4c00;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses .selccionDireccion .selector1 .selccionOtraDireccion .select label {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+}
+body .formCarrito .orderAddress .addresses .contenedorAddresses,
+body .formCarrito .orderAddress .addresses .listaDireccion {
+  display: inline-block;
+  margin-top: 18px;
+  vertical-align: top;
+  width: 49%;
+}
+body .formCarrito .orderAddress .addresses .listaDireccion {
+  padding-top: 30px;
+}
+body .formCarrito .orderAddress .addresses .listaDireccion .contenedorListaDireccion {
+  border: none;
+  margin-left: 10%;
+  width: 90%;
+}
+body .formCarrito .orderAddress .addresses .listaDireccion .contenedorListaDireccion ul {
+  border: 1px solid #ecedef;
+  margin-top: 10px;
+}
+body .formCarrito .orderAddress .addresses .listaDireccion .contenedorListaDireccion ul li {
+  background: #fff;
+  text-align: right;
+  text-transform: capitalize;
+}
+body .formCarrito .orderAddress .addresses .listaDireccion .contenedorListaDireccion ul .address_title h3 {
+  background: #ecedef;
+  color: #434142;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: right;
 }
 body .micuenta {
   margin: 0 auto;
@@ -2006,7 +2088,7 @@ body .micuenta .volverHome li a span {
 }
 body .micuenta .volverHome li a .icon-chevron-left:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e726';
   display: block;
   font-family: 'icos';
@@ -3075,7 +3157,6 @@ table tfoot .cart_total_voucher .text-right {
 }
 .listaDireccion {
   margin: 28px auto 0;
-  width: 80%;
 }
 .listaDireccion .contenedorListaDireccion {
   border: 1px solid #999;
@@ -3106,7 +3187,7 @@ table tfoot .cart_total_voucher .text-right {
   border-bottom: 1px solid #999;
   color: #ecedef;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 50px;
   margin: 0;
   text-transform: initial;
@@ -3301,7 +3382,7 @@ table tfoot .cart_total_voucher .text-right {
 }
 .navegador .checkout span .icon-chevron-right:before {
   border-left: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e722';
   display: block;
   font-family: 'icos';
@@ -3351,7 +3432,7 @@ table tfoot .cart_total_voucher .text-right {
 }
 .navegador .volverCompra .icon-chevron-left:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e726';
   display: block;
   font-family: 'icos';
@@ -3938,6 +4019,9 @@ table tfoot .cart_total_voucher .text-right {
   font-family: 'icos';
   font-size: 11px;
 }
+.breadcrumb .navigation_page {
+  color: #434142 !important;
+}
 .breadcrumb .navigation-pipe {
   display: none;
 }
@@ -4045,38 +4129,49 @@ table tfoot .cart_total_voucher .text-right {
   text-decoration: none;
 }
 .textoLink .payment_module a:hover {
-  background: #f8b302;
-}
-.textoLink .payment_module a:hover:after,
-.textoLink .payment_module a:hover:before {
-  color: #434142;
+  background: #f4714a;
+  color: #fff;
 }
 .textoLink .payment_module a:after {
-  color: #f8b302;
+  background: #ecedef;
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  color: #f4714a;
   content: '\e732';
   font-family: 'icos';
-  font-size: 20px;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
   position: absolute;
-  top: 28px;
+  top: 70px;
   right: 5px;
 }
 .textoLink .payment_module a:before {
-  color: #f8b302;
+  background: #ecedef;
+  border-bottom: 1px solid #e4e4e4;
+  border-left: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
+  color: #f4714a;
   content: 'ir a pagar';
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
   position: absolute;
   text-transform: uppercase;
-  top: 28px;
+  top: 70px;
   right: 30px;
 }
 .textoLink .payment_module a img {
   border: none;
-  height: 80px !important;
-  margin-right: 15px;
+  height: 75px !important;
+  margin-right: 5px;
   vertical-align: middle;
-  width: 150px !important;
+  width: 130px !important;
 }
 .textoLink .payment_module a span {
   display: none;
@@ -4094,6 +4189,13 @@ table tfoot .cart_total_voucher .text-right {
 .boton {
   background: #ecedef;
 }
+.box {
+  border: 1px solid #ecedef;
+  font-size: 15px;
+  margin-top: 18px !important;
+  padding: 20px;
+  text-align: left !important;
+}
 .box a {
   color: #434142;
   font-weight: 600;
@@ -4105,6 +4207,12 @@ table tfoot .cart_total_voucher .text-right {
 }
 .box a:hover {
   color: #f4714a;
+}
+.box p {
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: left;
 }
 .rodeaContacto form fieldset {
   -webkit-border-radius: 5px;
@@ -4136,7 +4244,13 @@ table tfoot .cart_total_voucher .text-right {
   display: none;
 }
 .page-subheading {
+  font-family: 'oswaldregular';
+  font-size: 20px;
   text-align: center;
+}
+.info-title {
+  font-size: 16px;
+  margin: 0;
 }
 .contenedorFormNuevoComentario {
   text-align: center;
@@ -4472,14 +4586,18 @@ table tfoot .cart_total_voucher .text-right {
   margin: 45px auto 18px;
   width: 950px;
 }
+.page-heading {
+  text-align: left !important;
+}
 .page-heading,
 .product-listing {
+  font-family: 'oswaldregular';
   font-size: 15px;
+  font-weight: 100;
   display: block;
   margin: 0 auto;
   overflow: hidden;
   text-align: left;
-  width: 80%;
 }
 .page-heading span,
 .product-listing span {
@@ -5411,6 +5529,74 @@ hr {
   display: block;
   font-size: 11px;
   line-height: 30px;
+}
+.order_carrier_content {
+  margin-top: 18px !important;
+}
+.order_carrier_content .carrier_title {
+  display: none;
+}
+.order_carrier_content .checkbox {
+  margin-top: 18px;
+  width: 100%;
+}
+.order_carrier_content .checkbox a {
+  background: #fff;
+  border: 1px solid #ecedef;
+  font-family: 'oswaldregular';
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0 0 0 15%;
+  text-align: center;
+  width: 30%;
+}
+.order_carrier_content .checkbox a:hover {
+  background: #ecedef;
+}
+.order_carrier_content .checkbox a,
+.order_carrier_content .checkbox label,
+.order_carrier_content .checkbox .checker {
+  display: inline-block;
+  vertical-align: middle;
+}
+.order_carrier_content .checkbox label {
+  width: 50%;
+}
+.order_carrier_content .delivery_options_address .carrier_title {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+  text-align: left;
+}
+.order_carrier_content .delivery_options_address .delivery_options .delivery_option {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+.order_carrier_content .delivery_options_address .delivery_options .delivery_option table tbody tr td {
+  font-size: 13px;
+}
+.content_only h2 {
+  color: #f4714a;
+  font-family: 'oswaldregular';
+  margin-bottom: 15px !important;
+}
+.content_only h2 span span {
+  border-bottom: 1px solid #f4714a;
+}
+.content_only h2,
+.content_only h3 {
+  margin: 0;
+}
+.content_only h2 span span,
+.content_only p span span {
+  background: transparent !important;
+}
+.content_only h3 {
+  font-size: 16px;
+}
+.content_only p {
+  font-size: 14px;
+  text-align: justify;
 }
 @-moz-keyframes anim-open {
   0% {
