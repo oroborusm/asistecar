@@ -1946,7 +1946,7 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a span {
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-ban-circle:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e6f5';
   display: block;
   font-family: 'icos';
@@ -1959,7 +1959,7 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-ban-circle
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-building:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e603';
   display: block;
   font-family: 'icos';
@@ -1972,7 +1972,7 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-building:b
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-list-ol:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e6b6';
   display: block;
   font-family: 'icos';
@@ -1985,7 +1985,7 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-list-ol:be
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-user:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e670';
   display: block;
   font-family: 'icos';
@@ -2030,7 +2030,7 @@ body .micuenta .rodeaListaDirecciones .listaregalo ul li a:hover span {
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a:before {
   border-right: 1px solid #999;
-  color: #f8b302;
+  color: #f4714a;
   content: '\e6f5';
   display: block;
   font-family: 'icos';
@@ -5597,6 +5597,20 @@ hr {
 .content_only p {
   font-size: 14px;
   text-align: justify;
+}
+.adresses_bloc .row .col-xs-12 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+.adresses_bloc .row .col-xs-12 ul {
+  margin: 0;
+  padding: 0;
+}
+.adresses_bloc .row .col-xs-12 ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 @-moz-keyframes anim-open {
   0% {
