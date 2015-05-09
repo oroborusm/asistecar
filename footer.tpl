@@ -75,7 +75,9 @@
 						</div>
 						<div class="finFooter">
 							<div class="row">
-								<img src="https://www.toolmania.cl/public_img/nodriza.png">
+								<figure>
+									<img src="https://www.toolmania.cl/public_img/nodriza.png">
+								</figure>
 
 
 

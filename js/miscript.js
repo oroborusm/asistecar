@@ -20,6 +20,9 @@ $(function(){
 		$('.telefono').toggleClass('tada');
 	}, 4000);
 
+	$('.sumaComentario').on('click', function(){
+		$('.agregaComentario').toggleClass('activo')
+	});
 
 	// $('input:checkbox').click(function(){
 	//    $('.esEmpresa').toggleClass('active');

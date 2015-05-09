@@ -84,51 +84,26 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="selccionOtraDireccion waca">
-				<div id="address_invoice_form" class="select form-group selector1"{if $cart->id_address_invoice == $cart->id_address_delivery} style="display: none;"{/if}>
-					{if $addresses|@count > 1}
-						<label for="id_address_invoice" class="strong">{l s='Choose a billing address:'}</label>
-						<select name="id_address_invoice" id="id_address_invoice" class="address_select form-control">
-						{section loop=$addresses step=-1 name=address}
-							<option value="{$addresses[address].id_address|intval}"{if $addresses[address].id_address == $cart->id_address_invoice && $cart->id_address_delivery != $cart->id_address_invoice} selected="selected"{/if}>
-								{$addresses[address].alias|escape:'html':'UTF-8'}
-							</option>
-						{/section}
-						</select><span class="waitimage"></span>
-					{else}
-						<a href="{$link->getPageLink('address', true, NULL, "back={$back_order_page}?step=1&select_address=1{if $back}&mod={$back}{/if}")|escape:'html':'UTF-8'}" title="{l s='Add'}" class="button button-small btn btn-default">
-							<span>
-								{l s='Add a new address'}
-								<i class="icon-chevron-right right"></i>
-							</span>
-						</a>
-					{/if}
+			<div class="listaDireccion">
+				<div class="contenedorListaDireccion"{if $cart->isVirtualCart()} style="display:none;"{/if}>
+					<ul class="address item" id="address_delivery">
+					</ul>
 				</div>
-			</div> -->
+				<div class="contenedorListaDireccion">
+					<ul class="address alternate_item{if $cart->isVirtualCart()} full_width{/if} box" id="address_invoice">
+					</ul>
+				</div>
+			</div> <!-- end row -->
+		</div> <!-- end row -->
+		<div class="quieresAgregaComentario">
+			<p class="sumaComentario">Quieres Agregar un comentario</p>
 			{if !$opc}
 				<div id="ordermsg" class="agregaComentario">
 					<label>{l s='If you would like to add a comment about your order, please write it in the field below.'}</label>
 					<textarea class="form-control" cols="60" rows="6" name="message">{if isset($oldMessage)}{$oldMessage}{/if}</textarea>
 				</div>
 			{/if}
-		</div> <!-- end row -->
-		<div class="listaDireccion">
-			<div class="contenedorListaDireccion"{if $cart->isVirtualCart()} style="display:none;"{/if}>
-				<ul class="address item" id="address_delivery">
-				</ul>
-			</div>
-			<div class="contenedorListaDireccion">
-				<ul class="address alternate_item{if $cart->isVirtualCart()} full_width{/if} box" id="address_invoice">
-				</ul>
-			</div>
-		</div> <!-- end row -->
-
-		<!-- {if !$opc}
-			<div id="ordermsg" class="agregaComentario">
-				<label>{l s='If you would like to add a comment about your order, please write it in the field below.'}</label>
-				<textarea class="form-control" cols="60" rows="6" name="message">{if isset($oldMessage)}{$oldMessage}{/if}</textarea>
-			</div>
-		{/if} -->
+		</div>
 	</div> <!-- end addresses -->
 	{if !$opc}
 				<p class="navegador">

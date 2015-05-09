@@ -143,15 +143,19 @@ body
 				margin 0 auto
 				padding 10px 0
 				width 950px
-				img
-					width 100px
-				img
+				figure
+					margin 0
+					padding 0
+					width 19%
+					img
+						width 80%
+				figure
 				.boletin
 					display inline-block
 					vertical-align middle
 				.boletin
 					margin 10px 0
-					width 840px
+					width 80%
 					.contBoletin
 						background #DDDCE0
 						border #aeadb3
@@ -208,7 +212,7 @@ body
 				padding 0 1%
 				//position absolute
 				vertical-align top
-				width 28%
+				width 30%
 				a
 					color oscuro
 					text-decoration none
@@ -1472,7 +1476,7 @@ body
 		.cart_last_product
 			display none
 		.detalleProducto
-			margin 18px auto
+			margin 25px auto 10px
 			//width 80%
 
 		.formRodea
@@ -1487,12 +1491,15 @@ body
 			//max-width 1150px
 			li
 				display inline-block
+				font-family 'oswaldregular'
+				font-weight 100
+				height 30px
 				list-style none
 				text-align center
 				width 20%
 				span
 					font-size 16px
-					line-height 25px
+					line-height 30px
 					text-align center
 					em
 						display none
@@ -1505,19 +1512,19 @@ body
 				color white
 				position relative
 				&:after
-					border-bottom 12.5px solid transparent
+					border-bottom 15.15px solid transparent
 					border-left 7px solid rojoAsiste
 					border-right 0
-					border-top 12.5px solid transparent
+					border-top 15.15px solid transparent
 					bottom 0
 					content ''
 					position absolute
 					right -7px
 				&:before
-					border-bottom 12.5px solid transparent
+					border-bottom 15.15px solid transparent
 					border-left 7px solid white
 					border-right 0
-					border-top 12.5px solid transparent
+					border-top 15.15px solid transparent
 					bottom 0
 					content ''
 					position absolute
@@ -1527,7 +1534,7 @@ body
 				border-bottom 1px solid clarito
 				border-top 1px solid clarito
 				font-size 16px
-				line-height 25px
+				line-height 30px
 				text-align center
 				a
 					color clarito
@@ -1538,7 +1545,7 @@ body
 					a
 						color #d3d3d3
 			.step_todo
-				background clarito
+				background #dddce0
 				color otroGris
 		.heading-counter
 			//background naranjo
@@ -1598,19 +1605,8 @@ body
 				margin 0 auto
 				width 80%
 				.contenedorAddresses
-					margin-right 1%
-					.agregaComentario
-						margin-top 25px
-						width 100%
-						label
-							display block
-							font-size 12px
-							text-align left
-						textarea
-							//border-radius 5px
-							box-sizing border-box
-							height 100px
-							width 100%
+					margin 18px 1% 0 0
+					//width 49%
 					.selccionDireccion
 						text-align center
 						.selector1
@@ -1636,6 +1632,10 @@ body
 								background clarito
 								margin 0
 								text-align center
+								&:hover
+									background oscuro
+									label
+										color white
 								label
 									font-size 13px
 								label
@@ -1684,33 +1684,71 @@ body
 									label
 										font-family 'oswaldregular'
 										font-size 15px
+					.listaDireccion
+						display block
+						margin 5px 0 0 0
+						//padding-top 10px
+						width 100%
+						.contenedorListaDireccion
+							border none
+							//margin-left 10%
+							width 100%
+							ul
+								background white
+								border 1px solid #dddce0
+								//margin-top 10px
+								li
+									background white
+									display block
+									padding 0 5%
+									text-align left
+									text-transform capitalize
+									width 89%
+								.address_title
+									h3
+										background white
+										color oscuro
+										font-size 15px
+										font-weight 100
+										line-height 26px
+										text-align left
+							.alternate_item
+								li
+									display none !important
+								.address_address1
+								.address_title
+									display block !important
 				.contenedorAddresses
-				.listaDireccion
+				.quieresAgregaComentario
 					display inline-block
-					margin-top 18px
 					vertical-align top
 					width 49%
-				.listaDireccion
-					padding-top 30px
-					.contenedorListaDireccion
-						border none
-						margin-left 10%
-						width 90%
-						ul
-							border 1px solid clarito
-							margin-top 10px
-							li
-								background white
-								text-align right
-								text-transform capitalize
-							.address_title
-								h3
-									background clarito
-									color oscuro
-									font-size 15px
-									font-weight 100
-									line-height 26px
-									text-align right
+				.quieresAgregaComentario
+					margin-top 26px
+					p
+						background clarito
+						color oscuro
+						cursor pointer
+						font-size 13px
+						font-weight 400
+						line-height 26px
+						margin 32px 0 0 0
+						padding 0 5%
+						&:hover
+							background oscuro
+							color white
+					.agregaComentario
+						display none
+						margin-top 15px
+						label
+							display block
+							font-size 12px
+							text-align left
+						textarea
+							border 1px solid #dddce0
+							box-sizing border-box
+							height 93px
+							width 100%
 			//aca estaba el navegador
 	
 	.micuenta
@@ -2547,28 +2585,38 @@ table
 	width 100%
 	thead
 		background oscuro
+		border-bottom 1px solid rojoAsiste
+		font-family 'oswaldlight'
+		font-size 13px
 		tr
+			border-radius 2px
 			th
-				color clarito
-				border-right 1px solid clarito
-				font-weight 100
+				color white
+				//border-right 1px solid clarito
+				//font-weight 100
+				//font-weight 400
+				line-height 30px
+				text-transform uppercase
 				&:last-child
 					border-right none
 	tbody
 		tr
+			//height 100px
 			td
-				border 1px solid clarito
+				border-bottom 2px solid clarito
+				//height 100px
+				padding 0
 				text-align center
 				a
 					img
-						height 130px
-						width 130px
+						height 100px
+						width 100px
 			.cart_avail
 				span
 					background colorao
 					color white
 					display block
-					line-height 130px
+					line-height 100px
 			.cart_delete
 				width 40px
 				div
@@ -2580,7 +2628,7 @@ table
 						display block
 						width 40px
 						&:after
-							color naranjito
+							color rojoAsiste
 							content '\e6fa'
 							display block
 							font-family 'icos'
@@ -2592,21 +2640,40 @@ table
 							top 0
 							width 40px
 			.cart_description
+				padding 0 10px
+				text-align left
 				&:hover
 					a
 						text-decoration underline
 				p
+					margin 2px 0
 					a
 						color oscuro
 						text-decoration none
 				small
 					display block
+					font-style italic
 					a
 						color oscuro
 						text-decoration none
+				.product-name
+					font-family 'oswaldregular'
+					font-size 16px
+					font-weight 100
+			.cart_product
+				width 100px
+			.cart_total
+				span
+					font-family 'oswaldregular'
+					font-weight 600
 			.cart_quantity
+				font-family 'oswaldregular'
+				font-weight 100
 				input
-					border-radius 3px
+					box-sizing border-box
+					padding 3px 5px
+			.cart_unit
+				font-family 'oswaldregular'
 	tfoot
 		tr
 			text-align right
@@ -3029,43 +3096,56 @@ table
 		border-right 1px solid clarito
 		
 .navegador
-	margin 1em auto
-	overflow hidden
+	display block
+	margin 18px auto
+	height 40px
+	//overflow hidden
 	position relative
 	//width 80%
 	.checkout
 		float right
 		position relative
 		span
-			color oscuro
-			font-size 18px
+			color white
 			line-height 40px
 			transition .3s
-			.icon-chevron-right
-				&:before
-					border-left 1px solid #999
-					color colorao
-					content '\e722'
-					display block
-					font-family 'icos'
-					font-size 18px
-					height 100%
-					line-height 40px
-					position absolute
-					right 0
-					top 0
-					width 35px
+		&:after
+			border-bottom 20px solid transparent
+			border-left 7px solid rojoAsiste
+			border-right 0
+			border-top 20px solid transparent
+			right -7px
+		&:before
+			border-bottom 20px solid transparent
+			border-left 7px solid white
+			border-right 0
+			border-top 20px solid transparent
+			left 0
+		&:hover
+			&:after
+				border-left 7px solid oscuro
 	.checkout
 	.volverCompra
-		background clarito
-		border 1px solid #999
-		border-radius 5px
-		color oscuro
+		background rojoAsiste
+		border 0
+		//border-radius 5px
+		color white
 		display block
+		font-family 'oswaldregular'
+		font-size 16px
+		height 40px
 		position relative
 		text-align center
 		text-decoration none
-		width 300px
+		width 200px
+		&:after
+			bottom 0
+			content ''
+			position absolute	
+		&:before
+			bottom 0
+			content ''
+			position absolute
 		&:hover
 			background oscuro
 			color clarito
@@ -3075,26 +3155,23 @@ table
 		float left
 		position relative
 		span
-			color oscuro
-			font-size 18px
 			line-height 40px
 			transition .3s
-		.icon-chevron-left
-			&:before
-				border-right 1px solid #999
-				color colorao
-				content '\e726'
-				display block
-				font-family 'icos'
-				font-size 18px
-				height 100%
-				left 0
-				line-height 40px
-				position absolute
-				top 0
-				width 35px
-
-
+		&:after
+			border-bottom 20px solid transparent
+			border-left 0
+			border-right 7px solid rojoAsiste
+			border-top 20px solid transparent
+			left -7px
+		&:before
+			border-bottom 20px solid transparent
+			border-left 0
+			border-right 7px solid white
+			border-top 20px solid transparent
+			right 0
+		&:hover
+			&:after
+				border-right 7px solid oscuro
 .bottom-footer
 	display none
 .col-sm-2
@@ -3630,6 +3707,7 @@ table
 				td
 					border 1px solid clarito
 					color white
+					padding 0 3px
 					&:hover
 						.remove
 							opacity 1
@@ -3994,7 +4072,7 @@ table
 	display none
 	font-size 12px
 	left 50%
-	margin-left 345px
+	margin-left 242px
 	padding 5px
 	position fixed
 	text-align right
@@ -4971,11 +5049,43 @@ hr
 				display inline-block
 				vertical-align top
 				width 49%
-				table
+				.eligeTransporte
+					font-size 13px
+					width 100%
 					tbody
 						tr
+							border-right 1px solid clarito
+							text-align left
 							td
-								font-size 13px
+								height 55px
+							.cuerpo
+								width 240px
+								span
+									display block
+									margin 0 5%
+									text-align left
+									width 90%
+									strong
+										font-family 'oswaldregular'
+										font-weight 100
+										display block
+							.delivery_option_price
+								.delivery_option_price
+									color verdeAsiste
+									font-weight 600
+									line-height 45px
+									text-align left
+							.delivery_option_radio
+								.radio
+									span
+										cursor pointer
+										display block
+										height 13px
+										width 13px
+										input
+											cursor pointer
+											line-height 55px
+											
 								
 .content_only
 	h2
