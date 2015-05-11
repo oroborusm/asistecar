@@ -40,6 +40,9 @@
   font-weight: normal;
   font-style: normal;
 }
+fieldset {
+  border: none;
+}
 i {
   font-style: normal !important;
 }
@@ -49,16 +52,20 @@ input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px !important;
+  height: 22px;
   outline: none;
 }
 input:focus {
   background: #f0f8ff;
 }
+label {
+  font-weight: 600;
+}
 select {
   border: 1px solid #a1a5ad !important;
-}
-fieldset {
-  border: none;
+  height: 22px;
 }
 textarea {
   -webkit-box-sizing: border-box;
@@ -444,7 +451,6 @@ body header .header .headerCOnt .buscador .buscadorForm form input {
   border: none;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
-  font-size: 15px;
   height: 26px;
   padding: 0 0 0 5%;
   width: 80%;
@@ -883,13 +889,13 @@ body .autenticacion .contenedorLogin .accedeCuenta {
   padding: 0;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form {
-  margin: 0 auto;
-  width: 80%;
+  width: 70%;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .form-group label {
   color: #434142;
   display: block;
   font-size: 13px;
+  font-weight: 600;
   text-align: left;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .form-group input {
@@ -903,24 +909,27 @@ body .autenticacion .contenedorLogin .accedeCuenta form .form_content .form-grou
   background: #f0f8ff;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .lost_password {
-  font-size: 15px;
+  font-size: 13px;
   margin: 0;
+  text-align: right;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .lost_password a {
   color: #434142;
+  font-weight: 600;
   text-decoration: none;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .lost_password a:hover {
   text-decoration: underline;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit {
-  margin-top: 22px;
+  margin-top: 22px !important;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit button {
-  border: 2px solid #ecedef;
+  background: #ecedef;
+  border: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  color: #434142;
+  color: #0040a6;
   width: 100%;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit button span {
@@ -936,6 +945,9 @@ body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit in
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover {
   background: #0040a6;
 }
+body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover button {
+  background: #0040a6;
+}
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover button span {
   color: #fff;
 }
@@ -943,15 +955,18 @@ body .autenticacion .contenedorLogin .accedeCuenta,
 body .autenticacion .contenedorLogin .creaCuenta {
   border: 1px solid #ecedef;
   display: inline-block;
+  height: 300px;
+  position: relative;
   vertical-align: top;
   width: 48%;
 }
-body .autenticacion .contenedorLogin .accedeCuenta form,
-body .autenticacion .contenedorLogin .creaCuenta form {
+body .autenticacion .contenedorLogin .accedeCuenta .formsAtenticacion,
+body .autenticacion .contenedorLogin .creaCuenta .formsAtenticacion {
   border: none !important;
+  padding: 5% 15%;
 }
-body .autenticacion .contenedorLogin .accedeCuenta form h1,
-body .autenticacion .contenedorLogin .creaCuenta form h1 {
+body .autenticacion .contenedorLogin .accedeCuenta .formsAtenticacion h1,
+body .autenticacion .contenedorLogin .creaCuenta .formsAtenticacion h1 {
   border-bottom: 1px solid #ecedef;
   display: block;
   font-size: 20px;
@@ -959,8 +974,8 @@ body .autenticacion .contenedorLogin .creaCuenta form h1 {
   line-height: 40px;
   margin: 0 0 1em 0;
 }
-body .autenticacion .contenedorLogin .accedeCuenta form .form_content p,
-body .autenticacion .contenedorLogin .creaCuenta form .form_content p {
+body .autenticacion .contenedorLogin .accedeCuenta .formsAtenticacion .form_content p,
+body .autenticacion .contenedorLogin .creaCuenta .formsAtenticacion .form_content p {
   color: #434142;
   margin: 0;
 }
@@ -975,6 +990,7 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group 
   color: #434142;
   display: block;
   font-size: 13px;
+  font-weight: 600;
   text-align: left;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group input {
@@ -982,15 +998,15 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group 
   padding: 5px;
   width: 100%;
 }
-body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group margin-top 22px:focus {
+body .autenticacion .contenedorLogin .creaCuenta form .form_content .form-group input:focus {
   background: #f0f8ff;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit {
-  margin-top: 18px;
+  margin-top: 35px;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit button {
-  background: #fff;
-  border: 2px solid #f4714a;
+  background: #ecedef;
+  border: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   color: #f4714a;
@@ -1025,6 +1041,9 @@ body .autenticacion .formularioCrea .creaCuenta h3 {
   font-size: 18px;
   text-align: center;
 }
+body .autenticacion .formularioCrea .creaCuenta .nombreApellido {
+  margin-bottom: 10px;
+}
 body .autenticacion .formularioCrea .creaCuenta .nombreApellido .apellido,
 body .autenticacion .formularioCrea .creaCuenta .nombreApellido .nombre {
   display: inline-block;
@@ -1048,14 +1067,16 @@ body .autenticacion .formularioCrea .creaCuenta .nombreApellido .nombre label {
   display: block;
   text-align: left;
 }
+body .autenticacion .formularioCrea .creaCuenta .nombreApellido .nombre {
+  margin-right: 1%;
+}
 body .autenticacion .formularioCrea .creaCuenta .correo,
 body .autenticacion .formularioCrea .creaCuenta .password {
-  margin: 25px 0;
+  margin: 5px 0;
 }
 body .autenticacion .formularioCrea .creaCuenta .correo input,
 body .autenticacion .formularioCrea .creaCuenta .password input {
   color: #999;
-  font-size: 16px;
   padding: 5px;
   width: 100%;
 }
@@ -1069,7 +1090,6 @@ body .autenticacion .formularioCrea .creaCuenta .password label {
   color: #434142;
   font-size: 13px;
   text-align: left;
-  width: 28%;
 }
 body .autenticacion .formularioCrea .creaCuenta .correo .condicionPass,
 body .autenticacion .formularioCrea .creaCuenta .password .condicionPass {
@@ -1104,6 +1124,11 @@ body .autenticacion .formularioCrea .creaCuenta .checkbox .checker {
 body .autenticacion .formularioCrea .creaCuenta .checkboxArriba {
   margin-top: 30px;
 }
+body .autenticacion .formularioCrea .creaCuenta .fechaNacimiento h3 {
+  font-size: 13px;
+  margin: 0;
+  text-align: left;
+}
 body .autenticacion .formularioCrea .creaCuenta .srSra {
   display: none;
   text-align: center;
@@ -1124,18 +1149,21 @@ body .autenticacion .formularioCrea .creaCuenta .srSra .radioSeleccion .top .gen
   vertical-align: middle;
 }
 body .autenticacion .formularioCrea .submit {
-  margin-top: 20px;
-  text-align: center;
+  margin: 20px auto;
+  text-align: right;
+  width: 90%;
 }
 body .autenticacion .formularioCrea .submit button {
-  background: #f8b302;
+  background: #ff4c00;
   border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   width: 30%;
 }
 body .autenticacion .formularioCrea .submit button span {
   color: #fff;
+  font-family: 'oswaldregular';
+  font-weight: 100;
   line-height: 30px;
 }
 body .autenticacion .formularioCrea .submit .requerido {
@@ -1164,12 +1192,14 @@ body .box .rodeaAddress form .activaEmpresa {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 5px 10px;
+  height: 22px;
+  padding: 0 10px;
   text-align: left;
 }
 body .box .rodeaAddress form .activaEmpresa label,
 body .box .rodeaAddress form .activaEmpresa .checker {
   display: inline-block;
+  height: 22px;
   vertical-align: middle;
 }
 body .box .rodeaAddress form .activaEmpresa label {
@@ -1178,9 +1208,13 @@ body .box .rodeaAddress form .activaEmpresa label {
   margin: 0 5px 0 0;
   text-align: left;
 }
+body .box .rodeaAddress form .activaEmpresa .checker {
+  line-height: 22px;
+  margin: 0;
+}
 body .box .rodeaAddress form .activaEmpresa .esEmpresa {
   display: none;
-  margin: 5px 0;
+  margin: 0;
   padding: 5px 0;
 }
 body .box .rodeaAddress form .activaEmpresa .esEmpresa label {
@@ -1198,23 +1232,22 @@ body .box .rodeaAddress form .activaEmpresa .esEmpresa input {
 body .box .rodeaAddress form .addressNombreApellido {
   margin: 5px 0;
 }
-body .box .rodeaAddress form .addressNombreApellido .nombreDireccion,
-body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion {
+body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion,
+body .box .rodeaAddress form .addressNombreApellido .nombreDireccion {
   display: inline-block;
   padding: 5px 0;
   vertical-align: middle;
-  width: 49%;
+  width: 49.5%;
 }
-body .box .rodeaAddress form .addressNombreApellido .nombreDireccion label,
-body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion label {
+body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion label,
+body .box .rodeaAddress form .addressNombreApellido .nombreDireccion label {
   display: block;
   font-size: 13px;
   font-weight: 600;
   text-align: left;
 }
-body .box .rodeaAddress form .addressNombreApellido .nombreDireccion input,
-body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion input {
-  font-size: 14px;
+body .box .rodeaAddress form .addressNombreApellido .apellidoDireccion input,
+body .box .rodeaAddress form .addressNombreApellido .nombreDireccion input {
   padding: 5px;
   width: 100%;
 }
@@ -1230,8 +1263,8 @@ body .box .rodeaAddress form .esPostcode,
 body .box .rodeaAddress form .esRegion,
 body .box .rodeaAddress form .esRutEmpresa,
 body .box .rodeaAddress form .esTelefono {
-  margin: 5px 0;
-  padding: 5px 0;
+  margin: 2px 0;
+  padding: 2px 0;
 }
 body .box .rodeaAddress form .esAliasDireccion label,
 body .box .rodeaAddress form .esCelular label,
@@ -1283,12 +1316,16 @@ body .box .rodeaAddress form .esPais .selector select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 13px;
   margin: 0 auto;
   outline: none;
   width: 100%;
 }
 body .box .rodeaAddress form .esPais .selector select:focus {
   background: #f0f8ff;
+}
+body .box .rodeaAddress form .esPais .selector select option {
+  font-size: 13px;
 }
 body .box .rodeaAddress form .esAliasDireccion {
   float: right;
@@ -1312,6 +1349,10 @@ body .box .rodeaAddress form .esRegion select:focus {
 }
 body .box .rodeaAddress form .esRegion span {
   display: none;
+}
+body .box .rodeaAddress form .esRutEmpresa {
+  display: none;
+  margin: 0;
 }
 body .box .rodeaAddress form .infoAdicional {
   float: left;
@@ -4790,11 +4831,11 @@ table tfoot .cart_total_voucher .text-right {
 .wishlisturl input {
   background: #eaeaea;
   cursor: not-allowed;
+  font-size: 15px;
   font-weight: 300;
 }
 .wishlisturl input,
 .wishlisturl label {
-  font-size: 15px;
   text-align: left;
   width: 100%;
 }
@@ -5116,7 +5157,8 @@ td .sale-box {
   border-radius: 2px;
   color: #fff;
   display: block;
-  font-size: 13px;
+  font-family: 'oswaldregular';
+  font-size: 15px;
   line-height: 30px;
   margin: 0;
   text-decoration: none;
@@ -5279,7 +5321,6 @@ td .sale-box {
   text-align: center;
 }
 .fechaNacimiento .contenedorFecha {
-  margin: 0 auto;
   width: 70%;
 }
 .fechaNacimiento .contenedorFecha .selectorFecha {
@@ -5297,16 +5338,17 @@ td .sale-box {
   box-sizing: border-box;
   color: #999;
   font-size: 13px;
-  height: 27px;
   left: 0px;
   outline: 0;
-  padding: 5px;
   text-align: center;
   top: 0px;
   width: 100%;
 }
 .fechaNacimiento .contenedorFecha .selectorFecha .selector select option {
   background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #434142;
 }
 .fechaNacimiento .contenedorFecha .selectorFecha .selector span {
@@ -5334,8 +5376,27 @@ td .sale-box {
 .checkbox .checker {
   text-align: right;
 }
-.checkboxArriba {
-  margin-top: 30px;
+.checkboxIncribase {
+  display: inline-block;
+  margin-top: 15px;
+  vertical-align: top;
+  width: 48%;
+}
+.checkboxIncribase label {
+  font-size: 11px;
+  font-weight: 100;
+  text-align: left;
+  width: 91%;
+}
+.checkboxIncribase label,
+.checkboxIncribase .checker {
+  display: inline-block;
+  vertical-align: top;
+}
+.checkboxIncribase label span input,
+.checkboxIncribase .checker span input {
+  height: 15px;
+  width: 15px;
 }
 .alertClica {
   color: #999;
@@ -5839,6 +5900,12 @@ hr {
 }
 .cuadroComentario .submit button:hover span {
   color: #fff;
+}
+.alto {
+  height: 80px !important;
+}
+.formDirecciones .info-title {
+  text-align: center;
 }
 @-moz-keyframes anim-open {
   0% {

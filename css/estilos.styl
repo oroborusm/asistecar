@@ -96,19 +96,25 @@ verdeClarito = #71b238
 	font-style: normal;
 }
 
+fieldset
+	border none
 i
 	font-style normal !important
 input
 	background #fbfbfb
 	border 1px solid grisAzul
 	box-sizing border-box
+	font-family 'Open Sans', sans-serif
+	font-size 13px !important
+	height 22px
 	outline none
 	&:focus
 		background aliceblue
+label
+	font-weight 600
 select
 	border 1px solid grisAzul !important
-fieldset
-	border none
+	height 22px
 textarea
 	box-sizing border-box
 #category-thumbnail
@@ -123,7 +129,7 @@ textarea
 
 body
 	color oscuro
-	font-family 'Open Sans', sans-serif;
+	font-family 'Open Sans', sans-serif
 	font-size 18px
 	margin 0 auto
 	//width 1150px
@@ -437,7 +443,7 @@ body
 								background white
 								border none
 								border-radius .5em
-								font-size 15px
+								//font-size 15px
 								height 26px
 								//margin-top 35px
 								padding 0 0 0 5%
@@ -778,14 +784,14 @@ body
 				margin 0
 				padding 0
 				form
-					margin 0 auto
-					width 80%
+					width 70%
 					.form_content
 						.form-group
 							label
 								color oscuro
 								display block
 								font-size 13px
+								font-weight 600
 								text-align left
 							input
 								border-radius 0
@@ -798,20 +804,22 @@ body
 								&:focus
 									background aliceblue
 						.lost_password
-							font-size 15px
+							font-size 13px
 							margin 0
+							text-align right
 							a
 								color oscuro
+								font-weight 600
 								text-decoration none
 								&:hover
 									text-decoration underline
 						.submit
-							margin-top 22px
+							margin-top 22px !important
 							button
-								//background calipso
-								border 2px solid clarito
+								background clarito
+								border none
 								border-radius 2px
-								color oscuro
+								color azulAsiste
 								width 100%
 								span
 									font-family 'oswaldregular'
@@ -824,6 +832,7 @@ body
 							&:hover
 								background azulAsiste
 								button
+									background azulAsiste
 									span
 										color white
 			.accedeCuenta
@@ -831,12 +840,14 @@ body
 				border 1px solid clarito
 				//border-radius 4px
 				display inline-block
-				//height 300px
+				height 300px
 				//padding 1em
+				position relative
 				vertical-align top
 				width 48%
-				form
+				.formsAtenticacion
 					border none !important
+					padding 5% 15%
 					h1
 						border-bottom 1px solid clarito
 						display block
@@ -863,6 +874,7 @@ body
 								color oscuro
 								display block
 								font-size 13px
+								font-weight 600
 								text-align left
 							input
 								//border-radius 5px
@@ -872,14 +884,14 @@ body
 								//outline none
 								padding 5px
 								width 100%
-							margin-top 22px
+								//margin-top 22px
 								&:focus
 									background aliceblue
 						.submit
-							margin-top 18px
+							margin-top 35px
 							button
-								background white
-								border 2px solid colorao
+								background clarito
+								border none
 								border-radius 2	px
 								color colorao
 								width 100%
@@ -909,6 +921,7 @@ body
 				.nombreApellido
 					//border-bottom 1px solid naranjito
 					// border-top 1px solid naranjito
+					margin-bottom 10px
 					.apellido
 					.nombre
 						display inline-block
@@ -928,16 +941,18 @@ body
 							color oscuro
 							display block
 							text-align left
+					.nombre
+						margin-right 1%
 				.correo
 				.password
 					//border-bottom 1px solid naranjito
 					// border-top 1px solid naranjito
-					margin 25px 0
+					margin 5px 0
 					input
 						//border none
 						//box-sizing border-box
 						color #999
-						font-size 16px
+						//font-size 16px
 						//outline none
 						padding 5px
 						width 100%
@@ -948,7 +963,7 @@ body
 						color oscuro
 						font-size 13px
 						text-align left
-						width 28%
+						//width 28%
 					.condicionPass
 						color oscuro
 						display block
@@ -974,7 +989,12 @@ body
 						text-align right
 				.checkboxArriba
 					margin-top 30px
-				
+				.fechaNacimiento
+					h3
+						//font-family 'oswaldregular'
+						font-size 13px
+						margin 0
+						text-align left
 				.srSra
 					display none
 					text-align center
@@ -992,15 +1012,18 @@ body
 								font-size 13px
 								vertical-align middle
 			.submit
-				margin-top 20px
-				text-align center
+				margin 20px auto 
+				text-align right
+				width 90%
 				button
-					background naranjito
+					background rojoAsiste
 					border none
-					border-radius 5px
+					border-radius 2px
 					width 30%
 					span
 						color white
+						font-family 'oswaldregular'
+						font-weight 100
 						line-height 30px
 				.requerido
 					color red
@@ -1022,11 +1045,13 @@ body
 					background #fbfbfb
 					border 1px solid grisAzul
 					box-sizing border-box
-					padding 5px 10px
+					height 22px
+					padding 0 10px
 					text-align left
 					label
 					.checker
 						display inline-block
+						height 22px
 						vertical-align middle
 					label
 						font-size 13px
@@ -1034,9 +1059,12 @@ body
 						margin 0 5px 0 0
 						text-align left
 						//width 100%
+					.checker
+						line-height 22px
+						margin 0
 					.esEmpresa
 						display none
-						margin 5px 0
+						margin 0
 						padding 5px 0
 						label
 							display block
@@ -1052,19 +1080,19 @@ body
 					//border-bottom 1px solid naranjito
 					//border-top 1px solid naranjito
 					margin 5px 0
-					.nombreDireccion
 					.apellidoDireccion
+					.nombreDireccion
 						display inline-block
 						padding 5px 0
 						vertical-align middle
-						width 49%
+						width 49.5%
 						label
 							display block
 							font-size 13px
 							font-weight 600
 							text-align left
 						input
-							font-size 14px
+							//font-size 14px
 							padding 5px
 							width 100%
 				.esAliasDireccion
@@ -1079,8 +1107,8 @@ body
 				.esRegion
 				.esRutEmpresa
 				.esTelefono
-					margin 5px 0
-					padding 5px 0
+					margin 2px 0
+					padding 2px 0
 					label
 						display block
 						font-size 13px
@@ -1103,11 +1131,14 @@ body
 							background #fbfbfb
 							border none
 							box-sizing border-box
+							font-size 13px
 							margin 0 auto
 							outline none
 							width 100%
 							&:focus
 								background aliceblue
+							option
+								font-size 13px
 				.esAliasDireccion
 					float right
 					margin 5px 0
@@ -1131,6 +1162,9 @@ body
 							background aliceblue
 					span
 						display none
+				.esRutEmpresa
+					display none
+					margin 0
 				.infoAdicional
 					//border-bottom 1px solid naranjito
 					float left
@@ -4224,10 +4258,10 @@ table
 	input
 		background #eaeaea
 		cursor not-allowed
+		font-size 15px
 		font-weight 300
 	input
 	label
-		font-size 15px
 		text-align left
 		width 100%
 	label
@@ -4516,7 +4550,8 @@ td
 				border-radius 2px
 				color white
 				display block
-				font-size 13px
+				font-family 'oswaldregular'
+				font-size 15px
 				line-height 30px
 				margin 0
 				text-decoration none
@@ -4667,7 +4702,7 @@ td
 	.contenedorFecha
 		//border-bottom 1px solid naranjito
 		// border-top 1px solid naranjito
-		margin 0 auto
+		//margin 0 auto
 		width 70%
 		.selectorFecha
 			display inline-block
@@ -4683,12 +4718,12 @@ td
 					box-sizing border-box
 					color #999
 					font-size 13px
-					height 27px
+					//height 27px
 					left 0px
 					//opacity 0
 					outline 0
 					//position absolute
-					padding 5px
+					//padding 5px
 					text-align center
 					top 0px
 					width 100%
@@ -4697,6 +4732,7 @@ td
 					// 	color white
 					option
 						background white
+						box-sizing border-box
 						color oscuro
 				span
 					display none
@@ -4729,8 +4765,24 @@ td
 				width 15px
 	.checker
 		text-align right
-.checkboxArriba
-	margin-top 30px
+.checkboxIncribase
+	display inline-block
+	margin-top 15px
+	vertical-align top
+	width 48%
+	label
+		font-size 11px
+		font-weight 100
+		text-align left
+		width 91%
+	label
+	.checker
+		display inline-block
+		vertical-align top
+		span
+			input
+				height 15px
+				width 15px
 	
 .alertClica
 	color #999
@@ -5176,3 +5228,10 @@ hr
 				background colorao
 				span
 					color white
+
+.alto
+	height 80px !important
+
+.formDirecciones
+	.info-title
+		text-align center

@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {capture name=path}{l s='Your addresses'}{/capture}
-<div class="box">
+<div class="box formDirecciones">
 	<h1 class="page-subheading">{l s='Your addresses'}</h1>
 	<p class="info-title">
 		{if isset($id_address) && (isset($smarty.post.alias) || isset($address->alias))}
@@ -261,5 +261,6 @@
 <script>
 	$('input:checkbox').click(function(){
 	   $('.esEmpresa').toggleClass('activo');
+	   $(".activaEmpresa").toggleClass('alto')
 	});
 </script>
