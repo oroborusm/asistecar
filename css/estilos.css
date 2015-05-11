@@ -1180,8 +1180,6 @@ body .box .rodeaAddress {
   width: 80%;
 }
 body .box .rodeaAddress form {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
   font-size: 16px;
   margin: 0 auto;
   width: 80%;
@@ -1304,6 +1302,11 @@ body .box .rodeaAddress form .esTelefono {
   vertical-align: top;
   width: 49.5%;
 }
+body .box .rodeaAddress form .esPais {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+}
 body .box .rodeaAddress form .esPais .selector {
   width: 100% !important;
 }
@@ -1328,13 +1331,28 @@ body .box .rodeaAddress form .esPais .selector select option {
   font-size: 13px;
 }
 body .box .rodeaAddress form .esAliasDireccion {
-  float: right;
   margin: 5px 0;
-  overflow: hidden;
   padding: 5px 0;
-  width: 48%;
 }
-body .box .rodeaAddress form .esRegion select {
+body .box .rodeaAddress form .esAliasDireccion,
+body .box .rodeaAddress form .infoAdicional {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+}
+body .box .rodeaAddress form .esRegion {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+}
+body .box .rodeaAddress form .esRegion label {
+  margin-bottom: 1px;
+}
+body .box .rodeaAddress form .esRegion .selector {
+  height: 22px;
+  width: 100% !important;
+}
+body .box .rodeaAddress form .esRegion .selector select {
   background: #fbfbfb;
   border: none;
   -webkit-box-sizing: border-box;
@@ -1344,10 +1362,10 @@ body .box .rodeaAddress form .esRegion select {
   outline: none;
   width: 100%;
 }
-body .box .rodeaAddress form .esRegion select:focus {
+body .box .rodeaAddress form .esRegion .selector select:focus {
   background: #f0f8ff;
 }
-body .box .rodeaAddress form .esRegion span {
+body .box .rodeaAddress form .esRegion .selector span {
   display: none;
 }
 body .box .rodeaAddress form .esRutEmpresa {
@@ -1355,10 +1373,8 @@ body .box .rodeaAddress form .esRutEmpresa {
   margin: 0;
 }
 body .box .rodeaAddress form .infoAdicional {
-  float: left;
   margin: 5px 0;
   padding: 5px 0;
-  width: 48%;
 }
 body .box .rodeaAddress form .infoAdicional label {
   display: block;
@@ -1384,7 +1400,7 @@ body .box .rodeaAddress form .infoAdicional textarea:focus {
 }
 body .box .rodeaAddress form .submit2 {
   display: block;
-  margin-top: 130px;
+  margin-top: 10px;
   text-align: right;
   width: 100%;
 }
@@ -5903,6 +5919,12 @@ hr {
 }
 .alto {
   height: 80px !important;
+}
+.formDirecciones h1 {
+  margin-top: 0;
+}
+.formDirecciones p {
+  font-size: 13px;
 }
 .formDirecciones .info-title {
   text-align: center;

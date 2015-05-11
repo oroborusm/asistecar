@@ -41,7 +41,7 @@
 	<!-- <p class="required"{l s='Required field'}</p> -->
 		<!--h3 class="page-subheading">{if isset($id_address)}{l s='Your address'}{else}{l s='New address'}{/if}</h3-->
 	<div class="rodeaAddress">
-		<form action="{$link->getPageLink('address', true)|escape:'html':'UTF-8'}" method="post" class="std" id="add_address">
+		<form action="{$link->getPageLink('address', true)|escape:'html':'UTF-8'}" method="post" id="add_address">
 			{assign var="stateExist" value=false}
 			{assign var="postCodeExist" value=false}
 			{assign var="dniExist" value=false}
