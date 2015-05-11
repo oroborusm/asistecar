@@ -3027,6 +3027,7 @@ table tbody tr .cart_description .product-name {
   font-weight: 100;
 }
 table tbody tr .cart_product {
+  padding: 0 20px;
   width: 100px;
 }
 table tbody tr .cart_total span {
@@ -3124,10 +3125,6 @@ table tfoot .cart_total_voucher .price-discount {
   color: #f4714a;
   font-weight: 600;
   text-transform: uppercase;
-}
-table tfoot .cart_total_voucher .price-discount,
-table tfoot .cart_total_voucher .text-right {
-  display: inline-block;
 }
 .active {
   display: block;
@@ -3410,9 +3407,9 @@ table tfoot .cart_total_voucher .text-right {
   background: #ff4c00;
 }
 .menuManias > ul > li > ul {
-  border-bottom: 6px solid #ff4c00;
+  border-bottom: 6px solid #ecedef;
   display: none;
-  min-height: 280px;
+  min-height: 290px;
   left: 0;
   opacity: 1 !important;
   -ms-filter: none;
@@ -3429,11 +3426,13 @@ table tfoot .cart_total_voucher .text-right {
   z-index: 10;
 }
 .menuManias > ul > li > ul li {
+  border-right: 1px solid #ecedef;
   display: inline-block;
   font-size: 16px;
   list-style: none;
+  padding: 15px;
   vertical-align: top;
-  width: 150px;
+  width: 140px;
 }
 .menuManias > ul > li > ul li a {
   color: #ff4c00;
@@ -3449,6 +3448,7 @@ table tfoot .cart_total_voucher .text-right {
   padding: 0;
 }
 .menuManias > ul > li > ul li ul li {
+  border: none;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -3464,22 +3464,22 @@ table tfoot .cart_total_voucher .text-right {
   color: #ff4c00;
 }
 .maniaBackground1 > ul {
-  background: #fff url("../img/1.png");
+  background: #fff url("../img/asiste2.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 350px;
+  -moz-background-size: 350px;
+  background-size: 350px;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground2 > ul {
-  background: #fff url("../img/2.png");
+  background: #fff url("../img/asiste3.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 350px;
+  -moz-background-size: 350px;
+  background-size: 350px;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
@@ -3982,20 +3982,20 @@ table tfoot .cart_total_voucher .text-right {
   z-index: 0;
 }
 .listaProducto .listaProductoLi2 {
-  -webkit-border-radius: 9px;
-  border-radius: 9px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   display: inline-block;
   font-size: 18px;
   list-style: none;
-  margin: 0.3%;
+  margin: 2px 0;
   position: relative;
   text-align: center;
   vertical-align: top;
   width: 20%;
 }
 .listaProducto .listaProductoLi2:hover {
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  border: 1px solid #ecedef;
 }
 .listaProducto .listaProductoLi2:hover .añadeCarrituHome {
   opacity: 1;
@@ -4029,6 +4029,11 @@ table tfoot .cart_total_voucher .text-right {
   color: #434142;
   font-size: 14px;
   text-decoration: none;
+}
+.listaProducto .listaProductoLi2 .s_title_block span {
+  color: #0040a6;
+  font-size: 18px;
+  font-weight: 600;
 }
 .añadeCarrituHome {
   background: #0040a6;
@@ -5010,22 +5015,19 @@ table tfoot .cart_total_voucher .text-right {
 #sslsSiteSeal {
   width: 200px;
 }
-.accesorios .homeTab .main {
-  background: #eee;
+.accesorios {
+  margin-top: 20px;
 }
-.accesorios .homeTab .main div {
-  border-color: #434142;
+.accesorios .relacionados {
+  border-bottom: 4px solid #ecedef;
+  display: block;
 }
-.accesorios .homeTab .main div h3 {
-  line-height: 38px;
-}
-.accesorios .homeTab .main div h3:after {
-  content: '\e62d';
-  font-family: 'icos';
-  font-size: 27px;
-  color: #434142;
-  margin-left: 13px;
-  font-weight: 100;
+.accesorios .relacionados h3 {
+  color: #0040a6;
+  font-family: 'oswaldregular';
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
 }
 .adjuntos {
   display: inline-block;

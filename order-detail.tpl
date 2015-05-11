@@ -153,6 +153,7 @@
 			{if $order->total_discounts > 0}
 			<tr class="item">
 				<td colspan="{if $return_allowed}2{else}1{/if}">
+				<!-- <td colspan="2"> -->
 					<strong>{l s='Total vouchers'}</strong>
 				</td>
 				<td colspan="{if $order->hasProductReturned()}5{else}4{/if}">

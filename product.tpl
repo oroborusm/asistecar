@@ -598,17 +598,36 @@
 			</div>
 		</section>
 
+		{if isset($attachments) && $attachments}
+		<!--Download -->
+		<section class="page-product-box adjuntos">
+			<h3 class="page-product-heading">{l s='Download'}</h3>
+			{foreach from=$attachments item=attachment name=attachements}
+				{if $smarty.foreach.attachements.iteration %3 == 1}<div class="row">{/if}
+					<div class="col-lg-4">
+						<h4><a href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">{$attachment.name|escape:'html':'UTF-8'}</a></h4>
+						<p class="text-muted">{$attachment.description|escape:'html':'UTF-8'}</p>
+						<!-- <a class="btn btn-default btn-block" href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">
+							<i class="icon-download"></i>
+							{l s="Download"} ({Tools::formatBytes($attachment.file_size, 2)})
+						</a> -->
+						<hr />
+					</div>
+				{if $smarty.foreach.attachements.iteration %3 == 0 || $smarty.foreach.attachements.last}</div>{/if}
+			{/foreach}
+		</section>
+		<!--end Download -->
+		{/if}
+
+
 
 
 		{if isset($accessories) && $accessories}
 
 			<!--Accessories -->
 			<section class="page-product-box accesorios">
-				<div class="homeTab one">
-
-					<div class="main">
-						<div><h3 class="page-product-heading">{l s='Accessories'}</h3></div>
-					</div>
+				<div class="relacionados">
+					<h3>{l s='Accessories'}</h3>
 
 				</div>
 				<div class="block_content">
@@ -656,29 +675,12 @@
 			</section>
 			<!--end Accessories -->
 		{/if}
+
+
 		{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}
 		<!-- description & features -->
 		{if (isset($product) && $product->description) || (isset($features) && $features) || (isset($accessories) && $accessories) || (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($attachments) && $attachments) || isset($product) && $product->customizable}
-			{if isset($attachments) && $attachments}
-			<!--Download -->
-			<section class="page-product-box adjuntos">
-				<h3 class="page-product-heading">{l s='Download'}</h3>
-				{foreach from=$attachments item=attachment name=attachements}
-					{if $smarty.foreach.attachements.iteration %3 == 1}<div class="row">{/if}
-						<div class="col-lg-4">
-							<h4><a href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">{$attachment.name|escape:'html':'UTF-8'}</a></h4>
-							<p class="text-muted">{$attachment.description|escape:'html':'UTF-8'}</p>
-							<!-- <a class="btn btn-default btn-block" href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">
-								<i class="icon-download"></i>
-								{l s="Download"} ({Tools::formatBytes($attachment.file_size, 2)})
-							</a> -->
-							<hr />
-						</div>
-					{if $smarty.foreach.attachements.iteration %3 == 0 || $smarty.foreach.attachements.last}</div>{/if}
-				{/foreach}
-			</section>
-			<!--end Download -->
-			{/if}
+			<!-- aca dowloads -->
 			{if isset($product) && $product->customizable}
 			<!--Customization -->
 			<section class="page-product-box">

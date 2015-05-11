@@ -171,7 +171,7 @@
 										{else}
 										<tr class="cart_total_price descuento">
 											{if $voucherAllowed}
-												<td colspan="1" id="cart_voucher" class="cart_voucher">
+												<td colspan="2" id="cart_voucher" class="cart_voucher">
 													<div id="cart_voucher" class="table_block">
 														{if isset($errors_discount) && $errors_discount}
 															<ul class="alert alert-danger">
