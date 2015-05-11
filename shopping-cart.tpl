@@ -103,8 +103,8 @@
 					{if $use_taxes}
 						{if $priceDisplay}
 							<tr class="cart_total_price">
-								<!-- <td rowspan="{3+$total_discounts_num+$use_show_taxes+$total_wrapping_taxes_num}" colspan="3" id="cart_voucher" class="cart_voucher"> -->
-								<td rowspan="1" colspan="3" id="cart_voucher" class="cart_voucher">
+								<td rowspan="{3+$total_discounts_num+$use_show_taxes+$total_wrapping_taxes_num}" colspan="3" id="cart_voucher" class="cart_voucher">
+								<!-- <td rowspan="1" colspan="3" id="cart_voucher" class="cart_voucher"> -->
 									{if $voucherAllowed}
 										{if isset($errors_discount) && $errors_discount}
 											<ul class="alert alert-danger">
@@ -139,7 +139,7 @@
 						{else}
 							<tr class="cart_total_price">
 								<!-- <td rowspan="{3+$total_discounts_num+$use_show_taxes+$total_wrapping_taxes_num}" colspan="1" id="cart_voucher" class="cart_voucher"> -->
-								<td rowspan="1" colspan="1" id="cart_voucher" class="cart_voucher">
+								<td rowspan="1" colspan="2" id="cart_voucher" class="cart_voucher">
 									{if $voucherAllowed}
 										{if isset($errors_discount) && $errors_discount}
 											<ul class="alert alert-danger">
@@ -167,7 +167,7 @@
 									{/if}
 								</td>
 								<!-- <td colspan="{$col_span_subtotal}" class="text-right"> -->
-								<td colspan="3" class="text-right conIva">
+								<td colspan="2" class="text-right conIva">
 									{if $display_tax_label}{l s='Total products (tax incl.)'}{else}{l s='Total products'}{/if}</td>
 								<td colspan="3" class="price" id="total_product">{displayPrice price=$total_products_wt}</td>
 							</tr>
@@ -281,7 +281,7 @@
 					{/if}
 					<tr class="cart_total_voucher" {if $total_discounts == 0}style="display:none"{/if}>
 						<!-- <td colspan="{$col_span_subtotal}" class="text-right"> -->
-						<td colspan="1" class="text-right">
+						<td colspan="4">
 							{if $display_tax_label}
 								{if $use_taxes && $priceDisplay == 0}
 									{l s='Total vouchers (tax incl.):'}
@@ -292,7 +292,7 @@
 								{l s='Total vouchers'}
 							{/if}
 						</td>
-						<td colspan="2" class="price-discount price" id="total_discount">
+						<td colspan="3" class="price-discount price" id="total_discount">
 							{if $use_taxes && $priceDisplay == 0}
 								{assign var='total_discounts_negative' value=$total_discounts * -1}
 							{else}
