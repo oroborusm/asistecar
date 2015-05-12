@@ -42,7 +42,7 @@
         </p>
     {else}
         <form action="{$link->getModuleLink('bankwire', 'validation', [], true)|escape:'html':'UTF-8'}" method="post">
-            <div class="box cheque-box">
+            <div class="box cheque-box pagar">
                 <h3 class="page-subheading">
                     {l s='Bank-wire payment.' mod='bankwire'}
                 </h3>
@@ -79,7 +79,8 @@
                 </p>
                 <p>
                     - {l s='Bank wire account information will be displayed on the next page.' mod='bankwire'}
-                    <br />
+                </p>
+                <p>
                     - {l s='Please confirm your order by clicking "I confirm my order."' mod='bankwire'}.
                 </p>
             </div><!-- .cheque-box -->

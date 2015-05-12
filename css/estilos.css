@@ -5933,6 +5933,47 @@ hr {
 .formDirecciones .info-title {
   text-align: center;
 }
+.carritoHover .bloc_cart_voucher .name {
+  display: none;
+}
+.carritoHover .bloc_cart_voucher .price {
+  padding-left: 5%;
+  text-align: left;
+  width: 50%;
+}
+.carritoHover .bloc_cart_voucher .price,
+.carritoHover .bloc_cart_voucher .quantity {
+  font-family: 'oswaldregular';
+  font-size: 15px;
+  font-weight: 100;
+}
+.carritoHover .bloc_cart_voucher .quantity {
+  text-align: right;
+  width: 50%;
+}
+.pagar {
+  margin: 0 auto 80px !important;
+  width: 60% !important;
+}
+.pagar p {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: justify;
+}
+.pagar .cheque-indent {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.formCarritoFinalCompra .box {
+  font-size: 13px;
+  width: 60%;
+}
+.formCarritoFinalCompra .box p {
+  margin: 7px 0;
+}
+.formCarritoFinalCompra .box p .strong {
+  font-size: 16px;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;

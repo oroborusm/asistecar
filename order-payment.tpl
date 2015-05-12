@@ -204,6 +204,8 @@
 														{/if}
 													</div>
 												</td>
+											{else}
+												<td colspan="1"></td>
 											{/if}
 											<!-- <td colspan="{if !$voucherAllowed}3{else}2{/if}" class="text-right total_price_container"> -->
 											<td colspan="3" class="textoTotal">
