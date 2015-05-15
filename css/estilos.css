@@ -2563,6 +2563,28 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescrip
   font-size: 0;
   width: 50%;
 }
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion .editable {
+  padding-left: 15px;
+  position: relative;
+  width: 45px;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion .editable:before {
+  background: #0040a6;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  content: 'N';
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  font-weight: 600;
+  height: 13px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  width: 13px;
+}
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion label,
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .referencia label,
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .condicion span,
@@ -2608,6 +2630,12 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescr
   list-style: none;
   margin-bottom: 5px;
   width: 100px;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li:hover {
+  background: #434142;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li:hover a {
+  color: #fff;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li a {
   color: #aeadb3;
@@ -3363,6 +3391,7 @@ table tfoot .cart_total_voucher .price-discount {
   width: 100%;
 }
 .menuManias > ul {
+  border-left: 1px solid #5b5b5f;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -3370,6 +3399,7 @@ table tfoot .cart_total_voucher .price-discount {
   width: 950px;
 }
 .menuManias > ul > li {
+  border-right: 1px solid #5b5b5f;
   display: inline-block;
   list-style: none;
   font-size: 0;
@@ -3390,7 +3420,7 @@ table tfoot .cart_total_voucher .price-discount {
   color: #fff;
   display: block;
   font-family: 'oswaldbold';
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 30px;
   padding: 0 20px 0 10px;
@@ -5973,6 +6003,18 @@ hr {
 }
 .formCarritoFinalCompra .box p .strong {
   font-size: 16px;
+}
+.contact-form-box fieldset .contenedor {
+  border: 1px solid #ecedef;
+}
+.contact-form-box fieldset .contenedor .formularioUno {
+  background: #5b5b5f;
+}
+.contact-form-box fieldset .contenedor .formularioUno,
+.contact-form-box fieldset .contenedor .mensaje {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
 }
 @-moz-keyframes anim-open {
   0% {

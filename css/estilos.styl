@@ -2298,6 +2298,25 @@ body
 						.condicion
 							font-size 0
 							width 50%
+							.editable
+								padding-left 15px
+								position relative
+								width 45px
+								&:before
+									background azulAsiste
+									border-radius 50%
+									color white
+									content 'N'
+									display block
+									font-family 'Open Sans'
+									font-size 10px
+									font-weight 600
+									height 13px
+									left 0
+									position absolute
+									text-align center
+									top 2px
+									width 13px
 						.condicion
 						.referencia
 							label
@@ -2338,6 +2357,10 @@ body
 							list-style none
 							margin-bottom 5px
 							width 100px
+							&:hover
+								background oscuro
+								a
+									color white
 							a
 								color rgb(174, 173, 179)
 								display block
@@ -3016,12 +3039,14 @@ table
 	//position relative
 	width 100%
 .menuManias > ul
+	border-left 1px solid otroGris
 	margin 0 auto
 	padding 0
 	position relative
 	text-align left
 	width 950px
 .menuManias > ul > li
+	border-right 1px solid otroGris
 	display inline-block
 	list-style none
 	font-size 0
@@ -3040,7 +3065,7 @@ table
 	color white
 	display block
 	font-family 'oswaldbold'
-	font-size 16px
+	font-size 15px
 	font-weight 600
 	line-height 30px
 	padding 0 20px 0 10px
@@ -5300,3 +5325,15 @@ hr
 			margin 7px 0
 			.strong
 				font-size 16px
+
+.contact-form-box
+	fieldset
+		.contenedor
+			border 1px solid clarito
+			.formularioUno
+				background otroGris
+			.formularioUno
+			.mensaje
+				display inline-block
+				vertical-align top
+				width 49%
