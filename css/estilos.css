@@ -3412,8 +3412,8 @@ table tfoot .cart_total_voucher .price-discount {
   min-height: 290px;
   left: 0;
   opacity: 1 !important;
-  -ms-filter: none;
-  filter: none;
+  -ms-filter: none !important;
+  filter: none !important;
   padding: 10px 30% 10px 5%;
   position: absolute;
   text-align: left;
@@ -5973,6 +5973,12 @@ hr {
 }
 .formCarritoFinalCompra .box p .strong {
   font-size: 16px;
+}
+.contact-form-box fieldset .contenedor .formularioUno,
+.contact-form-box fieldset .contenedor .mensaje {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
 }
 @-moz-keyframes anim-open {
   0% {
