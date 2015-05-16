@@ -65,6 +65,7 @@ label {
 }
 select {
   border: 1px solid #a1a5ad !important;
+  font-size: 13px;
   height: 22px;
 }
 textarea {
@@ -6004,14 +6005,42 @@ hr {
 .formCarritoFinalCompra .box p .strong {
   font-size: 16px;
 }
-.contact-form-box fieldset .contenedor {
+.contact-form-box fieldset .contenedorForm {
   border: 1px solid #ecedef;
 }
-.contact-form-box fieldset .contenedor .formularioUno {
+.contact-form-box fieldset .contenedorForm .formularioUno {
   background: #5b5b5f;
+  text-align: left;
 }
-.contact-form-box fieldset .contenedor .formularioUno,
-.contact-form-box fieldset .contenedor .mensaje {
+.contact-form-box fieldset .contenedorForm .formularioUno .form-group {
+  padding: 0 5%;
+  width: 90%;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .form-group label {
+  font-family: 'oswaldregular';
+  font-weight: 100;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .form-group input {
+  width: 100%;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .form-group .uploader span {
+  display: none;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .selector1 label {
+  display: block;
+  width: 100%;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector {
+  width: 100% !important;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector span {
+  display: none;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector select {
+  width: 100%;
+}
+.contact-form-box fieldset .contenedorForm .formularioUno,
+.contact-form-box fieldset .contenedorForm .mensaje {
   display: inline-block;
   vertical-align: top;
   width: 49%;

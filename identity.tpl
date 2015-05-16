@@ -90,7 +90,7 @@
                             {l s='Date of Birth'}
                         </label>
                         <div class="contenedorFecha" style="width:100%">
-                            <div class="selectorFecha" style="width:32.8%">
+                            <div class="selectorFecha" style="width:32%; margin-right:1%;">
                                 <div class="selector">
                                     <select name="days" id="days" class="form-control">
                                         <option value="">-</option>
@@ -101,7 +101,7 @@
                                 </div>
 
                             </div>
-                            <div class="selectorFecha" style="width:32.8%">
+                            <div class="selectorFecha" style="width:32%; margin-right:1%;">
                                 <div class="selector">
                                     <select id="months" name="months" class="form-control">
                                         <option value="">-</option>
@@ -111,7 +111,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="selectorFecha" style="width:32.8%">
+                            <div class="selectorFecha" style="width:32%">
                                 <div class="selector">
                                     <select id="years" name="years" class="form-control">
                                         <option value="">-</option>

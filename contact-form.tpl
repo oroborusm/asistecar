@@ -55,7 +55,7 @@
     	<form action="{$request_uri|escape:'html':'UTF-8'}" method="post" class="contact-form-box" enctype="multipart/form-data">
     		<fieldset>
             <h3 class="page-subheading">{l s='send a message'}</h3>
-            <div class="contenedor">
+            <div class="contenedorForm">
                 <div class="formularioUno">
                     <div class="form-group selector1">
                         <label for="id_contact">{l s='Subject Heading'}</label>
