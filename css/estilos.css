@@ -3445,7 +3445,7 @@ table tfoot .cart_total_voucher .price-discount {
   opacity: 1 !important;
   -ms-filter: none;
   filter: none;
-  padding: 10px 30% 10px 5%;
+  padding: 10px 30% 10px 6%;
   position: absolute;
   text-align: left;
   -webkit-transition: 0.3s;
@@ -3453,7 +3453,7 @@ table tfoot .cart_total_voucher .price-discount {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  width: 65%;
+  width: 38%;
   z-index: 10;
 }
 .menuManias > ul > li > ul li {
@@ -6005,45 +6005,105 @@ hr {
 .formCarritoFinalCompra .box p .strong {
   font-size: 16px;
 }
-.contact-form-box fieldset .contenedorForm {
-  border: 1px solid #ecedef;
+.contacto {
+  margin-top: 10px;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno {
-  background: #5b5b5f;
+.contacto fieldset .contenedorForm {
+  border: 1px solid #ecedef;
+  padding: 5px 5%;
+}
+.contacto fieldset .contenedorForm .desc_contact {
+  display: block;
+  font-size: 10px;
+}
+.contacto fieldset .contenedorForm .selector1 {
+  margin-top: 10px;
   text-align: left;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno .form-group {
-  padding: 0 5%;
-  width: 90%;
-}
-.contact-form-box fieldset .contenedorForm .formularioUno .form-group label {
+.contacto fieldset .contenedorForm .selector1 label {
   font-family: 'oswaldregular';
   font-weight: 100;
-}
-.contact-form-box fieldset .contenedorForm .formularioUno .form-group input {
-  width: 100%;
-}
-.contact-form-box fieldset .contenedorForm .formularioUno .form-group .uploader span {
-  display: none;
-}
-.contact-form-box fieldset .contenedorForm .formularioUno .selector1 label {
   display: block;
   width: 100%;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector {
+.contacto fieldset .contenedorForm .selector1 .selector {
   width: 100% !important;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector span {
+.contacto fieldset .contenedorForm .selector1 .selector span {
   display: none;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno .selector1 .selector select {
+.contacto fieldset .contenedorForm .selector1 .selector select {
   width: 100%;
 }
-.contact-form-box fieldset .contenedorForm .formularioUno,
-.contact-form-box fieldset .contenedorForm .mensaje {
+.contacto fieldset .contenedorForm .formularioUno {
+  text-align: left;
+}
+.contacto fieldset .contenedorForm .formularioUno .form-group {
+  margin: 5px 0;
+  width: 90%;
+}
+.contacto fieldset .contenedorForm .formularioUno .form-group label {
+  font-family: 'oswaldregular';
+  font-weight: 100;
+}
+.contacto fieldset .contenedorForm .formularioUno .form-group input {
+  width: 100%;
+}
+.contacto fieldset .contenedorForm .formularioUno .form-group .uploader span {
+  display: none;
+}
+.contacto fieldset .contenedorForm .formularioUno .selector1 label {
+  display: block;
+  width: 100%;
+}
+.contacto fieldset .contenedorForm .formularioUno .selector1 .selector {
+  width: 100% !important;
+}
+.contacto fieldset .contenedorForm .formularioUno .selector1 .selector span {
+  display: none;
+}
+.contacto fieldset .contenedorForm .formularioUno .selector1 .selector select {
+  width: 100%;
+}
+.contacto fieldset .contenedorForm .formularioUno,
+.contacto fieldset .contenedorForm .mensaje {
   display: inline-block;
   vertical-align: top;
   width: 49%;
+}
+.contacto fieldset .contenedorForm .mensaje .form-group {
+  margin: 5px auto 0;
+}
+.contacto fieldset .contenedorForm .mensaje .form-group label {
+  display: block;
+  font-family: 'oswaldregular';
+  font-weight: 100;
+  margin: 2px 0;
+  text-align: left;
+}
+.contacto fieldset .contenedorForm .mensaje .form-group textarea {
+  height: 130px;
+  width: 100%;
+}
+.contacto fieldset .submit {
+  margin-top: 10px;
+  text-align: right;
+}
+.contacto fieldset .submit button {
+  background: #ecedef;
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+}
+.contacto fieldset .submit button span {
+  font-family: 'oswaldregular';
+}
+.contacto fieldset .submit button:hover {
+  background: #ff4c00;
+  font-weight: 100;
+}
+.contacto fieldset .submit button:hover span {
+  color: #fff;
 }
 @-moz-keyframes anim-open {
   0% {

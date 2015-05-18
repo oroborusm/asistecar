@@ -52,35 +52,35 @@
     	</ul>
     {else}
     	{include file="$tpl_dir./errors.tpl"}
-    	<form action="{$request_uri|escape:'html':'UTF-8'}" method="post" class="contact-form-box" enctype="multipart/form-data">
+    	<form action="{$request_uri|escape:'html':'UTF-8'}" method="post" class="contact-form-box contacto" enctype="multipart/form-data">
     		<fieldset>
-            <h3 class="page-subheading">{l s='send a message'}</h3>
+            <!-- <h3 class="page-subheading">{l s='send a message'}</h3> -->
             <div class="contenedorForm">
-                <div class="formularioUno">
-                    <div class="form-group selector1">
-                        <label for="id_contact">{l s='Subject Heading'}</label>
-                    {if isset($customerThread.id_contact)}
-                            {foreach from=$contacts item=contact}
-                                {if $contact.id_contact == $customerThread.id_contact}
-                                    <input type="text" class="form-control" id="contact_name" name="contact_name" value="{$contact.name|escape:'html':'UTF-8'}" readonly="readonly" />
-                                    <input type="hidden" name="id_contact" value="{$contact.id_contact}" />
-                                {/if}
-                            {/foreach}
-                    {else}
-                        <select id="id_contact" class="form-control" name="id_contact">
-                            <option value="0">{l s='-- Choose --'}</option>
-                            {foreach from=$contacts item=contact}
-                                <option value="{$contact.id_contact|intval}" {if isset($smarty.request.id_contact) && $smarty.request.id_contact == $contact.id_contact}selected="selected"{/if}>{$contact.name|escape:'html':'UTF-8'}</option>
-                            {/foreach}
-                        </select>
-                    </div>
-                        <p id="desc_contact0" class="desc_contact">&nbsp;</p>
+                <div class="form-group selector1">
+                    <label for="id_contact">{l s='Subject Heading'}</label>
+                {if isset($customerThread.id_contact)}
                         {foreach from=$contacts item=contact}
-                            <p id="desc_contact{$contact.id_contact|intval}" class="desc_contact contact-title" style="display:none;">
-                                <i class="icon-comment-alt"></i>{$contact.description|escape:'html':'UTF-8'}
-                            </p>
+                            {if $contact.id_contact == $customerThread.id_contact}
+                                <input type="text" class="form-control" id="contact_name" name="contact_name" value="{$contact.name|escape:'html':'UTF-8'}" readonly="readonly" />
+                                <input type="hidden" name="id_contact" value="{$contact.id_contact}" />
+                            {/if}
                         {/foreach}
-                    {/if}
+                {else}
+                    <select id="id_contact" class="form-control" name="id_contact">
+                        <option value="0">{l s='-- Choose --'}</option>
+                        {foreach from=$contacts item=contact}
+                            <option value="{$contact.id_contact|intval}" {if isset($smarty.request.id_contact) && $smarty.request.id_contact == $contact.id_contact}selected="selected"{/if}>{$contact.name|escape:'html':'UTF-8'}</option>
+                        {/foreach}
+                    </select>
+                </div>
+                    <p id="desc_contact0" class="desc_contact">&nbsp;</p>
+                    {foreach from=$contacts item=contact}
+                        <p id="desc_contact{$contact.id_contact|intval}" class="desc_contact contact-title" style="display:none;">
+                            <i class="icon-comment-alt"></i>{$contact.description|escape:'html':'UTF-8'}
+                        </p>
+                    {/foreach}
+                {/if}
+                <div class="formularioUno">
                     <p class="form-group">
                         <label for="email">{l s='Email address'}</label>
                         {if isset($customerThread.email)}

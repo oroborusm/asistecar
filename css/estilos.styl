@@ -3086,11 +3086,11 @@ table
 	min-height 290px
 	left 0
 	opacity 1 !important
-	padding 10px 30% 10px 5%
+	padding 10px 30% 10px 6%
 	position absolute
 	text-align left
 	transition .3s
-	width 65%
+	width 38%
 	z-index 10
 	li
 		//border-right 1px solid clarito
@@ -5326,15 +5326,37 @@ hr
 			margin 7px 0
 			.strong
 				font-size 16px
-.contact-form-box
+.contacto
+	margin-top 10px
 	fieldset
 		.contenedorForm
 			border 1px solid clarito
+			padding 5px 5%
+			.desc_contact
+				display block
+				font-size 10px
+				//margin 0 auto
+				//width 90%
+			.selector1
+				margin-top 10px
+				text-align left
+				label
+					font-family 'oswaldregular'
+					font-weight 100
+					display block
+					width 100%
+				.selector
+					width 100% !important
+					span
+						display none
+					select
+						width 100%
 			.formularioUno
-				background otroGris
+				//background otroGris
+				//height 250px
 				text-align left
 				.form-group
-					padding 0 5%
+					margin 5px 0
 					width 90%
 					label
 						font-family 'oswaldregular'
@@ -5359,3 +5381,31 @@ hr
 				display inline-block
 				vertical-align top
 				width 49%
+			.mensaje
+				.form-group
+					margin 5px auto 0
+					label
+						display block
+						font-family 'oswaldregular'
+						font-weight 100
+						margin 2px 0
+						text-align left
+					textarea
+						height 130px
+						width 100%
+		.submit
+			margin-top 10px
+			text-align right
+			button
+				background clarito
+				border none
+				padding 5px 25px
+				text-align center
+				span
+					font-family 'oswaldregular'
+				&:hover
+					background rojoAsiste
+					span
+						color white
+					font-weight 100
+				
