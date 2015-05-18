@@ -86,12 +86,12 @@ verdeClarito = #71b238
 
 
 @font-face {
-	font-family: 'mania';
-	src:url('../font/mania.eot?-4sz0s6');
-	src:url('../font/mania.eot?#iefix-4sz0s6') format('embedded-opentype'),
-		url('../font/mania.woff?-4sz0s6') format('woff'),
-		url('../font/mania.ttf?-4sz0s6') format('truetype'),
-		url('../font/mania.svg?-4sz0s6#icomoon') format('svg');
+	font-family: 'manias';
+	src:url('../font/manias.eot?-4sz0s6');
+	src:url('../font/manias.eot?#iefix-4sz0s6') format('embedded-opentype'),
+		url('../font/manias.woff?-4sz0s6') format('woff'),
+		url('../font/manias.ttf?-4sz0s6') format('truetype'),
+		url('../font/manias.svg?-4sz0s6#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -474,7 +474,7 @@ body
 							color white
 							content "\e601"
 							display block
-							font-family 'mania'
+							font-family 'manias'
 							font-size 30px
 							font-weight 100
 							left 0
@@ -3106,12 +3106,24 @@ table
 			display block
 			//font-family 'oswaldregular'
 			font-size 15px
-			margin-bottom 10px
+			font-style italic
+			margin-bottom 7px
+			position relative
 			text-decoration none
 			text-transform uppercase
 			width 100%
 			&:hover
 				color rojoAsiste
+				&:after
+					content '\e607'
+					font-family 'manias'
+					font-size 15px
+					font-style normal
+					line-height 22px
+					margin-left 10px
+					position absolute
+					//right 5px
+				
 		ul
 			color #aeadb3
 			display block !important
@@ -3131,6 +3143,8 @@ table
 					text-transform capitalize
 					&:hover
 						color rojoAsiste
+					&:after
+						content ''
 
 .maniaBackground1 >	ul
 		//background #fff url('../img/1.png')
