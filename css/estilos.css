@@ -3507,7 +3507,7 @@ table tfoot .cart_total_voucher .price-discount {
 .menuManias > ul > li > ul li ul li a:hover {
   color: #ff4c00;
 }
-.menuManias > ul > li > ul li ul li a:after {
+.menuManias > ul > li > ul li ul li a:hover:after {
   content: '';
 }
 .maniaBackground1 > ul {
