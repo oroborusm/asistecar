@@ -35,7 +35,7 @@
         <div class="listaDireccion">
         {foreach from=$multipleAddresses item=address name=myLoop}
             <div class="contenedorListaDireccion">
-                <ul class="{if $smarty.foreach.myLoop.last}last_item{elseif $smarty.foreach.myLoop.first}first_item{/if}{if $smarty.foreach.myLoop.index % 2} alternate_item{else} item{/if} box">
+                <ul class="{if $smarty.foreach.myLoop.last}last_item{elseif $smarty.foreach.myLoop.first}first_item{/if}{if $smarty.foreach.myLoop.index % 2} alternate_item{else} item{/if}">
                     <li><h3 class="page-subheading">{$address.object.alias}</h3></li>
                     {foreach from=$address.ordered name=adr_loop item=pattern}
                         {assign var=addressKey value=" "|explode:$pattern}

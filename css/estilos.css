@@ -1660,10 +1660,10 @@ body .direcciones .addresses .tituloDirecciones {
   text-transform: uppercase;
 }
 body .direcciones .agregarNueva {
-  background: #f8b302;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  line-height: 60px;
+  background: #0040a6;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 30px;
   margin: 30px auto;
   text-align: center;
   width: 300px;
@@ -1672,7 +1672,11 @@ body .direcciones .agregarNueva a {
   text-decoration: none;
 }
 body .direcciones .agregarNueva a span {
-  color: #ff4c00;
+  color: #fff;
+  font-family: 'oswaldregular';
+}
+body .direcciones .agregarNueva:hover {
+  background: #a1a5ad;
 }
 body .direcciones .volver {
   margin: 0;
@@ -2033,72 +2037,99 @@ body .micuenta h1 {
 body .micuenta .info-account {
   text-align: center;
 }
+body .micuenta .rodeaListaDirecciones {
+  margin-bottom: 80px;
+}
+body .micuenta .rodeaListaDirecciones .listaDirecciones {
+  width: 49%;
+}
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li {
-  border: 1px solid #999;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  display: inline-block;
   font-size: 0;
   list-style: none;
-  margin: 16px 0 0 0;
-  width: 49%;
+  margin: 5px 0;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a {
-  background: #ecedef;
+  -webkit-border-radius: 35px 2px 2px 35px;
+  border-radius: 35px 2px 2px 35px;
   display: block;
   position: relative;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
 }
-body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a:hover {
-  background: #434142;
-}
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a:hover span {
-  color: #ecedef;
+  color: #0040a6;
+  text-decoration: underline;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a span {
   color: #434142;
   font-size: 18px;
   line-height: 40px;
+  margin-left: 50px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-ban-circle {
+  background: #ecedef;
+  border: 2px solid #0040a6;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  width: 35px;
+}
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-ban-circle:before {
-  border-right: 1px solid #999;
-  color: #f4714a;
-  content: '\e6f5';
+  color: #0040a6;
+  content: '\e631';
   display: block;
   font-family: 'icos';
   font-size: 18px;
   height: 100%;
   left: 0;
   line-height: 40px;
+  width: 35px;
+}
+body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-building {
+  background: #ecedef;
+  border: 2px solid #0040a6;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  height: 35px;
   position: absolute;
+  text-align: center;
   width: 35px;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-building:before {
-  border-right: 1px solid #999;
-  color: #f4714a;
-  content: '\e603';
+  color: #0040a6;
+  content: '\e642';
   display: block;
   font-family: 'icos';
   font-size: 18px;
   height: 100%;
   left: 0;
   line-height: 40px;
+  width: 35px;
+}
+body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-list-ol {
+  background: #ecedef;
+  border: 2px solid #0040a6;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  height: 35px;
   position: absolute;
+  text-align: center;
   width: 35px;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-list-ol:before {
-  border-right: 1px solid #999;
-  color: #f4714a;
+  color: #0040a6;
   content: '\e6b6';
   display: block;
   font-family: 'icos';
@@ -2106,12 +2137,20 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-list-ol:be
   height: 100%;
   left: 0;
   line-height: 40px;
+  width: 35px;
+}
+body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-user {
+  background: #ecedef;
+  border: 2px solid #0040a6;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  height: 35px;
   position: absolute;
+  text-align: center;
   width: 35px;
 }
 body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-user:before {
-  border-right: 1px solid #999;
-  color: #f4714a;
+  color: #0040a6;
   content: '\e670';
   display: block;
   font-family: 'icos';
@@ -2119,57 +2158,70 @@ body .micuenta .rodeaListaDirecciones .listaDirecciones ul li a .icon-user:befor
   height: 100%;
   left: 0;
   line-height: 40px;
-  position: absolute;
   width: 35px;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo {
-  margin-top: 20px;
+  margin: 0;
+  width: 49%;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul {
   margin: 0;
   padding: 0;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li {
-  border: 1px solid #999;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  display: inline-block;
   list-style: none;
   margin: 5px 0;
-  width: 49%;
+  width: 100%;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a {
-  background: #ecedef;
   color: #434142;
   display: block;
   line-height: 40px;
   position: relative;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a:hover {
-  background: #434142;
-  color: #ecedef;
+  text-decoration: underline;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a:hover span {
-  color: #ecedef;
+  color: #0040a6;
 }
-body .micuenta .rodeaListaDirecciones .listaregalo ul li a:before {
-  border-right: 1px solid #999;
-  color: #f4714a;
-  content: '\e6f5';
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-barcode:before {
+  content: '\e631';
+}
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-barcode,
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-heart {
+  background: #ecedef;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  border: 2px solid #0040a6;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  width: 35px;
+}
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-barcode:before,
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-heart:before {
+  color: #0040a6;
   display: block;
   font-family: 'icos';
   font-size: 18px;
-  height: 100%;
+  height: 35px;
   left: 0;
   line-height: 40px;
   position: absolute;
   width: 35px;
 }
+body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-heart:before {
+  content: '\e6f5';
+}
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a span {
   color: #434142;
   font-size: 18px;
+  margin-left: 50px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2581,6 +2633,7 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescrip
   font-weight: 600;
   height: 13px;
   left: 0;
+  line-height: 13px;
   position: absolute;
   text-align: center;
   top: 2px;
@@ -3979,6 +4032,13 @@ table tfoot .cart_total_voucher .price-discount {
   -ms-transition: 0.5s;
   transition: 0.5s;
 }
+.listaProducto .listaProductoLi .contenedorPopular .right-block .precios .ivaInclude {
+  color: #434142;
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+}
 .listaProducto .listaProductoLi .contenedorPopular .right-block .precios .precioAnterior {
   font-size: 11px;
   text-decoration: line-through;
@@ -3986,6 +4046,7 @@ table tfoot .cart_total_voucher .price-discount {
 .listaProducto .listaProductoLi .contenedorPopular .right-block .precios .precio {
   font-size: 18px;
   margin: 0;
+  position: relative;
 }
 .listaProducto .listaProductoLi .contenedorPopular .right-block .wishlist {
   background: #ec7004;
@@ -5912,14 +5973,29 @@ hr {
 .contenedorHistoria table {
   margin: 18px auto;
 }
+.contenedorHistoria table tbody tr .footable-first-column a {
+  color: #0040a6;
+  text-decoration: none;
+}
+.contenedorHistoria table tbody tr .footable-first-column a:hover {
+  text-decoration: underline;
+}
 .cuadroComentario h1 {
   border-bottom: 1px solid #ecedef;
+}
+.cuadroComentario form .table-responsive table tfoot tr td {
+  padding: 0 1.5%;
+  text-align: right;
 }
 .cuadroComentario p {
   font-size: 15px;
 }
+.cuadroComentario .adresses_bloc {
+  display: none;
+}
 .cuadroComentario .box-small {
-  width: 100%;
+  padding: 20px 5%;
+  width: 90%;
 }
 .cuadroComentario .box-small form {
   height: 29px;
@@ -5947,7 +6023,26 @@ hr {
   line-height: 29px;
 }
 .cuadroComentario .info-order {
+  padding: 20px 5%;
+  width: 90%;
+}
+.cuadroComentario .std {
+  padding: 15px 10%;
+  width: 80%;
+}
+.cuadroComentario .std h3 {
+  text-transform: uppercase;
+}
+.cuadroComentario .std .form-group label {
+  font-family: 'oswaldregular';
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.cuadroComentario .std .form-group textarea {
   width: 100%;
+}
+.cuadroComentario .std .submit button {
+  padding: 5px 15px;
 }
 .cuadroComentario .submit {
   text-align: right;
@@ -6118,6 +6213,14 @@ hr {
 }
 .contacto fieldset .submit button:hover span {
   color: #fff;
+}
+.history_state span {
+  color: #fff;
+  display: block;
+}
+.detail_step_by_step tbody tr td span {
+  color: #fff;
+  display: block;
 }
 @-moz-keyframes anim-open {
   0% {

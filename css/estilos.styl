@@ -1476,16 +1476,19 @@ body
 				text-align center
 				text-transform uppercase
 		.agregarNueva
-			background naranjito
-			border-radius 5px
-			line-height 60px
+			background azulAsiste
+			border-radius 2px
+			line-height 30px
 			margin 30px auto
 			text-align center
 			width 300px
 			a
 				text-decoration none
 				span
-					color rojoAsiste
+					color white
+					font-family 'oswaldregular'
+			&:hover
+				background grisAzul
 		.volver
 			margin 0
 			padding 0
@@ -1805,63 +1808,99 @@ body
 		.info-account
 			text-align center
 		.rodeaListaDirecciones
+			margin-bottom 80px
 			.listaDirecciones
+				//display inline-block
+				//vertical-align top
+				width 49%
 				ul
 					margin 0
 					padding 0
+					width 100%
 					li
-						border 1px solid #999
-						border-radius 3px
-						display inline-block
+						//border 1px solid #999
+						//display inline-block
 						font-size 0
 						list-style none
-						margin 16px 0 0 0
-						width 49%
+						margin 5px 0
+						//width 49%
 						a
-							background clarito
+							//background clarito
+							border-radius 35px 2px 2px 35px
 							display block
+							//font-family 'oswaldregular'
+							//font-weight 100
 							position relative
-							text-align center
+							text-align left
 							text-decoration none
+							// &:hover
+							// 	background oscuro
+							// 	span
+							// 		color clarito
 							&:hover
-								background oscuro
 								span
-									color clarito
+									color azulAsiste
+									text-decoration underline
 							span
 								color oscuro
 								font-size 18px
 								line-height 40px
+								margin-left 50px
 								transition .3s
 							.icon-ban-circle
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
 								&:before
-									border-right 1px solid #999
-									color colorao
-									content '\e6f5'
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e631'
 									display block
 									font-family 'icos'
 									font-size 18px
 									height 100%
 									left 0
 									line-height 40px
-									position absolute
+									//position absolute
 									width 35px
 							.icon-building
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
 								&:before
-									border-right 1px solid #999
-									color colorao
-									content '\e603'
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
+									content '\e642'
 									display block
 									font-family 'icos'
 									font-size 18px
 									height 100%
 									left 0
 									line-height 40px
-									position absolute
+									//position absolute
 									width 35px
 							.icon-list-ol
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
 								&:before
-									border-right 1px solid #999
-									color colorao
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
 									content '\e6b6'
 									display block
 									font-family 'icos'
@@ -1869,12 +1908,20 @@ body
 									height 100%
 									left 0
 									line-height 40px
-									position absolute
+									//position absolute
 									width 35px
 							.icon-user
+								background clarito
+								border 2px solid azulAsiste
+								border-radius 20%
+								height 35px
+								position absolute
+								text-align center
+								width 35px
 								&:before
-									border-right 1px solid #999
-									color colorao
+									//border-right 1px solid #999
+									//color rojoAsiste
+									color azulAsiste
 									content '\e670'
 									display block
 									font-family 'icos'
@@ -1882,48 +1929,69 @@ body
 									height 100%
 									left 0
 									line-height 40px
-									position absolute
+									//position absolute
 									width 35px
 			.listaregalo
-				margin-top 20px
+				//display inline-block
+				margin 0
+				//vertical-align top
+				width 49%
 				ul
 					margin 0
 					padding 0
 					li
-						border 1px solid #999
+						//border 1px solid #999
 						border-radius 3px
-						display inline-block
+						//display inline-block
 						list-style none
 						margin 5px 0
-						width 49%
+						width 100%
 						a
-							background clarito
+							//background clarito
 							color oscuro
 							display block
+							//font-weight 100
 							line-height 40px
 							position relative
-							text-align center
+							text-align left
 							text-decoration none
 							&:hover
-								background oscuro
-								color clarito
-								span
-									color clarito
-							&:before
-								border-right 1px solid #999
-								color colorao
-								content '\e6f5'
-								display block
-								font-family 'icos'
-								font-size 18px
-								height 100%
-								left 0
-								line-height 40px
+								span 
+							 		color azulAsiste
+									text-decoration underline
+							// 	span
+							// 		color clarito
+							.icon-barcode
+								&:before
+									content '\e631'
+							.icon-barcode
+							.icon-heart
+								background clarito
+								border-radius 20%
+								border 2px solid azulAsiste
+								height 35px
 								position absolute
+								text-align center
 								width 35px
+								&:before
+									//border-right 1px solid #999
+									//border-radius 50%
+									color azulAsiste
+									display block
+									font-family 'icos'
+									font-size 18px
+									height 35px
+									left 0
+									line-height 40px
+									position absolute
+									width 35px
+							.icon-heart
+								&:before
+									content '\e6f5'
 							span
 								color oscuro
 								font-size 18px
+								margin-left 50px
 								transition .3s
 
 		.volverHome
@@ -2314,6 +2382,7 @@ body
 									font-weight 600
 									height 13px
 									left 0
+									line-height 13px
 									position absolute
 									text-align center
 									top 2px
@@ -3533,6 +3602,13 @@ table
 						margin 0
 						opacity .5
 						transition .5s
+					.ivaInclude
+						color oscuro
+						//display none
+						font-size 11px
+						font-weight 400
+						margin 0
+						text-transform capitalize
 					.precioAnterior
 						font-size 11px
 						text-decoration line-through
@@ -3542,8 +3618,17 @@ table
 						//color white
 						font-size 18px
 						margin 0
+						position relative
 						//text-align left
-						//width 50%
+						//width 50%	
+						// &:after
+						// 	color rojoAsiste
+						// 	content 'iva incl'
+						// 	font-size 10px
+						// 	font-weight 400
+						// 	margin 0
+						// 	position absolute
+						// 	text-transform capitalize						
 				.wishlist
 					background #ec7004
 					border-radius 50%
@@ -4851,7 +4936,7 @@ td
 	color #999
 	font-size 13px
 	margin 20px 0 
-	
+
 .tabsInfo
 	display inline-block
 	margin-top 25px
@@ -5248,14 +5333,33 @@ hr
 		margin-top 16px
 	table
 		margin 18px auto
+		tbody
+			tr
+				.footable-first-column
+					a
+						color azulAsiste
+						text-decoration none
+						&:hover
+							text-decoration underline
 
 .cuadroComentario
 	h1
 		border-bottom 1px solid clarito
+	form
+		.table-responsive
+			table
+				tfoot
+					tr
+						td
+							padding 0 1.5%
+							text-align right
 	p
 		font-size 15px
+	.adresses_bloc
+		display none
 	.box-small
-		width 100%
+		padding 20px 5%
+		width 90%
 		form
 			height 29px
 			text-align left
@@ -5278,7 +5382,23 @@ hr
 					line-height 29px
 	.info-order
 		//height 62px
-		width 100%
+		padding 20px 5%
+		width 90%
+	.std
+		padding 15px 10%
+		width 80%
+		h3
+			text-transform uppercase
+		.form-group
+			label
+				font-family 'oswaldregular'
+				font-weight 100
+				text-transform capitalize
+			textarea
+				width 100%
+		.submit
+			button
+				padding 5px 15px
 	.submit
 		text-align right
 		button
@@ -5422,4 +5542,15 @@ hr
 					span
 						color white
 					font-weight 100
-				
+
+.history_state
+	span
+		color white
+		display block
+.detail_step_by_step
+	tbody
+		tr
+			td
+				span
+					color white
+					display block
