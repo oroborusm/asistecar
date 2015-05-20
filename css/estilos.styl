@@ -4371,37 +4371,64 @@ table
 	text-align center
 
 .mywishlist
+	form
+		fieldset
+			h3
+				font-weight 100
+				margin 0 auto 18px
+			.form-group
+				text-align center
+				label
+					font-family 'oswaldregular'
+					font-weight 100
+				input
+				label
+				.submit
+					display inline-block
+					margin 0 5px
+					vertical-align middle
+				.submit
+					button
+						background rojoAsiste
+						border none
+						border-radius 2px
+						padding 2px 15px
+						//width 80px
+						span
+							color white
+							//line-height 40px
+							font-family 'oswaldregular'
+							font-weight 100
+						&:hover
+							background oscuro
 	.volver
 		display none
 	.comparte
-		background naranjo
-		border-radius 5px
+		border-radius 2px
 		margin 0 auto
-		text-align center
+		text-align right
 		transition .2s
-		width 30%
+		//width 30%
 		&:hover
-			background oscuro
+			a
+				background rojoAsiste
+				span
+					color white
 		a
-			display block
+			background clarito
+			//display block
+			padding 5px 15px
 			text-decoration none
-			width 100%
+			width 103px
 			span
-				color white
-				display block
+				color oscuro
+				//display block
+				font-family 'oswaldregular'
+				font-weight 100
 				line-height 40px
-				width 100%
-	.submit
-		button
-			background naranjo
-			border none
-			border-radius 5px
-			width 30%
-			span
-				color white
-				line-height 40px
+				//width 100%
 	input
-		border-radius 5px
+		border-radius 2px
 	td
 		a
 			color oscuro
@@ -4422,9 +4449,6 @@ table
 
 .wlp_bought
 	margin-top 26px
-	input
-	select
-		border-radius 5px
 	ul
 		margin 0
 		padding 0
@@ -4438,29 +4462,47 @@ table
 					width 100%
 				p
 					display block
-					text-align center
+					//text-align center
 					label
+						font-size 11px
 						display block
 						width 100%
 					input
+					select
 						display block
-						margin 0 auto
-						width 60%
+						border-radius 2px
+						margin 0
+						text-align right
+						width 80%
+					select
+						option
+							text-align right
+				.col-xs-6 
+					.product_infos
+						.product-name
+							font-size 14px
+							font-weight 600
 	.btn_action
-		background naranjito
-		border-radius 5px
-		display block
-		line-height 40px
+		border-bottom 1px solid clarito
+		border-radius 2px
+		//display block
+		//line-height 40px
 		margin 0 auto
-		text-align center
+		padding-bottom 25px
+		text-align left
 		transition .3s
-		width 30%
-		&:hover
-			background oscuro
+		//width 30%
 		a
+			background rojoAsiste
+			margin-right 5%
+			padding 3px 15px
 			text-decoration none
 			span
 				color white
+				font-family 'oswaldregular'
+				font-weight 100
+			&:hover
+				background oscuro
 .wl_send
 	margin-top 24px !important
 
@@ -5083,9 +5125,32 @@ td
 			font-size 13px
 			strong
 				color rojoAsiste
+
 .fancybox-wrap
 	.fancybox-skin
 		padding 10px !important
+		.fancybox-outer
+			.fancybox-inner
+				width 300px !important
+				p
+					border-bottom 1px solid otroGris
+					border-top 1px solid otroGris
+					display inline-block
+					font-family 'oswaldregular'
+					font-size 20px
+					font-weight 100
+					vertical-align middle
+					width 90%
+					&:before
+						color #cacaca
+						content '\e699'
+						display inline-block
+						font-family 'icos'
+						font-size 45px
+						line-height 35px
+						height 40px
+						vertical-align middle
+						width 55px
 hr
 	display none
 
@@ -5554,3 +5619,7 @@ hr
 				span
 					color white
 					display block
+
+.bodyWishlist
+	font-family 'oswaldregular'
+	font-size 100

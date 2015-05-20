@@ -4908,50 +4908,74 @@ table tfoot .cart_total_voucher .price-discount {
   color: #f4714a;
   text-align: center;
 }
+.mywishlist form fieldset h3 {
+  font-weight: 100;
+  margin: 0 auto 18px;
+}
+.mywishlist form fieldset .form-group {
+  text-align: center;
+}
+.mywishlist form fieldset .form-group label {
+  font-family: 'oswaldregular';
+  font-weight: 100;
+}
+.mywishlist form fieldset .form-group input,
+.mywishlist form fieldset .form-group label,
+.mywishlist form fieldset .form-group .submit {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.mywishlist form fieldset .form-group .submit button {
+  background: #ff4c00;
+  border: none;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 15px;
+}
+.mywishlist form fieldset .form-group .submit button span {
+  color: #fff;
+  font-family: 'oswaldregular';
+  font-weight: 100;
+}
+.mywishlist form fieldset .form-group .submit button:hover {
+  background: #434142;
+}
 .mywishlist .volver {
   display: none;
 }
 .mywishlist .comparte {
-  background: #ff6b00;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   -ms-transition: 0.2s;
   transition: 0.2s;
-  width: 30%;
 }
-.mywishlist .comparte:hover {
-  background: #434142;
+.mywishlist .comparte:hover a {
+  background: #ff4c00;
+}
+.mywishlist .comparte:hover a span {
+  color: #fff;
 }
 .mywishlist .comparte a {
-  display: block;
+  background: #ecedef;
+  padding: 5px 15px;
   text-decoration: none;
-  width: 100%;
+  width: 103px;
 }
 .mywishlist .comparte a span {
-  color: #fff;
-  display: block;
-  line-height: 40px;
-  width: 100%;
-}
-.mywishlist .submit button {
-  background: #ff6b00;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  width: 30%;
-}
-.mywishlist .submit button span {
-  color: #fff;
+  color: #434142;
+  font-family: 'oswaldregular';
+  font-weight: 100;
   line-height: 40px;
 }
 .mywishlist input {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 .mywishlist td a {
   color: #434142;
@@ -4974,11 +4998,6 @@ table tfoot .cart_total_voucher .price-discount {
 .wlp_bought {
   margin-top: 26px;
 }
-.wlp_bought input,
-.wlp_bought select {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
 .wlp_bought ul {
   margin: 0;
   padding: 0;
@@ -4994,40 +5013,54 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .wlp_bought ul li .row p {
   display: block;
-  text-align: center;
 }
 .wlp_bought ul li .row p label {
+  font-size: 11px;
   display: block;
   width: 100%;
 }
-.wlp_bought ul li .row p input {
+.wlp_bought ul li .row p input,
+.wlp_bought ul li .row p select {
   display: block;
-  margin: 0 auto;
-  width: 60%;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 0;
+  text-align: right;
+  width: 80%;
+}
+.wlp_bought ul li .row p select option {
+  text-align: right;
+}
+.wlp_bought ul li .row .col-xs-6 .product_infos .product-name {
+  font-size: 14px;
+  font-weight: 600;
 }
 .wlp_bought .btn_action {
-  background: #f8b302;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  line-height: 40px;
+  border-bottom: 1px solid #ecedef;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   margin: 0 auto;
-  text-align: center;
+  padding-bottom: 25px;
+  text-align: left;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  width: 30%;
-}
-.wlp_bought .btn_action:hover {
-  background: #434142;
 }
 .wlp_bought .btn_action a {
+  background: #ff4c00;
+  margin-right: 5%;
+  padding: 3px 15px;
   text-decoration: none;
 }
 .wlp_bought .btn_action a span {
   color: #fff;
+  font-family: 'oswaldregular';
+  font-weight: 100;
+}
+.wlp_bought .btn_action a:hover {
+  background: #434142;
 }
 .wl_send {
   margin-top: 24px !important;
@@ -5696,6 +5729,30 @@ td .sale-box {
 .fancybox-wrap .fancybox-skin {
   padding: 10px !important;
 }
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner {
+  width: 300px !important;
+}
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner p {
+  border-bottom: 1px solid #5b5b5f;
+  border-top: 1px solid #5b5b5f;
+  display: inline-block;
+  font-family: 'oswaldregular';
+  font-size: 20px;
+  font-weight: 100;
+  vertical-align: middle;
+  width: 90%;
+}
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner p:before {
+  color: #cacaca;
+  content: '\e699';
+  display: inline-block;
+  font-family: 'icos';
+  font-size: 45px;
+  line-height: 35px;
+  height: 40px;
+  vertical-align: middle;
+  width: 55px;
+}
 hr {
   display: none;
 }
@@ -6221,6 +6278,10 @@ hr {
 .detail_step_by_step tbody tr td span {
   color: #fff;
   display: block;
+}
+.bodyWishlist {
+  font-family: 'oswaldregular';
+  font-size: 100;
 }
 @-moz-keyframes anim-open {
   0% {

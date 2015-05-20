@@ -50,16 +50,16 @@
 						{l s='Name' mod='blockwishlist'}
 					</label>
 					<input type="text" id="name" name="name" class="inputTxt form-control" value="{if isset($smarty.post.name) and $errors|@count > 0}{$smarty.post.name|escape:'html':'UTF-8'}{/if}" />
+					<p class="submit">
+	                    <button 
+	                    id="submitWishlist" 
+	                    class="btn btn-default button button-medium" 
+	                    type="submit" 
+	                    name="submitWishlist">
+	                    	<span>{l s='Save' mod='blockwishlist'}<i class="icon-chevron-right right"></i></span>
+	                    </button>
+					</p>
 				</div>
-				<p class="submit">
-                    <button 
-                    id="submitWishlist" 
-                    class="btn btn-default button button-medium" 
-                    type="submit" 
-                    name="submitWishlist">
-                    	<span>{l s='Save' mod='blockwishlist'}<i class="icon-chevron-right right"></i></span>
-                    </button>
-				</p>
 			</fieldset>
 		</form>
 		{if $wishlists}
@@ -75,7 +75,7 @@
 							<th class="last_item mywishlist_first">{l s='Delete' mod='blockwishlist'}</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody class="bodyWishlist">
 						{section name=i loop=$wishlists}
 							<tr id="wishlist_{$wishlists[i].id_wishlist|intval}">
 								<td style="width:200px;">

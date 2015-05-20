@@ -134,6 +134,8 @@
 
 {/if}
 {include file="$tpl_dir./global.tpl"}
+
+
 	<script>
 		$('.owl-carousel').owlCarousel({
 			autoplay:true,
@@ -168,13 +170,6 @@
 			}
 		);
 
-		(function() {
-
-			[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-				new CBPFWTabs( el );
-			});
-
-		})();
 	</script>
     </div>
 
