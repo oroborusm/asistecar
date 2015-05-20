@@ -4948,21 +4948,16 @@ table tfoot .cart_total_voucher .price-discount {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   margin: 0 auto;
-  text-align: right;
+  text-align: left;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   -ms-transition: 0.2s;
   transition: 0.2s;
 }
-.mywishlist .comparte:hover a {
-  background: #ff4c00;
-}
-.mywishlist .comparte:hover a span {
-  color: #fff;
-}
 .mywishlist .comparte a {
   background: #ecedef;
+  display: block;
   padding: 5px 15px;
   text-decoration: none;
   width: 103px;
@@ -4972,6 +4967,12 @@ table tfoot .cart_total_voucher .price-discount {
   font-family: 'oswaldregular';
   font-weight: 100;
   line-height: 40px;
+}
+.mywishlist .comparte a:hover {
+  background: #ff4c00;
+}
+.mywishlist .comparte a:hover span {
+  color: #fff;
 }
 .mywishlist input {
   -webkit-border-radius: 2px;
