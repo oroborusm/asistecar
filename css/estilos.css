@@ -1422,7 +1422,6 @@ body .box .rodeaAddress form .submit2 button span {
 }
 body .box .correos,
 body .box .required {
-  color: #f00;
   font-size: 13px;
 }
 body .contenedorCategoria {
@@ -2035,7 +2034,12 @@ body .micuenta h1 {
   text-align: center;
 }
 body .micuenta .info-account {
-  text-align: center;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0 0 25px;
+  text-align: left;
 }
 body .micuenta .rodeaListaDirecciones {
   margin-bottom: 80px;
@@ -2216,7 +2220,7 @@ body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-heart:before {
   width: 35px;
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a .icon-heart:before {
-  content: '\e6f5';
+  content: '\e6d1';
 }
 body .micuenta .rodeaListaDirecciones .listaregalo ul li a span {
   color: #434142;
@@ -4542,7 +4546,9 @@ table tfoot .cart_total_voucher .price-discount {
   text-align: center;
 }
 .info-title {
-  font-size: 16px;
+  font-family: 'oswaldregular';
+  font-size: 13px;
+  font-weight: 100;
   margin: 0;
 }
 .contenedorFormNuevoComentario {
@@ -4905,8 +4911,13 @@ table tfoot .cart_total_voucher .price-discount {
   float: right;
 }
 .alert-warning {
+  border: 2px solid #f4714a;
   color: #f4714a;
+  font-size: 13px;
+  margin: 25px auto;
+  padding: 5px 15px;
   text-align: center;
+  width: 300px;
 }
 .mywishlist form fieldset h3 {
   font-weight: 100;
@@ -5050,21 +5061,49 @@ table tfoot .cart_total_voucher .price-discount {
   transition: 0.3s;
 }
 .wlp_bought .btn_action a {
-  background: #ff4c00;
+  background: #ecedef;
   margin-right: 5%;
   padding: 3px 15px;
   text-decoration: none;
 }
 .wlp_bought .btn_action a span {
-  color: #fff;
+  color: #434142;
   font-family: 'oswaldregular';
   font-weight: 100;
 }
 .wlp_bought .btn_action a:hover {
-  background: #434142;
+  background: #ff4c00;
+}
+.wlp_bought .btn_action a:hover span {
+  color: #fff;
 }
 .wl_send {
   margin-top: 24px !important;
+}
+.wl_send fieldset div {
+  margin: 5px auto;
+}
+.wl_send fieldset div input {
+  width: 200px;
+}
+.wl_send fieldset div label {
+  color: #434142;
+}
+.wl_send fieldset .required {
+  color: #434142;
+  font-size: 13px;
+  text-align: right;
+}
+.wl_send fieldset .submit {
+  text-align: right;
+}
+.wl_send fieldset .submit button {
+  background: #ecedef;
+  border: none;
+}
+.wl_send fieldset .submit button span {
+  color: #434142;
+  padding: 5px 15px;
 }
 #block_various_links_footer {
   display: none;

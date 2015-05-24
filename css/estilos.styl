@@ -1221,7 +1221,7 @@ body
 					
 		.correos
 		.required
-			color red
+			//color red
 			font-size 13px
 	.contenedorCategoria
 		margin 0 auto
@@ -1806,7 +1806,12 @@ body
 		h1
 			text-align center
 		.info-account
-			text-align center
+			font-family 'oswaldregular'
+			font-size 13px
+			font-style italic
+			font-weight 100
+			margin 0 0 25px
+			text-align left
 		.rodeaListaDirecciones
 			margin-bottom 80px
 			.listaDirecciones
@@ -1987,7 +1992,7 @@ body
 									width 35px
 							.icon-heart
 								&:before
-									content '\e6f5'
+									content '\e6d1'
 							span
 								color oscuro
 								font-size 18px
@@ -4061,7 +4066,9 @@ table
 	font-size 20px
 	text-align center
 .info-title
-	font-size 16px
+	font-family 'oswaldregular'
+	font-size 13px
+	font-weight 100
 	margin 0
 .contenedorFormNuevoComentario
 	text-align center
@@ -4367,8 +4374,13 @@ table
 		float right
 
 .alert-warning
+	border 2px solid colorao
 	color colorao
+	font-size 13px
+	margin 25px auto
+	padding 5px 15px
 	text-align center
+	width 300px
 
 .mywishlist
 	form
@@ -4492,19 +4504,39 @@ table
 		transition .3s
 		//width 30%
 		a
-			background rojoAsiste
+			background clarito
 			margin-right 5%
 			padding 3px 15px
 			text-decoration none
 			span
-				color white
+				color oscuro
 				font-family 'oswaldregular'
 				font-weight 100
 			&:hover
-				background oscuro
+				background rojoAsiste
+				span
+					color white
 .wl_send
 	margin-top 24px !important
-
+	fieldset
+		div
+			margin 5px auto
+			input
+				width 200px
+			label
+				color oscuro
+		.required
+			color oscuro
+			font-size 13px
+			text-align right
+		.submit
+			text-align right
+			button
+				background clarito
+				border none
+				span
+					color oscuro
+					padding 5px 15px
 #block_various_links_footer
 	display none
 
