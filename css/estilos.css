@@ -6413,6 +6413,13 @@ hr {
 .submitPassForgot button span {
   color: #fff;
 }
+.ivaInclude {
+  color: #434142;
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;
