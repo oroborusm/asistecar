@@ -5016,10 +5016,77 @@ td
 	margin 20px 0 
 	
 .tabsInfoCms
-	width 100%	
-.tabsInfo
-	width 67%
-
+	width 100%
+	.tabs
+		.navTabs
+			.nav-container
+				background white
+				li
+					background white !important
+					border-bottom 1px solid azulAsiste !important
+					border-top 1px solid azulAsiste
+					display inline-block
+					margin 0
+					padding 0
+					text-align center
+					width 180px
+					a
+						color azulAsiste !important
+						display block
+						font-size 15px
+						font-family 'oswaldregular'
+						line-height 40px
+						text-decoration none
+						text-transform uppercase
+						h3
+							font-weight 100
+							margin 0
+							padding 5px 5px 0 5px
+					&:hover
+						background clarito !important
+						a
+							color oscuro !important
+							text-decoration underline
+			.seccion
+				padding 20px 0 30px
+				h2
+					font-family 'oswaldregular'
+					font-size 18px
+					font-weight 100
+					text-align left 
+					text-decoration underline
+				p
+					font-size 14px
+					a
+						color oscuro
+						display inline
+						font-size 15px
+						font-family 'oswaldregular'
+						line-height 40px
+						text-decoration none
+						text-transform uppercase
+						&:hover
+							color rojoAsiste
+							text-decoration underline
+				ul
+					background white !important
+					border 1px solid clarito
+					margin 0
+					padding 10px 20px
+					li
+						background white !important
+						border none
+						display block
+						font-size 15px
+						font-style italic
+						list-style-type disc
+						padding 10px 0
+						text-align left
+						width 100%
+						a
+							display inline
+						&:before
+							content '-'
 .tabsInfoCms
 .tabsInfo
 	display inline-block
@@ -5058,9 +5125,9 @@ td
 					border-top 1px solid #aeadb3
 					border-right 1px solid #aeadb3
 					a
-						color azulAsiste
+						color naranjo
 						h3
-							padding 5px 10px 0 10px	 
+							padding 5px 10px 0 10px
 		.content-wrap
 			section
 			.seccionTab
@@ -5142,6 +5209,7 @@ td
 							td
 								&:nth-child(1)
 									color #aeadb3
+
 
 .fancyComent
 	form
@@ -5686,3 +5754,8 @@ hr
 	font-weight 400
 	margin 0
 	text-transform capitalize
+	
+			
+.f-nav
+	position fixed
+	top 5px

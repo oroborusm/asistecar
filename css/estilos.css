@@ -5612,8 +5612,88 @@ td .sale-box {
 .tabsInfoCms {
   width: 100%;
 }
-.tabsInfo {
-  width: 67%;
+.tabsInfoCms .tabs .navTabs .nav-container {
+  background: #fff;
+}
+.tabsInfoCms .tabs .navTabs .nav-container li {
+  background: #fff !important;
+  border-bottom: 1px solid #0040a6 !important;
+  border-top: 1px solid #0040a6;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 180px;
+}
+.tabsInfoCms .tabs .navTabs .nav-container li a {
+  color: #0040a6 !important;
+  display: block;
+  font-size: 15px;
+  font-family: 'oswaldregular';
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tabsInfoCms .tabs .navTabs .nav-container li a h3 {
+  font-weight: 100;
+  margin: 0;
+  padding: 5px 5px 0 5px;
+}
+.tabsInfoCms .tabs .navTabs .nav-container li:hover {
+  background: #ecedef !important;
+}
+.tabsInfoCms .tabs .navTabs .nav-container li:hover a {
+  color: #434142 !important;
+  text-decoration: underline;
+}
+.tabsInfoCms .tabs .navTabs .seccion {
+  padding: 20px 0 30px;
+}
+.tabsInfoCms .tabs .navTabs .seccion h2 {
+  font-family: 'oswaldregular';
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+  text-decoration: underline;
+}
+.tabsInfoCms .tabs .navTabs .seccion p {
+  font-size: 14px;
+}
+.tabsInfoCms .tabs .navTabs .seccion p a {
+  color: #434142;
+  display: inline;
+  font-size: 15px;
+  font-family: 'oswaldregular';
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tabsInfoCms .tabs .navTabs .seccion p a:hover {
+  color: #ff4c00;
+  text-decoration: underline;
+}
+.tabsInfoCms .tabs .navTabs .seccion ul {
+  background: #fff !important;
+  border: 1px solid #ecedef;
+  margin: 0;
+  padding: 10px 20px;
+}
+.tabsInfoCms .tabs .navTabs .seccion ul li {
+  background: #fff !important;
+  border: none;
+  display: block;
+  font-size: 15px;
+  font-style: italic;
+  list-style-type: disc;
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+}
+.tabsInfoCms .tabs .navTabs .seccion ul li a {
+  display: inline;
+}
+.tabsInfoCms .tabs .navTabs .seccion ul li:before {
+  content: '-';
 }
 .tabsInfoCms,
 .tabsInfo {
@@ -5663,7 +5743,7 @@ td .sale-box {
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a,
 .tabsInfo .tabs .navTabs ul .tab-current a {
-  color: #0040a6;
+  color: #ff6b00;
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a h3,
 .tabsInfo .tabs .navTabs ul .tab-current a h3 {
@@ -6423,6 +6503,10 @@ hr {
   font-weight: 400;
   margin: 0;
   text-transform: capitalize;
+}
+.f-nav {
+  position: fixed;
+  top: 5px;
 }
 @-moz-keyframes anim-open {
   0% {
