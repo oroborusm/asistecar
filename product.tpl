@@ -556,7 +556,7 @@
 
 		<section class="tabsInfo">
 			<div class="tabs tabs-style-bar">
-				<nav>
+				<nav class="navTabs">
 					<ul>
 						<li>
 							<a href="#section-bar-1" class="icon icon-box">

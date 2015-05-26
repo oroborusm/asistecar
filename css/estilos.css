@@ -5602,18 +5602,26 @@ td .sale-box {
   font-size: 13px;
   margin: 20px 0;
 }
+.tabsInfoCms {
+  width: 100%;
+}
+.tabsInfo {
+  width: 67%;
+}
+.tabsInfoCms,
 .tabsInfo {
   display: inline-block;
   margin-top: 25px;
   vertical-align: top;
-  width: 67%;
 }
-.tabsInfo .tabs nav ul {
+.tabsInfoCms .tabs .navTabs ul,
+.tabsInfo .tabs .navTabs ul {
   font-size: 0;
   margin: 0;
   padding: 0;
 }
-.tabsInfo .tabs nav ul li {
+.tabsInfoCms .tabs .navTabs ul li,
+.tabsInfo .tabs .navTabs ul li {
   background: #ecedef;
   border-bottom: 1px solid #aeadb3;
   display: inline-block;
@@ -5622,98 +5630,162 @@ td .sale-box {
   text-align: center;
   width: 180px;
 }
-.tabsInfo .tabs nav ul li a {
+.tabsInfoCms .tabs .navTabs ul li a,
+.tabsInfo .tabs .navTabs ul li a {
+  color: #aeadb3;
   display: block;
+  font-size: 17px;
+  font-family: 'oswaldregular';
   line-height: 40px;
   text-decoration: none;
+  text-transform: uppercase;
 }
-.tabsInfo .tabs nav ul li a h3 {
-  color: #aeadb3;
-  font-family: 'oswaldregular';
-  font-size: 20px;
+.tabsInfoCms .tabs .navTabs ul li a h3,
+.tabsInfo .tabs .navTabs ul li a h3 {
   font-weight: 100;
   margin: 0;
   padding: 5px 5px 0 5px;
-  text-transform: uppercase;
 }
-.tabsInfo .tabs nav ul .tab-current {
+.tabsInfoCms .tabs .navTabs ul .tab-current,
+.tabsInfo .tabs .navTabs ul .tab-current {
   background: #fff;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #aeadb3;
   border-top: 1px solid #aeadb3;
   border-right: 1px solid #aeadb3;
 }
-.tabsInfo .tabs nav ul .tab-current a h3 {
+.tabsInfoCms .tabs .navTabs ul .tab-current a,
+.tabsInfo .tabs .navTabs ul .tab-current a {
   color: #0040a6;
+}
+.tabsInfoCms .tabs .navTabs ul .tab-current a h3,
+.tabsInfo .tabs .navTabs ul .tab-current a h3 {
   padding: 5px 10px 0 10px;
 }
-.tabsInfo .tabs .content-wrap section {
+.tabsInfoCms .tabs .content-wrap section,
+.tabsInfo .tabs .content-wrap section,
+.tabsInfoCms .tabs .content-wrap .seccionTab,
+.tabsInfo .tabs .content-wrap .seccionTab {
   display: none;
 }
-.tabsInfo .tabs .content-wrap section p {
+.tabsInfoCms .tabs .content-wrap section p,
+.tabsInfo .tabs .content-wrap section p,
+.tabsInfoCms .tabs .content-wrap .seccionTab p,
+.tabsInfo .tabs .content-wrap .seccionTab p {
   font-size: 14px;
   font-weight: 100;
   margin: 0;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario {
   border-bottom: 1px solid #ecedef;
   padding: 15px 0;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo {
   width: 120px;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos {
   text-transform: uppercase;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em {
   font-size: 13px;
   margin: 0;
 }
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong {
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos em,
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .comment_author_infos strong {
   display: block;
   padding-left: 5px;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content {
   margin-top: 5px;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star {
   height: 13px;
   margin: 0;
   width: 13px;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo .star_content .star:after {
   font-size: 9px;
 }
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
 .tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario {
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .usuarioInfo,
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario {
   display: inline-block;
   vertical-align: top;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .detalleComentario p strong {
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .teSirvio {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .teSirvio,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .comentario .teSirvio,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .teSirvio,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .comentario .teSirvio {
   display: none;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center {
   font-family: 'oswaldregular';
   font-size: 15px;
   margin-top: 15px;
   text-align: right;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center a,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center a {
   color: #aeadb3;
 }
-.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a:hover {
+.tabsInfoCms .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a:hover,
+.tabsInfo .tabs .content-wrap section .contenedorComentario .contenedorInternoComentario .align_center a:hover,
+.tabsInfoCms .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center a:hover,
+.tabsInfo .tabs .content-wrap .seccionTab .contenedorComentario .contenedorInternoComentario .align_center a:hover {
   color: #ff4c00;
 }
+.tabsInfoCms .tabs .content-wrap section,
 .tabsInfo .tabs .content-wrap section,
+.tabsInfoCms .tabs .content-wrap .content-current,
 .tabsInfo .tabs .content-wrap .content-current {
   margin-top: -1px;
 }
+.tabsInfoCms .tabs .content-wrap .content-current,
 .tabsInfo .tabs .content-wrap .content-current {
   border: 1px solid #aeadb3;
   border-box: box-sizing;
@@ -5721,21 +5793,27 @@ td .sale-box {
   padding: 25px;
   width: 100%;
 }
+.tabsInfoCms .tabs .content-wrap .content-current table,
 .tabsInfo .tabs .content-wrap .content-current table {
   font-family: 'oswaldregular';
   font-weight: 100;
 }
+.tabsInfoCms .tabs .content-wrap .content-current table tbody .even td,
 .tabsInfo .tabs .content-wrap .content-current table tbody .even td {
   border: 0;
 }
+.tabsInfoCms .tabs .content-wrap .content-current table tbody .even td,
 .tabsInfo .tabs .content-wrap .content-current table tbody .even td,
+.tabsInfoCms .tabs .content-wrap .content-current table tbody .odd td,
 .tabsInfo .tabs .content-wrap .content-current table tbody .odd td {
   padding: 5px 0;
 }
+.tabsInfoCms .tabs .content-wrap .content-current table tbody .odd,
 .tabsInfo .tabs .content-wrap .content-current table tbody .odd {
   background: #ecedef;
   border: 0;
 }
+.tabsInfoCms .tabs .content-wrap .content-current table tbody tr td:nth-child(1),
 .tabsInfo .tabs .content-wrap .content-current table tbody tr td:nth-child(1) {
   color: #aeadb3;
 }
