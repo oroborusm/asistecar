@@ -5610,7 +5610,7 @@ td .sale-box {
   margin: 20px 0;
 }
 .tabsInfoCms {
-  width: 100%;
+  width: 100% !important;
 }
 .tabsInfoCms .tabs .navTabs .nav-container {
   background: #fff;
@@ -5700,6 +5700,7 @@ td .sale-box {
   display: inline-block;
   margin-top: 25px;
   vertical-align: top;
+  width: 67%;
 }
 .tabsInfoCms .tabs .navTabs ul,
 .tabsInfo .tabs .navTabs ul {
