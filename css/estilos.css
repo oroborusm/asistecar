@@ -6401,6 +6401,18 @@ hr {
   font-family: 'oswaldregular';
   font-size: 100;
 }
+.formPassForgot,
+.submitPassForgot {
+  display: inline-block !important;
+  vertical-align: middle;
+}
+.submitPassForgot button {
+  background: #ff4c00;
+  border: none;
+}
+.submitPassForgot button span {
+  color: #fff;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;
