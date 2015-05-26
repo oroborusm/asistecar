@@ -5214,6 +5214,7 @@ table tfoot .cart_total_voucher .price-discount {
   font-family: 'oswaldregular';
   font-size: 20px;
   margin: 0;
+  padding-left: 10px;
   text-align: left;
 }
 .adjuntos {
@@ -5852,9 +5853,6 @@ td .sale-box {
 }
 .fancybox-wrap .fancybox-skin {
   padding: 10px !important;
-}
-.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner {
-  width: 300px !important;
 }
 .fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner p {
   border-bottom: 1px solid #5b5b5f;
