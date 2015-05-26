@@ -5196,6 +5196,12 @@ table tfoot .cart_total_voucher .price-discount {
 #sslsSiteSeal {
   width: 200px;
 }
+#sslsSiteSeal .sslslock {
+  padding: 0 !important;
+}
+#sslsSiteSeal .sslslock img {
+  height: 40px !important;
+}
 .accesorios {
   margin-top: 20px;
 }
