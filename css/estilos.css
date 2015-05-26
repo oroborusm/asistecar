@@ -5640,10 +5640,10 @@ td .sale-box {
   padding: 5px 5px 0 5px;
 }
 .tabsInfoCms .tabs .navTabs .nav-container li:hover {
-  background: #ecedef !important;
+  background: #0040a6 !important;
 }
 .tabsInfoCms .tabs .navTabs .nav-container li:hover a {
-  color: #434142 !important;
+  color: #fff !important;
   text-decoration: underline;
 }
 .tabsInfoCms .tabs .navTabs .seccion {
