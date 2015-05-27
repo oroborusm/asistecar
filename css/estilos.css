@@ -2320,7 +2320,7 @@ body .popularesMasVendidos div .menuProductosHome li a {
   width: 100%;
 }
 body .popularesMasVendidos div .menuProductosHome li p {
-  color: #0040a6;
+  color: #007cc3;
   display: block;
   font-family: 'oswaldregular';
   font-size: 20px;
@@ -2740,6 +2740,8 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .stock {
   width: 150px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .textoDescripcion {
+  font-family: 'oswaldlight';
+  font-size: 15px;
   margin: 0;
   padding: 0 5px 0 15px;
 }
@@ -5744,7 +5746,7 @@ td .sale-box {
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a,
 .tabsInfo .tabs .navTabs ul .tab-current a {
-  color: #ff6b00;
+  color: #0040a6;
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a h3,
 .tabsInfo .tabs .navTabs ul .tab-current a h3 {
@@ -5930,7 +5932,7 @@ td .sale-box {
   font-size: 13px;
 }
 .infoAdicionalHeader .row .shop-phone strong {
-  color: #ff4c00;
+  color: #007cc3;
 }
 .fancybox-wrap .fancybox-skin {
   padding: 10px !important;
