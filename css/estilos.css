@@ -2320,7 +2320,7 @@ body .popularesMasVendidos div .menuProductosHome li a {
   width: 100%;
 }
 body .popularesMasVendidos div .menuProductosHome li p {
-  color: #007cc3;
+  color: #0040a6;
   display: block;
   font-family: 'oswaldregular';
   font-size: 20px;
@@ -3499,12 +3499,12 @@ table tfoot .cart_total_voucher .price-discount {
 .menuManias > ul > li > ul {
   border-bottom: 6px solid #ecedef;
   display: none;
-  min-height: 290px;
+  min-height: 260px;
   left: 0;
   opacity: 1 !important;
   -ms-filter: none;
   filter: none;
-  padding: 10px 6% 10px 30%;
+  padding: 40px 30% 10px 6%;
   position: absolute;
   text-align: left;
   -webkit-transition: 0.3s;
