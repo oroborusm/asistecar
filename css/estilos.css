@@ -3593,9 +3593,9 @@ table tfoot .cart_total_voucher .price-discount {
   background: #fff url("../img/asiste-03.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
@@ -3603,9 +3603,9 @@ table tfoot .cart_total_voucher .price-discount {
   background: #fff url("../img/asiste-04.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
@@ -3613,9 +3613,9 @@ table tfoot .cart_total_voucher .price-discount {
   background: #fff url("../img/asiste-05.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
@@ -3623,9 +3623,9 @@ table tfoot .cart_total_voucher .price-discount {
   background: #fff url("../img/asiste-06.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
