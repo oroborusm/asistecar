@@ -3504,7 +3504,7 @@ table tfoot .cart_total_voucher .price-discount {
   opacity: 1 !important;
   -ms-filter: none;
   filter: none;
-  padding: 10px 30% 10px 6%;
+  padding: 10px 6% 10px 30%;
   position: absolute;
   text-align: left;
   -webkit-transition: 0.3s;
@@ -3570,27 +3570,27 @@ table tfoot .cart_total_voucher .price-discount {
   content: '';
 }
 .maniaBackground1 > ul {
-  background: #fff url("../img/asiste2.jpg");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-01.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 350px;
-  -moz-background-size: 350px;
-  background-size: 350px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground2 > ul {
-  background: #fff url("../img/asiste3.jpg");
+  background: #fff url("../img/asiste-02.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 350px;
-  -moz-background-size: 350px;
-  background-size: 350px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground3 > ul {
-  background: #fff url("../img/3.png");
+  background: #fff url("../img/asiste-03.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
   -webkit-background-size: 200px;
@@ -3600,7 +3600,7 @@ table tfoot .cart_total_voucher .price-discount {
   border-right: 1px solid #ecedef;
 }
 .maniaBackground4 > ul {
-  background: #fff url("../img/4.png");
+  background: #fff url("../img/asiste-04.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
   -webkit-background-size: 200px;
@@ -3610,7 +3610,7 @@ table tfoot .cart_total_voucher .price-discount {
   border-right: 1px solid #ecedef;
 }
 .maniaBackground5 > ul {
-  background: #fff url("../img/5.png");
+  background: #fff url("../img/asiste-05.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
   -webkit-background-size: 200px;
@@ -3620,7 +3620,7 @@ table tfoot .cart_total_voucher .price-discount {
   border-right: 1px solid #ecedef;
 }
 .maniaBackground6 > ul {
-  background: #fff url("../img/6.png");
+  background: #fff url("../img/asiste-06.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
   -webkit-background-size: 200px;
