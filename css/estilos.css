@@ -2572,8 +2572,8 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   width: 90%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .pay {
-  bottom: -110px;
-  left: 15px;
+  bottom: -122px;
+  left: 5px;
   position: absolute;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion {
@@ -5928,6 +5928,7 @@ td .sale-box {
 .infoAdicionalHeader .row {
   margin: 0 auto;
   text-align: right;
+  position: relative;
   width: 950px;
 }
 .infoAdicionalHeader .row .shop-phone {
@@ -6515,11 +6516,30 @@ hr {
 }
 .candadito {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
 }
 .candadito img {
   width: 22px;
+}
+.candadito .imgCandadito:hover ~ .textCandadito {
+  color: #5b5b5f;
+}
+.candadito img,
+.candadito p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.candadito p {
+  color: transparent;
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
 }
 @-moz-keyframes anim-open {
   0% {

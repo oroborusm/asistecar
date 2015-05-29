@@ -2334,8 +2334,8 @@ body
 										text-align right
 										width 90%
 					.pay
-						bottom -110px
-						left 15px
+						bottom -122px
+						left 5px
 						position absolute
 				.descripcion
 					//background rgba(cafoso, .6)
@@ -5240,6 +5240,7 @@ td
 	.row
 		margin 0 auto
 		text-align right
+		position relative
 		width 950px
 		.shop-phone
 			font-size 13px
@@ -5772,7 +5773,19 @@ hr
 	
 .candadito
 	position absolute
-	top 2px
+	top 0
 	left 0
 	img
 		width 22px
+	.imgCandadito:hover ~ .textCandadito
+		color otroGris
+	img
+	p
+		display inline-block
+		vertical-align middle
+	p
+		color transparent 
+		font-size 13px
+		font-style italic
+		margin 0
+		transition .5s
