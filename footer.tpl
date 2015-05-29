@@ -46,10 +46,6 @@
 									<div class="item"><img src="themes/asistecar/img/1.jpg"></div>
 									<div class="item"><img src="themes/asistecar/img/2.jpg"></div>
 									<div class="item"><img src="themes/asistecar/img/3.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/4.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/5.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/7.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/8.jpg"></div>
 								</div>
 
 						</div>

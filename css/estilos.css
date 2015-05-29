@@ -4826,6 +4826,9 @@ table tfoot .cart_total_voucher .price-discount {
   position: relative;
   width: 950px;
 }
+.owl-carousel .owl-stage-outer .owl-stage {
+  margin: 0 auto;
+}
 .owl-nav {
   text-align: center;
 }
