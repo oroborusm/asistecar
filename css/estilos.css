@@ -6513,6 +6513,14 @@ hr {
   position: fixed;
   top: 5px;
 }
+.candadito {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.candadito img {
+  width: 22px;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;
