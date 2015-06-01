@@ -61,7 +61,7 @@ input:focus {
   background: #f0f8ff;
 }
 label {
-  font-weight: 600;
+  font-weight: 400;
 }
 select {
   border: 1px solid #a1a5ad !important;
@@ -476,7 +476,6 @@ body header .header .headerCOnt .carrito {
   -ms-transition: 0.3s;
   transition: 0.3s;
   width: 90px;
-  z-index: 2147483647;
 }
 body header .header .headerCOnt .carrito .carritoIcon:before {
   color: #fff;
@@ -2775,6 +2774,9 @@ body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedo
   -ms-filter: none;
   filter: none;
 }
+body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedorImagen:hover .quick-view:before {
+  border-bottom: 30px solid #ff4c00;
+}
 body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedorImagen img {
   width: 100%;
 }
@@ -3882,6 +3884,9 @@ table tfoot .cart_total_voucher .price-discount {
   -ms-filter: none;
   filter: none;
 }
+.listaProducto .listaProductoLi:hover .contenedorPopular .left-block .product-image-container .quick-view:before {
+  border-bottom: 30px solid #ff4c00;
+}
 .listaProducto .listaProductoLi:hover .contenedorPopular .right-block .añadeCarrituHome {
   opacity: 1;
   -ms-filter: none;
@@ -4090,6 +4095,7 @@ table tfoot .cart_total_voucher .price-discount {
   left: 0;
   line-height: 45px;
   position: absolute;
+  text-align: center;
   top: 0;
   width: 45px;
   z-index: 0;
@@ -4215,11 +4221,6 @@ table tfoot .cart_total_voucher .price-discount {
   text-align: center;
   text-decoration: none;
   top: 0;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
   width: 45px;
 }
 .Otroquick-view:after,
@@ -4239,7 +4240,7 @@ table tfoot .cart_total_voucher .price-discount {
 .Otroquick-view:before,
 .quick-view:before {
   content: '';
-  border-bottom: 30px solid #ff4c00;
+  border-bottom: 30px solid transparent;
   border-left: 7px solid transparent;
   border-right: 0;
   border-top: 0;
@@ -5980,7 +5981,6 @@ hr {
   height: 30px;
   position: relative;
   width: 100%;
-  z-index: 2147483647;
 }
 .loginUsuario .contenedorLogin:hover .accedeCuenta {
   display: block;
@@ -6520,6 +6520,10 @@ hr {
   left: 0;
 }
 .candadito img {
+  filter: grayscale(1);
+  margin-top: -3px;
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
   width: 22px;
 }
 .candadito .imgCandadito:hover ~ .textCandadito {
@@ -6530,11 +6534,11 @@ hr {
   display: inline-block;
   vertical-align: middle;
 }
-.candadito p {
-  color: transparent;
-  font-size: 13px;
-  font-style: italic;
+.candadito .textCandadito {
+  color: #5b5b5f;
+  font-size: 10px;
   margin: 0;
+  text-transform: uppercase;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;

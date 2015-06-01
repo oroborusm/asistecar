@@ -112,7 +112,7 @@ input
 	&:focus
 		background aliceblue
 label
-	font-weight 600
+	font-weight 400
 select
 	border 1px solid grisAzul !important
 	font-size 13px
@@ -469,7 +469,7 @@ body
 					top 20px
 					transition .3s
 					width 90px
-					z-index 2147483647
+					//z-index 2147483647
 					.carritoIcon
 						&:before
 							color white
@@ -2514,6 +2514,8 @@ body
 						&:hover
 							.quick-view
 								opacity 1
+								&:before
+									border-bottom 30px solid rojoAsiste
 						img
 							width 100%
 			.muestraChica
@@ -3485,6 +3487,8 @@ table
 					.product-image-container
 						.quick-view
 							opacity 1
+							&:before
+								border-bottom 30px solid rojoAsiste
 					// .sale-box
 					// 	.sale-label
 					// 		background naranjito
@@ -3667,6 +3671,7 @@ table
 							left 0
 							line-height 45px
 							position absolute
+							text-align center
 							top 0
 							width 45px
 							z-index 0
@@ -3780,7 +3785,7 @@ table
 	text-align center
 	text-decoration none
 	top 0
-	transition .3s
+	//transition .3s
 	width 45px
 	//z-index 1000
 	&:after
@@ -3799,12 +3804,14 @@ table
 		width 100%
 	&:before
 		content ''
-		border-bottom 30px solid rojoAsiste
+		//border-bottom 30px solid rojoAsiste
+		border-bottom 30px solid transparent
 		border-left 7px solid transparent
 		border-right 0
 		border-top 0
 		left -7px
 		position absolute
+		//transition .3s
 .quick-view > span
 	color azulAsiste
 	display none
@@ -5292,7 +5299,7 @@ hr
 		//overflow hidden
 		position relative
 		width 100%
-		z-index 2147483647
+		//z-index 2147483647
 		&:hover
 			.accedeCuenta
 				display block
@@ -5776,6 +5783,10 @@ hr
 	top 0
 	left 0
 	img
+		filter grayscale(1)
+		margin-top -3px
+		-ms-filter grayscale(1)
+		-webkit-filter grayscale(1)
 		width 22px
 	.imgCandadito:hover ~ .textCandadito
 		color otroGris
@@ -5783,9 +5794,10 @@ hr
 	p
 		display inline-block
 		vertical-align middle
-	p
-		color transparent 
-		font-size 13px
-		font-style italic
+	.textCandadito
+		color otroGris 
+		font-size 10px
+		//font-style italic
 		margin 0
+		text-transform uppercase
 		transition .5s
