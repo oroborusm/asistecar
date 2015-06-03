@@ -3137,6 +3137,13 @@ table tbody tr .cart_quantity input {
 table tbody tr .cart_unit {
   font-family: 'oswaldregular';
 }
+table tbody tr .cart_unit .price .special-price {
+  display: none;
+}
+table tbody tr .cart_unit .price .price-percent-reduction {
+  float: right;
+  margin-right: 15px;
+}
 table tfoot tr {
   text-align: right;
 }
