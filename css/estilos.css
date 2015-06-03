@@ -6522,9 +6522,10 @@ hr {
   top: 5px;
 }
 .candadito {
+  left: 50%;
+  margin-left: -80px;
   position: absolute;
   top: 0;
-  left: 0;
 }
 .candadito img {
   filter: grayscale(1);
