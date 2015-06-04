@@ -3115,6 +3115,7 @@ table tbody tr .cart_description .product-name {
   font-family: 'oswaldregular';
   font-size: 16px;
   font-weight: 100;
+  max-width: 350px;
 }
 table tbody tr .cart_product {
   padding: 0 20px;
@@ -3833,22 +3834,24 @@ table tfoot .cart_total_voucher .price-discount {
   background: #ecedef;
   position: relative;
   margin: 2em auto 0;
-  padding-bottom: 7px;
-  text-align: center;
+  padding: 7px 20px;
+  text-align: left;
 }
 .content_sortPagiBar .sortPagiBar .productsSortForm span {
   display: none;
 }
-.content_sortPagiBar .sortPagiBar .productsSortForm .select {
-  margin: 0 auto;
-  width: 50%;
-}
 .content_sortPagiBar .sortPagiBar .productsSortForm .select label {
   color: #434142;
-  font-weight: 600;
+  font-family: 'oswaldregular';
+  font-weight: 400;
+}
+.content_sortPagiBar .sortPagiBar .productsSortForm .select label,
+.content_sortPagiBar .sortPagiBar .productsSortForm .select .selector {
+  display: inline-block;
+  vertical-align: middle;
 }
 .content_sortPagiBar .sortPagiBar .productsSortForm .select .selector {
-  width: 100% !important;
+  margin-left: 20px;
 }
 .content_sortPagiBar .top-pagination-content {
   display: none;
@@ -4416,14 +4419,14 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .textoLink .row,
 .textoLink .payment_module {
-  display: inline-block;
-  margin: 0;
-  width: 48%;
-}
-.textoLink .payment_module {
   background: #fbfbfb;
   border: 1px solid #ecedef;
-  margin: 0 1% 5px 1%;
+  display: block;
+  margin: 2px auto;
+  width: 70%;
+}
+.textoLink .payment_module {
+  margin: 0 auto;
 }
 .textoLink .payment_module a {
   color: #434142;
@@ -4486,7 +4489,7 @@ table tfoot .cart_total_voucher .price-discount {
   background: #ecedef;
 }
 .textoLink .row .payment_module {
-  border: 1px solid #ecedef;
+  border: 1px solid transparent;
   width: 100%;
 }
 .colorao {
@@ -6149,10 +6152,13 @@ hr {
   font-size: 15px;
   text-align: left;
 }
+.order_carrier_content .delivery_options_address .delivery_options {
+  text-align: center;
+}
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option {
   display: inline-block;
   vertical-align: top;
-  width: 49%;
+  width: 70%;
 }
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte {
   font-size: 13px;
@@ -6179,11 +6185,15 @@ hr {
   font-weight: 100;
   display: block;
 }
+.order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte tbody tr .delivery_option_logo {
+  width: 100px;
+}
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte tbody tr .delivery_option_price .delivery_option_price {
   color: #038a7a;
   font-weight: 600;
   line-height: 45px;
-  text-align: left;
+  padding: 0 20px;
+  text-align: center;
 }
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte tbody tr .delivery_option_radio .radio span {
   cursor: pointer;
@@ -6193,7 +6203,7 @@ hr {
 }
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte tbody tr .delivery_option_radio .radio span input {
   cursor: pointer;
-  line-height: 55px;
+  height: 13px;
 }
 .content_only h2 {
   color: #f4714a;
