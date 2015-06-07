@@ -2429,10 +2429,11 @@ body
 						li
 							background rgb(237, 238, 240)
 							border 1px solid rgb(174, 173, 179)
-							//display inline-block
+							display inline-block
 							font-size 13px
 							list-style none
 							margin-bottom 5px
+							margin-right 3px
 							width 100px
 							&:hover
 								background oscuro
@@ -5273,14 +5274,16 @@ td
 		.fancybox-outer
 			.fancybox-inner
 				p
-					border-bottom 1px solid otroGris
-					border-top 1px solid otroGris
-					display inline-block
 					font-family 'oswaldregular'
 					font-size 20px
 					font-weight 100
 					vertical-align middle
 					width 90%
+				.fancybox-error
+					border-bottom 1px solid otroGris
+					border-top 1px solid otroGris
+					display inline-block
+					padding 15px 10px
 					&:before
 						color #cacaca
 						content '\e699'
@@ -5291,8 +5294,6 @@ td
 						height 40px
 						vertical-align middle
 						width 55px
-			// .fancybox-error
-			// 	width 300px !important
 hr
 	display none
 
@@ -5455,6 +5456,7 @@ hr
 			text-align center
 			.delivery_option
 				display inline-block
+				margin-bottom 15px
 				vertical-align top
 				width 70%
 				.eligeTransporte
@@ -5822,3 +5824,10 @@ hr
 		margin 0
 		text-transform uppercase
 		transition .5s
+.volverBusqueda
+	a
+		color oscuro
+		display block
+		font-family 'oswaldregular'
+		font-weight 100
+		margin-bottom 15px

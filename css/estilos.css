@@ -2683,9 +2683,11 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescr
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li {
   background: #edeef0;
   border: 1px solid #aeadb3;
+  display: inline-block;
   font-size: 13px;
   list-style: none;
   margin-bottom: 5px;
+  margin-right: 3px;
   width: 100px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion li:hover {
@@ -5952,16 +5954,19 @@ td .sale-box {
   padding: 10px !important;
 }
 .fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner p {
-  border-bottom: 1px solid #5b5b5f;
-  border-top: 1px solid #5b5b5f;
-  display: inline-block;
   font-family: 'oswaldregular';
   font-size: 20px;
   font-weight: 100;
   vertical-align: middle;
   width: 90%;
 }
-.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner p:before {
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner .fancybox-error {
+  border-bottom: 1px solid #5b5b5f;
+  border-top: 1px solid #5b5b5f;
+  display: inline-block;
+  padding: 15px 10px;
+}
+.fancybox-wrap .fancybox-skin .fancybox-outer .fancybox-inner .fancybox-error:before {
   color: #cacaca;
   content: '\e699';
   display: inline-block;
@@ -6157,6 +6162,7 @@ hr {
 }
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option {
   display: inline-block;
+  margin-bottom: 15px;
   vertical-align: top;
   width: 70%;
 }
@@ -6562,6 +6568,13 @@ hr {
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   transition: 0.5s;
+}
+.volverBusqueda a {
+  color: #434142;
+  display: block;
+  font-family: 'oswaldregular';
+  font-weight: 100;
+  margin-bottom: 15px;
 }
 @-moz-keyframes anim-open {
   0% {
