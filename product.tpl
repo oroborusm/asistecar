@@ -238,6 +238,7 @@
 
 
 			<div class="carroDecripcion">
+				<img class="pay" src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt="">
 				<div class="rodeacarroDecripcion">
 
 					{if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
@@ -423,7 +424,7 @@
 
 			{if isset($images) && count($images) > 0}
 				<!-- thumbnails -->
-				<div id="views_block" class="muestraChica {if isset($images) && count($images) < 2}hidden{/if}">
+				<div id="views_block" class="muestraChica">
 					{if isset($images) && count($images) > 2}
 						<span class="view_scroll_spacer">
 							<a id="view_scroll_left" class="" title="{l s='Other views'}" href="javascript:{ldelim}{rdelim}">
@@ -555,18 +556,22 @@
 
 		<section class="tabsInfo">
 			<div class="tabs tabs-style-bar">
-				<nav>
+				<nav class="navTabs">
 					<ul>
 						<li>
 							<a href="#section-bar-1" class="icon icon-box">
 								<h3 class="page-product-heading">{l s='More info'}</h3>
 							</a>
 						</li>
-						<li>
-							<a href="#section-bar-2" class="icon icon-home">
-								{if isset($features) && $features}<h3 class="page-product-heading">{l s='Data sheet'}</h3>{/if}
-							</a>
-						</li>
+						{if isset($features) && $features}
+							<li>
+								<a href="#section-bar-2" class="icon icon-home">
+									{if isset($features) && $features}
+										<h3 class="page-product-heading">{l s='Data sheet'}</h3>
+									{/if}
+								</a>
+							</li>
+						{/if}
 						<li>
 							<a href="#section-bar-3" class="icon icon-display">
 								{$HOOK_PRODUCT_TAB}
@@ -578,18 +583,20 @@
 					<section id="section-bar-1">
 						<p>{$product->description}</p>
 					</section>
-					<section id="section-bar-2">
-							<table class="table-data-sheet">
-								{foreach from=$features item=feature}
-								<tr class="{cycle values="odd,even"}">
-									{if isset($feature.value)}
-									<td><span>{$feature.name|escape:'html':'UTF-8'}</span></td>
-									<td><span>{$feature.value|escape:'html':'UTF-8'}</span></td>
-									{/if}
-								</tr>
-								{/foreach}
-							</table>
-					</section>
+					{if isset($features) && $features}
+						<section id="section-bar-2">
+								<table class="table-data-sheet">
+									{foreach from=$features item=feature}
+									<tr class="{cycle values="odd,even"}">
+										{if isset($feature.value)}
+										<td><span>{$feature.name|escape:'html':'UTF-8'}</span></td>
+										<td><span>{$feature.value|escape:'html':'UTF-8'}</span></td>
+										{/if}
+									</tr>
+									{/foreach}
+								</table>
+						</section>
+					{/if}
 					<section id="section-bar-3">
 						{if isset($HOOK_PRODUCT_TAB_CONTENT) && $HOOK_PRODUCT_TAB_CONTENT}{$HOOK_PRODUCT_TAB_CONTENT}{/if}
 					</section>
@@ -597,17 +604,36 @@
 			</div>
 		</section>
 
+		{if isset($attachments) && $attachments}
+		<!--Download -->
+		<section class="page-product-box adjuntos">
+			<h3 class="page-product-heading">{l s='Download'}</h3>
+			{foreach from=$attachments item=attachment name=attachements}
+				{if $smarty.foreach.attachements.iteration %3 == 1}<div class="row">{/if}
+					<div class="col-lg-4">
+						<h4><a href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">{$attachment.name|escape:'html':'UTF-8'}</a></h4>
+						<p class="text-muted">{$attachment.description|escape:'html':'UTF-8'}</p>
+						<!-- <a class="btn btn-default btn-block" href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">
+							<i class="icon-download"></i>
+							{l s="Download"} ({Tools::formatBytes($attachment.file_size, 2)})
+						</a> -->
+						<hr />
+					</div>
+				{if $smarty.foreach.attachements.iteration %3 == 0 || $smarty.foreach.attachements.last}</div>{/if}
+			{/foreach}
+		</section>
+		<!--end Download -->
+		{/if}
+
+
 
 
 		{if isset($accessories) && $accessories}
 
 			<!--Accessories -->
 			<section class="page-product-box accesorios">
-				<div class="homeTab one">
-
-					<div class="main">
-						<div><h3 class="page-product-heading">{l s='Accessories'}</h3></div>
-					</div>
+				<div class="relacionados">
+					<h3>{l s='Accessories'}</h3>
 
 				</div>
 				<div class="block_content">
@@ -655,29 +681,12 @@
 			</section>
 			<!--end Accessories -->
 		{/if}
+
+
 		{if isset($HOOK_PRODUCT_FOOTER) && $HOOK_PRODUCT_FOOTER}{$HOOK_PRODUCT_FOOTER}{/if}
 		<!-- description & features -->
 		{if (isset($product) && $product->description) || (isset($features) && $features) || (isset($accessories) && $accessories) || (isset($HOOK_PRODUCT_TAB) && $HOOK_PRODUCT_TAB) || (isset($attachments) && $attachments) || isset($product) && $product->customizable}
-			{if isset($attachments) && $attachments}
-			<!--Download -->
-			<section class="page-product-box adjuntos">
-				<h3 class="page-product-heading">{l s='Download'}</h3>
-				{foreach from=$attachments item=attachment name=attachements}
-					{if $smarty.foreach.attachements.iteration %3 == 1}<div class="row">{/if}
-						<div class="col-lg-4">
-							<h4><a href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">{$attachment.name|escape:'html':'UTF-8'}</a></h4>
-							<p class="text-muted">{$attachment.description|escape:'html':'UTF-8'}</p>
-							<!-- <a class="btn btn-default btn-block" href="{$link->getPageLink('attachment', true, NULL, "id_attachment={$attachment.id_attachment}")|escape:'html':'UTF-8'}">
-								<i class="icon-download"></i>
-								{l s="Download"} ({Tools::formatBytes($attachment.file_size, 2)})
-							</a> -->
-							<hr />
-						</div>
-					{if $smarty.foreach.attachements.iteration %3 == 0 || $smarty.foreach.attachements.last}</div>{/if}
-				{/foreach}
-			</section>
-			<!--end Download -->
-			{/if}
+			<!-- aca dowloads -->
 			{if isset($product) && $product->customizable}
 			<!--Customization -->
 			<section class="page-product-box">
@@ -870,13 +879,4 @@
 {/strip}
 {/if}
 
-
-<script>
-	(function() {
-
-		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-			new CBPFWTabs( el );
-		});
-
-	})();
-</script>
+	

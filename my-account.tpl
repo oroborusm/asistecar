@@ -79,13 +79,11 @@
         </div>
     {/if}
     </div>
-    <ul class="volverHome">
-        <li>
-            <a class="btn btn-default button button-small" href="{$base_dir}" title="{l s='Home'}">
-                <span><div class="icon-chevron-left"></div> {l s='Home'}</span>
+    <p class="navegador">
+            <a class="volverCompra" href="{$base_dir}" title="{l s='Home'}">
+                <span>{l s='Home'}</span>
             </a>
-        </li>
-    </ul>    
+    </p>    
 
 </div>
 

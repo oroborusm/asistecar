@@ -37,17 +37,23 @@
 <p>{l s='Please enter the email address you used to register. We will then send you a new password. '}</p>
 <form action="{$request_uri|escape:'html':'UTF-8'}" method="post" class="std" id="form_forgotpassword">
 	<fieldset>
-		<div class="form-group">
+		<div class="form-group formPassForgot">
 			<label for="email">{l s='Email address'}</label>
 			<input class="form-control" type="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email|escape:'html':'UTF-8'|stripslashes}{/if}" />
 		</div>
-		<p class="submit">
+		<p class="submit submitPassForgot">
             <button type="submit" class="btn btn-default button button-medium"><span>{l s='Retrieve Password'}<i class="icon-chevron-right right"></i></span></button>
 		</p>
 	</fieldset>
 </form>
 {/if}
 </div>
-<ul class="clearfix footer_links">
-	<li><a class="btn btn-default button button-small" href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}" title="{l s='Back to Login'}" rel="nofollow"><span><i class="icon-chevron-left"></i>{l s='Back to Login'}</span></a></li>
-</ul>
+<p class="navegador">
+	<a class="volverCompra btn btn-default button button-small" href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}" title="{l s='Back to Login'}" rel="nofollow">
+		<span class="icon-chevron-right">
+			{l s='Back to Login'}
+			
+		</span>
+		<i class="icon-chevron-left"></i>
+	</a>
+</p>

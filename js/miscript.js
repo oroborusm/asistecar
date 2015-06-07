@@ -20,6 +20,9 @@ $(function(){
 		$('.telefono').toggleClass('tada');
 	}, 4000);
 
+	$('.sumaComentario').on('click', function(){
+		$('.agregaComentario').toggleClass('activo')
+	});
 
 	// $('input:checkbox').click(function(){
 	//    $('.esEmpresa').toggleClass('active');
@@ -35,5 +38,24 @@ $(function(){
 
 
 	//$('input, textarea').placeholder({customClass: 'my-placeholder'});
+
+	$(".ancla").click(function(){
+	    vinculo = $(this).attr("href")
+	    destino = $(vinculo).offset().top - 100;
+	        
+	    $("html:not(:animated), body:not(:animated)").animate({scrollTop:destino}, 800)
+	        return false
+	        
+	});
+
+	var nav = $('.nav-container');
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 136) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+    });
 
 });

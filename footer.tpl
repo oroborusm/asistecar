@@ -28,13 +28,6 @@
 
 						{/if}
 					</div><!-- popularesMasVendidos -->
-
-
-
-
-
-
-
 				</div>
 			</div>
 
@@ -45,24 +38,6 @@
 
 					{if isset($HOOK_HOME) && $HOOK_HOME|trim}
 					<!-- hook_home arriba en los comentarios quedo el contenido que va aca por default-->
-						<!-- <div class="homeInfo">
-							<h3>alguna metodologia que explicar?</h3>
-							<ul>
-								<li>
-									<div class="icoInfo1"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-								<li>
-									<div class="icoInfo2"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-								<li>
-									<div class="icoInfo3"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</li>
-							</ul>
-
-						</div> -->
 
 						<div class="contenedorPartners">
 
@@ -71,10 +46,6 @@
 									<div class="item"><img src="themes/asistecar/img/1.jpg"></div>
 									<div class="item"><img src="themes/asistecar/img/2.jpg"></div>
 									<div class="item"><img src="themes/asistecar/img/3.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/4.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/5.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/7.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/8.jpg"></div>
 								</div>
 
 						</div>
@@ -87,8 +58,60 @@
 
 				<div class="footer-container">
 					<footer id="footer">
-						<div class="row">{$HOOK_FOOTER}
+						<div class="row">
+							{$HOOK_FOOTER}
 
+						</div>
+						<div class="finFooter">
+							<div class="row">
+								<figure>
+									<img src="https://www.toolmania.cl/public_img/nodriza.png">
+								</figure>
+
+
+
+
+
+								<!-- Block Newsletter module-->
+								<div id="newsletter_block_left" class="boletin">
+									<div class="contBoletin">
+										<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
+										<div class="block_content">
+											<form action="{$link->getPageLink('index')|escape:'html':'UTF-8'}" method="post">
+												<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
+													<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" />
+									                <button type="submit" name="submitNewsletter" class="btn btn-default button button-small">
+									                    <span>{l s='Ok' mod='blocknewsletter'}</span>
+									                </button>
+													<input type="hidden" name="action" value="0" />
+												</div>
+											</form>
+										</div>
+										
+									</div>
+								</div>
+								<!-- /Block Newsletter module-->
+								{strip}
+								{if isset($msg) && $msg}
+								{addJsDef msg_newsl=$msg|@addcslashes:'\''}
+								{/if}
+								{if isset($nw_error)}
+								{addJsDef nw_error=$nw_error}
+								{/if}
+								{addJsDefL name=placeholder_blocknewsletter}{l s='Enter your e-mail' mod='blocknewsletter' js=1}{/addJsDefL}
+								{if isset($msg) && $msg}
+									{addJsDefL name=alert_blocknewsletter}{l s='Newsletter : %1$s' sprintf=$msg js=1 mod="blocknewsletter"}{/addJsDefL}
+								{/if}
+								{/strip}
+
+
+
+
+
+
+
+
+							</div>
 						</div>
 					</footer>
 					<!-- #footer -->
@@ -100,6 +123,7 @@
 
 {/if}
 {include file="$tpl_dir./global.tpl"}
+
 	<script>
 		$('.owl-carousel').owlCarousel({
 			autoplay:true,
@@ -133,7 +157,12 @@
 			belowOrigin: false // Displays dropdown below the button
 			}
 		);
+
+		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+			new CBPFWTabs( el );
+		});
 	</script>
+
     </div>
 
 

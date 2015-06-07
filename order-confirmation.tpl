@@ -22,7 +22,7 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="formCarrito">
+<div class="formCarrito formCarritoFinalCompra">
 	{capture name=path}{l s='Order confirmation'}{/capture}
 
 	<h1 class="page-heading">{l s='Order confirmation'}</h1>

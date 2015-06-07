@@ -83,19 +83,16 @@
 	<p class="alert alert-warning">{l s='You do not have any vouchers.'}</p>
 {/if}
 
-<ul class="footer_links clearfix">
-	<li>
-		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
-			<span>
-				<i class="icon-chevron-left"></i> {l s='Back to your account'}
-			</span>
-		</a>
-	</li>
-	<li>
-		<a class="btn btn-default button button-small" href="{$base_dir}">
-			<span>
-				<i class="icon-chevron-left"></i> {l s='Home'}
-			</span>
-		</a>
-	</li>
-</ul>
+<p class="navegador">
+	<a class="checkout" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
+		<span>
+			<i class="icon-chevron-left"></i> {l s='Back to your account'}
+		</span>
+	</a>
+	
+	<a class="volverCompra" href="{$base_dir}">
+		<span>
+			<i class="icon-chevron-left"></i> {l s='Home'}
+		</span>
+	</a>
+</p>

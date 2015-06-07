@@ -71,7 +71,8 @@
 	        	</li>
 	        {/if}
 		</ul>
-		<img src="https://www.toolmania.cl/public_img/webpay.png" alt="webpay" style="width:70%;">  <script type="text/javascript">
+		<h4 class="tituloPagos">Medios de Pago</h4>
+		<img src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt="webpay" style="width:70%; margin-left: -10px;">  <script type="text/javascript">
     (function() {
         var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true;
         ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'seal.ssls.com/script.js?cn=' + window.location.host;

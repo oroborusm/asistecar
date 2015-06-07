@@ -115,18 +115,18 @@
 									<div class="icono"></div>
 									<span class="texto">Perfil</span>
 								</a>
-
+					
 								<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
 									<div class="icono"></div>
 									<span class="texto">{l s='Salir' mod='blockuserinfo'}</span>
 								</a>
 							{else}
-
+					
 								<div class="login">
 									{l s='Login' mod='blockuserinfo'}
 								</div>
 								<div class="accedeCuenta">
-									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" class="box boxLogin" autocomplete="off">
+									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" autocomplete="off">
 										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
 										<div class="form_content">
 											<div class="form-group emailLogin">
@@ -137,7 +137,7 @@
 												<label for="passwd">{l s='Password'}</label>
 												<span><input class="is_required validate account_input form-control" type="password" data-validate="isPasswd" id="passwd" name="passwd" value="{if isset($smarty.post.passwd)}{$smarty.post.passwd|stripslashes}{/if}"/></span>
 											</div>
-
+					
 											<p class="submit">
 												{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 												<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
@@ -147,10 +147,12 @@
 													</span>
 												</button>
 											</p>
-
+					
 											<p class="lost_password form-group"><a href="{$link->getPageLink('password')|escape:'html':'UTF-8'}" title="{l s='Recover your forgotten password'}" rel="nofollow">{l s='Forgot your password?'}</a></p>
+					
+											
 											<a class="linkCreaCuenta" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
-												<!-- {l s='Login' mod='blockuserinfo'} -->
+												{l s='Login' mod='blockuserinfo'}
 												Crea una cuenta
 											</a>
 										</div>
@@ -158,7 +160,7 @@
 								</div>
 							{/if}
 						</div>
-
+					
 					</div>
 					<!-- /Block usmodule NAV -->
 					{if isset($HOOK_TOP)}{$HOOK_TOP}{hook h="displayNav"}{/if}

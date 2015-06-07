@@ -73,7 +73,16 @@
 							{/if}-->
 							{if isset($product.on_sale) && $product.on_sale && isset($product.show_price) && $product.show_price && !$PS_CATALOG_MODE}
 								<a class="sale-box" href="{$product.link|escape:'html':'UTF-8'}">
-									<p class="sale-label"><span>{l s='Sale!'}</span></p>
+									<!-- <p class="sale-label"><span>{l s='Sale!'}</span></p> -->
+									<p class="sale-label">
+										<span>
+											{if $product.specific_prices.reduction_type == 'percentage'}
+												<span class="price-percent-reduction descuento">-{$product.specific_prices.reduction * 100}%</span>
+											{else}
+												<p class="sale-label"><span>{l s='Sale!'}</span></p>
+											{/if}
+										</span>
+									</p>
 								</a>
 							{/if} 
 						</div>
@@ -145,15 +154,16 @@
 									<span itemprop="price" class="precio">
 										{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
 									</span>
+									<span class="ivaInclude">iva incluido</span>
 									<meta itemprop="priceCurrency" content="{$currency->iso_code}" />
 									{if isset($product.specific_prices) && $product.specific_prices && isset($product.specific_prices.reduction) && $product.specific_prices.reduction > 0}
 										{hook h="displayProductPriceBlock" product=$product type="old_price"}
 										<span class="old-price product-price precioAnterior">
 											{displayWtPrice p=$product.price_without_reduction}
 										</span>
-										{if $product.specific_prices.reduction_type == 'percentage'}
+										<!-- {if $product.specific_prices.reduction_type == 'percentage'}
 											<span class="price-percent-reduction descuento">-{$product.specific_prices.reduction * 100}%</span>
-										{/if}
+										{/if} -->
 									{/if}
 									{hook h="displayProductPriceBlock" product=$product type="price"}
 									{hook h="displayProductPriceBlock" product=$product type="unit_price"}

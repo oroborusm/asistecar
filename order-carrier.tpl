@@ -71,11 +71,8 @@
 								{foreach $option_list as $key => $option}
 									<div class="delivery_option {if ($option@index % 2)}alternate_{/if}item">
 										<div>
-											<table class="resume table table-bordered{if !$option.unique_carrier} not-displayable{/if}">
+											<table class="eligeTransporte{if !$option.unique_carrier} not-displayable{/if}">
 												<tr>
-													<td class="delivery_option_radio">
-														<input id="delivery_option_{$id_address|intval}_{$option@index}" class="delivery_option_radio" type="radio" name="delivery_option[{$id_address|intval}]" data-key="{$key}" data-id_address="{$id_address|intval}" value="{$key}"{if isset($delivery_option[$id_address]) && $delivery_option[$id_address] == $key} checked="checked"{/if} />
-													</td>
 													<td class="delivery_option_logo">
 														{foreach $option.carrier_list as $carrier}
 															{if $carrier.logo}
@@ -86,28 +83,30 @@
 															{/if}
 														{/foreach}
 													</td>
-													<td>
-														{if $option.unique_carrier}
-															{foreach $option.carrier_list as $carrier}
-																<strong>{$carrier.instance->name|escape:'htmlall':'UTF-8'}</strong>
-															{/foreach}
-															{if isset($carrier.instance->delay[$cookie->id_lang])}
-																{$carrier.instance->delay[$cookie->id_lang]|escape:'htmlall':'UTF-8'}
+													<td class="cuerpo">
+														<span>
+															{if $option.unique_carrier}
+																{foreach $option.carrier_list as $carrier}
+																	<strong>{$carrier.instance->name|escape:'htmlall':'UTF-8'}</strong>
+																{/foreach}
+																{if isset($carrier.instance->delay[$cookie->id_lang])}
+																	{$carrier.instance->delay[$cookie->id_lang]|escape:'htmlall':'UTF-8'}
+																{/if}
 															{/if}
-														{/if}
-														{if count($option_list) > 1}
-															{if $option.is_best_grade}
-																{if $option.is_best_price}
-																	{l s='The best price and speed'}
+															{if count($option_list) > 1}
+																{if $option.is_best_grade}
+																	{if $option.is_best_price}
+																		{l s='The best price and speed'}
+																	{else}
+																		{l s='The fastest'}
+																	{/if}
 																{else}
-																	{l s='The fastest'}
+																	{if $option.is_best_price}
+																		{l s='The best price'}
+																	{/if}
 																{/if}
-															{else}
-																{if $option.is_best_price}
-																	{l s='The best price'}
-																{/if}
-															{/if}
-														{/if}
+															{/if}															
+														</span>
 													</td>
 													<td class="delivery_option_price">
 														<div class="delivery_option_price">
@@ -125,6 +124,9 @@
 																{l s='Free'}
 															{/if}
 														</div>
+													</td>
+													<td class="delivery_option_radio">
+														<input id="delivery_option_{$id_address|intval}_{$option@index}" class="delivery_option_radio" type="radio" name="delivery_option[{$id_address|intval}]" data-key="{$key}" data-id_address="{$id_address|intval}" value="{$key}"{if isset($delivery_option[$id_address]) && $delivery_option[$id_address] == $key} checked="checked"{/if} />
 													</td>
 												</tr>
 											</table>
