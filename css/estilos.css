@@ -2782,8 +2782,8 @@ body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedo
   width: 100%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .imagenGrande .contenedorImagen #videoholder iframe {
-  height: 295px;
-  width: 100%;
+  height: 295px !important;
+  width: 100% !important;
 }
 body .productoPag .productoFoto .muestraChica {
   overflow: hidden;
