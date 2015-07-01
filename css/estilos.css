@@ -6564,6 +6564,9 @@ hr {
   -ms-transition: 0.5s;
   transition: 0.5s;
 }
+.cienPorciento {
+  width: 100% !important;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;
