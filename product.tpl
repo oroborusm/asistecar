@@ -433,7 +433,7 @@
 						</span>
 					{/if}
 					<div id="thumbs_list" class="rodeaMuestraChica">
-						<ul id="thumbs_list_frame">
+						<ul id="thumbs_list_frame" style="width:100%;">
 						{if isset($images)}
 							{foreach from=$images item=image name=thumbnails}
 								{assign var=imageIds value="`$product->id`-`$image.id_image`"}

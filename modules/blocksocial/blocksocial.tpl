@@ -71,13 +71,17 @@
 	        	</li>
 	        {/if}
 		</ul>
-		<h4 class="tituloPagos">Medios de Pago</h4>
-		<img src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt="webpay" style="width:70%; margin-left: -10px;">  <script type="text/javascript">
-    (function() {
-        var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true;
-        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'seal.ssls.com/script.js?cn=' + window.location.host;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ss, s);
-    })();
+		<div class="mediosPago">
+			<h4 class="tituloPagos">Medios de Pago</h4>
+			<img src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt="webpay">  
+			
+		</div>
+	<script type="text/javascript">
+	    (function() {
+	        var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true;
+	        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'seal.ssls.com/script.js?cn=' + window.location.host;
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ss, s);
+	    })();
     </script>
     <!-- Do not alter for the seal to work properly -->
     <div id="sslsSiteSeal">
