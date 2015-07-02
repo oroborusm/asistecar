@@ -6568,6 +6568,13 @@ hr {
   -ms-transition: 0.5s;
   transition: 0.5s;
 }
+.volverBusqueda a {
+  color: #434142;
+  display: block;
+  font-family: 'oswaldregular';
+  font-weight: 100;
+  margin-bottom: 15px;
+}
 .cienPorciento {
   width: 100% !important;
 }
