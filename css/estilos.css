@@ -6578,6 +6578,9 @@ hr {
 .cienPorciento {
   width: 100% !important;
 }
+#videoholder {
+  padding: 0 !important;
+}
 @-moz-keyframes anim-open {
   0% {
     opacity: 0;

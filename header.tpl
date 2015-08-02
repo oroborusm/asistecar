@@ -27,7 +27,7 @@
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="{$lang_iso}"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="{$lang_iso}"><![endif]-->
 <!--[if gt IE 8]> <html class="no-js ie9" lang="{$lang_iso}"><![endif]-->
-<html lang="{$lang_iso}">
+<html lang="{$lang_iso}" class="no-js">
 	<head>
 		<meta charset="utf-8" />
 		<title>{$meta_title|escape:'html':'UTF-8'}</title>
@@ -47,7 +47,6 @@
 
 
 		<link rel="stylesheet" href="{$css_dir}normalize.css">
-		<link rel="stylesheet" href="{$css_dir}verticalmenu.css">
 		<link rel="stylesheet" href="{$css_dir}estilos.css">
 		<link rel="stylesheet" href="{$css_dir}animate.css">
 		<link rel="stylesheet" href="{$css_dir}internos.css">
@@ -65,13 +64,12 @@
 	<script type="text/javascript" src="{$js_dir}modernizr.custom.js"></script>
 	<script type="text/javascript" src="{$js_dir}miscript.js"></script>
 
-	<script type="text/javascript" src="{$js_dir}carrusel.js"></script>
 	<script type="text/javascript" src="{$js_dir}slimscroll.min.js"></script>
 	<script type="text/javascript" src="{$js_dir}owl.carousel.min.js"></script>
-	<script type="text/javascript" src="{$js_dir}classie.js"></script>
 	<script type="text/javascript" src="{$js_dir}modal.js"></script>
 	<script type="text/javascript" src="{$js_dir}placeholder.js"></script>
 	<script type="text/javascript" src="{$js_dir}tabs.js"></script>
+	
 
 
 
