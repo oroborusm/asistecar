@@ -47,29 +47,33 @@
 
 
 		<link rel="stylesheet" href="{$css_dir}normalize.css">
+		<link rel="stylesheet" href="{$css_dir}verticalmenu.css">
 		<link rel="stylesheet" href="{$css_dir}estilos.css">
 		<link rel="stylesheet" href="{$css_dir}animate.css">
 		<link rel="stylesheet" href="{$css_dir}internos.css">
 		<link rel="stylesheet" href="{$css_dir}owl.carousel.css">
 		<link rel="stylesheet" href="{$css_dir}fancybox.css">
+		<link rel="stylesheet" href="{$css_dir}responsive.css">
 
 
 
 {if isset($js_defer) && !$js_defer && isset($js_files) && isset($js_def)}
 	{$js_def}
 	{foreach from=$js_files item=js_uri}
-	<script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>
+		<script type="text/javascript" src="{$js_uri|escape:'html':'UTF-8'}"></script>
 	{/foreach}
 {/if}
 	<script type="text/javascript" src="{$js_dir}modernizr.custom.js"></script>
 	<script type="text/javascript" src="{$js_dir}miscript.js"></script>
 
+	<script type="text/javascript" src="{$js_dir}carrusel.js"></script>
 	<script type="text/javascript" src="{$js_dir}slimscroll.min.js"></script>
 	<script type="text/javascript" src="{$js_dir}owl.carousel.min.js"></script>
+	<script type="text/javascript" src="{$js_dir}classie.js"></script>
 	<script type="text/javascript" src="{$js_dir}modal.js"></script>
 	<script type="text/javascript" src="{$js_dir}placeholder.js"></script>
 	<script type="text/javascript" src="{$js_dir}tabs.js"></script>
-	
+	<script type="text/javascript" src="{$js_dir}menumanias.js"></script>
 
 
 
@@ -93,8 +97,8 @@
 				<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country|escape:'html':'UTF-8'}</span></p>
 			</div>
 		{/if}
-
 		<header>
+			{hook h="displayNav"}
 			<div class="header">
 				<div class="headerCOnt">
 					<figure>
@@ -109,21 +113,22 @@
 								<div class="nombre">
 									<span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span>
 								</div>
-								<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">
-									<div class="icono"></div>
-									<span class="texto">Perfil</span>
-								</a>
+								<div class="despliega">
+									<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">
+										<span class="texto">Perfil</span>
+									</a>
 					
-								<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
-									<div class="icono"></div>
-									<span class="texto">{l s='Salir' mod='blockuserinfo'}</span>
-								</a>
+									<a class="logout" href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log me out' mod='blockuserinfo'}">
+										<span class="texto">{l s='Salir' mod='blockuserinfo'}</span>
+									</a>
+									
+								</div>
 							{else}
 					
 								<div class="login">
 									{l s='Login' mod='blockuserinfo'}
 								</div>
-								<div class="accedeCuenta">
+								<div class="accedeCuentaChica">
 									<form action="{$link->getPageLink('authentication', true)|escape:'html':'UTF-8'}" method="post" id="login_form" autocomplete="off">
 										<!-- <h3 class="page-subheading">{l s='Already registered?'}</h3> -->
 										<div class="form_content">
@@ -151,7 +156,6 @@
 											
 											<a class="linkCreaCuenta" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='Log in to your customer account' mod='blockuserinfo'}">
 												{l s='Login' mod='blockuserinfo'}
-												Crea una cuenta
 											</a>
 										</div>
 									</form>
@@ -161,12 +165,16 @@
 					
 					</div>
 					<!-- /Block usmodule NAV -->
-					{if isset($HOOK_TOP)}{$HOOK_TOP}{hook h="displayNav"}{/if}
+					{if isset($HOOK_TOP)}{$HOOK_TOP}{/if}
 				</div>
+				<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 			</div>
 		</header>
-
-		<div id="page">
+		<!-- aca deberia ir el nav -->
+		<div class="contenedorMenu">
+			{$HOOK_MENU}
+		</div>
+		<div id="page" class="cd-main-content">
 			<div class="columns-container">
 				<div id="columns" class="container">
 					{if $page_name !='index' && $page_name !='pagenotfound'}

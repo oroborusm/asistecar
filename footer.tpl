@@ -30,22 +30,22 @@
 					</div><!-- popularesMasVendidos -->
 				</div>
 			</div>
-
-
-
 		<!--</div> esto abre desde el archivo header.tpl#page -->
-
-
 					{if isset($HOOK_HOME) && $HOOK_HOME|trim}
 					<!-- hook_home arriba en los comentarios quedo el contenido que va aca por default-->
 
-						<div class="contenedorPartners">
+						<div class="contenedorPartners cd-main-content">
 
 							  <!-- SilverTrack requires only this part -->
 								<div class="owl-carousel">
-									<div class="item"><img src="themes/asistecar/img/1.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/2.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/3.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/1.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/2.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/3.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/4.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/5.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/7.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/8.jpg"></div>
+									<div class="item"><img src="themes/nodriza/img/9.jpg"></div>
 								</div>
 
 						</div>
@@ -158,10 +158,9 @@
 			}
 		);
 
-		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-			new CBPFWTabs( el );
-		});
+		
 	</script>
+
     </div>
 
 

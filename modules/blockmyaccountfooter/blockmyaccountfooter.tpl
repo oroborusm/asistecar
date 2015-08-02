@@ -26,7 +26,7 @@
 <!-- Block myaccount module -->
 <section class="footer-block col-xs-12 col-sm-4">
 	<h4><a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='Manage my customer account' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My account' mod='blockmyaccountfooter'}</a></h4>
-	<div class="block_content toggle-footer">
+	<div class="block_content">
 		<ul class="bullet">
 			<li><a href="{$link->getPageLink('history', true)|escape:'html':'UTF-8'}" title="{l s='My orders' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My orders' mod='blockmyaccountfooter'}</a></li>
 			{if $returnAllowed}<li><a href="{$link->getPageLink('order-follow', true)|escape:'html':'UTF-8'}" title="{l s='My merchandise returns' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My merchandise returns' mod='blockmyaccountfooter'}</a></li>{/if}
@@ -36,7 +36,7 @@
 			{if $voucherAllowed}<li><a href="{$link->getPageLink('discount', true)|escape:'html':'UTF-8'}" title="{l s='My vouchers' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My vouchers' mod='blockmyaccountfooter'}</a></li>{/if}
 			{$HOOK_BLOCK_MY_ACCOUNT}
 			<!-- cambiar url condiciones de uso-->
-            <li><a href="http://dev.nodriza.cl/prestashop4/index.php?id_cms=3&controller=cms">Terminos y Condiciones</a></li>
+            <li><a href="https://www.toolmania.cl/content/3-terminos-y-condiciones">Terminos y Condiciones</a></li>
             <!-- fin condiciones de uso-->
             {if $is_logged}<li><a href="{$link->getPageLink('index')}?mylogout" title="{l s='Sign out' mod='blockmyaccountfooter'}" rel="nofollow">{l s='Sign out' mod='blockmyaccountfooter'}</a></li>{/if}
 		</ul>

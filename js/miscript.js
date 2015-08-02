@@ -16,40 +16,45 @@ $(function(){
 		}, 5000);
 	});
 
-	setInterval(function() {
-		$('.telefono').toggleClass('tada');
-	}, 4000);
-
 	$('.sumaComentario').on('click', function(){
 		$('.agregaComentario').toggleClass('activo')
 	});
 
-	// $('input:checkbox').click(function(){
-	//    $('.esEmpresa').toggleClass('active');
-	// });
-	// setTimeout(function() {
-	// 	$('.dialog').addClass('dialog--open');
-	// }, 5000);
-	//
-	// $('.closeDialog').on('click',function(){
-	// 	$('.dialog').removeClass('dialog--open');
-	// 	$('.dialog').addClass('dialog--close');
-	// });
 
+    $(".ancla").click(function(){
+		vinculo = $(this).attr("href")
+		destino = $(vinculo).offset().top - 100;    
+		$("html:not(:animated), body:not(:animated)").animate({scrollTop:destino}, 800)
+			return false
+	});
+    var removeClass = true;
 
-	//$('input, textarea').placeholder({customClass: 'my-placeholder'});
+	$('.carrito').on('click', function(){
+		$('.carritoHover').toggleClass('activo')
+		removeClass = false;
+	})
 
-	$(".ancla").click(function(){
-	    vinculo = $(this).attr("href")
-	    destino = $(vinculo).offset().top - 100;
-	        
-	    $("html:not(:animated), body:not(:animated)").animate({scrollTop:destino}, 800)
-	        return false
-	        
+	$('.login').on('click', function(){
+		$('.accedeCuentaChica').toggleClass('activo')
+		removeClass = false;
 	});
 
-	var nav = $('.nav-container');
+	$('.nombre').on('click', function(){
+		$('.despliega').addClass('activo')
+		removeClass = false;
+	});
+
+
+	$("html").on('click',function () {
+		if (removeClass) {
+			$('.carritoHover').removeClass('activo');
+			//$('.accedeCuenta').removeClass('activo');
+			$('.despliega').removeClass('activo');
+		}
+		removeClass = true;
+	});
     
+    var nav = $('.nav-container');
     $(window).scroll(function () {
         if ($(this).scrollTop() > 136) {
             nav.addClass("f-nav");
@@ -57,5 +62,9 @@ $(function(){
             nav.removeClass("f-nav");
         }
     });
+
+    if($(window).width() < 800){
+		$('.añadeCarrituHome').removeClass('animated infinite pulse')
+	}
 
 });

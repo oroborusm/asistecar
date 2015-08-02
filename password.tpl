@@ -48,6 +48,7 @@
 </form>
 {/if}
 </div>
+
 <p class="navegador">
 	<a class="volverCompra btn btn-default button button-small" href="{$link->getPageLink('authentication')|escape:'html':'UTF-8'}" title="{l s='Back to Login'}" rel="nofollow">
 		<span class="icon-chevron-right">
