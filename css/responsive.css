@@ -93,11 +93,13 @@
   }
   body header .header .headerCOnt figure {
     display: block;
+    padding-top: 1em;
     position: initial;
     width: 100%;
   }
   body header .header .headerCOnt figure a img {
-    width: 130px;
+    margin: 0 auto;
+    width: 200px;
   }
   body header .header .headerCOnt .buscador {
     margin-left: -40%;
@@ -134,7 +136,7 @@
     width: 100%;
   }
   body .carrito {
-    background-color: #f8b302;
+    background-color: #ff4c00;
     -webkit-border-radius: 0;
     border-radius: 0;
     top: 120px;
@@ -346,6 +348,9 @@
   }
   .menuManias .menuTop > li > a {
     color: #879193;
+  }
+  .menuManias .menuTop > li > a:hover {
+    color: #fff;
   }
   .sub-menuDesktop {
     border: none !important;

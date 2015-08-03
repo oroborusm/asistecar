@@ -2881,7 +2881,7 @@ table tfoot tr .cart_voucher form fieldset {
   padding: 0;
 }
 table tfoot tr .cart_voucher form fieldset button {
-  background: #f8b302;
+  background: #ff4c00;
   border: none;
   height: 22px;
   line-height: 22px;
@@ -2892,7 +2892,7 @@ table tfoot tr .cart_voucher form fieldset button span {
   line-height: 22px;
 }
 table tfoot tr .cart_voucher form fieldset h4 {
-  color: #f8b302;
+  color: #ff4c00;
   margin: 0 5px;
   padding: 0;
   text-transform: uppercase;
@@ -3566,72 +3566,72 @@ table tfoot .cart_total_voucher .price-discount {
   color: #fff;
 }
 .maniaBackground1 > ul {
-  background: #fff url("../img/1.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-01.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground2 > ul {
-  background: #fff url("../img/2.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-02.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground3 > ul {
-  background: #fff url("../img/3.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-03.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground4 > ul {
-  background: #fff url("../img/4.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-04.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground5 > ul {
-  background: #fff url("../img/5.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-05.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground6 > ul {
-  background: #fff url("../img/6.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-06.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
 .maniaBackground6 > ul {
-  background: #fff url("../img/7.png");
-  background-position: right bottom;
+  background: #fff url("../img/asiste-07.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
-  -webkit-background-size: 200px;
-  -moz-background-size: 200px;
-  background-size: 200px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
   border-left: 1px solid #ecedef;
   border-right: 1px solid #ecedef;
 }
@@ -4339,12 +4339,12 @@ table tfoot .cart_total_voucher .price-discount {
   position: relative;
 }
 .remove a .icon-trash:before {
-  color: #f8b302;
+  color: #ff4c00;
   content: '\e6fa';
   font-family: 'icos';
   font-size: 18px;
   position: absolute;
-  right: 17px;
+  right: 0;
   top: 5px;
 }
 .products_block table {
@@ -4841,6 +4841,9 @@ table tfoot .cart_total_voucher .price-discount {
   position: relative;
   width: 950px;
 }
+.owl-carousel .owl-stage-outer .owl-stage {
+  margin: 0 auto;
+}
 .owl-nav {
   text-align: center;
 }
@@ -4898,7 +4901,7 @@ table tfoot .cart_total_voucher .price-discount {
   color: #f8b302;
 }
 .container {
-  margin: 1em auto;
+  margin: 0.6em auto;
   width: 950px;
 }
 .page-heading {
@@ -6552,6 +6555,9 @@ hr {
 }
 .oscuro {
   color: #434142 !important;
+}
+#videoholder {
+  padding: 0 !important;
 }
 #oosHook {
   display: none;
