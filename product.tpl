@@ -308,7 +308,6 @@
 								{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
 									<!-- prices -->
 									<div class="price">
-										<p class="ivaInclude">iva incluido</p>
 										<p class="precioActual" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 											{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
 											{if $priceDisplay >= 0 && $priceDisplay <= 2}

@@ -1,5 +1,7 @@
 @import "nib"
 @import 'nib/gradients'
+
+
 //calipso = #5fa098
 calipso = #009999
 clarito = #ecedef
@@ -9,7 +11,6 @@ naranjo = #FF6B00
 oscuro = #434142
 cafoso = #211915
 rosadito = #fa524e
-muyclarito = rgb(247, 247, 247)
 naranjoCafoso = #A04B01
 naranjoClaro = #F39C02
 grisAzul = #A1A5AD
@@ -378,7 +379,8 @@ body
 		//overflow hidden
 		position relative
 		.header
-			background white
+			//background white
+			background #ecedef
 			border-bottom 1px solid clarito
 			height 70px
 			margin 0 auto
@@ -392,14 +394,14 @@ body
 				margin 0
 				padding 0
 				position absolute
-				width 140px
+				width 200px
 				z-index 3
 				a
 					//background blue
 					img
 						display block
-						margin 8px auto 0
-						width 90%
+						margin 20px 0 0 0
+						width 100%
 			.headerCOnt
 				height 70px
 				margin 0 auto
@@ -417,7 +419,7 @@ body
 					width 300px
 					.buscadorForm
 						background white
-						border 2px solid naranjito
+						border 2px solid azulAsiste
 						border-radius 2px
 						bottom 0
 						height 26px
@@ -432,7 +434,7 @@ body
 							//text-align center
 							z-index -1
 							button
-								background naranjito
+								background azulAsiste
 								border none
 								//border-radius 0 .5em .5em 0
 								cursor pointer
@@ -596,9 +598,9 @@ body
 								display block
 								width 100%
 							&:hover
-								background naranjito
+								background azulAsiste
 								button
-									background naranjito
+									background azulAsiste
 									span
 										color white
 			.accedeCuenta
@@ -659,7 +661,7 @@ body
 								background clarito
 								border none
 								border-radius 2	px
-								color colorao
+								color rojoAsiste
 								width 100%
 								span
 									font-family 'oswaldregular'
@@ -671,7 +673,7 @@ body
 								width 100%
 							&:hover
 								button
-									background colorao
+									background rojoAsiste
 									color white
 		.formularioCrea
 			border 1px solid clarito
@@ -1325,12 +1327,12 @@ body
 			.first
 				border-radius 2px 0 0 2px
 			.step_current
-				background naranjito
+				background rojoAsiste
 				color white
 				position relative
 				&:after
 					border-bottom 15.15px solid transparent
-					border-left 7px solid naranjito
+					border-left 7px solid rojoAsiste
 					border-right 0
 					border-top 15.15px solid transparent
 					bottom 0
@@ -1989,7 +1991,7 @@ body
 											left 0
 											position absolute
 									.precioActual
-										background naranjo
+										background rojoAsiste
 										//border-radius 2px
 										display block
 										line-height 50px
@@ -2002,7 +2004,7 @@ body
 											font-family 'oswaldregular'
 											font-size 20px
 											font-weight 100
-											padding-right 20px
+											//padding-right 20px
 							.cantidad
 								font-size 15px
 								margin 0 auto
@@ -2682,9 +2684,9 @@ table
 			.transporte
 				font-size 13px
 			.precioTotal
-				border-bottom 2px solid naranjito
+				border-bottom 2px solid rojoAsiste
 				span
-					color naranjito
+					color rojoAsiste
 					font-family 'oswaldregular'
 					font-size 22px
 					font-weight 100
@@ -2693,9 +2695,9 @@ table
 				font-weight 600
 		.cart_total_price
 			.priceFinal
-				border-bottom 2px solid naranjito
+				border-bottom 2px solid rojoAsiste
 				span
-					color naranjito
+					color rojoAsiste
 					font-family 'oswaldregular'
 					font-size 22px
 					font-weight 100
@@ -2767,11 +2769,11 @@ table
 	width 70%
 .bx-start.active
 .bx-pager-link.active
-	background naranjito
+	background azulAsiste
 	border 2px solid white
 .bx-pager-link
 	background white
-	border 2px solid naranjito
+	border 2px solid azulAsiste
 	border-radius 50%
 	bottom 0
 	display inline-block
@@ -2791,7 +2793,7 @@ table
 	//background #f8b302
 	//background #003F3F
 	//background rgb(255, 76, 0)
-	background naranjito
+	background rojoAsiste
 	border-radius 2px
 	cursor pointer
 	//float right
@@ -2996,7 +2998,7 @@ table
 										// 	&:after
 										// 		color rojoAsiste
 		.cart-buttons
-			background naranjito
+			background rojoAsiste
 			//border-radius 4px
 			float right
 			padding 0 1em
@@ -3213,8 +3215,8 @@ table
 	text-transform uppercase
 	transition .4s
 	&:hover
-		background white
-		color naranjito
+		background rojoAsiste
+		color white
 
 
 .maniaBackground1 >	ul
@@ -3600,7 +3602,7 @@ table
 					text-align center
 					span
 						border-radius 7px
-						color naranjito
+						color azulAsiste
 						display block
 						//line-height 30px
 						margin 4px 0
@@ -3645,7 +3647,7 @@ table
 						// 	position absolute
 						// 	text-transform capitalize
 				.wishlist
-					background naranjo
+					background rojoAsiste
 					border-radius 50%
 					height 45px
 					//margin-right -27px
@@ -3719,7 +3721,7 @@ table
 				font-weight 600
 
 .añadeCarrituHome
-	background naranjito
+	background azulAsiste
 	border-radius 50%
 	cursor pointer
 	//font-size 13px
@@ -3768,7 +3770,7 @@ table
 .Otroquick-view
 .quick-view
 	//background rgba(255,255,255, .5) !important
-	background naranjo
+	background rojoAsiste
 	color naranjito
 	//display block
 	font-size 0
@@ -3802,7 +3804,7 @@ table
 		width 100%
 	&:before
 		content ''
-		border-bottom 30px solid naranjo
+		border-bottom 30px solid rojoAsiste
 		border-left 7px solid transparent
 		border-right 0
 		border-top 0
@@ -4265,7 +4267,7 @@ table
 			font-weight 100
 	.totalFinal
 		span
-			color naranjito
+			color rojoAsiste
 			font-size 20px
 .carritoAlert
 	background clarito
@@ -4652,7 +4654,7 @@ table
 	h3
 		border 1px solid transparent
 		border-bottom 2px solid clarito
-		color naranjo
+		color azulAsiste
 		font-family 'oswaldregular'
 		font-size 20px
 		font-weight 100
@@ -4815,7 +4817,7 @@ td
 					color oscuro
 					width 100%
 					&:hover
-						background naranjito
+						background azulAsiste
 						color white
 					span
 						font-family 'oswaldregular'
@@ -5133,7 +5135,7 @@ td
 					border-top 1px solid #aeadb3
 					border-right 1px solid #aeadb3
 					a
-						color naranjo
+						color azulAsiste
 						h3
 							padding 5px 10px 0 10px
 		.content-wrap
@@ -5436,7 +5438,7 @@ hr
 								.delivery_option_price
 									color verdeAsiste
 									font-weight 600
-									line-height 45px
+									//line-height 45px
 									padding 0 20px
 									text-align center
 							.delivery_option_radio

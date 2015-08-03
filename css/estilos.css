@@ -386,7 +386,7 @@ body header {
   position: relative;
 }
 body header .header {
-  background: #fff;
+  background: #ecedef;
   border-bottom: 1px solid #ecedef;
   height: 70px;
   margin: 0 auto;
@@ -397,13 +397,13 @@ body header .header figure {
   margin: 0;
   padding: 0;
   position: absolute;
-  width: 140px;
+  width: 200px;
   z-index: 3;
 }
 body header .header figure a img {
   display: block;
-  margin: 8px auto 0;
-  width: 90%;
+  margin: 20px 0 0 0;
+  width: 100%;
 }
 body header .header .headerCOnt {
   height: 70px;
@@ -421,7 +421,7 @@ body header .header .headerCOnt .buscador {
 }
 body header .header .headerCOnt .buscador .buscadorForm {
   background: #fff;
-  border: 2px solid #f8b302;
+  border: 2px solid #0040a6;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   bottom: 0;
@@ -437,7 +437,7 @@ body header .header .headerCOnt .buscador .buscadorForm form {
   z-index: -1;
 }
 body header .header .headerCOnt .buscador .buscadorForm form button {
-  background: #f8b302;
+  background: #0040a6;
   border: none;
   cursor: pointer;
   height: 26px;
@@ -618,10 +618,10 @@ body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit in
   width: 100%;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover {
-  background: #f8b302;
+  background: #0040a6;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover button {
-  background: #f8b302;
+  background: #0040a6;
 }
 body .autenticacion .contenedorLogin .accedeCuenta form .form_content .submit:hover button span {
   color: #fff;
@@ -684,7 +684,7 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit butt
   border: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  color: #f4714a;
+  color: #ff4c00;
   width: 100%;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit button span {
@@ -698,7 +698,7 @@ body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit inpu
   width: 100%;
 }
 body .autenticacion .contenedorLogin .creaCuenta form .form_content .submit:hover button {
-  background: #f4714a;
+  background: #ff4c00;
   color: #fff;
 }
 body .autenticacion .formularioCrea {
@@ -1434,13 +1434,13 @@ body .formCarrito .listaCompra .first {
   border-radius: 2px 0 0 2px;
 }
 body .formCarrito .listaCompra .step_current {
-  background: #f8b302;
+  background: #ff4c00;
   color: #fff;
   position: relative;
 }
 body .formCarrito .listaCompra .step_current:after {
   border-bottom: 15.15px solid transparent;
-  border-left: 7px solid #f8b302;
+  border-left: 7px solid #ff4c00;
   border-right: 0;
   border-top: 15.15px solid transparent;
   bottom: 0;
@@ -2136,7 +2136,7 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   position: absolute;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices .price .precioActual {
-  background: #ff6b00;
+  background: #ff4c00;
   display: block;
   line-height: 50px;
   margin: 18px auto 0;
@@ -2149,7 +2149,6 @@ body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .b
   font-family: 'oswaldregular';
   font-size: 20px;
   font-weight: 100;
-  padding-right: 20px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .cantidad {
   font-size: 15px;
@@ -2919,10 +2918,10 @@ table tfoot tr .transporte {
   font-size: 13px;
 }
 table tfoot tr .precioTotal {
-  border-bottom: 2px solid #f8b302;
+  border-bottom: 2px solid #ff4c00;
 }
 table tfoot tr .precioTotal span {
-  color: #f8b302;
+  color: #ff4c00;
   font-family: 'oswaldregular';
   font-size: 22px;
   font-weight: 100;
@@ -2932,10 +2931,10 @@ table tfoot tr .price {
   font-weight: 600;
 }
 table tfoot .cart_total_price .priceFinal {
-  border-bottom: 2px solid #f8b302;
+  border-bottom: 2px solid #ff4c00;
 }
 table tfoot .cart_total_price .priceFinal span {
-  color: #f8b302;
+  color: #ff4c00;
   font-family: 'oswaldregular';
   font-size: 22px;
   font-weight: 100;
@@ -3021,12 +3020,12 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .bx-start.active,
 .bx-pager-link.active {
-  background: #f8b302;
+  background: #0040a6;
   border: 2px solid #fff;
 }
 .bx-pager-link {
   background: #fff;
-  border: 2px solid #f8b302;
+  border: 2px solid #0040a6;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   bottom: 0;
@@ -3046,7 +3045,7 @@ table tfoot .cart_total_voucher .price-discount {
   font-size: 0;
 }
 .carrito {
-  background: #f8b302;
+  background: #ff4c00;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   cursor: pointer;
@@ -3340,7 +3339,7 @@ table tfoot .cart_total_voucher .price-discount {
   width: 16px;
 }
 .carrito .carritoHover .cart-buttons {
-  background: #f8b302;
+  background: #ff4c00;
   float: right;
   padding: 0 1em;
   -webkit-transition: 0.3s;
@@ -3563,8 +3562,8 @@ table tfoot .cart_total_voucher .price-discount {
   transition: 0.4s;
 }
 .menuTop > li > a:hover {
-  background: #fff;
-  color: #f8b302;
+  background: #ff4c00;
+  color: #fff;
 }
 .maniaBackground1 > ul {
   background: #fff url("../img/1.png");
@@ -4024,7 +4023,7 @@ table tfoot .cart_total_voucher .price-discount {
 .listaProducto .listaProductoLi .contenedorPopular .right-block .precios span {
   -webkit-border-radius: 7px;
   border-radius: 7px;
-  color: #f8b302;
+  color: #0040a6;
   display: block;
   margin: 4px 0;
   vertical-align: top;
@@ -4064,7 +4063,7 @@ table tfoot .cart_total_voucher .price-discount {
   position: relative;
 }
 .listaProducto .listaProductoLi .contenedorPopular .right-block .wishlist {
-  background: #ff6b00;
+  background: #ff4c00;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   height: 45px;
@@ -4159,7 +4158,7 @@ table tfoot .cart_total_voucher .price-discount {
   font-weight: 600;
 }
 .añadeCarrituHome {
-  background: #f8b302;
+  background: #0040a6;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
@@ -4212,7 +4211,7 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .Otroquick-view,
 .quick-view {
-  background: #ff6b00;
+  background: #ff4c00;
   color: #f8b302;
   font-size: 0;
   font-weight: 600;
@@ -4250,7 +4249,7 @@ table tfoot .cart_total_voucher .price-discount {
 .Otroquick-view:before,
 .quick-view:before {
   content: '';
-  border-bottom: 30px solid #ff6b00;
+  border-bottom: 30px solid #ff4c00;
   border-left: 7px solid transparent;
   border-right: 0;
   border-top: 0;
@@ -4774,7 +4773,7 @@ table tfoot .cart_total_voucher .price-discount {
   font-weight: 100;
 }
 .productoCesta .totalFinal span {
-  color: #f8b302;
+  color: #ff4c00;
   font-size: 20px;
 }
 .carritoAlert {
@@ -5247,7 +5246,7 @@ table tfoot .cart_total_voucher .price-discount {
 .adjuntos h3 {
   border: 1px solid transparent;
   border-bottom: 2px solid #ecedef;
-  color: #ff6b00;
+  color: #0040a6;
   font-family: 'oswaldregular';
   font-size: 20px;
   font-weight: 100;
@@ -5417,7 +5416,7 @@ td .sale-box {
   width: 100%;
 }
 .accedeCuentaChica form .form_content .submit button:hover {
-  background: #f8b302;
+  background: #0040a6;
   color: #fff;
 }
 .accedeCuentaChica form .form_content .submit button span {
@@ -5756,7 +5755,7 @@ td .sale-box {
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a,
 .tabsInfo .tabs .navTabs ul .tab-current a {
-  color: #ff6b00;
+  color: #0040a6;
 }
 .tabsInfoCms .tabs .navTabs ul .tab-current a h3,
 .tabsInfo .tabs .navTabs ul .tab-current a h3 {
@@ -6149,7 +6148,6 @@ hr {
 .order_carrier_content .delivery_options_address .delivery_options .delivery_option .eligeTransporte tbody tr .delivery_option_price .delivery_option_price {
   color: #038a7a;
   font-weight: 600;
-  line-height: 45px;
   padding: 0 20px;
   text-align: center;
 }
