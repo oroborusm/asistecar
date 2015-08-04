@@ -106,11 +106,8 @@
     top: 50px;
     width: 80%;
   }
-  body header .header .headerCOnt .buscador .buscadorForm {
-    border: 2px solid #434142;
-  }
   body header .header .headerCOnt .buscador .buscadorForm form button {
-    background-color: #434142;
+    background-color: #0040a6;
   }
   body .accedeCuentaChica {
     -webkit-box-sizing: border-box;
@@ -490,7 +487,10 @@
     width: 48.5%;
   }
   .listaProducto .listaProductoLi .contenedorPopular .functional-buttons .compare a {
-    width: 170px;
+    width: 150px;
+  }
+  .listaProducto .listaProductoLi .contenedorPopular .functional-buttons .compare a span {
+    font-size: 11px;
   }
   .navegador {
     width: 90%;
