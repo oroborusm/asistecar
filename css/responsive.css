@@ -590,6 +590,9 @@
     text-decoration: none;
     text-transform: capitalize;
   }
+  .sub-menuDesktop > li ul li a:hover {
+    color: #ff4c00;
+  }
   .sub-menuDesktop > li > a {
     color: #5b5b5f;
     font-size: 14px;
