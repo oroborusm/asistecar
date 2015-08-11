@@ -169,7 +169,7 @@ body footer .finFooter .row .boletin .contBoletin .block_content form button spa
   line-height: 29px;
 }
 body footer .row {
-  margin: 0 auto;
+  margin: 0 auto 2em;
   position: relative;
   width: 950px;
 }
