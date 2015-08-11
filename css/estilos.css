@@ -4183,7 +4183,9 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .añadeCarrituHome a {
   display: block;
+  height: 45px;
   text-decoration: none;
+  width: 45px;
 }
 .añadeCarrituHome span:before {
   color: #fff;
