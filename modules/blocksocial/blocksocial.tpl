@@ -71,8 +71,14 @@
 	        	</li>
 	        {/if}
 		</ul>
-		<h4 class="tituloPagos">Medios de Pago</h4>
-		<img src="themes/secure-transbanc.png" alt="webpay" style="width:50%; margin-left: -10px;">  <script type="text/javascript">
+		<div class="mediosPago">
+			<h4 class="tituloPagos">Medios de Pago</h4>
+			<img src="https://www.asistecar.cl/themes/asistecar-asiste_movil/secure-transbanc.png" alt="webpay"> 
+			
+		</div>	
+
+
+	<script type="text/javascript">
     (function() {
         var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true;
         ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'seal.ssls.com/script.js?cn=' + window.location.host;
