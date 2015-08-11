@@ -2968,6 +2968,7 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .alert-danger p {
   color: #fff;
+  display: none;
   text-align: center;
 }
 .alert-danger ol {
