@@ -229,9 +229,9 @@
 <p class="navegador">
 	<a class="volverCompra" href="{$link->getPageLink('addresses', true)|escape:'html':'UTF-8'}">
 		<span class="icon-chevron-left">
-			{l s='Back to your addresses'}
 			
 		</span>
+		{l s='Back to your addresses'}
 		<i class="icon-chevron-left"></i>
 	</a>
 </p>

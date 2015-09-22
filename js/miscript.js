@@ -67,4 +67,15 @@ $(function(){
 		$('.añadeCarrituHome').removeClass('animated infinite pulse')
 	}
 
+	defineSizes();
+	$(window).on("resize", defineSizes);
+	function defineSizes(){
+		$(".categoriasHome .contenedor").each(function(i,el){
+			$(el).css({
+				"height": ($(".contenedor").width() * 0.75)+"px"
+			});
+		});
+	}
+
+
 });

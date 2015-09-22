@@ -34,10 +34,15 @@
         {l s='Your personal information'}
     </span>
 {/capture}
-<div class="box">
-    <h1 class="page-subheading">
+<div class="titulocentrado">
+    <h1 class="page-heading">
         {l s='Your personal information'}
     </h1>
+    <p class="info-title">
+        {l s='Please be sure to update your personal information if it has changed.'}
+    </p>    
+</div>
+<div class="box">
     
     {include file="$tpl_dir./errors.tpl"}
     
@@ -47,9 +52,6 @@
             {if isset($pwd_changed)}<br />{l s='Your password has been sent to your email:'} {$email}{/if}
         </p>
     {else}
-        <p class="info-title">
-            {l s='Please be sure to update your personal information if it has changed.'}
-        </p>
         <!-- <p class="required">
             <sup>*</sup>{l s='Required field'}
         </p> -->
@@ -176,7 +178,7 @@
     					<input type="text" class="form-control" id="website" name="website" value="{if isset($smarty.post.website)}{$smarty.post.website}{/if}" />
     				</div>
     			{/if}
-                    <div class="form-group">
+                    <div class="form-group submit2">
                         <button type="submit" name="submitIdentity" class="btn btn-default button button-medium">
                             <span>{l s='Save'}<i class="icon-chevron-right right"></i></span>
                         </button>
@@ -208,8 +210,8 @@
 <p class="navegador">
     <a class="volverCompra" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
         <span class="icon-chevron-left">
-            {l s='Back to Your Account'}
         </span>
+        {l s='Back to Your Account'}
         <i class="icon-chevron-left"></i>
     </a>
 

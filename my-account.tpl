@@ -82,6 +82,7 @@
     <p class="navegador">
             <a class="volverCompra" href="{$base_dir}" title="{l s='Home'}">
                 <span>{l s='Home'}</span>
+                <span class="icon-chevron-left"></span>
             </a>
     </p>    
 

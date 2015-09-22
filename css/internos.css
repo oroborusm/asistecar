@@ -38,6 +38,7 @@
   overflow: hidden;
   padding: 15px 0 0px 0; }
   .subcategories p.subcategory-heading {
+    font-family: 'proxima_nova_rgregular';
     font-weight: bold;
     color: #333333;
     margin: 0 0 15px 0; }
@@ -52,6 +53,9 @@
       text-align: center;
       width: 145px;
   	}
+      .subcategories ul li h5{
+        margin: 0;
+      }
       .subcategories ul li .subcategory-image {
         padding: 0 0 8px 0; }
         .subcategories ul li .subcategory-image a {
@@ -63,6 +67,7 @@
             vertical-align: top; }
       .subcategories ul li .subcategory-name {
         color: #555454;
+        font-family: 'proxima_nova_rgregular';
         text-transform: uppercase; }
         .subcategories ul li .subcategory-name:hover {
           color: #515151; }
@@ -457,7 +462,7 @@ header.is-fixed {
 }
 #cd-lateral-nav a {
   display: block;
-  line-height: 2em;
+  /* line-height: 2em; */
   /* padding: 0 16px 0 32px; */
   /* color: #aab5b7; */
 }
@@ -487,7 +492,7 @@ header.is-fixed {
 #cd-lateral-nav .item-has-children > a {
   position: relative;
   text-transform: uppercase;
-  font-weight: 600;
+  /*font-weight: 600;*/
   /* this is the right arrow to show that the item has a submenu  */
 }
 #cd-lateral-nav .item-has-children > a::after {

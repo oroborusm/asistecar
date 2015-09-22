@@ -4,7 +4,7 @@
 @media screen and (min-width:801px)
 	#cd-lateral-nav
 		background-color: #434142;
-		height 30px
+		height 40px
 		margin 0 auto
 		overflow visible
 		position relative
@@ -19,7 +19,6 @@
 			padding 20px
 			.finFooter
 				.row
-					text-align center
 					width 100%
 					figure
 						width 100%
@@ -31,14 +30,13 @@
 					.boletin
 						width 100%
 						.contBoletin
-							margin 0 auto
-							width 80%
-							h4
-								display none
+							//margin 0 auto
+							width 100%
 							.block_content
 								width 100%
 								form
 									.form-group
+										text-align left
 										input
 											width 60%
 			.row
@@ -73,8 +71,8 @@
 							width 49%
 		header
 			.header
-				border-bottom 4px solid #F8B302
-				height 120px
+				//border-bottom 4px solid #F8B302
+				height 140px
 				.headerCOnt
 					width 100%
 					figure
@@ -160,6 +158,8 @@
 					.contenedorAddresses
 					.quieresAgregaComentario 
 						width 100%
+					.quieresAgregaComentario 
+						margin-top 0
 		.micuenta
 			.rodeaListaDirecciones
 				.listaDirecciones
@@ -222,6 +222,7 @@
 							display none
 					.descripcion
 						box-sizing border-box
+						max-height initial
 						margin 0
 						padding 20px
 						width 100%
@@ -229,6 +230,8 @@
 						.socialsharing_product
 							display none
 					.contenedorImagenes
+						display block
+						margin 0 auto
 						width 100%
 						.imagenGrande
 							border 0
@@ -379,14 +382,6 @@
 		
 @media screen and (max-width: 650px)
 	body
-		header
-			.header
-				.headerCOnt
-					.buscador
-						.buscadorForm
-							form
-								input
-									height 25px
 		.formCarrito
 			.detalleProducto
 				overflow-y scroll
@@ -528,8 +523,8 @@
 @media only screen and (min-width: 800px) 
 	.contenedorMenu
 		background #434142
-		border-bottom 4px solid #ff4c00
-		border-top 1px solid #999
+		//border-bottom 1px solid #999
+		border-top 4px solid #999
 	.loginMenu
 		display none !important
 	.sub-menuDesktop
@@ -538,7 +533,7 @@
 		min-height 260px !important
 		padding 20px 30% 10px 6% !important
 		position absolute !important
-		width 38% !important
+		width 75% !important
 	.sub-menuDesktop > li
 		display inline-block 
 		vertical-align top 
@@ -581,7 +576,7 @@
 	
 	.cd-navigation > li
 		display inline-block
-		height 30px
+		height 40px
 		vertical-align top
 	
 	.item-has-children > a

@@ -148,46 +148,70 @@
 				{/if}
 
 				<div class="topDescripcion">
-					<p id="product_reference" class="referencia"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
-						<label>{l s='Model'} </label>
-						<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
-					</p>
+					<div class="referencias">
+						<p id="product_reference" class="referencia"{if empty($product->reference) || !$product->reference} style="display: none;"{/if}>
+							<label>{l s='Model'} </label>
+							<span class="editable" itemprop="sku">{if !isset($groups)}{$product->reference|escape:'html':'UTF-8'}{/if}</span>
+						</p>
 
 
-					{if $product->condition}
-					<p id="product_condition" class="condicion">
-						<label>{l s='Condition'} </label>
-						{if $product->condition == 'new'}
-							<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
-							<span class="editable">{l s='New'}</span>
-						{elseif $product->condition == 'used'}
-							<link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
-							<span class="editable">{l s='Used'}</span>
-						{elseif $product->condition == 'refurbished'}
-							<link itemprop="itemCondition" href="http://schema.org/RefurbishedCondition"/>
-							<span class="editable">{l s='Refurbished'}</span>
-						{/if}
-					</p>
+						
 
-					<!-- {if $nbComments != 0} -->
-						<div class="commentsValorizacion">
-							<span>{l s='Rating' mod='productcomments'}:</span>
-							<div class="star_content clearfix">
-								{section name="i" start=0 loop=5 step=1}
-									{if $averageTotal le $smarty.section.i.index}
-										<div class="star"></div>
-									{else}
-										<div class="star star_on"></div>
-									{/if}
-								{/section}
-								<meta itemprop="worstRating" content = "0" />
-								<meta itemprop="ratingValue" content = "{if isset($ratings.avg)}{$ratings.avg|round:1|escape:'html':'UTF-8'}{else}{$averageTotal|round:1|escape:'html':'UTF-8'}{/if}" />
-								<meta itemprop="bestRating" content = "5" />
-							</div>
-						</div> <!-- .comments_note -->
-					<!-- {/if} -->					
+
+						<!-- {if $nbComments != 0} -->
+							<div class="commentsValorizacion">
+								<span>{l s='Rating' mod='productcomments'}:</span>
+								<div class="star_content clearfix">
+									{section name="i" start=0 loop=5 step=1}
+										{if $averageTotal le $smarty.section.i.index}
+											<div class="star"></div>
+										{else}
+											<div class="star star_on"></div>
+										{/if}
+									{/section}
+									<meta itemprop="worstRating" content = "0" />
+									<meta itemprop="ratingValue" content = "{if isset($ratings.avg)}{$ratings.avg|round:1|escape:'html':'UTF-8'}{else}{$averageTotal|round:1|escape:'html':'UTF-8'}{/if}" />
+									<meta itemprop="bestRating" content = "5" />
+								</div>
+							</div> <!-- .comments_note -->
+						<!-- {/if} -->	
+					</div>
+
+					{if !$content_only}
+						<!-- usefull links-->
+						<ul id="usefull_link_block" class="linksDescripcion">
+							{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
+							
+							{if $have_image && !$jqZoomEnabled}{/if}
+
+
+							{if ($too_early == false AND ($is_logged OR $allow_guests))}
+								<li>
+									<a class="open-comment-form" href="#new_comment_form">
+										{l s='Write a review' mod='productcomments'}
+									</a>
+								</li>
+							{/if}
+
+						</ul>
+					{/if}				
 				</div>
 
+				
+				{if $product->condition}
+				<p id="product_condition" class="condicion">
+					<label>{l s='Condition'} </label>
+					{if $product->condition == 'new'}
+						<link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
+						<span class="ProdNuevo">{l s='New'}</span>
+					{elseif $product->condition == 'used'}
+						<link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
+						<span class="ProdReparado">{l s='Used'}</span>
+					{elseif $product->condition == 'refurbished'}
+						<link itemprop="itemCondition" href="http://schema.org/RefurbishedCondition"/>
+						<span class="ProdUsado">{l s='Refurbished'}</span>
+					{/if}
+				</p>
 
 				<h1 itemprop="name">{$product->name|escape:'html':'UTF-8'}</h1>
 
@@ -244,30 +268,199 @@
 				<div id="oosHook"{if $product->quantity > 0} style="display: none;"{/if}>
 					{$HOOK_PRODUCT_OOS}
 				</div>
+				
+				<div class="carroDecripcion">
+					<!-- <img class="pay" src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt=""> -->
+					<div class="rodeacarroDecripcion">
+
+						{if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
+						<!-- add to cart form-->
+						<form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if} action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
+							<!-- hidden datas -->
+							<p class="hidden">
+								<input type="hidden" name="token" value="{$static_token}" />
+								<input type="hidden" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
+								<input type="hidden" name="add" value="1" />
+								<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
+							</p>
+							<div class="box-info-product">
+
+								<div class="content_prices">
+									<div class="cantidad">
+										<!-- quantity wanted -->
+
+										{if !$PS_CATALOG_MODE}
+										<p id="quantity_wanted_p" class="contieneCantidad"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
+											<!-- <label>{l s='Quantity'}</label> -->
+
+											<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
+
+												<!-- <div class="updown"> -->
+													<a href="#" data-field-qty="qty" class="product_quantity_up">
+														<span><i class="icon-plus"></i></span>
+													</a>
+
+													<a href="#" data-field-qty="qty" class="product_quantity_down">
+														<span><i class="icon-minus"></i></span>
+													</a>
+
+												<!-- </div> -->
+
+											<!-- <span class="clearfix"></span> -->
+										</p>
+										{/if}
+
+
+
+
+
+
+
+										<!-- minimal quantity wanted -->
+										<p id="minimal_quantity_wanted_p"{if $product->minimal_quantity <= 1 || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
+											{l s='This product is not sold individually. You must select at least'} <b id="minimal_quantity_label">{$product->minimal_quantity}</b> {l s='quantity for this product.'}
+										</p>
+										<!-- {if isset($groups)} -->
+											<!-- attributes -->
+											<!-- <div id="attributes">
+												<div class="clearfix"></div>
+												{foreach from=$groups key=id_attribute_group item=group}
+													{if $group.attributes|@count}
+														<fieldset class="attribute_fieldset">
+															<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
+															{assign var="groupName" value="group_$id_attribute_group"}
+															<div class="attribute_list">
+																{if ($group.group_type == 'select')}
+																	<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select no-print">
+																		{foreach from=$group.attributes key=id_attribute item=group_attribute}
+																			<option value="{$id_attribute|intval}"{if (isset($smarty.get.$groupName) && $smarty.get.$groupName|intval == $id_attribute) || $group.default == $id_attribute} selected="selected"{/if} title="{$group_attribute|escape:'html':'UTF-8'}">{$group_attribute|escape:'html':'UTF-8'}</option>
+																		{/foreach}
+																	</select>
+																{elseif ($group.group_type == 'color')}
+																	<ul id="color_to_pick_list" class="clearfix">
+																		{assign var="default_colorpicker" value=""}
+																		{foreach from=$group.attributes key=id_attribute item=group_attribute}
+																			{assign var='img_color_exists' value=file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}
+																			<li{if $group.default == $id_attribute} class="selected"{/if}>
+																				<a href="{$link->getProductLink($product)|escape:'html':'UTF-8'}" id="color_{$id_attribute|intval}" name="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" class="color_pick{if ($group.default == $id_attribute)} selected{/if}"{if !$img_color_exists && isset($colors.$id_attribute.value) && $colors.$id_attribute.value} style="background:{$colors.$id_attribute.value|escape:'html':'UTF-8'};"{/if} title="{$colors.$id_attribute.name|escape:'html':'UTF-8'}">
+																					{if $img_color_exists}
+																						<img src="{$img_col_dir}{$id_attribute|intval}.jpg" alt="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" title="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" width="20" height="20" />
+																					{/if}
+																				</a>
+																			</li>
+																			{if ($group.default == $id_attribute)}
+																				{$default_colorpicker = $id_attribute}
+																			{/if}
+																		{/foreach}
+																	</ul>
+																	<input type="hidden" class="color_pick_hidden" name="{$groupName|escape:'html':'UTF-8'}" value="{$default_colorpicker|intval}" />
+																{elseif ($group.group_type == 'radio')}
+																	<ul>
+																		{foreach from=$group.attributes key=id_attribute item=group_attribute}
+																			<li>
+																				<input type="radio" class="attribute_radio" name="{$groupName|escape:'html':'UTF-8'}" value="{$id_attribute}" {if ($group.default == $id_attribute)} checked="checked"{/if} />
+																				<span>{$group_attribute|escape:'html':'UTF-8'}</span>
+																			</li>
+																		{/foreach}
+																	</ul>
+																{/if} --
+															</div> <!-- end attribute_list -->
+														<!-- </fieldset>
+													{/if}
+												{/foreach}
+											</div> <!-- end attributes -->
+										<!-- {/if} -->
+									</div> <!--end product_attributes -->
+
+									{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
+										<!-- prices -->
+										<div class="price">
+											<p class="precioActual" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
+												{if $priceDisplay >= 0 && $priceDisplay <= 2}
+													<span id="our_price_display" itemprop="price">{convertPrice price=$productPrice}</span>
+													<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
+														{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
+													{/if}-->
+													<meta itemprop="priceCurrency" content="{$currency->iso_code}" />
+													{hook h="displayProductPriceBlock" product=$product type="price"}
+												{/if}
+											</p>
+											<!-- <p id="reduction_percent" {if !$product->specificPrice || $product->specificPrice.reduction_type != 'percentage'} style="display:none;"{/if}>
+												<span id="reduction_percent_display">
+													{if $product->specificPrice && $product->specificPrice.reduction_type == 'percentage'}-{$product->specificPrice.reduction*100}%{/if}
+												</span>
+											</p> -->
+											<p id="reduction_amount" {if !$product->specificPrice || $product->specificPrice.reduction_type != 'amount' || $product->specificPrice.reduction|floatval ==0} style="display:none"{/if}>
+												<span id="reduction_amount_display">
+												{if $product->specificPrice && $product->specificPrice.reduction_type == 'amount' && $product->specificPrice.reduction|floatval !=0}
+													-{convertPrice price=$productPriceWithoutReduction-$productPrice|floatval}
+												{/if}
+												</span>
+											</p>
+											<!-- <p id="old_price"{if (!$product->specificPrice || !$product->specificPrice.reduction) && $group_reduction == 0} class="hidden"{/if}>
+												{if $priceDisplay >= 0 && $priceDisplay <= 2}
+													{hook h="displayProductPriceBlock" product=$product type="old_price"}
+													<span id="old_price_display">{if $productPriceWithoutReduction > $productPrice}{convertPrice price=$productPriceWithoutReduction}{/if}</span>
+													{if $tax_enabled && $display_tax_label == 1}{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}{/if}
+												{/if}
+											</p> -->
+											{if $priceDisplay == 2}
+												<br />
+												<span id="pretaxe_price">
+													<span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
+													{l s='tax excl.'}
+												</span>
+											{/if}
+
+											<div class="box-cart-bottom">
+												<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
+													<p id="add_to_cart" class="agregaCarrito">
+														<button type="submit" name="Submit" class="exclusive">
+															<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>
+														</button>
+													</p>
+												</div>
+												{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}<strong></strong>
+											</div> <!-- end box-cart-bottom -->
+
+										</div> <!-- end prices -->
+										{if $packItems|@count && $productPrice < $product->getNoPackPrice()}
+											<p class="pack_price">{l s='Instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p>
+										{/if}
+										{if $product->ecotax != 0}
+											<p class="price-ecotax">{l s='Including'} <span id="ecotax_price_display">{if $priceDisplay == 2}{$ecotax_tax_exc|convertAndFormatPrice}{else}{$ecotax_tax_inc|convertAndFormatPrice}{/if}</span> {l s='for ecotax'}
+												{if $product->specificPrice && $product->specificPrice.reduction}
+												<br />{l s='(not impacted by the discount)'}
+												{/if}
+											</p>
+										{/if}
+										{if !empty($product->unity) && $product->unit_price_ratio > 0.000000}
+											{math equation="pprice / punit_price"  pprice=$productPrice  punit_price=$product->unit_price_ratio assign=unit_price}
+											<p class="unit-price"><span id="unit_price_display">{convertPrice price=$unit_price}</span> {l s='per'} {$product->unity|escape:'html':'UTF-8'}</p>
+											{hook h="displayProductPriceBlock" product=$product type="unit_price"}
+										{/if}
+									{/if} {*close if for show price*}
+									{hook h="displayProductPriceBlock" product=$product type="weight"}
+									
+										
+								
+
+								</div> <!-- end content_prices -->
+
+
+
+							</div> <!-- end box-info-product -->
+						</form>
+						{/if}
+					</div>
+				</div> <!-- end pb-right-column-->
+
+
 				<!-- social? -->
 				{if isset($HOOK_EXTRA_RIGHT) && $HOOK_EXTRA_RIGHT}{$HOOK_EXTRA_RIGHT}{/if}
-				{if !$content_only}
-					<!-- usefull links-->
-					<ul id="usefull_link_block" class="linksDescripcion">
-						{if $HOOK_EXTRA_LEFT}{$HOOK_EXTRA_LEFT}{/if}
-						<li class="print">
-							<a href="javascript:print();">
-								{l s='Print'}
-							</a>
-						</li>
-						{if $have_image && !$jqZoomEnabled}{/if}
+				
 
-
-						{if ($too_early == false AND ($is_logged OR $allow_guests))}
-							<li>
-								<a class="open-comment-form" href="#new_comment_form">
-									{l s='Write a review' mod='productcomments'}
-								</a>
-							</li>
-						{/if}
-
-					</ul>
-				{/if}
 			</div>
 
 
@@ -277,185 +470,6 @@
 
 
 
-			<div class="carroDecripcion">
-				<img class="pay" src="https://www.asistecar.cl/public_img/secure-transbanc.gif" alt="">
-				<div class="rodeacarroDecripcion">
-
-					{if ($product->show_price && !isset($restricted_country_mode)) || isset($groups) || $product->reference || (isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS)}
-					<!-- add to cart form-->
-					<form id="buy_block"{if $PS_CATALOG_MODE && !isset($groups) && $product->quantity > 0} class="hidden"{/if} action="{$link->getPageLink('cart')|escape:'html':'UTF-8'}" method="post">
-						<!-- hidden datas -->
-						<p class="hidden">
-							<input type="hidden" name="token" value="{$static_token}" />
-							<input type="hidden" name="id_product" value="{$product->id|intval}" id="product_page_product_id" />
-							<input type="hidden" name="add" value="1" />
-							<input type="hidden" name="id_product_attribute" id="idCombination" value="" />
-						</p>
-						<div class="box-info-product">
-
-							<div class="box-cart-bottom">
-								<div{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || (isset($restricted_country_mode) && $restricted_country_mode) || $PS_CATALOG_MODE} class="unvisible"{/if}>
-									<p id="add_to_cart" class="agregaCarrito">
-										<button type="submit" name="Submit" class="exclusive">
-											<span>{if $content_only && (isset($product->customization_required) && $product->customization_required)}{l s='Customize'}{else}{l s='Add to cart'}{/if}</span>
-										</button>
-									</p>
-								</div>
-								{if isset($HOOK_PRODUCT_ACTIONS) && $HOOK_PRODUCT_ACTIONS}{$HOOK_PRODUCT_ACTIONS}{/if}<strong></strong>
-							</div> <!-- end box-cart-bottom -->
-
-														<div class="content_prices">
-								{if $product->show_price && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
-									<!-- prices -->
-									<div class="price">
-										<p class="precioActual" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-											{if $product->quantity > 0}<link itemprop="availability" href="http://schema.org/InStock"/>{/if}
-											{if $priceDisplay >= 0 && $priceDisplay <= 2}
-												<span id="our_price_display" itemprop="price">{convertPrice price=$productPrice}</span>
-												<!--{if $tax_enabled  && ((isset($display_tax_label) && $display_tax_label == 1) || !isset($display_tax_label))}
-													{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}
-												{/if}-->
-												<meta itemprop="priceCurrency" content="{$currency->iso_code}" />
-												{hook h="displayProductPriceBlock" product=$product type="price"}
-											{/if}
-										</p>
-										<!-- <p id="reduction_percent" {if !$product->specificPrice || $product->specificPrice.reduction_type != 'percentage'} style="display:none;"{/if}>
-											<span id="reduction_percent_display">
-												{if $product->specificPrice && $product->specificPrice.reduction_type == 'percentage'}-{$product->specificPrice.reduction*100}%{/if}
-											</span>
-										</p> -->
-										<p id="reduction_amount" {if !$product->specificPrice || $product->specificPrice.reduction_type != 'amount' || $product->specificPrice.reduction|floatval ==0} style="display:none"{/if}>
-											<span id="reduction_amount_display">
-											{if $product->specificPrice && $product->specificPrice.reduction_type == 'amount' && $product->specificPrice.reduction|floatval !=0}
-												-{convertPrice price=$productPriceWithoutReduction-$productPrice|floatval}
-											{/if}
-											</span>
-										</p>
-										<!-- <p id="old_price"{if (!$product->specificPrice || !$product->specificPrice.reduction) && $group_reduction == 0} class="hidden"{/if}>
-											{if $priceDisplay >= 0 && $priceDisplay <= 2}
-												{hook h="displayProductPriceBlock" product=$product type="old_price"}
-												<span id="old_price_display">{if $productPriceWithoutReduction > $productPrice}{convertPrice price=$productPriceWithoutReduction}{/if}</span>
-												<!-- {if $tax_enabled && $display_tax_label == 1}{if $priceDisplay == 1}{l s='tax excl.'}{else}{l s='tax incl.'}{/if}{/if} --
-											{/if}
-										</p> -->
-										{if $priceDisplay == 2}
-											<br />
-											<span id="pretaxe_price">
-												<span id="pretaxe_price_display">{convertPrice price=$product->getPrice(false, $smarty.const.NULL)}</span>
-												{l s='tax excl.'}
-											</span>
-										{/if}
-									</div> <!-- end prices -->
-									{if $packItems|@count && $productPrice < $product->getNoPackPrice()}
-										<p class="pack_price">{l s='Instead of'} <span style="text-decoration: line-through;">{convertPrice price=$product->getNoPackPrice()}</span></p>
-									{/if}
-									{if $product->ecotax != 0}
-										<p class="price-ecotax">{l s='Including'} <span id="ecotax_price_display">{if $priceDisplay == 2}{$ecotax_tax_exc|convertAndFormatPrice}{else}{$ecotax_tax_inc|convertAndFormatPrice}{/if}</span> {l s='for ecotax'}
-											{if $product->specificPrice && $product->specificPrice.reduction}
-											<br />{l s='(not impacted by the discount)'}
-											{/if}
-										</p>
-									{/if}
-									{if !empty($product->unity) && $product->unit_price_ratio > 0.000000}
-										{math equation="pprice / punit_price"  pprice=$productPrice  punit_price=$product->unit_price_ratio assign=unit_price}
-										<p class="unit-price"><span id="unit_price_display">{convertPrice price=$unit_price}</span> {l s='per'} {$product->unity|escape:'html':'UTF-8'}</p>
-										{hook h="displayProductPriceBlock" product=$product type="unit_price"}
-									{/if}
-								{/if} {*close if for show price*}
-								{hook h="displayProductPriceBlock" product=$product type="weight"}
-
-
-								<div class="cantidad">
-									<!-- quantity wanted -->
-
-									{if !$PS_CATALOG_MODE}
-									<p id="quantity_wanted_p" class="contieneCantidad"{if (!$allow_oosp && $product->quantity <= 0) || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
-										<!-- <label>{l s='Quantity'}</label> -->
-
-										<input type="text" name="qty" id="quantity_wanted" class="text" value="{if isset($quantityBackup)}{$quantityBackup|intval}{else}{if $product->minimal_quantity > 1}{$product->minimal_quantity}{else}1{/if}{/if}" />
-
-											<!-- <div class="updown"> -->
-												<a href="#" data-field-qty="qty" class="product_quantity_up">
-													<span><i class="icon-plus"></i></span>
-												</a>
-
-												<a href="#" data-field-qty="qty" class="product_quantity_down">
-													<span><i class="icon-minus"></i></span>
-												</a>
-
-											<!-- </div> -->
-
-										<!-- <span class="clearfix"></span> -->
-									</p>
-									{/if}
-
-
-
-
-
-
-
-									<!-- minimal quantity wanted -->
-									<p id="minimal_quantity_wanted_p"{if $product->minimal_quantity <= 1 || !$product->available_for_order || $PS_CATALOG_MODE} style="display: none;"{/if}>
-										{l s='This product is not sold individually. You must select at least'} <b id="minimal_quantity_label">{$product->minimal_quantity}</b> {l s='quantity for this product.'}
-									</p>
-									<!-- {if isset($groups)} -->
-										<!-- attributes -->
-										<!-- <div id="attributes">
-											<div class="clearfix"></div>
-											{foreach from=$groups key=id_attribute_group item=group}
-												{if $group.attributes|@count}
-													<fieldset class="attribute_fieldset">
-														<label class="attribute_label" {if $group.group_type != 'color' && $group.group_type != 'radio'}for="group_{$id_attribute_group|intval}"{/if}>{$group.name|escape:'html':'UTF-8'}&nbsp;</label>
-														{assign var="groupName" value="group_$id_attribute_group"}
-														<div class="attribute_list">
-															{if ($group.group_type == 'select')}
-																<select name="{$groupName}" id="group_{$id_attribute_group|intval}" class="form-control attribute_select no-print">
-																	{foreach from=$group.attributes key=id_attribute item=group_attribute}
-																		<option value="{$id_attribute|intval}"{if (isset($smarty.get.$groupName) && $smarty.get.$groupName|intval == $id_attribute) || $group.default == $id_attribute} selected="selected"{/if} title="{$group_attribute|escape:'html':'UTF-8'}">{$group_attribute|escape:'html':'UTF-8'}</option>
-																	{/foreach}
-																</select>
-															{elseif ($group.group_type == 'color')}
-																<ul id="color_to_pick_list" class="clearfix">
-																	{assign var="default_colorpicker" value=""}
-																	{foreach from=$group.attributes key=id_attribute item=group_attribute}
-																		{assign var='img_color_exists' value=file_exists($col_img_dir|cat:$id_attribute|cat:'.jpg')}
-																		<li{if $group.default == $id_attribute} class="selected"{/if}>
-																			<a href="{$link->getProductLink($product)|escape:'html':'UTF-8'}" id="color_{$id_attribute|intval}" name="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" class="color_pick{if ($group.default == $id_attribute)} selected{/if}"{if !$img_color_exists && isset($colors.$id_attribute.value) && $colors.$id_attribute.value} style="background:{$colors.$id_attribute.value|escape:'html':'UTF-8'};"{/if} title="{$colors.$id_attribute.name|escape:'html':'UTF-8'}">
-																				{if $img_color_exists}
-																					<img src="{$img_col_dir}{$id_attribute|intval}.jpg" alt="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" title="{$colors.$id_attribute.name|escape:'html':'UTF-8'}" width="20" height="20" />
-																				{/if}
-																			</a>
-																		</li>
-																		{if ($group.default == $id_attribute)}
-																			{$default_colorpicker = $id_attribute}
-																		{/if}
-																	{/foreach}
-																</ul>
-																<input type="hidden" class="color_pick_hidden" name="{$groupName|escape:'html':'UTF-8'}" value="{$default_colorpicker|intval}" />
-															{elseif ($group.group_type == 'radio')}
-																<ul>
-																	{foreach from=$group.attributes key=id_attribute item=group_attribute}
-																		<li>
-																			<input type="radio" class="attribute_radio" name="{$groupName|escape:'html':'UTF-8'}" value="{$id_attribute}" {if ($group.default == $id_attribute)} checked="checked"{/if} />
-																			<span>{$group_attribute|escape:'html':'UTF-8'}</span>
-																		</li>
-																	{/foreach}
-																</ul>
-															{/if} --
-														</div> <!-- end attribute_list -->
-													<!-- </fieldset>
-												{/if}
-											{/foreach}
-										</div> <!-- end attributes -->
-									<!-- {/if} -->
-								</div> <!--end product_attributes -->
-							</div> <!-- end content_prices -->
-						</div> <!-- end box-info-product -->
-					</form>
-					{/if}
-				</div>
-			</div> <!-- end pb-right-column-->
 
 
 

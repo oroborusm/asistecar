@@ -30,6 +30,94 @@
 						</div>
 
 					</div>
+					
+					<div class="categoriasHome">
+						<div class="contenedor">
+							<ul>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/1.jpg" alt="">
+											<figcaption>
+												<h3 class="abajo">PORTABICICLETAS</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/2.jpg" alt="">
+											<figcaption>
+												<h3 class="abajo">OUTDOOR</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/3.jpg" alt="">
+											<figcaption>
+												<h3 class="arriba">CARROS</h3>
+												
+												<p class="arriba">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis mollitia expedita blanditiis officia ea, velit est itaque.</p>
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/4.jpg" alt="">
+											<figcaption>
+												<h3 class="arriba">PORTAEQUIPAJES</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/5.jpg" alt="">
+											<figcaption>
+												<h3 class="arriba">ACCESORIO VEHÍCULOS</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/6.jpg" alt="">
+											<figcaption>
+												<h3 class="abajo">MOCHILAS</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li>
+									<a class="linkToCategory" href="#">
+										<figure>
+											<img src="themes/asistecarDios/img/categorias/7.jpg" alt="">
+											<figcaption>
+												<h3 class="arriba">BARRAS</h3>
+												
+											</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
 					<div class="popularesMasVendidos">
 
 						<div id="center_column">

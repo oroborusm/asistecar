@@ -78,9 +78,8 @@
     <p class="navegador">
         <a class="volverCompra" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
             <span class="icon-chevron-left">
-                {l s='Back to Your Account'}
             </span>
-            <i class="icon-chevron-left"></i>
+            {l s='Back to Your Account'}
         </a>
 
         <a class="checkout" href="{$base_dir}">

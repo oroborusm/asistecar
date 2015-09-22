@@ -1,7 +1,7 @@
 @media screen and (min-width: 801px) {
   #cd-lateral-nav {
     background-color: #434142;
-    height: 30px;
+    height: 40px;
     margin: 0 auto;
     overflow: visible;
     position: relative;
@@ -22,7 +22,6 @@
     padding: 20px;
   }
   body footer .finFooter .row {
-    text-align: center;
     width: 100%;
   }
   body footer .finFooter .row figure {
@@ -39,14 +38,13 @@
     width: 100%;
   }
   body footer .finFooter .row .boletin .contBoletin {
-    margin: 0 auto;
-    width: 80%;
-  }
-  body footer .finFooter .row .boletin .contBoletin h4 {
-    display: none;
+    width: 100%;
   }
   body footer .finFooter .row .boletin .contBoletin .block_content {
     width: 100%;
+  }
+  body footer .finFooter .row .boletin .contBoletin .block_content form .form-group {
+    text-align: left;
   }
   body footer .finFooter .row .boletin .contBoletin .block_content form .form-group input {
     width: 60%;
@@ -85,8 +83,7 @@
     width: 49%;
   }
   body header .header {
-    border-bottom: 4px solid #f8b302;
-    height: 120px;
+    height: 140px;
   }
   body header .header .headerCOnt {
     width: 100%;
@@ -174,6 +171,9 @@
   body .formCarrito .orderAddress .addresses .quieresAgregaComentario {
     width: 100%;
   }
+  body .formCarrito .orderAddress .addresses .quieresAgregaComentario {
+    margin-top: 0;
+  }
   body .micuenta .rodeaListaDirecciones .listaDirecciones {
     width: 100%;
   }
@@ -245,6 +245,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    max-height: initial;
     margin: 0;
     padding: 20px;
     width: 100%;
@@ -254,6 +255,8 @@
     display: none;
   }
   body .productoPag .productoFoto .contenedorProductoFoto .contenedorImagenes {
+    display: block;
+    margin: 0 auto;
     width: 100%;
   }
   body .productoPag .productoFoto .contenedorProductoFoto .contenedorImagenes .imagenGrande {
@@ -418,9 +421,6 @@
   }
 }
 @media screen and (max-width: 650px) {
-  body header .header .headerCOnt .buscador .buscadorForm form input {
-    height: 25px;
-  }
   body .formCarrito .detalleProducto {
     overflow-y: scroll;
     width: 100%;
@@ -555,8 +555,7 @@
 @media only screen and (min-width: 800px) {
   .contenedorMenu {
     background: #434142;
-    border-bottom: 4px solid #ff4c00;
-    border-top: 1px solid #999;
+    border-top: 4px solid #999;
   }
   .loginMenu {
     display: none !important;
@@ -567,7 +566,7 @@
     min-height: 260px !important;
     padding: 20px 30% 10px 6% !important;
     position: absolute !important;
-    width: 38% !important;
+    width: 75% !important;
   }
   .sub-menuDesktop > li {
     display: inline-block;
@@ -615,7 +614,7 @@
   }
   .cd-navigation > li {
     display: inline-block;
-    height: 30px;
+    height: 40px;
     vertical-align: top;
   }
   .item-has-children > a:after {

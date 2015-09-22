@@ -44,8 +44,9 @@
 	    </p>
 	{else}
 	<p class="navegador">
-		<a class="volverCompra" href="{$link->getPageLink('history', true)|escape:'html':'UTF-8'}" title="{l s='Back to orders'}">
-			<span>{l s='Back to orders'}</span>
+		<a class="volverCompra" href="{$base_dir}" title="{l s='Home'}">
+			<!-- <span>{l s='Back to orders'}</span> -->
+			<span>{l s='Home'}</span>
 			<i class="icon-chevron-left"></i>
 		</a>
 	</p>

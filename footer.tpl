@@ -30,33 +30,14 @@
 					</div><!-- popularesMasVendidos -->
 				</div>
 			</div>
-		<!--</div> esto abre desde el archivo header.tpl#page -->
-					{if isset($HOOK_HOME) && $HOOK_HOME|trim}
-					<!-- hook_home arriba en los comentarios quedo el contenido que va aca por default-->
-
-						<div class="contenedorPartners cd-main-content">
-
-							  <!-- SilverTrack requires only this part -->
-								<div class="owl-carousel">
-									<div class="item"><img src="themes/asistecar/img/1.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/2.jpg"></div>
-									<div class="item"><img src="themes/asistecar/img/3.jpg"></div>
-								</div>
-
-						</div>
-					{/if}
-
-
+		<!--</div> esto abre desde el archivo header.tpl#page -->  
 
 			{if isset($HOOK_FOOTER)}
 				<!-- Footer -->
 
 				<div class="footer-container">
 					<footer id="footer">
-						<div class="row">
-							{$HOOK_FOOTER}
-
-						</div>
+						
 						<div class="finFooter">
 							<div class="row">
 								<figure>
@@ -76,7 +57,8 @@
 												<div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
 													<input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" />
 									                <button type="submit" name="submitNewsletter" class="btn btn-default button button-small">
-									                    <span>{l s='Ok' mod='blocknewsletter'}</span>
+									                    <!-- <span>{l s='Ok' mod='blocknewsletter'}</span> -->
+									                    <span>enviar</span>
 									                </button>
 													<input type="hidden" name="action" value="0" />
 												</div>
@@ -107,6 +89,10 @@
 
 
 							</div>
+						</div>
+
+						<div class="row">
+							{$HOOK_FOOTER}	
 						</div>
 					</footer>
 					<!-- #footer -->

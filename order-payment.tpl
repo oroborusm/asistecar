@@ -83,7 +83,7 @@
 											</tr>
 										{/if}
 										<tr class="cart_total_voucher" {if $total_wrapping == 0}style="display:none"{/if}>
-											<td colspan="4" class="text-right">
+											<td colspan="4" class="text-right conIva">
 												{if $use_taxes}
 													{if $priceDisplay}
 														{if $display_tax_label}{l s='Total gift wrapping (tax excl.):'}{else}{l s='Total gift wrapping cost:'}{/if}
@@ -107,7 +107,7 @@
 											</td>
 										</tr>
 										{if $total_shipping_tax_exc <= 0 && !isset($virtualCart)}
-											<tr class="cart_total_delivery">
+											<tr class="cart_total_delivery conIva">
 												<td colspan="4" class="text-right delivery">{l s='Shipping:'}</td>
 												<td colspan="2" class="price" id="total_shipping">{l s='Free Shipping!'}</td>
 											</tr>
@@ -321,7 +321,7 @@
 									{/if}
 								</table>
 							</div> <!-- end order-detail-content -->
-</div>
+		</div>
 						{/if}
 						<p class="alertClica">Haz click en la forma de pago</p>
 						{if $opc}<div id="opc_payment_methods-content">{/if}

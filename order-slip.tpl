@@ -24,14 +24,15 @@
 *}
 
 {capture name=path}<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span><span class="navigation_page">{l s='Credit slips'}</span>{/capture}
-
-<h1 class="page-heading bottom-indent">
-	{l s='Credit slips'}
-</h1>
-<p class="info-title">
-	{l s='Credit slips you have received after canceled orders'}.
-</p>
-<div class="block-center" id="block-history">
+<div class="titulocentrado">
+	<h1 class="page-heading bottom-indent">
+		{l s='Credit slips'}
+	</h1>
+	<p class="info-title">
+		{l s='Credit slips you have received after canceled orders'}.
+	</p>	
+</div>
+<div class="block-center titulocentrado" id="block-history">
 	{if $ordersSlip && count($ordersSlip)}
 		<table id="order-list" class="table table-bordered footab">
 			<thead>
@@ -93,9 +94,8 @@
 <p class="navegador">
 	<a class="volverCompra" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
 		<span class="icon-chevron-left">
-			{l s='Back to Your Account'}
 		</span>
-		<i class="icon-chevron-left"></i>
+		{l s='Back to Your Account'}
 	</a>
 
 	<a class="checkout" href="{$base_dir}">
