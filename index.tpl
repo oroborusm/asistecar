@@ -35,7 +35,7 @@
 						<div class="contenedor">
 							<ul>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/portabicicletas-66">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/1.jpg" alt="">
 											<figcaption>
@@ -46,7 +46,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/outdoor-60">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/2.jpg" alt="">
 											<figcaption>
@@ -57,7 +57,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/carros-30">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/3.jpg" alt="">
 											<figcaption>
@@ -69,7 +69,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/portaequipajes-67">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/4.jpg" alt="">
 											<figcaption>
@@ -80,7 +80,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/accesorios-vehiculos-68">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/5.jpg" alt="">
 											<figcaption>
@@ -91,7 +91,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/mochilas-69">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/6.jpg" alt="">
 											<figcaption>
@@ -102,7 +102,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="linkToCategory" href="#">
+									<a class="linkToCategory" href="https://www.asistecar.cl/barras-70">
 										<figure>
 											<img src="themes/asistecarDios/img/categorias/7.jpg" alt="">
 											<figcaption>
