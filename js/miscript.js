@@ -44,6 +44,11 @@ $(function(){
 		removeClass = false;
 	});
 
+	$('#cierraDespliega').on('click', function(){
+		$('.carritoHover').removeClass('activo');
+		$('.despliega').removeClass('activo');
+	});
+
 
 	$("html").on('click',function () {
 		if (removeClass) {

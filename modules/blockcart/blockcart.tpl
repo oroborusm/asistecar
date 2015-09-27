@@ -61,6 +61,7 @@
 	<span class="ajax_cart_no_product{if $cart_qties > 0} unvisible{/if}">0</span>
 {/if}
 	<div class="carritoHover">
+		<button id="cierraDespliega" class="cierraDespliega">a</button>
 		<div class="carritoDeCompra shopping_cart">
 
 			<div class="topCarrito">

@@ -4104,6 +4104,12 @@ table tfoot .cart_total_voucher .price-discount {
 .bottom-footer {
   display: none;
 }
+.cierraDespliega {
+  display: none;
+}
+.cierraDespliega:before {
+  content: '';
+}
 .col-sm-2 {
   display: block;
   width: 20%;
@@ -6551,7 +6557,6 @@ hr {
 .loginUsuario .contenedorLogin .despliega {
   background: #fff;
   border: 1px solid #ddd;
-  bottom: -67px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
@@ -6563,6 +6568,7 @@ hr {
   position: absolute;
   right: 0;
   text-align: left;
+  top: 30px;
   width: 150px;
 }
 .loginUsuario .contenedorLogin .despliega .account {

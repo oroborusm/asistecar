@@ -558,6 +558,24 @@
   .categoriasHome .contenedor ul li a figure figcaption p {
     display: none;
   }
+  .cierraDespliega {
+    background: transparent;
+    border-bottom: 1px solid #999;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: block;
+    font-size: 0;
+    height: 35px;
+    text-align: right;
+    width: 100%;
+  }
+  .cierraDespliega:before {
+    color: otroGris;
+    content: '\e6fd';
+    font-family: 'icos';
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 650px) {
   body .formCarrito .detalleProducto {

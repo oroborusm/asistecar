@@ -114,6 +114,7 @@
 									<span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span>
 								</div>
 								<div class="despliega">
+									<button id="cierraDespliega" class="cierraDespliega">a</button>
 									<a href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='View my customer account' mod='blockuserinfo'}" class="account" rel="nofollow">
 										<span class="texto">Perfil</span>
 									</a>
