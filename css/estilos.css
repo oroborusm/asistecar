@@ -417,7 +417,7 @@ body header {
 }
 body header .header {
   border-bottom: 1px solid #ecedef;
-  height: 70px;
+  height: 100px;
   margin: 0 auto;
   position: relative;
 }
@@ -431,11 +431,15 @@ body header .header figure {
 }
 body header .header figure a img {
   display: block;
-  margin: 20px 0 0 0;
+  margin: 8px 0 0 0;
   width: 100%;
 }
 body header .header .headerCOnt {
-  height: 70px;
+  background: url("../img/montañas.png") no-repeat bottom;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  height: 100px;
   margin: 0 auto;
   position: relative;
   max-width: 950px;
@@ -451,10 +455,10 @@ body header .header .headerCOnt .buscador {
 body header .header .headerCOnt .buscador .buscadorForm {
   background: #fff;
   border-bottom: 2px solid #999;
-  bottom: 0;
   height: 26px;
   margin: 0;
   position: absolute;
+  top: 10px;
   width: 100%;
 }
 body header .header .headerCOnt .buscador .buscadorForm form {
@@ -3394,7 +3398,7 @@ table tfoot .cart_total_voucher .price-discount {
   position: absolute;
   right: 0;
   text-align: center;
-  top: 20px;
+  top: 7px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -6534,7 +6538,7 @@ hr {
   position: absolute;
   right: 90px;
   text-align: center;
-  top: 20px;
+  top: 7px;
   width: 90px;
 }
 .loginUsuario .contenedorLogin {

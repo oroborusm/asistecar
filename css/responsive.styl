@@ -1,16 +1,20 @@
 @import "nib"
 @import 'nib/gradients'
 
+@media screen and (min-width: 970px)
+	#cd-lateral-nav
+		width 950px !important
+
 @media screen and (min-width:801px)
 	#cd-lateral-nav
-		background-color: #434142;
+		background-color #434142
 		height 40px
 		margin 0 auto
 		overflow visible
 		position relative
 		transform translateX(0)
 		visibility visible
-		width 950px
+		width 100%
 
 @media screen and (max-width: 800px)
 	body
@@ -18,6 +22,7 @@
 			box-sizing border-box
 			padding 20px
 			.finFooter
+				width 100%
 				.row
 					width 100%
 					figure
@@ -69,11 +74,17 @@
 							display inline-block !important
 							vertical-align top
 							width 49%
+				.mediosPago
+					width 100%
+					img
+						width 200px !important
 		header
 			.header
 				//border-bottom 4px solid #F8B302
-				height 140px
+				height 150px
+				padding 0 10px
 				.headerCOnt
+					background none
 					width 100%
 					figure
 						display block
@@ -88,11 +99,11 @@
 						margin-left -40%
 						top 50px
 						width 80%
-						.buscadorForm
+						/*.buscadorForm
 							//border 2px solid #434142
 							form
 								button
-									background-color #0040a6
+									background-color #0040a6*/
 		.accedeCuentaChica
 			box-sizing border-box
 			margin 0
@@ -121,9 +132,12 @@
 		.carrito 
 			background-color #ff4c00
 			border-radius 0
-			top 120px
+			position relative
+			top 15px
 			right 0
-			width 50%
+			width 100%
+			.carritoHover
+				width 100%
 			.carritoIcon
 				&:before
 					width 100%
@@ -168,11 +182,14 @@
 			border-radius 0
 			//display none
 			left 0
-			top 120px
-			width 50%
+			margin-top 23px
+			position relative
+			//top 120px
+			width 100%
 			.contenedorLogin
 				.despliega
 					width 100%
+					z-index 1
 		.popularesMasVendidos
 			width 100%
 		.productoPag
@@ -249,17 +266,21 @@
 		margin 0
 		width 100%
 	.añadeCarrituHome
-		height 40px
+		bottom -30px
+		height 60px
 		opacity 1
-		width 40px
+		right -30px
+		width 60px
 		a
 			display block
-			height 40px
-			width 40px
+			//height 40px
+			//width 40px
 			span
 				&:before
+					bottom 10px
 					font-size 16px
 					height 40px
+					left -5px
 					line-height 40px
 					width 40px
 	.carrito 
@@ -267,6 +288,8 @@
 			.carritoDeCompra
 				.cart_block
 					.block_content
+						margin 0 auto
+						width 280px
 						.cart_block_list
 							.products
 								.first_item
@@ -378,7 +401,58 @@
 		height 40px
 		top 40px
 	#sslsSiteSeal
-		width 100%
+		width 49%
+@media screen and (max-width: 700px)
+	.categoriasHome
+		.contenedor
+			height 700px !important
+			ul
+				height 100%
+				li
+					display block
+					left 0 !important
+					height 15%
+					position relative
+					top initial !important
+					width 100%
+					&:nth-child(1)
+						background url('../img/categorias/1.jpg') center no-repeat
+						background-size cover
+					&:nth-child(2)
+						background url('../img/categorias/2.jpg') center no-repeat
+						background-size cover
+					&:nth-child(3)
+						background url('../img/categorias/3.jpg') 0 80% no-repeat
+						background-size cover
+					&:nth-child(4)
+						background url('../img/categorias/4.jpg') center no-repeat
+						background-size cover
+					&:nth-child(5)
+						background url('../img/categorias/5.jpg') 0 80% no-repeat
+						background-size cover
+					&:nth-child(6)
+						background url('../img/categorias/6.jpg') center no-repeat
+						background-size cover
+					&:nth-child(7)
+						background url('../img/categorias/7.jpg') center no-repeat
+						background-size cover
+					a
+						height 100%
+						figure
+							height 100%
+							img
+								display none
+							figcaption
+								height 100%
+								h3
+									bottom 1.8em !important
+									text-shadow 0 0 10px black
+									color white !important
+									font-size 20px
+									text-align center !important
+									top initial !important
+								p
+									display none
 		
 @media screen and (max-width: 650px)
 	body
@@ -524,7 +598,7 @@
 	.contenedorMenu
 		background #434142
 		//border-bottom 1px solid #999
-		border-top 4px solid #999
+		border-top 4px solid #727176
 	.loginMenu
 		display none !important
 	.sub-menuDesktop
@@ -610,6 +684,10 @@
 						.mediosPago
 							img
 								width 100%
+								
+				.mediosPago
+					img
+						width 150px !important
 	.listaDireccion .contenedorListaDireccion
 		width 100%
 		

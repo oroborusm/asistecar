@@ -1,3 +1,8 @@
+@media screen and (min-width: 970px) {
+  #cd-lateral-nav {
+    width: 950px !important;
+  }
+}
 @media screen and (min-width: 801px) {
   #cd-lateral-nav {
     background-color: #434142;
@@ -11,7 +16,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0);
     visibility: visible;
-    width: 950px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -20,6 +25,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px;
+  }
+  body footer .finFooter {
+    width: 100%;
   }
   body footer .finFooter .row {
     width: 100%;
@@ -82,10 +90,18 @@
     vertical-align: top;
     width: 49%;
   }
+  body footer .row .mediosPago {
+    width: 100%;
+  }
+  body footer .row .mediosPago img {
+    width: 200px !important;
+  }
   body header .header {
-    height: 140px;
+    height: 150px;
+    padding: 0 10px;
   }
   body header .header .headerCOnt {
+    background: none;
     width: 100%;
   }
   body header .header .headerCOnt figure {
@@ -102,9 +118,11 @@
     margin-left: -40%;
     top: 50px;
     width: 80%;
-  }
-  body header .header .headerCOnt .buscador .buscadorForm form button {
-    background-color: #0040a6;
+/*.buscadorForm
+							//border 2px solid #434142
+							form
+								button
+									background-color #0040a6*/
   }
   body .accedeCuentaChica {
     -webkit-box-sizing: border-box;
@@ -133,9 +151,13 @@
     background-color: #ff4c00;
     -webkit-border-radius: 0;
     border-radius: 0;
-    top: 120px;
+    position: relative;
+    top: 15px;
     right: 0;
-    width: 50%;
+    width: 100%;
+  }
+  body .carrito .carritoHover {
+    width: 100%;
   }
   body .carrito .carritoIcon:before {
     width: 100%;
@@ -181,11 +203,13 @@
     -webkit-border-radius: 0;
     border-radius: 0;
     left: 0;
-    top: 120px;
-    width: 50%;
+    margin-top: 23px;
+    position: relative;
+    width: 100%;
   }
   body .loginUsuario .contenedorLogin .despliega {
     width: 100%;
+    z-index: 1;
   }
   body .popularesMasVendidos {
     width: 100%;
@@ -279,22 +303,28 @@
     width: 100%;
   }
   .añadeCarrituHome {
-    height: 40px;
+    bottom: -30px;
+    height: 60px;
     opacity: 1;
     -ms-filter: none;
     filter: none;
-    width: 40px;
+    right: -30px;
+    width: 60px;
   }
   .añadeCarrituHome a {
     display: block;
-    height: 40px;
-    width: 40px;
   }
   .añadeCarrituHome a span:before {
+    bottom: 10px;
     font-size: 16px;
     height: 40px;
+    left: -5px;
     line-height: 40px;
     width: 40px;
+  }
+  .carrito .carritoHover .carritoDeCompra .cart_block .block_content {
+    margin: 0 auto;
+    width: 280px;
   }
   .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .remove_link a,
   .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .remove_link a,
@@ -417,7 +447,88 @@
     top: 40px;
   }
   #sslsSiteSeal {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .categoriasHome .contenedor {
+    height: 700px !important;
+  }
+  .categoriasHome .contenedor ul {
+    height: 100%;
+  }
+  .categoriasHome .contenedor ul li {
+    display: block;
+    left: 0 !important;
+    height: 15%;
+    position: relative;
+    top: initial !important;
     width: 100%;
+  }
+  .categoriasHome .contenedor ul li:nth-child(1) {
+    background: url("../img/categorias/1.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(2) {
+    background: url("../img/categorias/2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(3) {
+    background: url("../img/categorias/3.jpg") 0 80% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(4) {
+    background: url("../img/categorias/4.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(5) {
+    background: url("../img/categorias/5.jpg") 0 80% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(6) {
+    background: url("../img/categorias/6.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li:nth-child(7) {
+    background: url("../img/categorias/7.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .categoriasHome .contenedor ul li a {
+    height: 100%;
+  }
+  .categoriasHome .contenedor ul li a figure {
+    height: 100%;
+  }
+  .categoriasHome .contenedor ul li a figure img {
+    display: none;
+  }
+  .categoriasHome .contenedor ul li a figure figcaption {
+    height: 100%;
+  }
+  .categoriasHome .contenedor ul li a figure figcaption h3 {
+    bottom: 1.8em !important;
+    text-shadow: 0 0 10px #000;
+    color: #fff !important;
+    font-size: 20px;
+    text-align: center !important;
+    top: initial !important;
+  }
+  .categoriasHome .contenedor ul li a figure figcaption p {
+    display: none;
   }
 }
 @media screen and (max-width: 650px) {
@@ -555,7 +666,7 @@
 @media only screen and (min-width: 800px) {
   .contenedorMenu {
     background: #434142;
-    border-top: 4px solid #999;
+    border-top: 4px solid #727176;
   }
   .loginMenu {
     display: none !important;
@@ -646,6 +757,9 @@
 @media only screen and (max-width: 500px) {
   body footer .row .footerSocial .contFooterSocial .mediosPago img {
     width: 100%;
+  }
+  body footer .row .mediosPago img {
+    width: 150px !important;
   }
   .listaDireccion .contenedorListaDireccion {
     width: 100%;
