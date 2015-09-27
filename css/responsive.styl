@@ -81,7 +81,7 @@
 		header
 			.header
 				//border-bottom 4px solid #F8B302
-				height 150px
+				height 160px
 				padding 0 10px
 				.headerCOnt
 					background none
@@ -190,62 +190,81 @@
 				.despliega
 					width 100%
 					z-index 1
+		.order_carrier_content
+			.checkbox
+				padding 10px
 		.popularesMasVendidos
 			width 100%
 		.productoPag
+			border-top none
 			.productoFoto
 				.contenedorProductoFoto
 					.carroDecripcion
 						height initial
 						position relative
 						width 100%
-						form
-							.box-info-product
-								box-sizing border-box
-								padding 15px
-								.box-cart-bottom
-									margin 0
-									div
-										.agregaCarrito
-											margin 0
-											.exclusive
+						.rodeacarroDecripcion
+							form
+								.box-info-product
+									box-sizing border-box
+									padding 15px
+									.box-cart-bottom
+										margin 0
+										div
+											.agregaCarrito
+												margin 0
+												.exclusive
+													width 100%
+										.buttons_bottom_block
+											a
+												margin 0
+												width 80%
+												&:before
+													display none
+													width 30px
+												span
+													text-align center
+													width 95%
+									.box-cart-bottom
+									.content_prices
+										display inline-block
+										margin -2px
+										position relative
+										top 0
+										vertical-align top
+										width 49%
+									.content_prices
+										width 100%
+										.price
+											.box-cart-bottom
+												margin 0
 												width 100%
-									.buttons_bottom_block
-										a
-											margin 0
-											width 80%
-											&:before
-												display none
-												width 30px
-											span
+											.precioActual
+												margin 0
 												text-align center
-												width 95%
-								.box-cart-bottom
-								.content_prices
-									display inline-block
-									margin -2px
-									position relative
-									top 0
-									vertical-align top
-									width 49%
-								.content_prices
-									.price
-										.ivaInclude
-											right 5%
-										.precioActual
-											margin 0
-											width 100%
-						.pay
-							display none
+												width 100%
+							.pay
+								display none
 					.descripcion
 						box-sizing border-box
 						max-height initial
 						margin 0
-						padding 20px
+						padding 0
 						width 100%
-						.linksDescripcion
-						.socialsharing_product
-							display none
+						.topDescripcion
+							padding 5px !important
+							.linksDescripcion
+								position relative
+								width 100%
+								li
+									padding 0
+									width 50%
+									a
+										text-align center
+							.referencias
+								width 100%
+							.socialsharing_product
+								display none
 					.contenedorImagenes
 						display block
 						margin 0 auto
@@ -394,6 +413,7 @@
 					margin 0
 					border-left 0
 					border-right 0
+					padding 10px
 	.Otroquick-view
 	.quick-view
 		display none
@@ -468,6 +488,7 @@
 		width 100%
 	.order_carrier_content
 		.checkbox
+			padding 10px
 			a
 				margin 5px auto
 				width 100%
@@ -529,16 +550,24 @@
 							span
 								font-size 11px
 	.navegador
-		width 90%
+		//width 90%
 		.checkout
 		.volverCompra
-			width 100px
+			font-size 13px
+			width 50%
 			span
-				font-size 14px
+				font-size 13px
+	.formCarritoFinalCompra  .box
+	.pagar
+		padding 1em
+		width 100% !important
 	#sslsSiteSeal
 		.sslslock
 			img
 				width 26px !important
+				
+	.textoLink
+		font-size 13px
 
 @media screen and (max-width: 460px)
 	body
@@ -559,7 +588,10 @@
 				li
 					a
 					span
-						font-size 13px
+						font-size 0
+						em
+							display initial
+							font-size 13px
 				.step_current
 					&:after
 						border 0

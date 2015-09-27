@@ -97,7 +97,7 @@
     width: 200px !important;
   }
   body header .header {
-    height: 150px;
+    height: 160px;
     padding: 0 10px;
   }
   body header .header .headerCOnt {
@@ -211,43 +211,49 @@
     width: 100%;
     z-index: 1;
   }
+  body .order_carrier_content .checkbox {
+    padding: 10px;
+  }
   body .popularesMasVendidos {
     width: 100%;
+  }
+  body .productoPag {
+    border-top: none;
   }
   body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion {
     height: initial;
     position: relative;
     width: 100%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom {
     margin: 0;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom div .agregaCarrito {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom div .agregaCarrito {
     margin: 0;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom div .agregaCarrito .exclusive {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom div .agregaCarrito .exclusive {
     width: 100%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a {
     margin: 0;
     width: 80%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a:before {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a:before {
     display: none;
     width: 30px;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a span {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom .buttons_bottom_block a span {
     text-align: center;
     width: 95%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .box-cart-bottom,
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .box-cart-bottom,
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .content_prices {
     display: inline-block;
     margin: -2px;
     position: relative;
@@ -255,14 +261,19 @@
     vertical-align: top;
     width: 49%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices .price .ivaInclude {
-    right: 5%;
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .content_prices {
+    width: 100%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion form .box-info-product .content_prices .price .precioActual {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .content_prices .price .box-cart-bottom {
     margin: 0;
     width: 100%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .pay {
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion form .box-info-product .content_prices .price .precioActual {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .carroDecripcion .rodeacarroDecripcion .pay {
     display: none;
   }
   body .productoPag .productoFoto .contenedorProductoFoto .descripcion {
@@ -271,11 +282,27 @@
     box-sizing: border-box;
     max-height: initial;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     width: 100%;
   }
-  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .linksDescripcion,
-  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .socialsharing_product {
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion {
+    padding: 5px !important;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .linksDescripcion {
+    position: relative;
+    width: 100%;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .linksDescripcion li {
+    padding: 0;
+    width: 50%;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .linksDescripcion li a {
+    text-align: center;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .referencias {
+    width: 100%;
+  }
+  body .productoPag .productoFoto .contenedorProductoFoto .descripcion .topDescripcion .socialsharing_product {
     display: none;
   }
   body .productoPag .productoFoto .contenedorProductoFoto .contenedorImagenes {
@@ -437,6 +464,7 @@
     margin: 0;
     border-left: 0;
     border-right: 0;
+    padding: 10px;
   }
   .Otroquick-view,
   .quick-view {
@@ -543,6 +571,9 @@
     overflow-y: scroll;
     width: 100%;
   }
+  .order_carrier_content .checkbox {
+    padding: 10px;
+  }
   .order_carrier_content .checkbox a {
     margin: 5px auto;
     width: 100%;
@@ -603,19 +634,25 @@
   .listaProducto .listaProductoLi .contenedorPopular .functional-buttons .compare a span {
     font-size: 11px;
   }
-  .navegador {
-    width: 90%;
-  }
   .navegador .checkout,
   .navegador .volverCompra {
-    width: 100px;
+    font-size: 13px;
+    width: 50%;
   }
   .navegador .checkout span,
   .navegador .volverCompra span {
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .formCarritoFinalCompra .box,
+  .pagar {
+    padding: 1em;
+    width: 100% !important;
   }
   #sslsSiteSeal .sslslock img {
     width: 26px !important;
+  }
+  .textoLink {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -635,6 +672,11 @@
   }
   body .formCarrito .listaCompra li a,
   body .formCarrito .listaCompra li span {
+    font-size: 0;
+  }
+  body .formCarrito .listaCompra li a em,
+  body .formCarrito .listaCompra li span em {
+    display: initial;
     font-size: 13px;
   }
   body .formCarrito .listaCompra .step_current:after {
