@@ -3557,6 +3557,11 @@ table tfoot .cart_total_voucher .price-discount {
   font-family: 'proxima_nova_rgbold';
   width: 110px;
 }
+.carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad span,
+.carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad span,
+.carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad span {
+  margin-left: -4px;
+}
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .cantidad,
@@ -3582,7 +3587,7 @@ table tfoot .cart_total_voucher .price-discount {
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .quantity-formated .quantity,
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .quantity-formated .quantity,
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .last_item .cart-info .product-name .quantity-formated .quantity {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .first_item .cart-info .product-name .cantidad,
 .carrito .carritoHover .carritoDeCompra .cart_block .block_content .cart_block_list .products .item .cart-info .product-name .cantidad,
