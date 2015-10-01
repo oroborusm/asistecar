@@ -4116,7 +4116,7 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .content_sortPagiBar {
   margin: 0 auto;
-  width: 100%;
+  max-width: 950px;
 }
 .content_sortPagiBar .bottom-pagination-content {
   border-top: 1px solid #ecedef;
@@ -4126,14 +4126,25 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .content_sortPagiBar .bottom-pagination-content form {
   line-height: 50px;
+  margin-bottom: 1em;
   width: 150px;
 }
 .content_sortPagiBar .bottom-pagination-content form button {
-  background: #099;
-  border: none;
+  background: #fff;
+  border-bottom: 2px solid #099;
+  border-left: none;
+  border-top: none;
+  border-right: none;
   width: 100%;
 }
 .content_sortPagiBar .bottom-pagination-content form button span {
+  color: #434142;
+  font-family: 'proxima_nova_rgbold';
+}
+.content_sortPagiBar .bottom-pagination-content form button:hover {
+  background: #099;
+}
+.content_sortPagiBar .bottom-pagination-content form button:hover span {
   color: #fff;
 }
 .content_sortPagiBar .bottom-pagination-content .compare-form {
@@ -4302,6 +4313,7 @@ table tfoot .cart_total_voucher .price-discount {
   background: none;
   margin: 14px auto;
   padding: 0;
+  max-width: 950px;
 }
 .listaProducto .listaProductoLi {
   border: 1px solid transparent;
@@ -4672,22 +4684,21 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .Otroquick-view,
 .quick-view {
-  background: rgba(255,76,0,0.5) !important;
+  border: 2px solid #ecedef;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   color: #f8b302;
   font-size: 0;
   font-weight: 600;
   height: 44px;
-  margin-right: -22px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   position: absolute;
-  right: 50%;
+  right: 0;
   text-align: center;
   text-decoration: none;
-  top: 50%;
+  top: 0;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -4705,8 +4716,8 @@ table tfoot .cart_total_voucher .price-discount {
 }
 .Otroquick-view:after,
 .quick-view:after {
-  top: 3px;
-  color: #fff;
+  top: 1px;
+  color: #ecedef;
   content: '\e67f';
   font-family: 'icos';
   font-size: 20px;
@@ -5460,6 +5471,7 @@ table tfoot .cart_total_voucher .price-discount {
   margin: 0 auto;
   overflow: hidden;
   text-align: left;
+  max-width: 950px;
 }
 .page-heading span,
 .product-listing span {

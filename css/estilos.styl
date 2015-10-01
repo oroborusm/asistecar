@@ -3697,7 +3697,7 @@ table
 
 .content_sortPagiBar
 	margin 0 auto
-	width 100%
+	max-width 950px
 	.bottom-pagination-content
 		border-top 1px solid clarito
 		overflow hidden
@@ -3705,13 +3705,22 @@ table
 		width 100%
 		form
 			line-height 50px
+			margin-bottom 1em
 			width 150px
 			button
-				background calipso
-				border none
+				background white
+				border-bottom 2px solid calipso
+				border-left none
+				border-top none
+				border-right none
 				width 100%
 				span
-					color white
+					color oscuro
+					font-family 'proxima_nova_rgbold'
+				&:hover
+					background calipso
+					span
+						color white
 		.compare-form
 			float right
 		.pagination
@@ -3846,7 +3855,7 @@ table
 	background none
 	margin 14px auto
 	padding 0
-	//width 80%
+	max-width 950px
 	.listaProductoLi
 		//border-radius 9px
 		border 1px solid transparent
@@ -4171,8 +4180,9 @@ table
 
 .Otroquick-view
 .quick-view
-	background rgba(rojoAsiste, .5) !important
+	//background rgba(rojoAsiste, .5) !important
 	//background rojoAsiste
+	border 2px solid clarito
 	border-radius 50%
 	color naranjito
 	//display block
@@ -4180,21 +4190,21 @@ table
 	font-weight 600
 	height 44px
 	//line-height 40px
-	margin-right -22px
+	//margin-right -22px
 	opacity 0
 	//padding-top 22px
 	position absolute
-	right 50%
+	right 0
 	text-align center
 	text-decoration none
-	top 50%
+	top 0
 	transition .3s
 	width 44px
 	//z-index 1000
 	&:after
 		//background rgba(255,255,255, .7)
-		top 3px
-		color white
+		top 1px
+		color clarito
 		content '\e67f'
 		font-family 'icos'
 		font-size 20px
@@ -4854,7 +4864,7 @@ table
 	margin 0 auto
 	overflow hidden
 	text-align left
-	//width 80%
+	max-width 950px
 	span
 		display inline-block
 	.cat-name

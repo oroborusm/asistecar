@@ -369,6 +369,12 @@
   .contenedorProductoFoto {
     position: relative;
   }
+  .content_sortPagiBar .bottom-pagination-content form {
+    width: 125px;
+  }
+  .content_sortPagiBar .bottom-pagination-content form button span {
+    font-size: 16px;
+  }
   .infoAdicionalHeader .row {
     width: 100%;
   }

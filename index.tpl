@@ -63,7 +63,7 @@
 											<figcaption>
 												<h3 class="arriba">CARROS</h3>
 												
-												<p class="arriba">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe omnis mollitia expedita blanditiis officia ea, velit est itaque.</p>
+												<p class="arriba">La más alta variedad y calidad en carros de arrastre carros pra Jet Ski y motos.</p>
 											</figcaption>
 										</figure>
 									</a>
