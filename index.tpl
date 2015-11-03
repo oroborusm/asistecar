@@ -37,7 +37,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/portabicicletas-66">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/1.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/1.jpg" alt="">
 											<figcaption>
 												<h3 class="abajo">PORTABICICLETAS</h3>
 												
@@ -48,7 +48,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/outdoor-60">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/2.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/2.jpg" alt="">
 											<figcaption>
 												<h3 class="abajo">OUTDOOR</h3>
 												
@@ -59,7 +59,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/carros-30">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/3.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/3.jpg" alt="">
 											<figcaption>
 												<h3 class="arriba">CARROS</h3>
 												
@@ -71,7 +71,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/portaequipajes-67">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/4.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/4.jpg" alt="">
 											<figcaption>
 												<h3 class="arriba">PORTAEQUIPAJES</h3>
 												
@@ -82,7 +82,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/accesorios-vehiculos-68">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/5.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/5.jpg" alt="">
 											<figcaption>
 												<h3 class="arriba">ACCESORIO VEHÍCULOS</h3>
 												
@@ -93,7 +93,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/mochilas-69">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/6.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/6.jpg" alt="">
 											<figcaption>
 												<h3 class="abajo">MOCHILAS</h3>
 												
@@ -104,7 +104,7 @@
 								<li>
 									<a class="linkToCategory" href="https://www.asistecar.cl/barras-70">
 										<figure>
-											<img src="themes/asistecarDios/img/categorias/7.jpg" alt="">
+											<img src="themes/asistecar/img/categorias/7.jpg" alt="">
 											<figcaption>
 												<h3 class="arriba">BARRAS</h3>
 												

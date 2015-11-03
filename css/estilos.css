@@ -2197,7 +2197,7 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecri
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .box-cart-bottom {
   display: inline-block;
-  margin-left: 29%;
+  margin-left: 19%;
 /*position absolute
 											top 135px*/
   vertical-align: middle;
@@ -2272,32 +2272,6 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecri
   text-align: right;
   width: 90%;
 }
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .ivaInclude {
-  background: #00a2b2;
-  color: #fff;
-  display: block;
-  font-family: 'oswaldlight';
-  font-size: 11.5px;
-  font-weight: 100;
-  margin: 0;
-  position: absolute;
-  right: 27px;
-  text-align: center;
-  text-transform: capitalize;
-  top: -2px;
-  width: 36px;
-  z-index: 1;
-}
-body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .ivaInclude:after {
-  border-bottom: 5px solid transparent;
-  border-left: 18px solid #00a2b2;
-  border-top: 5px solid #00a2b2;
-  border-right: 18px solid #00a2b2;
-  bottom: -10px;
-  content: '';
-  left: 0;
-  position: absolute;
-}
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .precioActual {
   display: inline-block;
   line-height: 50px;
@@ -2305,13 +2279,18 @@ body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecri
   position: relative;
   text-align: left;
   vertical-align: middle;
-  width: 30%;
+  width: 40%;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .precioActual span {
   color: #ff4c00;
   font-family: 'proxima_nova_rgbold';
   font-size: 30px;
   font-weight: 100;
+}
+body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .content_prices .price .precioActual .textChico {
+  color: #434142;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 13px;
 }
 body .productoPag .productoFoto .contenedorProductoFoto .descripcion .carroDecripcion form .box-info-product .cantidad {
   border-bottom: 2px solid #ddd;
